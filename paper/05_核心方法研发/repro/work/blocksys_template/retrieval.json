@@ -1,0 +1,14 @@
+[
+  {
+    "requested": "https://blocksys.info/2027/",
+    "error": "<urlopen error [Errno 61] Connection refused>"
+  },
+  {
+    "requested": "https://blocksys.info/2027/cfp.html",
+    "error": "<urlopen error [Errno 61] Connection refused>"
+  },
+  {
+    "requested": "http://blocksys.info/2027/",
+    "error": "<urlopen error [Errno 61] Connection refused>"
+  }
+]

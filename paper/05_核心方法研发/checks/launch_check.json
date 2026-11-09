@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "entry_help_routes_verified": [
+    "run_controls",
+    "run_lagrangian",
+    "run_partitions"
+  ],
+  "checks": [
+    "explicit path overrides environment",
+    "invalid supplied path has no silent fallback",
+    "environment root",
+    "bounded ../../02_实验工程 export layout",
+    "forwarded training args preserved",
+    "dry-run creates no output and imports no torch/data helper",
+    "actual helper ROOT and model/loader import identities checked for all entrypoints",
+    "partition RAW bound to selected project"
+  ],
+  "scope": "No training or real image data loaded; no Desktop writes."
+}

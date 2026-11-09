@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "fixture_only": true,
+  "scope": "fabricated two-method by twenty-client saved arrays only; no scientific result",
+  "fixture_root": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/topk_two_prior_vector_ed5luvb6",
+  "method_tuple": [
+    "ce_topk",
+    "fedlc_topk"
+  ],
+  "clients_per_method": 20,
+  "variants": [
+    "raw",
+    "analytic_prior",
+    "prioranchor_bias",
+    "zero_anchor_vector",
+    "prioranchored_vector",
+    "learned_head",
+    "learned_head_plus_prior"
+  ],
+  "checks": {
+    "client_variant_metrics": 1400,
+    "summary_values": 168,
+    "ece_bin_values": 25200,
+    "deployed_vector_reconstructions": 80
+  },
+  "max_absolute_errors": {
+    "metric": 8.881784197001252e-16,
+    "summary": 3.552713678800501e-15,
+    "ece_bin": 4.440892098500626e-16
+  },
+  "synthetic_fit_calls_observed": {
+    "prior_vector": 40,
+    "zero_vector": 40
+  },
+  "all_fits_received_saved_TRAIN_only": true,
+  "known_metric_cases": [
+    "balanced uniform: Brier 0.9",
+    "saturated perfect",
+    "saturated wrong: Brier 2, ECE1"
+  ],
+  "negative_cases": [
+    {
+      "case": "wrong explicit PLAN hash",
+      "error": "exact explicit main PLAN and preregistration required"
+    },
+    {
+      "case": "wrong explicit registration hash",
+      "error": "exact explicit main PLAN and preregistration required"
+    },
+    {
+      "case": "incomplete_methods",
+      "error": "complete exact ce_topk/fedlc_topk saved-array schema required"
+    },
+    {
+      "case": "nineteen_clients",
+      "error": "all20 ordered clients required for both TopK models"
+    },
+    {
+      "case": "reordered_clients",
+      "error": "all20 ordered clients required for both TopK models"
+    },
+    {
+      "case": "not_DONE",
+      "error": "complete exact ce_topk/fedlc_topk saved-array schema required"
+    },
+    {
+      "case": "existing_output",
+      "error": "fresh evaluator output required"
+    }
+  ],
+  "input_schema": "topk_two",
+  "contains_gates_or_decision": false,
+  "torch_imported": false,
+  "new_cnn_forwards": 0,
+  "new_cnn_backwards": 0,
+  "real_dataset_bytes": 0,
+  "real_saved_arrays_evaluated": false,
+  "formal_training_started": false,
+  "forbidden_dataset_open_attempts": [],
+  "protected_source_hashes_before_after_equal": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/evaluate_saved.py": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/probe.py": "d1fab28871824163a6d2fc2ee44e043698537b00dabc0e02af2618531adcd0c7",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PREREGISTRATION.json": "1eb7d284c43992a3cca58e31448a4b595b88e67abdf167c24a605342bf2f0568",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/PLAN.md": "b0daad197d50f71c4d18e3ea3d12878192ab9705a3d6b6179479048e8c6d7130",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/common.py": "37976f773cbaca44ee444d95091cb77cb916e06a9943837dbbee8586425a4a58",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/wire.py": "6bf9856e73fba6d601bbcd8ce19cb9ec3bdfe09f17e58ca79e0faef000c86693",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/train.py": "13d8538e671302e1f8ec891fea3f0b87c6cb6a996774222aef4d36856946affe",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/evaluate.py": "22cec15467ae06629c361a8f510da45cc1637bdf2ef1242db42169c88dbb3e8c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/prospective.py": "af3e654d1c9f7710d10096d12419a92eedb3e962583a4d1c7774fd546d95f1d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/prospective_evaluate.py": "83e97c50d770da661861f8e982164973883e2a45a186bbce602c97a7ca4e7bd3"
+  },
+  "wrapper_sha256": "867b7145c934978be60c7f406b9e1d1b46b0fb27cd3dc7dd164f62a37da858a4",
+  "fixture_harness_sha256": "e518716f918b536ca16e2c7fce2b5ef0735d8d2b08379be7cb2d88ba3ae2e501",
+  "main_plan_sha256": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+  "main_registration_sha256": "1eb7d284c43992a3cca58e31448a4b595b88e67abdf167c24a605342bf2f0568",
+  "external_cross_family_review": "REVIEW_UNAVAILABLE"
+}

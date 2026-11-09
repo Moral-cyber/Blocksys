@@ -1,0 +1,8 @@
+{
+  "checked_on": "2026-11-03",
+  "databases_queried": [{"database":"arXiv", "endpoint":"https://export.arxiv.org/api/query?search_query=all:FedALA%20OR%20all:FedCAC&max_results=10", "raw_response":"ala_cac_search.xml", "note":"Returned target titles among 9 entries; irrelevant records were not followed."}],
+  "primary_sources": [
+    {"title":"FedALA: Adaptive Local Aggregation for Personalized Federated Learning", "arxiv":"2212.01197v4", "url":"https://arxiv.org/html/2212.01197v4", "local_files":["fedala.html","fedala.txt"], "anchors":["Method / Adaptive Local Aggregation, Eq.(3)-(5)","Algorithm 1, lines7,9-21","Appendix A, Eq.(7)"]},
+    {"title":"Bold but Cautious: Unlocking the Potential of Personalized Federated Learning through Cautiously Aggressive Collaboration", "arxiv":"2309.11103v1", "url":"https://arxiv.org/html/2309.11103v1", "pdf_url":"https://arxiv.org/pdf/2309.11103v1", "local_files":["fedcac.html","fedcac.txt","fedcac.pdf","fedcac_pdf.txt"], "anchors":["Sec3.1 Steps1-5","Sec3.3 Eq.(5)-(6)","Sec3.4 Eq.(7)-(11)","Algorithm1"], "caution":"The overlap expression is an L1 mask difference although narrative and >= selection describe increasing similarity; confirmed in HTML and PDF, no code audit."}
+  ]
+}

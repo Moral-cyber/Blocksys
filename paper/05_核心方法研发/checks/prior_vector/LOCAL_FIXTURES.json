@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "scope": "synthetic NumPy arrays only; no CNN/dataset bytes",
+  "gradient_fd_max_error": 1.1804465183118396e-09,
+  "hessian_fd_max_error": 3.1746215378714027e-10,
+  "positive_definite_hessian": true,
+  "anchor_gradient_delta_only_and_hessian_identical": true,
+  "centered_train_log_count_anchor": true,
+  "convexity_gauge_checks": true,
+  "anchor_deletion_equivalence": [
+    {
+      "case": "imbalanced",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "single_class",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "one_row",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "balanced_zero",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    }
+  ],
+  "optimization_cases": [
+    {
+      "case": "imbalanced",
+      "steps": 4,
+      "state_bytes": 80,
+      "gradient_inf": 3.780975532663433e-12,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "single_class",
+      "steps": 11,
+      "state_bytes": 80,
+      "gradient_inf": 6.797357343657495e-09,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "one_row",
+      "steps": 10,
+      "state_bytes": 80,
+      "gradient_inf": 5.945022252262788e-11,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "balanced_zero",
+      "steps": 0,
+      "state_bytes": 80,
+      "gradient_inf": 1.1379786002407855e-15,
+      "stop_reason": "kkt_gradient_tolerance"
+    }
+  ],
+  "negative_scales_permitted": [
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032,
+    -0.849679172039032
+  ],
+  "deployment_state_bytes": 80,
+  "intentional_dummy_guard_rejections": 3,
+  "real_dataset_open_attempts": 0,
+  "source_identities_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/PLAN.md": "2d606bb226c08b73d24270250bf7fe676b56c515afba9e420a1b2f6e8dea5cd0",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c"
+  },
+  "harness_sha256": "fc287910a0dfcedd3039095a132ad9949d27822f2404127c453f2054a616a8f5",
+  "formal_ML_training_started": false
+}

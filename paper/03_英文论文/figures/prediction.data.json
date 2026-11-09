@@ -1,0 +1,146 @@
+[
+  {
+    "task": "cifar",
+    "seed": 20261231,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 75.72149534607576,
+    "macro_nll": 0.6663777486928855
+  },
+  {
+    "task": "cifar",
+    "seed": 20261232,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 75.84378226362148,
+    "macro_nll": 0.680373336478526
+  },
+  {
+    "task": "cifar",
+    "seed": 20261233,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 74.60576253332187,
+    "macro_nll": 0.6943522016056326
+  },
+  {
+    "task": "cifar",
+    "seed": 20261231,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 75.9931233775561,
+    "macro_nll": 0.634505682567523
+  },
+  {
+    "task": "cifar",
+    "seed": 20261232,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 75.71860118714521,
+    "macro_nll": 0.6434397177548166
+  },
+  {
+    "task": "cifar",
+    "seed": 20261233,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 74.9815945438909,
+    "macro_nll": 0.6607045532926391
+  },
+  {
+    "task": "cifar",
+    "seed": 20261231,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 76.09561058799979,
+    "macro_nll": 0.6320570996228507
+  },
+  {
+    "task": "cifar",
+    "seed": 20261232,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 75.69651125082635,
+    "macro_nll": 0.6424821102074739
+  },
+  {
+    "task": "cifar",
+    "seed": 20261233,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 74.9120441800568,
+    "macro_nll": 0.6593114927136857
+  },
+  {
+    "task": "fashion",
+    "seed": 20261241,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 93.19159364302925,
+    "macro_nll": 0.1920999440185412
+  },
+  {
+    "task": "fashion",
+    "seed": 20261242,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 92.46850864520704,
+    "macro_nll": 0.21406602133812985
+  },
+  {
+    "task": "fashion",
+    "seed": 20261243,
+    "variant": "zero_anchor_vector",
+    "label": "Zero vector",
+    "macro_accuracy_percent": 92.74288029085318,
+    "macro_nll": 0.21252692312492633
+  },
+  {
+    "task": "fashion",
+    "seed": 20261241,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 93.27720929293545,
+    "macro_nll": 0.17920531045994914
+  },
+  {
+    "task": "fashion",
+    "seed": 20261242,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 92.56501842151945,
+    "macro_nll": 0.19759479276151706
+  },
+  {
+    "task": "fashion",
+    "seed": 20261243,
+    "variant": "prioranchored_bcts",
+    "label": "Prior BCTS",
+    "macro_accuracy_percent": 92.69201925301006,
+    "macro_nll": 0.19802045557429077
+  },
+  {
+    "task": "fashion",
+    "seed": 20261241,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 93.4696554276316,
+    "macro_nll": 0.17530802875708915
+  },
+  {
+    "task": "fashion",
+    "seed": 20261242,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 92.63382071292222,
+    "macro_nll": 0.1948901899136038
+  },
+  {
+    "task": "fashion",
+    "seed": 20261243,
+    "variant": "prioranchored_vector",
+    "label": "Prior vector",
+    "macro_accuracy_percent": 92.81850492995203,
+    "macro_nll": 0.19378767336140923
+  }
+]

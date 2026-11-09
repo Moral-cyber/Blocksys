@@ -1,0 +1,330 @@
+{
+  "status": "ALL_DONE",
+  "runs": {
+    "topk": {
+      "status": "DONE",
+      "rounds": 20,
+      "per_round_analytical_upload_bytes": 1096160,
+      "completed_rounds_analytical_upload_bytes": 21923200,
+      "server_multiplier": 1.0,
+      "evaluation": "global balanced 2000-row development subset, not client macro",
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.32630000114440916,
+        "ce": 1.8803710388183592
+      },
+      "round20": {
+        "accuracy": 0.34599998593330383,
+        "ce": 1.8220691833496094
+      },
+      "last5_tensor_selection": {
+        "features.0.weight": {
+          "tensor_parameters": 432,
+          "mean_selected_coordinates": 61.72,
+          "mean_selected_fraction": 0.14287037037037037,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.0.bias": {
+          "tensor_parameters": 16,
+          "mean_selected_coordinates": 5.48,
+          "mean_selected_fraction": 0.3425,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.weight": {
+          "tensor_parameters": 4608,
+          "mean_selected_coordinates": 270.62,
+          "mean_selected_fraction": 0.05872829861111111,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.bias": {
+          "tensor_parameters": 32,
+          "mean_selected_coordinates": 7.25,
+          "mean_selected_fraction": 0.2265625,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.weight": {
+          "tensor_parameters": 131072,
+          "mean_selected_coordinates": 6240.53,
+          "mean_selected_fraction": 0.04761146545410156,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.bias": {
+          "tensor_parameters": 64,
+          "mean_selected_coordinates": 10.49,
+          "mean_selected_fraction": 0.16390625,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.weight": {
+          "tensor_parameters": 640,
+          "mean_selected_coordinates": 241.48,
+          "mean_selected_fraction": 0.3773125,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.bias": {
+          "tensor_parameters": 10,
+          "mean_selected_coordinates": 5.43,
+          "mean_selected_fraction": 0.5429999999999999,
+          "zero_selection_client_rounds_of_100": 0
+        }
+      }
+    },
+    "nova_topk": {
+      "status": "DONE",
+      "rounds": 20,
+      "per_round_analytical_upload_bytes": 1096160,
+      "completed_rounds_analytical_upload_bytes": 21923200,
+      "server_multiplier": 50.35770666666665,
+      "evaluation": "global balanced 2000-row development subset, not client macro",
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.310699999332428,
+        "ce": 1.9122744384765624
+      },
+      "round20": {
+        "accuracy": 0.33500000834465027,
+        "ce": 1.8696102752685546
+      },
+      "last5_tensor_selection": {
+        "features.0.weight": {
+          "tensor_parameters": 432,
+          "mean_selected_coordinates": 63.02,
+          "mean_selected_fraction": 0.14587962962962964,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.0.bias": {
+          "tensor_parameters": 16,
+          "mean_selected_coordinates": 5.49,
+          "mean_selected_fraction": 0.343125,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.weight": {
+          "tensor_parameters": 4608,
+          "mean_selected_coordinates": 271.0,
+          "mean_selected_fraction": 0.05881076388888889,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.bias": {
+          "tensor_parameters": 32,
+          "mean_selected_coordinates": 7.18,
+          "mean_selected_fraction": 0.224375,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.weight": {
+          "tensor_parameters": 131072,
+          "mean_selected_coordinates": 6232.36,
+          "mean_selected_fraction": 0.04754913330078125,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.bias": {
+          "tensor_parameters": 64,
+          "mean_selected_coordinates": 10.32,
+          "mean_selected_fraction": 0.16125,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.weight": {
+          "tensor_parameters": 640,
+          "mean_selected_coordinates": 248.56,
+          "mean_selected_fraction": 0.388375,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.bias": {
+          "tensor_parameters": 10,
+          "mean_selected_coordinates": 5.07,
+          "mean_selected_fraction": 0.507,
+          "zero_selection_client_rounds_of_100": 0
+        }
+      }
+    },
+    "rms": {
+      "status": "DONE",
+      "rounds": 20,
+      "per_round_analytical_upload_bytes": 1096160,
+      "completed_rounds_analytical_upload_bytes": 21923200,
+      "server_multiplier": 1.0,
+      "evaluation": "global balanced 2000-row development subset, not client macro",
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.32450000047683714,
+        "ce": 1.8981472381591797
+      },
+      "round20": {
+        "accuracy": 0.34200000762939453,
+        "ce": 1.8575381469726562
+      },
+      "last5_tensor_selection": {
+        "features.0.weight": {
+          "tensor_parameters": 432,
+          "mean_selected_coordinates": 14.2,
+          "mean_selected_fraction": 0.03287037037037037,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.0.bias": {
+          "tensor_parameters": 16,
+          "mean_selected_coordinates": 0.35,
+          "mean_selected_fraction": 0.021875,
+          "zero_selection_client_rounds_of_100": 66
+        },
+        "features.3.weight": {
+          "tensor_parameters": 4608,
+          "mean_selected_coordinates": 212.02,
+          "mean_selected_fraction": 0.046011284722222226,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.bias": {
+          "tensor_parameters": 32,
+          "mean_selected_coordinates": 0.85,
+          "mean_selected_fraction": 0.0265625,
+          "zero_selection_client_rounds_of_100": 40
+        },
+        "classifier.1.weight": {
+          "tensor_parameters": 131072,
+          "mean_selected_coordinates": 6599.77,
+          "mean_selected_fraction": 0.050352249145507816,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.bias": {
+          "tensor_parameters": 64,
+          "mean_selected_coordinates": 0.61,
+          "mean_selected_fraction": 0.00953125,
+          "zero_selection_client_rounds_of_100": 55
+        },
+        "classifier.3.weight": {
+          "tensor_parameters": 640,
+          "mean_selected_coordinates": 15.14,
+          "mean_selected_fraction": 0.02365625,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.bias": {
+          "tensor_parameters": 10,
+          "mean_selected_coordinates": 0.06,
+          "mean_selected_fraction": 0.006,
+          "zero_selection_client_rounds_of_100": 94
+        }
+      }
+    },
+    "nova_rms": {
+      "status": "DONE",
+      "rounds": 20,
+      "per_round_analytical_upload_bytes": 1096160,
+      "completed_rounds_analytical_upload_bytes": 21923200,
+      "server_multiplier": 50.35770666666665,
+      "evaluation": "global balanced 2000-row development subset, not client macro",
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.314599996805191,
+        "ce": 1.9140961395263674
+      },
+      "round20": {
+        "accuracy": 0.3294999897480011,
+        "ce": 1.8836189270019532
+      },
+      "last5_tensor_selection": {
+        "features.0.weight": {
+          "tensor_parameters": 432,
+          "mean_selected_coordinates": 13.7,
+          "mean_selected_fraction": 0.031712962962962964,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.0.bias": {
+          "tensor_parameters": 16,
+          "mean_selected_coordinates": 0.36,
+          "mean_selected_fraction": 0.0225,
+          "zero_selection_client_rounds_of_100": 69
+        },
+        "features.3.weight": {
+          "tensor_parameters": 4608,
+          "mean_selected_coordinates": 205.16,
+          "mean_selected_fraction": 0.044522569444444444,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "features.3.bias": {
+          "tensor_parameters": 32,
+          "mean_selected_coordinates": 0.84,
+          "mean_selected_fraction": 0.02625,
+          "zero_selection_client_rounds_of_100": 46
+        },
+        "classifier.1.weight": {
+          "tensor_parameters": 131072,
+          "mean_selected_coordinates": 6607.94,
+          "mean_selected_fraction": 0.05041458129882812,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.1.bias": {
+          "tensor_parameters": 64,
+          "mean_selected_coordinates": 0.73,
+          "mean_selected_fraction": 0.01140625,
+          "zero_selection_client_rounds_of_100": 60
+        },
+        "classifier.3.weight": {
+          "tensor_parameters": 640,
+          "mean_selected_coordinates": 14.2,
+          "mean_selected_fraction": 0.0221875,
+          "zero_selection_client_rounds_of_100": 0
+        },
+        "classifier.3.bias": {
+          "tensor_parameters": 10,
+          "mean_selected_coordinates": 0.07,
+          "mean_selected_fraction": 0.007000000000000001,
+          "zero_selection_client_rounds_of_100": 93
+        }
+      }
+    }
+  },
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE",
+  "frozen_go": {
+    "definition": "CE(D)<min(CE(B),CE(C)) AND acc(D)>=max(acc(B),acc(C))+.005",
+    "ce_pass": false,
+    "accuracy_pass": false,
+    "decision": "STOP_THIS_NORMALIZATION_COMBINATION"
+  },
+  "descriptive_2x2_differences": {
+    "known_nova_component_B_minus_A": {
+      "ce_delta": 0.03190339965820321,
+      "accuracy_delta_pp": -1.560000181198118
+    },
+    "rms_component_C_minus_A": {
+      "ce_delta": 0.01777619934082053,
+      "accuracy_delta_pp": -0.18000006675720215
+    },
+    "added_rms_under_nova_D_minus_B": {
+      "ce_delta": 0.0018217010498049468,
+      "accuracy_delta_pp": 0.38999974727630393
+    },
+    "added_nova_under_rms_D_minus_C": {
+      "ce_delta": 0.01594890136718763,
+      "accuracy_delta_pp": -0.9900003671646118
+    },
+    "interaction_D_minus_B_minus_C_plus_A": {
+      "ce": -0.015954498291015584,
+      "accuracy_pp": 0.5699998140335061
+    }
+  }
+}

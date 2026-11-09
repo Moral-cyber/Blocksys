@@ -1,0 +1,87 @@
+{
+  "scope": "synthetic CPU wrapper integration only; no official images/TEST or formal preparation/training",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/prospective_topk_fixture_g1zaun8g",
+  "protocol_plan": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PLAN.md",
+  "protocol_plan_sha256": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+  "source_identities": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_bias/solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/PLAN.md": "b0daad197d50f71c4d18e3ea3d12878192ab9705a3d6b6179479048e8c6d7130",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/common.py": "37976f773cbaca44ee444d95091cb77cb916e06a9943837dbbee8586425a4a58",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/wire.py": "6bf9856e73fba6d601bbcd8ce19cb9ec3bdfe09f17e58ca79e0faef000c86693",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/train.py": "13d8538e671302e1f8ec891fea3f0b87c6cb6a996774222aef4d36856946affe",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/evaluate.py": "22cec15467ae06629c361a8f510da45cc1637bdf2ef1242db42169c88dbb3e8c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/guarded_codec.py": "3dcb6636f12d6dc17fe023a978a9016ce10593ed3da5472b1ad498a33b8c948e",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/prospective.py": "af3e654d1c9f7710d10096d12419a92eedb3e962583a4d1c7774fd546d95f1d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/prospective_evaluate.py": "83e97c50d770da661861f8e982164973883e2a45a186bbce602c97a7ca4e7bd3"
+  },
+  "checks": {
+    "pure_ID_new_partition": {
+      "partition_seed": 20261217,
+      "deterministic": true,
+      "synthetic_train_samples": 37500,
+      "synthetic_holdout_samples": 12500,
+      "original_images_read": 0
+    },
+    "three_allowed_seed_contexts": {
+      "20261231": {
+        "config_seed": 20261231,
+        "partition_seed": 20261217,
+        "toy_rounds": 2,
+        "formal_rounds": 20,
+        "same_batch_seed_order_and_initialization": true,
+        "signature_binds_explicit_source_runtime_overrides": true,
+        "actual_wire_per_client": 54808
+      },
+      "20261232": {
+        "config_seed": 20261232,
+        "partition_seed": 20261217,
+        "toy_rounds": 2,
+        "formal_rounds": 20,
+        "same_batch_seed_order_and_initialization": true,
+        "signature_binds_explicit_source_runtime_overrides": true,
+        "actual_wire_per_client": 54808
+      },
+      "20261233": {
+        "config_seed": 20261233,
+        "partition_seed": 20261217,
+        "toy_rounds": 2,
+        "formal_rounds": 20,
+        "same_batch_seed_order_and_initialization": true,
+        "signature_binds_explicit_source_runtime_overrides": true,
+        "actual_wire_per_client": 54808
+      }
+    },
+    "negative_protocol_rejections": [
+      "wrong_plan",
+      "old_seed",
+      "old_partition",
+      "runtime_override_mismatch_before_forward"
+    ],
+    "standalone_generic_evaluation": {
+      "new_partition_and_seed_accepted": true,
+      "source_runtime_override_checked": true,
+      "old_fixed_main_not_called": true,
+      "saved_array_schema_unchanged": true,
+      "decision": "REFERENCE_ONLY",
+      "gates": null
+    }
+  },
+  "status": "PASS",
+  "original_common_train_evaluate_globals_unchanged": true,
+  "source_identities_unchanged": true,
+  "formal_ML_training_started": false,
+  "harness_sha256": "a0b72ed40f1d65e058e89ea6b3fe7b48fb24e0ae15b113f50f54991bced91f45",
+  "review": "REVIEW_UNAVAILABLE"
+}

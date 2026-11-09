@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "synthetic confirm-three/20 clients only; actual fresh-array control not run",
+  "fixture_root": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/bcts_control_integration_olxa4yc7",
+  "new_synthetic_bcts_fits": 60,
+  "cached_vector_states_reused_without_refit": true,
+  "all_seven_original_baseline_metrics_equal": true,
+  "bcts_state_score_metric_reconstruction_error": 0.0,
+  "no_candidate_gates_or_decision": true,
+  "source_identities_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/BCTS_CONTROL_PLAN.md": "9ea93ea8496f33f4f7330a1ea7a3764e3aa101432c04c0bb916903370116d1cc",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/bcts_control.py": "1dd83808fb0685e7136a24d8c4f9ff711abba754c5a06b0ef17ff40d83c9130f",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/bcts_control_probe.py": "4f474299a27be96b58d39dd78b2ea5736f4d675fc56b455576f1696c799cb5a8",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/evaluate_saved.py": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05"
+  },
+  "core_fixture_sha256": "b9cf8cda0017b4227cb6c2eb55c5acf52dc414d4e2dcf2d4f2619c21814dcc92",
+  "real_saved_array_fits": 0,
+  "real_dataset_bytes": 0,
+  "new_cnn_forwards": 0,
+  "new_cnn_backwards": 0,
+  "formal_ML_training_started": false,
+  "main_evaluator_sha256": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05",
+  "main_solver_sha256": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae"
+}

@@ -1,0 +1,2521 @@
+{
+  "verification": "PASS",
+  "independent_checker_sha256": "7064e5a2c6725894f8b3021548667caa76c0ca1132d36b192966d3ad69d26267",
+  "decision": "STOP_THIS_FIXED_PRIOR_RULE",
+  "evaluation_scope": "official TRAIN-holdout development; frozen final round only; not last5",
+  "official_test_loaded": false,
+  "official_dataset_loaded": false,
+  "checkpoint_model_loaded": false,
+  "training_started": false,
+  "calibrator_fitted": false,
+  "used_dev_statistics_to_estimate_prior": false,
+  "will_extend_or_flip_sign_to_rescue_rule": false,
+  "pi_effective_is_proven_predictive_prior": false,
+  "input_file_count": 18,
+  "recorded_model_config_hashes_matched": 10,
+  "inputs_unchanged": true,
+  "before": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/probe.py": "55c34a71a553c9b71212eb112ed5b4c271657c498a18d715c02ba3d561fa5187",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/PLAN.md": "c69c53daa3726088ae6682e70b2b7ba0d58fda28974372ccbc02e6208ef167cc",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/result.json": "ecc3dd694cb47676d1099ddf0d2b546b5c09af90cf53252eb8a7ff3de7eaaae1",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/hetero_dense.npz": "42989d5835d97e16f3b3b0ab5d1284c0ed4df42b085c0a74f6e2f53c4344e42d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/hetero_topk.npz": "dd06fd6ceb3097c06325ff9c225a596dafc5eb422c2870806b9e5c0de4c9369d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/mixed_dense.npz": "bc84771196a2c0cf557c2ff47da8a60c6ed97ba85be8aaf981601154d85c2bde",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/mixed_topk.npz": "1699a2899532b46935425c8cf162b718d4f5e070688542d49b4e9538119186c2",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/additional_dense.npz": "bd439a27b7f7418814625c023ced474baf5b2b5052ed258bd15e3ff821552b9f",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/config.json": "fe0bf5a3bf257fbf53bd86c94ba4c85652fd05bf1d855de61cbc662bd5d84b61",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/checkpoint.pt": "170375aed8b3c515f7cfb39a41eacf54ae40b958ca9ffefded463d440d09b99c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/config.json": "ca48a39166b59c8fbf5e1797cb056f0532438ffd44ce5eef741298845cfc8f3b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/checkpoint.pt": "3e3a38b041b775f3f951b0673de14453682d65027daef141934299f57bb2620b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/config.json": "f2fef0d24af992dba0ac151bf71432cb561f3edbbf7acc9c1a8d39cb21ace334",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/checkpoint.pt": "04ceee248eaacb48cb250843f225892302b58de6b9ca1d7d3e719e634fe14e8d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/config.json": "91f3d3d635bf5051881240f16000bfc763d3d8bd734f79742a85c2d21161d8c5",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/checkpoint.pt": "7a7cdca3c568beb4a260e16f52a5184d369ebdf308a5fbc3cc4d1e414f2ab367",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/config.json": "959de9a49ec3796e0e3eb1249459cb25936475d4110f30e60b23f46048b41ef1",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/checkpoint.pt": "359ffece8da9df1e616680f03aea964fab268e5833610974d38d93b9300b5c8c"
+  },
+  "after": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/probe.py": "55c34a71a553c9b71212eb112ed5b4c271657c498a18d715c02ba3d561fa5187",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/PLAN.md": "c69c53daa3726088ae6682e70b2b7ba0d58fda28974372ccbc02e6208ef167cc",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/result.json": "ecc3dd694cb47676d1099ddf0d2b546b5c09af90cf53252eb8a7ff3de7eaaae1",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/hetero_dense.npz": "42989d5835d97e16f3b3b0ab5d1284c0ed4df42b085c0a74f6e2f53c4344e42d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/hetero_topk.npz": "dd06fd6ceb3097c06325ff9c225a596dafc5eb422c2870806b9e5c0de4c9369d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/mixed_dense.npz": "bc84771196a2c0cf557c2ff47da8a60c6ed97ba85be8aaf981601154d85c2bde",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/mixed_topk.npz": "1699a2899532b46935425c8cf162b718d4f5e070688542d49b4e9538119186c2",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/exposure_prior/diagnostic_v1/additional_dense.npz": "bd439a27b7f7418814625c023ced474baf5b2b5052ed258bd15e3ff821552b9f",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/config.json": "fe0bf5a3bf257fbf53bd86c94ba4c85652fd05bf1d855de61cbc662bd5d84b61",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/checkpoint.pt": "170375aed8b3c515f7cfb39a41eacf54ae40b958ca9ffefded463d440d09b99c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/config.json": "ca48a39166b59c8fbf5e1797cb056f0532438ffd44ce5eef741298845cfc8f3b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/checkpoint.pt": "3e3a38b041b775f3f951b0673de14453682d65027daef141934299f57bb2620b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/config.json": "f2fef0d24af992dba0ac151bf71432cb561f3edbbf7acc9c1a8d39cb21ace334",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/checkpoint.pt": "04ceee248eaacb48cb250843f225892302b58de6b9ca1d7d3e719e634fe14e8d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/config.json": "91f3d3d635bf5051881240f16000bfc763d3d8bd734f79742a85c2d21161d8c5",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/checkpoint.pt": "7a7cdca3c568beb4a260e16f52a5184d369ebdf308a5fbc3cc4d1e414f2ab367",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/config.json": "959de9a49ec3796e0e3eb1249459cb25936475d4110f30e60b23f46048b41ef1",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/checkpoint.pt": "359ffece8da9df1e616680f03aea964fab268e5833610974d38d93b9300b5c8c"
+  },
+  "development_ids_same_order_across_configs": true,
+  "saved_labels_same_order_across_npz": true,
+  "development_binding_limit": "NPZ has no ID array. Config IDs and saved GT agree; original image-to-GT binding was not reloaded or revalidated.",
+  "metric_arithmetic": "FP32 stored logits plus FP32 shift; stable FP64 NumPy CE; no torch/probe/data loader imports",
+  "ce_comparison_tolerance": 2e-06,
+  "max_ce_difference_from_saved_fp32": 2.987873046755851e-07,
+  "max_accuracy_or_class_accuracy_difference": 0.0,
+  "gates": {
+    "hetero_dense": {
+      "ce": false,
+      "accuracy": false,
+      "direction": false
+    },
+    "hetero_topk": {
+      "ce": false,
+      "accuracy": false,
+      "direction": false
+    }
+  },
+  "results": {
+    "hetero_dense": {
+      "pooled": [
+        0.10032,
+        0.09954666666666667,
+        0.09925333333333333,
+        0.09968,
+        0.10104,
+        0.09898666666666667,
+        0.09957333333333333,
+        0.10018666666666666,
+        0.1008,
+        0.10061333333333333
+      ],
+      "effective": [
+        0.11652582537515607,
+        0.07711497584745719,
+        0.09432253732497216,
+        0.09122734739310343,
+        0.10209202007610617,
+        0.08122848061918628,
+        0.06568580830262856,
+        0.17600960382627961,
+        0.09335029289128338,
+        0.10244310834382717
+      ],
+      "effective_client_weights": [
+        0.02978690054193625,
+        0.07142077955363602,
+        0.00044058135557139487,
+        0.2916447346821195,
+        0.051300191589344284,
+        0.002020743332764955,
+        0.00011014533889284872,
+        0.0006884083680803045,
+        0.024491981101601664,
+        0.08688084286602409,
+        0.002697501713077747,
+        0.1292587324601491,
+        0.14546174726516536,
+        0.0007678401028588011,
+        0.06428463250113588,
+        0.01626338292344793,
+        0.008286318572092772,
+        0.0002065225104240913,
+        0.05291212626044924,
+        0.021075886961227783
+      ],
+      "steps_inferred_from_epoch_one_counts": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "shifts": {
+        "raw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pooled_to_uniform": [
+          2.2993902020975265,
+          2.307128733043918,
+          2.310079774756306,
+          2.305790223942994,
+          2.2922388009399013,
+          2.312770118052411,
+          2.306860887856834,
+          2.3007201663845334,
+          2.294616923344869,
+          2.296470491994192
+        ],
+        "effective_to_pooled": [
+          -0.1497478485943864,
+          0.25532904496430886,
+          0.05095534711838434,
+          0.08861034114192634,
+          -0.01035808615133016,
+          0.19771922871757974,
+          0.4160114965380748,
+          -0.5635034481465835,
+          0.07677934809384368,
+          -0.01802281695046437
+        ],
+        "wrong_direction": [
+          0.1497478485943864,
+          -0.25532904496430886,
+          -0.05095534711838434,
+          -0.08861034114192634,
+          0.01035808615133016,
+          -0.19771922871757974,
+          -0.4160114965380748,
+          0.5635034481465835,
+          -0.07677934809384368,
+          0.01802281695046437
+        ]
+      },
+      "development_id_sha256": "572697b02b80f59d93d90b47f4ee4f8f0a41feab68db8c7545a288a0df3e74a4",
+      "metrics": {
+        "raw": {
+          "loss": 1.7476050754429138,
+          "accuracy": 0.364,
+          "class_accuracy": [
+            0.205,
+            0.76,
+            0.185,
+            0.135,
+            0.605,
+            0.525,
+            0.0,
+            0.29,
+            0.685,
+            0.25
+          ],
+          "macro_accuracy": 0.364,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            41,
+            152,
+            37,
+            27,
+            121,
+            105,
+            0,
+            58,
+            137,
+            50
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "pooled_to_uniform": {
+          "loss": 1.747364989833767,
+          "accuracy": 0.363,
+          "class_accuracy": [
+            0.205,
+            0.76,
+            0.19,
+            0.135,
+            0.595,
+            0.53,
+            0.0,
+            0.29,
+            0.685,
+            0.24
+          ],
+          "macro_accuracy": 0.363,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            41,
+            152,
+            38,
+            27,
+            119,
+            106,
+            0,
+            58,
+            137,
+            48
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "effective_to_pooled": {
+          "loss": 1.7820750881694831,
+          "accuracy": 0.328,
+          "class_accuracy": [
+            0.15,
+            0.82,
+            0.185,
+            0.07,
+            0.545,
+            0.58,
+            0.0,
+            0.14,
+            0.69,
+            0.1
+          ],
+          "macro_accuracy": 0.328,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            30,
+            164,
+            37,
+            14,
+            109,
+            116,
+            0,
+            28,
+            138,
+            20
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "wrong_direction": {
+          "loss": 1.755696667142719,
+          "accuracy": 0.38,
+          "class_accuracy": [
+            0.275,
+            0.65,
+            0.165,
+            0.13,
+            0.54,
+            0.42,
+            0.0,
+            0.53,
+            0.675,
+            0.415
+          ],
+          "macro_accuracy": 0.38,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            55,
+            130,
+            33,
+            26,
+            108,
+            84,
+            0,
+            106,
+            135,
+            83
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        }
+      }
+    },
+    "hetero_topk": {
+      "pooled": [
+        0.10032,
+        0.09954666666666667,
+        0.09925333333333333,
+        0.09968,
+        0.10104,
+        0.09898666666666667,
+        0.09957333333333333,
+        0.10018666666666666,
+        0.1008,
+        0.10061333333333333
+      ],
+      "effective": [
+        0.11652582537515607,
+        0.07711497584745719,
+        0.09432253732497216,
+        0.09122734739310343,
+        0.10209202007610617,
+        0.08122848061918628,
+        0.06568580830262856,
+        0.17600960382627961,
+        0.09335029289128338,
+        0.10244310834382717
+      ],
+      "effective_client_weights": [
+        0.02978690054193625,
+        0.07142077955363602,
+        0.00044058135557139487,
+        0.2916447346821195,
+        0.051300191589344284,
+        0.002020743332764955,
+        0.00011014533889284872,
+        0.0006884083680803045,
+        0.024491981101601664,
+        0.08688084286602409,
+        0.002697501713077747,
+        0.1292587324601491,
+        0.14546174726516536,
+        0.0007678401028588011,
+        0.06428463250113588,
+        0.01626338292344793,
+        0.008286318572092772,
+        0.0002065225104240913,
+        0.05291212626044924,
+        0.021075886961227783
+      ],
+      "steps_inferred_from_epoch_one_counts": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "shifts": {
+        "raw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pooled_to_uniform": [
+          2.2993902020975265,
+          2.307128733043918,
+          2.310079774756306,
+          2.305790223942994,
+          2.2922388009399013,
+          2.312770118052411,
+          2.306860887856834,
+          2.3007201663845334,
+          2.294616923344869,
+          2.296470491994192
+        ],
+        "effective_to_pooled": [
+          -0.1497478485943864,
+          0.25532904496430886,
+          0.05095534711838434,
+          0.08861034114192634,
+          -0.01035808615133016,
+          0.19771922871757974,
+          0.4160114965380748,
+          -0.5635034481465835,
+          0.07677934809384368,
+          -0.01802281695046437
+        ],
+        "wrong_direction": [
+          0.1497478485943864,
+          -0.25532904496430886,
+          -0.05095534711838434,
+          -0.08861034114192634,
+          0.01035808615133016,
+          -0.19771922871757974,
+          -0.4160114965380748,
+          0.5635034481465835,
+          -0.07677934809384368,
+          0.01802281695046437
+        ]
+      },
+      "development_id_sha256": "572697b02b80f59d93d90b47f4ee4f8f0a41feab68db8c7545a288a0df3e74a4",
+      "metrics": {
+        "raw": {
+          "loss": 1.7768497096868172,
+          "accuracy": 0.349,
+          "class_accuracy": [
+            0.26,
+            0.68,
+            0.175,
+            0.045,
+            0.635,
+            0.535,
+            0.0,
+            0.26,
+            0.66,
+            0.24
+          ],
+          "macro_accuracy": 0.34900000000000003,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            52,
+            136,
+            35,
+            9,
+            127,
+            107,
+            0,
+            52,
+            132,
+            48
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "pooled_to_uniform": {
+          "loss": 1.7765610646774175,
+          "accuracy": 0.3505,
+          "class_accuracy": [
+            0.26,
+            0.685,
+            0.175,
+            0.045,
+            0.635,
+            0.55,
+            0.0,
+            0.26,
+            0.66,
+            0.235
+          ],
+          "macro_accuracy": 0.35050000000000003,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            52,
+            137,
+            35,
+            9,
+            127,
+            110,
+            0,
+            52,
+            132,
+            47
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "effective_to_pooled": {
+          "loss": 1.804446424957005,
+          "accuracy": 0.3285,
+          "class_accuracy": [
+            0.18,
+            0.76,
+            0.18,
+            0.025,
+            0.61,
+            0.595,
+            0.0,
+            0.14,
+            0.685,
+            0.11
+          ],
+          "macro_accuracy": 0.3285,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            36,
+            152,
+            36,
+            5,
+            122,
+            119,
+            0,
+            28,
+            137,
+            22
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "wrong_direction": {
+          "loss": 1.7930577032210662,
+          "accuracy": 0.3585,
+          "class_accuracy": [
+            0.3,
+            0.57,
+            0.135,
+            0.045,
+            0.61,
+            0.425,
+            0.0,
+            0.49,
+            0.645,
+            0.365
+          ],
+          "macro_accuracy": 0.3585,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            60,
+            114,
+            27,
+            9,
+            122,
+            85,
+            0,
+            98,
+            129,
+            73
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        }
+      }
+    },
+    "mixed_dense": {
+      "pooled": [
+        0.10032,
+        0.09954666666666667,
+        0.09925333333333333,
+        0.09968,
+        0.10104,
+        0.09898666666666667,
+        0.09957333333333333,
+        0.10018666666666666,
+        0.1008,
+        0.10061333333333333
+      ],
+      "effective": [
+        0.09956238409586034,
+        0.10016871300466952,
+        0.09803888342280875,
+        0.10100698257903191,
+        0.1008248191339399,
+        0.09909691413005833,
+        0.0991731685954457,
+        0.10110283020566466,
+        0.10073373741139391,
+        0.10029156742112691
+      ],
+      "effective_client_weights": [
+        0.02978690054193625,
+        0.07142077955363602,
+        0.00044058135557139487,
+        0.2916447346821195,
+        0.051300191589344284,
+        0.002020743332764955,
+        0.00011014533889284872,
+        0.0006884083680803045,
+        0.024491981101601664,
+        0.08688084286602409,
+        0.002697501713077747,
+        0.1292587324601491,
+        0.14546174726516536,
+        0.0007678401028588011,
+        0.06428463250113588,
+        0.01626338292344793,
+        0.008286318572092772,
+        0.0002065225104240913,
+        0.05291212626044924,
+        0.021075886961227783
+      ],
+      "steps_inferred_from_epoch_one_counts": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "shifts": {
+        "raw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pooled_to_uniform": [
+          2.2993902020975265,
+          2.307128733043918,
+          2.310079774756306,
+          2.305790223942994,
+          2.2922388009399013,
+          2.312770118052411,
+          2.306860887856834,
+          2.3007201663845334,
+          2.294616923344869,
+          2.296470491994192
+        ],
+        "effective_to_pooled": [
+          0.0075806533495059725,
+          -0.006229348491400888,
+          0.012311334627012727,
+          -0.013224593858301326,
+          0.002131931145658683,
+          -0.001113140971422677,
+          0.004026891288702483,
+          -0.009103007158306031,
+          0.0006575831108470709,
+          0.003203169122462768
+        ],
+        "wrong_direction": [
+          -0.0075806533495059725,
+          0.006229348491400888,
+          -0.012311334627012727,
+          0.013224593858301326,
+          -0.002131931145658683,
+          0.001113140971422677,
+          -0.004026891288702483,
+          0.009103007158306031,
+          -0.0006575831108470709,
+          -0.003203169122462768
+        ]
+      },
+      "development_id_sha256": "572697b02b80f59d93d90b47f4ee4f8f0a41feab68db8c7545a288a0df3e74a4",
+      "metrics": {
+        "raw": {
+          "loss": 1.4408387847826312,
+          "accuracy": 0.48,
+          "class_accuracy": [
+            0.67,
+            0.615,
+            0.26,
+            0.36,
+            0.44,
+            0.325,
+            0.6,
+            0.46,
+            0.515,
+            0.555
+          ],
+          "macro_accuracy": 0.48,
+          "worst_class_accuracy": 0.26,
+          "samples": 2000,
+          "class_correct": [
+            134,
+            123,
+            52,
+            72,
+            88,
+            65,
+            120,
+            92,
+            103,
+            111
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "pooled_to_uniform": {
+          "loss": 1.4405898459445923,
+          "accuracy": 0.4805,
+          "class_accuracy": [
+            0.67,
+            0.615,
+            0.265,
+            0.355,
+            0.44,
+            0.325,
+            0.605,
+            0.46,
+            0.515,
+            0.555
+          ],
+          "macro_accuracy": 0.4805,
+          "worst_class_accuracy": 0.265,
+          "samples": 2000,
+          "class_correct": [
+            134,
+            123,
+            53,
+            71,
+            88,
+            65,
+            121,
+            92,
+            103,
+            111
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "effective_to_pooled": {
+          "loss": 1.4412881722377677,
+          "accuracy": 0.479,
+          "class_accuracy": [
+            0.675,
+            0.615,
+            0.26,
+            0.35,
+            0.44,
+            0.325,
+            0.6,
+            0.455,
+            0.515,
+            0.555
+          ],
+          "macro_accuracy": 0.4789999999999999,
+          "worst_class_accuracy": 0.26,
+          "samples": 2000,
+          "class_correct": [
+            135,
+            123,
+            52,
+            70,
+            88,
+            65,
+            120,
+            91,
+            103,
+            111
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "wrong_direction": {
+          "loss": 1.440431989008382,
+          "accuracy": 0.4815,
+          "class_accuracy": [
+            0.67,
+            0.615,
+            0.255,
+            0.37,
+            0.445,
+            0.325,
+            0.605,
+            0.46,
+            0.515,
+            0.555
+          ],
+          "macro_accuracy": 0.48149999999999993,
+          "worst_class_accuracy": 0.255,
+          "samples": 2000,
+          "class_correct": [
+            134,
+            123,
+            51,
+            74,
+            89,
+            65,
+            121,
+            92,
+            103,
+            111
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        }
+      }
+    },
+    "mixed_topk": {
+      "pooled": [
+        0.10032,
+        0.09954666666666667,
+        0.09925333333333333,
+        0.09968,
+        0.10104,
+        0.09898666666666667,
+        0.09957333333333333,
+        0.10018666666666666,
+        0.1008,
+        0.10061333333333333
+      ],
+      "effective": [
+        0.09956238409586034,
+        0.10016871300466952,
+        0.09803888342280875,
+        0.10100698257903191,
+        0.1008248191339399,
+        0.09909691413005833,
+        0.0991731685954457,
+        0.10110283020566466,
+        0.10073373741139391,
+        0.10029156742112691
+      ],
+      "effective_client_weights": [
+        0.02978690054193625,
+        0.07142077955363602,
+        0.00044058135557139487,
+        0.2916447346821195,
+        0.051300191589344284,
+        0.002020743332764955,
+        0.00011014533889284872,
+        0.0006884083680803045,
+        0.024491981101601664,
+        0.08688084286602409,
+        0.002697501713077747,
+        0.1292587324601491,
+        0.14546174726516536,
+        0.0007678401028588011,
+        0.06428463250113588,
+        0.01626338292344793,
+        0.008286318572092772,
+        0.0002065225104240913,
+        0.05291212626044924,
+        0.021075886961227783
+      ],
+      "steps_inferred_from_epoch_one_counts": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "shifts": {
+        "raw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pooled_to_uniform": [
+          2.2993902020975265,
+          2.307128733043918,
+          2.310079774756306,
+          2.305790223942994,
+          2.2922388009399013,
+          2.312770118052411,
+          2.306860887856834,
+          2.3007201663845334,
+          2.294616923344869,
+          2.296470491994192
+        ],
+        "effective_to_pooled": [
+          0.0075806533495059725,
+          -0.006229348491400888,
+          0.012311334627012727,
+          -0.013224593858301326,
+          0.002131931145658683,
+          -0.001113140971422677,
+          0.004026891288702483,
+          -0.009103007158306031,
+          0.0006575831108470709,
+          0.003203169122462768
+        ],
+        "wrong_direction": [
+          -0.0075806533495059725,
+          0.006229348491400888,
+          -0.012311334627012727,
+          0.013224593858301326,
+          -0.002131931145658683,
+          0.001113140971422677,
+          -0.004026891288702483,
+          0.009103007158306031,
+          -0.0006575831108470709,
+          -0.003203169122462768
+        ]
+      },
+      "development_id_sha256": "572697b02b80f59d93d90b47f4ee4f8f0a41feab68db8c7545a288a0df3e74a4",
+      "metrics": {
+        "raw": {
+          "loss": 1.49366410189286,
+          "accuracy": 0.4645,
+          "class_accuracy": [
+            0.645,
+            0.605,
+            0.265,
+            0.28,
+            0.45,
+            0.32,
+            0.555,
+            0.44,
+            0.545,
+            0.54
+          ],
+          "macro_accuracy": 0.4645,
+          "worst_class_accuracy": 0.265,
+          "samples": 2000,
+          "class_correct": [
+            129,
+            121,
+            53,
+            56,
+            90,
+            64,
+            111,
+            88,
+            109,
+            108
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "pooled_to_uniform": {
+          "loss": 1.4933942863845004,
+          "accuracy": 0.464,
+          "class_accuracy": [
+            0.645,
+            0.61,
+            0.27,
+            0.28,
+            0.44,
+            0.32,
+            0.555,
+            0.44,
+            0.545,
+            0.535
+          ],
+          "macro_accuracy": 0.4640000000000001,
+          "worst_class_accuracy": 0.27,
+          "samples": 2000,
+          "class_correct": [
+            129,
+            122,
+            54,
+            56,
+            88,
+            64,
+            111,
+            88,
+            109,
+            107
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "effective_to_pooled": {
+          "loss": 1.4942191155633846,
+          "accuracy": 0.4655,
+          "class_accuracy": [
+            0.645,
+            0.605,
+            0.27,
+            0.275,
+            0.45,
+            0.325,
+            0.555,
+            0.435,
+            0.545,
+            0.55
+          ],
+          "macro_accuracy": 0.4655,
+          "worst_class_accuracy": 0.27,
+          "samples": 2000,
+          "class_correct": [
+            129,
+            121,
+            54,
+            55,
+            90,
+            65,
+            111,
+            87,
+            109,
+            110
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "wrong_direction": {
+          "loss": 1.493152528441377,
+          "accuracy": 0.4645,
+          "class_accuracy": [
+            0.64,
+            0.61,
+            0.26,
+            0.3,
+            0.45,
+            0.31,
+            0.555,
+            0.44,
+            0.545,
+            0.535
+          ],
+          "macro_accuracy": 0.4645,
+          "worst_class_accuracy": 0.26,
+          "samples": 2000,
+          "class_correct": [
+            128,
+            122,
+            52,
+            60,
+            90,
+            62,
+            111,
+            88,
+            109,
+            107
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        }
+      }
+    },
+    "additional_dense": {
+      "pooled": [
+        0.10032,
+        0.09954666666666667,
+        0.09925333333333333,
+        0.09968,
+        0.10104,
+        0.09898666666666667,
+        0.09957333333333333,
+        0.10018666666666666,
+        0.1008,
+        0.10061333333333333
+      ],
+      "effective": [
+        0.11652582537515607,
+        0.07711497584745719,
+        0.09432253732497216,
+        0.09122734739310343,
+        0.10209202007610617,
+        0.08122848061918628,
+        0.06568580830262856,
+        0.17600960382627961,
+        0.09335029289128338,
+        0.10244310834382717
+      ],
+      "effective_client_weights": [
+        0.02978690054193625,
+        0.07142077955363602,
+        0.00044058135557139487,
+        0.2916447346821195,
+        0.051300191589344284,
+        0.002020743332764955,
+        0.00011014533889284872,
+        0.0006884083680803045,
+        0.024491981101601664,
+        0.08688084286602409,
+        0.002697501713077747,
+        0.1292587324601491,
+        0.14546174726516536,
+        0.0007678401028588011,
+        0.06428463250113588,
+        0.01626338292344793,
+        0.008286318572092772,
+        0.0002065225104240913,
+        0.05291212626044924,
+        0.021075886961227783
+      ],
+      "steps_inferred_from_epoch_one_counts": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "shifts": {
+        "raw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pooled_to_uniform": [
+          2.2993902020975265,
+          2.307128733043918,
+          2.310079774756306,
+          2.305790223942994,
+          2.2922388009399013,
+          2.312770118052411,
+          2.306860887856834,
+          2.3007201663845334,
+          2.294616923344869,
+          2.296470491994192
+        ],
+        "effective_to_pooled": [
+          -0.1497478485943864,
+          0.25532904496430886,
+          0.05095534711838434,
+          0.08861034114192634,
+          -0.01035808615133016,
+          0.19771922871757974,
+          0.4160114965380748,
+          -0.5635034481465835,
+          0.07677934809384368,
+          -0.01802281695046437
+        ],
+        "wrong_direction": [
+          0.1497478485943864,
+          -0.25532904496430886,
+          -0.05095534711838434,
+          -0.08861034114192634,
+          0.01035808615133016,
+          -0.19771922871757974,
+          -0.4160114965380748,
+          0.5635034481465835,
+          -0.07677934809384368,
+          0.01802281695046437
+        ]
+      },
+      "development_id_sha256": "572697b02b80f59d93d90b47f4ee4f8f0a41feab68db8c7545a288a0df3e74a4",
+      "metrics": {
+        "raw": {
+          "loss": 1.7934089487836578,
+          "accuracy": 0.3515,
+          "class_accuracy": [
+            0.145,
+            0.39,
+            0.145,
+            0.18,
+            0.745,
+            0.48,
+            0.0,
+            0.23,
+            0.845,
+            0.355
+          ],
+          "macro_accuracy": 0.35150000000000003,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            29,
+            78,
+            29,
+            36,
+            149,
+            96,
+            0,
+            46,
+            169,
+            71
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "pooled_to_uniform": {
+          "loss": 1.7922842584397922,
+          "accuracy": 0.354,
+          "class_accuracy": [
+            0.145,
+            0.395,
+            0.16,
+            0.185,
+            0.745,
+            0.48,
+            0.0,
+            0.23,
+            0.845,
+            0.355
+          ],
+          "macro_accuracy": 0.354,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            29,
+            79,
+            32,
+            37,
+            149,
+            96,
+            0,
+            46,
+            169,
+            71
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "effective_to_pooled": {
+          "loss": 1.8168226221680297,
+          "accuracy": 0.339,
+          "class_accuracy": [
+            0.1,
+            0.48,
+            0.16,
+            0.175,
+            0.725,
+            0.55,
+            0.0,
+            0.11,
+            0.845,
+            0.245
+          ],
+          "macro_accuracy": 0.33899999999999997,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            20,
+            96,
+            32,
+            35,
+            145,
+            110,
+            0,
+            22,
+            169,
+            49
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        },
+        "wrong_direction": {
+          "loss": 1.806114684448798,
+          "accuracy": 0.3515,
+          "class_accuracy": [
+            0.185,
+            0.285,
+            0.125,
+            0.18,
+            0.715,
+            0.38,
+            0.0,
+            0.365,
+            0.835,
+            0.445
+          ],
+          "macro_accuracy": 0.3515,
+          "worst_class_accuracy": 0.0,
+          "samples": 2000,
+          "class_correct": [
+            37,
+            57,
+            25,
+            36,
+            143,
+            76,
+            0,
+            73,
+            167,
+            89
+          ],
+          "class_samples": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ]
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/config.json",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/dense_mix0_rho0.05_s20261171/checkpoint.pt",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/config.json",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing0/topk_ef_mix0_rho0.05_s20261171/checkpoint.pt",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/config.json",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/dense_mix1_rho0.05_s20261171/checkpoint.pt",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/config.json",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/bottleneck_reanchor/mixing1/topk_ef_mix1_rho0.05_s20261171/checkpoint.pt",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/config.json",
+      "passed": true
+    },
+    {
+      "check": "recorded_input_hash:/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/checkpoint.pt",
+      "passed": true
+    },
+    {
+      "check": "probe_source_hash",
+      "passed": true
+    },
+    {
+      "check": "plan_hash",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:counts_equal_sizes",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:positive_sizes",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:epoch_one",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:positive_priors",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:normalized_priors",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:id_encoding",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:dev_ids_count_unique",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:dev_ids_hash",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:dev_ids_same_order",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:logit_shape_finite",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:label_shape_range",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:npz_pooled",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:record_pooled",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:npz_effective",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:record_effective",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:npz_shift",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:record_shift",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:labels_same_order",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:gt_counts",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:balanced_gt_counts",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:pooled_to_uniform:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:pooled_to_uniform:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:pooled_to_uniform:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:pooled_to_uniform:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:pooled_to_uniform:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:effective_to_pooled:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:effective_to_pooled:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:effective_to_pooled:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:effective_to_pooled:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:effective_to_pooled:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:wrong_direction:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:wrong_direction:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:wrong_direction:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:wrong_direction:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:wrong_direction:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw_saved_final:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw_saved_final:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw_saved_final:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:raw_saved_final:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:twenty_round_config",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:counts_equal_sizes",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:positive_sizes",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:epoch_one",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:positive_priors",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:normalized_priors",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:id_encoding",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:dev_ids_count_unique",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:dev_ids_hash",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:dev_ids_same_order",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:logit_shape_finite",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:label_shape_range",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:npz_pooled",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:record_pooled",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:npz_effective",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:record_effective",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:npz_shift",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:record_shift",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:labels_same_order",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:gt_counts",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:balanced_gt_counts",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:pooled_to_uniform:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:pooled_to_uniform:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:pooled_to_uniform:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:pooled_to_uniform:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:pooled_to_uniform:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:effective_to_pooled:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:effective_to_pooled:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:effective_to_pooled:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:effective_to_pooled:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:effective_to_pooled:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:wrong_direction:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:wrong_direction:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:wrong_direction:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:wrong_direction:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:wrong_direction:samples",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw_saved_final:accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw_saved_final:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw_saved_final:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:raw_saved_final:ce",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:twenty_round_config",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:counts_equal_sizes",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:positive_sizes",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:epoch_one",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:positive_priors",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:normalized_priors",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:id_encoding",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:dev_ids_count_unique",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:dev_ids_hash",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:dev_ids_same_order",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:logit_shape_finite",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:label_shape_range",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:npz_pooled",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:record_pooled",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:npz_effective",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:record_effective",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:npz_shift",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:record_shift",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:labels_same_order",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:gt_counts",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:balanced_gt_counts",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:pooled_to_uniform:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:pooled_to_uniform:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:pooled_to_uniform:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:pooled_to_uniform:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:pooled_to_uniform:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:effective_to_pooled:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:effective_to_pooled:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:effective_to_pooled:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:effective_to_pooled:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:effective_to_pooled:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:wrong_direction:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:wrong_direction:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:wrong_direction:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:wrong_direction:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:wrong_direction:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw_saved_final:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw_saved_final:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw_saved_final:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:raw_saved_final:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_dense:twenty_round_config",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:counts_equal_sizes",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:positive_sizes",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:epoch_one",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:positive_priors",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:normalized_priors",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:id_encoding",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:dev_ids_count_unique",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:dev_ids_hash",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:dev_ids_same_order",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:logit_shape_finite",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:label_shape_range",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:npz_pooled",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:record_pooled",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:npz_effective",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:record_effective",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:npz_shift",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:record_shift",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:labels_same_order",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:gt_counts",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:balanced_gt_counts",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:pooled_to_uniform:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:pooled_to_uniform:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:pooled_to_uniform:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:pooled_to_uniform:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:pooled_to_uniform:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:effective_to_pooled:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:effective_to_pooled:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:effective_to_pooled:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:effective_to_pooled:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:effective_to_pooled:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:wrong_direction:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:wrong_direction:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:wrong_direction:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:wrong_direction:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:wrong_direction:samples",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw_saved_final:accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw_saved_final:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw_saved_final:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:raw_saved_final:ce",
+      "passed": true
+    },
+    {
+      "check": "mixed_topk:twenty_round_config",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:counts_equal_sizes",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:positive_sizes",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:epoch_one",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:positive_priors",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:normalized_priors",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:id_encoding",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:dev_ids_count_unique",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:dev_ids_hash",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:dev_ids_same_order",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:logit_shape_finite",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:label_shape_range",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:npz_pooled",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:record_pooled",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:npz_effective",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:record_effective",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:npz_shift",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:record_shift",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:labels_same_order",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:gt_counts",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:balanced_gt_counts",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw:accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw:ce",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw:samples",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:pooled_to_uniform:accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:pooled_to_uniform:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:pooled_to_uniform:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:pooled_to_uniform:ce",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:pooled_to_uniform:samples",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:effective_to_pooled:accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:effective_to_pooled:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:effective_to_pooled:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:effective_to_pooled:ce",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:effective_to_pooled:samples",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:wrong_direction:accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:wrong_direction:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:wrong_direction:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:wrong_direction:ce",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:wrong_direction:samples",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw_saved_final:accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw_saved_final:class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw_saved_final:worst_class_accuracy",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:raw_saved_final:ce",
+      "passed": true
+    },
+    {
+      "check": "additional_dense:twenty_round_config",
+      "passed": true
+    },
+    {
+      "check": "hetero_dense:gates_match",
+      "passed": true
+    },
+    {
+      "check": "hetero_topk:gates_match",
+      "passed": true
+    },
+    {
+      "check": "decision_matches",
+      "passed": true
+    },
+    {
+      "check": "all_protected_inputs_unchanged",
+      "passed": true
+    }
+  ],
+  "checks_run": 241,
+  "checks_passed": 241
+}

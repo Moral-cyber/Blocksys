@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "scope": "CPU NumPy synthetic logits only; no real source arrays or images",
+  "gradient_fd_max_error": 9.51908996071893e-10,
+  "hessian_fd_max_error": 8.081730840103774e-10,
+  "convex_hessian_ridge10": true,
+  "anchor_changes_gradient_only": true,
+  "gauge_checks": true,
+  "anchor_deletion_equivalence": [
+    {
+      "case": "imbalanced",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "single_class",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "one_row",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "balanced_zero",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    },
+    {
+      "case": "positive_bound",
+      "state_bitwise_equal": true,
+      "float64_parameters_trace_equal": true
+    }
+  ],
+  "optimization_and_bound_cases": [
+    {
+      "case": "imbalanced",
+      "steps": 4,
+      "a": 0.1532784253358841,
+      "projected_gradient_inf": 1.6715517858756357e-12,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "single_class",
+      "steps": 6,
+      "a": 0.0010000000474974513,
+      "projected_gradient_inf": 5.906386491005833e-13,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "one_row",
+      "steps": 2,
+      "a": 1.0,
+      "projected_gradient_inf": 8.258760342272353e-11,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "balanced_zero",
+      "steps": 0,
+      "a": 1.0,
+      "projected_gradient_inf": 1.1379786002407855e-15,
+      "stop_reason": "kkt_gradient_tolerance"
+    },
+    {
+      "case": "positive_bound",
+      "steps": 1,
+      "a": 0.0010000000474974513,
+      "projected_gradient_inf": 4.8547159217473546e-15,
+      "stop_reason": "kkt_gradient_tolerance"
+    }
+  ],
+  "deployment_state_bytes": 44,
+  "fp32_state_fp64_application_bitwise_checked": true,
+  "original_solver_globals_and_evaluator_variants_unchanged": true,
+  "source_identities_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/BCTS_CONTROL_PLAN.md": "9ea93ea8496f33f4f7330a1ea7a3764e3aa101432c04c0bb916903370116d1cc",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/bcts_control.py": "1dd83808fb0685e7136a24d8c4f9ff711abba754c5a06b0ef17ff40d83c9130f",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/bcts_control_probe.py": "4f474299a27be96b58d39dd78b2ea5736f4d675fc56b455576f1696c799cb5a8",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/evaluate_saved.py": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05"
+  },
+  "harness_sha256": "9595aafa1bf38a62cdebd0916a3e8549fdb52c7dfc1b5024246b08cc0f2026bd",
+  "real_saved_array_fits": 0,
+  "new_cnn_forwards": 0,
+  "new_cnn_backwards": 0,
+  "formal_ML_training_started": false
+}

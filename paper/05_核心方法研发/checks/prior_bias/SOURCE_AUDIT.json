@@ -1,0 +1,102 @@
+{
+  "scope": {
+    "successful_keyword_queries": 2,
+    "queries_manifest": "sources/queries_manifest.json",
+    "per_page": 15,
+    "pagination": false,
+    "reviewed_hits_per_query": 15,
+    "total_hits": [
+      16199,
+      686
+    ],
+    "full_primary_read": 5,
+    "no_experiments": true,
+    "no_local_fit_output_read": true,
+    "no_model_or_official_data_load": true,
+    "no_effectiveness_conclusion": true,
+    "note": "Two broad index queries with direct primary localization and primary reference follow-up. Finite top15 coverage cannot establish absence."
+  },
+  "primary": {
+    "Guo2017": {
+      "title": "On Calibration of Modern Neural Networks",
+      "url": "https://arxiv.org/html/1706.04599",
+      "section": "Sec4 Eq8 and surrounding text",
+      "formula": "softmax(W z + b); vector scaling constrains W diagonal; parameters optimize held-out NLL while NN parameters fixed",
+      "match": "Candidate bias-only is W=I, a constrained existing calibrator family; reading did not find the exact count-prior quadratic anchor"
+    },
+    "BCTS2020": {
+      "title": "Maximum Likelihood with Bias-Corrected Calibration is Hard-To-Beat at Label Shift Adaptation",
+      "version": "arXiv1901.06852v5, 27 Jun2020",
+      "url": "https://arxiv.org/html/1901.06852",
+      "section": "Sec3.1",
+      "formula": "BCTS is temperature scaling with additional class-specific bias terms; NLL optimized on validation set, equivalent softmax(z/T+b)",
+      "match": "z+b is T=1 restriction, so class-bias adaptation / no NN retraining / logit-only calibration are existing atoms",
+      "distinction": "Not federated local TRAIN fitting with count-prior L2 anchor. Its separate EM concavity theorem concerns target-prior maximum likelihood, not a novelty theorem for this candidate objective."
+    },
+    "FedCal2024": {
+      "title": "FedCal: Achieving Local and Global Calibration in Federated Learning via Aggregated Parameterized Scaler",
+      "version": "arXiv2405.15458v2,04 Jun2024",
+      "url": "https://arxiv.org/html/2405.15458v2",
+      "section": "Sec5 Eq9,Alg1;Sec6.1",
+      "formula": "order-preserving MLP takes frozen current model logits; local NLL scaler training, weight matching and aggregation; default K-64-64-K",
+      "match": "explicit personalized/local posthoc calibration in FL and global scaler aggregation",
+      "distinction": "learned MLP and scaler communication with periodic synchronization, not 10dim pure local retained prior-anchored intercept; maintaining original ordering pursues confidence calibration rather than candidate ability to alter class decisions"
+    },
+    "PrivateFederated2025": {
+      "title": "Private Federated Multiclass Post-hoc Calibration",
+      "version": "arXiv2510.01987v1,02 Oct2025",
+      "url": "https://arxiv.org/html/2510.01987",
+      "section": "Sec3,Sec4.2,Alg2,AppendixA.4",
+      "formula": "g(z)=softmax(Az+b); FedVector diagonal A; FedMatrix unrestricted; FedTemp inverse temperature and b=0. Local scaler fitted over logits and parameters shared/averaged over rounds. Has train/calibration/test splits. Uses convex local solver for FedTemp/FedOPVector in timing discussion",
+      "match": "explicit federated logit calibration including bias vectors; family contains A=I bias-only as mathematical restriction",
+      "distinction": "global calibrator through aggregated parameters, no read count-prior anchor / pure local state / low-bit chainauth same combination. Source discusses local skew/global accuracy empirically, not an effectiveness verdict about current personalized candidate. Paper does not establish candidate Newton method novelty."
+    },
+    "CCVR2021": {
+      "title": "No Fear of Heterogeneity: Classifier Calibration for Federated Learning with Non-IID Data",
+      "url": "https://arxiv.org/html/2106.05001",
+      "section": "Sec3 and calibration procedure",
+      "formula": "freeze feature extractor, adjust classifier using sampled virtual representations from classwise GMM, requiring feature statistics",
+      "distinction": "classifier weight learning with server-side synthetic features, not a fixed-logit ten-bias pure local calibration; secondary neighbor, omitted from concise report"
+    }
+  },
+  "candidate_math_audit": {
+    "objective": "J(b)=mean_k CE(z_k+b,y_k)+(lambda/2)||b-b0||^2, b0=log(n_i+1)",
+    "gradient": "mean_k(softmax(z_k+b)-onehot(y_k))+lambda*(b-b0)",
+    "Hessian": "mean_k(diag(p_k)-p_k p_k^T)+lambda*I >= lambda*I for lambda>0",
+    "claim_boundary": "Convex fixed-logit fitting plus positive quadratic makes a strongly convex problem. Newton is a standard numerical optimizer, not neural backprop, but fitting is still optimization. Once per-example logits are produced they can be cached for all bias iterations; this is an implementation property of fixed-logit calibrators generally.",
+    "gauge": "Without regularization softmax invariant to adding the same constant to b. Full positive L2 fixes this gauge. Count versus normalized prior differs by a constant and yields equivalent predictions when translated consistently.",
+    "Bayes_boundary": "logcount anchor is a regularization choice; it is not automatically the correct target/source prior ratio for CE or FedLC raw outputs, and does not imply perfect calibration.",
+    "storage": "10 FP32 bias numbers=40B deploy vector; temporary logits O(n_i*C), Hessian O(C^2), counts and source/identity metadata must be accounted separately if retained."
+  },
+  "minimum_strong_controls": [
+    "raw",
+    "fixed count prior (existing method baseline)",
+    "same-lambda zero-centered L2 bias to isolate anchor, with compatible gauge convention",
+    "local temperature scaling",
+    "local BCTS / temperature plus class bias",
+    "local vector scaling",
+    "frozen-body lastLinear adaptation",
+    "dense plus same prior-anchored bias to isolate low-bit compression",
+    "FedCal literature reference with its greater parameter and communication budget explicit"
+  ],
+  "evaluation_rules": "Use same available TRAIN, checkpoint and tuning budget across local fit methods; no external calibration labels for a favored method; compare independent held-out NLL, accuracy and calibration rather than assuming lower fitting NLL proves calibration. Final tuning and independent split/seed remain parent decisions; no experimental recommendation was acted on here.",
+  "conclusion": "Candidate is a count-prior-anchored, fixed-unit-scale restriction/regularization of established logit-scaling methods, integrated with known low-bit FL and authentication. No exact whole combination located within two top15 query pages and five primary reads. This is not evidence of nonexistence, atom novelty or benefit.",
+  "source_sha256": {
+    "work/prior_bias/sources/01_openalex_fedcal.json": "114297731e395abfbbd5c21b09249731cfb61beaa9fd2e201d2d19dd172224de",
+    "work/prior_bias/sources/02_openalex_personal_bias.json": "ce0852a11fe3017833c936f3cebae7763ddc52a900dab716a7778dcd754df2ec",
+    "work/prior_bias/sources/atomic_primary_manifest.json": "2e42358207e904c2d4ea1672482a813f2c3797359bb84b48322c232154d23425",
+    "work/prior_bias/sources/bcts.html": "e1145c4c21b2ed8c0f2da07575ac548ce78248d431e0319b6121c7d2ec58450f",
+    "work/prior_bias/sources/bcts.txt": "452728d1af43080d1155612742fa5f74c80caccce65567a8473de6344979efa4",
+    "work/prior_bias/sources/ccvr.html": "b100b59e80369d903dabdf245f28111cfd65049d5e16e334a82a8d0f16519617",
+    "work/prior_bias/sources/ccvr.txt": "3bf61f5628bfe41bf94559e8060f7dc56071321bbd30f81cac63541b725bc95e",
+    "work/prior_bias/sources/fedcal.html": "fbd65cb7eef4b4baa3049e29c9f1748d727712f4f77aff17f2204cd6eeff52be",
+    "work/prior_bias/sources/fedcal.txt": "287f41ddf9dd0ae2a2b531562a244fea0a5337e21b749d864b4d57d5ce6b04a5",
+    "work/prior_bias/sources/guo_cal.html": "f17237217f7d20dc83a3377d7c3dcbefcf41528743a896137c83b446ea0f1571",
+    "work/prior_bias/sources/guo_cal.txt": "8d5afe341cc1a2686af2490ef81fd16584023357ac507ae1419d40bdc04ca113",
+    "work/prior_bias/sources/primary_manifest.json": "35d82e25a6a6f735aea3e97d12696f868e63bf2bffa6cf642ccf15ffe748bca7",
+    "work/prior_bias/sources/private_cal.html": "29aea6f4c2429077104869505f4b9d5ade2e675c76db23308644dbf01e2aa063",
+    "work/prior_bias/sources/private_cal.txt": "73c1400877a940bdae8e10ae05a87f88e5b449b0a3e0442459c0e565f74f3658",
+    "work/prior_bias/sources/queries_manifest.json": "501947456276456d552f254154a3e84da709e5caf18fa02e07d6ed9a3b3a971d"
+  },
+  "report_characters": 789
+}

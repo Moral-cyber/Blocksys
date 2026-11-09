@@ -1,0 +1,36 @@
+# Researcher verdict after the bounded mechanism round
+
+Prepared by `/root/route_a_p1`, 2026-11-05, using current local role outputs, independent critique and saved experiment summaries. This memo closes the **three candidate decisions for this round**. It does not mark the manuscript, all experiment priorities or research novelty as complete. The main shared-training/personalized baseline work proceeds separately.
+
+**No new candidate from this round should replace the current method or be advertised as a new core contribution.** One candidate was run and stopped by its predeclared two-task screen; one was rejected as the next research priority on identification/novelty grounds; one remains parked as a capacity-control construction. These are different evidential outcomes.
+
+| Stable seed ID | Current disposition | Traceable reason | What was actually executed |
+|---|---|---|---|
+| `count_geometry_v1` | **STOP after first-seed fail-fast screen** | `candidate_review/GEOMETRY_PLAN_20261105.md` requires improvement over both original prior and misaligned geometry on both tasks. `GEOMETRY_SUBSET_RESULT.json` records failure on Fashion. `GEOMETRY_CONCLUSION_20261105.md` retains all six arms and trade-offs. | One original seed per task, all 20 clients/task, saved TRAIN fit/development score; no new CNN or TEST. Geometry-minus-prior NLL = −0.001191945 CIFAR, +0.000619258 Fashion. Geometry-minus-misaligned = −0.000938851 CIFAR, +0.001037785 Fashion. A failed screen stops this formulation; it does not prove every anisotropic method must fail. |
+| `residual_marginal_v1` | **DO NOT PRIORITIZE; unexecuted** | `candidate_review/RESIDUAL_ANCHOR_REVIEW.md`, `CANDIDATE_RECORD.json`, and `INDEPENDENT_CRITIC.md` identify standard prior-ratio overlap and the missing interpretation of local target predictive mass as a source prior. | Literature/algebraic assessment only; 0 candidate fits or scores. Do not call this an empirical failure. |
+| `support_scales_v1` | **PARK; unexecuted** | `INDEPENDENT_CRITIC.md` identifies support-conditioned partial vector scaling, absent-class negative-label information, and capacity/ridge-scaling rivals. It permits only one screen, giving priority to Seed 1. The parked seed has no missing hidden success run. | 0 candidate fits or scores. A future revisit requires matched-center BCTS with explicitly matched shared-scale penalty and equal-cardinality misaligned masks. Neither novelty nor uselessness is established. |
+
+## What the completed evidence does support
+
+The separate partition campaign completed all twelve new training/evaluation runs. Combining them with the existing development probe gives **three partitions × three model-seed settings per task**. The original prior-center method lowers client-macro development NLL in all 18 configurations. CIFAR partition-mean reductions are 0.041112, 0.039062 and 0.046313; Fashion reductions are 0.013788, 0.010327 and 0.010856. Improvement occurs in 177/180 CIFAR and 176/180 Fashion client-seed cells. These complete counts are more precise than an “all clients improve” claim.
+
+The repeated partition check strengthens the evidence that the original center's NLL advantage is not confined to one label-skew realization. It does not establish arbitrary feature/concept-shift robustness, nine independent model seeds, a new anisotropic uncertainty principle, or superiority to all personalized FL methods. One CIFAR configuration still loses macro accuracy; weighted accuracy declines in five CIFAR configurations and one Fashion configuration. The primary TEST evidence remains the protected original single-partition evaluation, separate from these development results. The frozen-predictor label-reallocation reversal remains an adverse boundary result.
+
+## Scientific implication and next expenditure
+
+The defensible paper story remains a compact, local, class-prior-centered fit on frozen logits, supported by matched zero/permutation controls and explicit predictor/upload costs. The generic existence of a personalized prior or quadratic center is established prior art. This round supplied an honest discriminating screen and eliminated a tempting extra mechanism claim; it did not create novelty by adding a special function or by installing ScientistTwo.
+
+No remaining candidate in this round has enough evidence to justify a full extra matrix. Finish integrating the real basic/personalized baselines and the complete partition table, retain the drift/secondary-metric boundaries, and write around the narrow supported contribution. P2 CIFAR-100/FEMNIST feasibility is assessed separately in `P2_DATASET_FEASIBILITY.md`; lack of a completed P2 experiment belongs in revision status, not as a result in the manuscript. Further research may generate a distinct seed, but it must start with a specific limitation, a familiar simple rival and a frozen discriminating test rather than relabeling these stopped/parked proposals.
+
+## Provenance
+
+- `roles/seeds.json` and `roles/seeds_receipt.json` preserve the original three native-agent proposals. Their JSON status remains the historical generation status, not an overwritten final verdict.
+- `candidate_review/INDEPENDENT_CRITIC.md` preserves independent pre-score mechanism review. Its source manifest describes the bytes read at review time; the idea Markdown later received a procedural acknowledgment, while seed JSON remained unchanged.
+- `candidate_review/GEOMETRY_VERIFICATION.json` reports independent saved-state metric replay (240 arm-client rows; maximum discrepancy about 1.54e−15) and unchanged locked inputs. This is a local formula/state check, not external review or novelty certification.
+- `/private/tmp/pr_lfl_route_a/03_英文论文/revision_artifacts/route_a_20261105/multipartition/{combined_development.json,combined_development.csv,combined_development.md,AGGREGATION_VERIFICATION.json}` preserve every partition configuration, paired accuracy/NLL trade-off, original source hash and aggregation check.
+
+The role used remembered project priorities only to preserve scope; all candidate decisions and numerical statements above were checked against current local artifacts. No protected manuscript number, original evidence file or source pin was changed by this memo.
+
+## Additional-dataset update, 2026-11-06
+
+The independently prepared CIFAR-100 extension subsequently completed all3fixed20-round runs and TRAIN-fit/development scoring. Zero/prior client-macro NLL is2.428310/2.289578, with improvements in3/3runs and60/60client-seed cells. Mean accuracy falls by0.1460percentage points and client-mean ECE rises; these trade-offs remain in the complete evidence. The100-class predictor stores200FP32coordinates (800B), and the shared upload is56376B. Saved-array/state replay of240arm-client rows passes with maximum metric difference3.33e−16 and valid fitted gradients/source/data/checkpoint hashes. See `cifar100_extension/ACCEPTANCE.md` in the revision artifacts. This additional dataset strengthens the scope of the existing method's NLL evidence; it does not revive any stopped/parked ScientistTwo candidate, establish a new mechanism or supply official TEST confirmation. The P2 experiment is now complete at its explicit development-evidence level.

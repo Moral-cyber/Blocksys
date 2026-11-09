@@ -1,0 +1,57 @@
+{
+  "status": "STATIC_READY",
+  "checks": [
+    "first-audit unchanged: check.py",
+    "first-audit unchanged: REPORT.md",
+    "first-audit unchanged: RESULT.json",
+    "identical function: metrics",
+    "identical function: summarize",
+    "identical function: objective",
+    "identical function: refit",
+    "identical function: independent_gates",
+    "explicit seed/partition: cifar",
+    "task TRAIN identity: cifar",
+    "explicit seed/partition: fashion",
+    "task TRAIN identity: fashion",
+    "invalid task/seed rejected",
+    "unchanged positive gate fixture",
+    "unchanged failing NLL gate fixture"
+  ],
+  "checks_passed": 15,
+  "numerical_function_sha256": {
+    "metrics": "7d13361eeaa0b66384a0be1f68e2cd44ace82c16f597fa6a5b8b7b4dc4f1ec61",
+    "summarize": "2ffcd768e47e05222fcdf805267de0804d9d6ad341c2ed7537179755bd1bd5ea",
+    "objective": "16c10f952adf3345b62722e64f878d83180915d847edfba502acf2421f443f0d",
+    "refit": "36ec592a46b12d39b005881dae9c8b13de94430408b075dc96a3ef409081d8eb",
+    "independent_gates": "3b9d0be4aad570158f90bea0cd5f214d2b0d647555988c3862cbfaf356ca4ffc"
+  },
+  "script_sha256": "e40dd7d005b0361b850af66ee51150a397f52c4afb800aa55399599d9d50f080",
+  "first_snapshot": {
+    "check.py": "78a22ea9bfe29e7ec7d4a4bbfda4a976ea352fcb144da70190ba4dd04615b291",
+    "REPORT.md": "1b7ae2173cbf13b314710c6ebca11d8d1600b74bf837e568811818b248f7274d",
+    "RESULT.json": "a0028d199dd588f567642a49046b216d85241b358df8b03c8ab93ea0f5d48b17"
+  },
+  "task_profiles": {
+    "cifar": {
+      "seed": 20261232,
+      "partition": 20261217,
+      "rows": 50000,
+      "labels_sha256": "f5cfe00b0f00968c0cc5ff3b1d2de51b10e33efa277c2986f4e0fa63e58c9f4f",
+      "index_namespace": "zero-based original row in torchvision CIFAR10(train=True), before any shuffle",
+      "source_config_sha256": "5d04567aebd2e53631ac6be0aa4deef2e08dbe9c82607671040f6f508aed5987"
+    },
+    "fashion": {
+      "seed": 20261241,
+      "partition": 20261219,
+      "rows": 60000,
+      "labels_sha256": "e3245b63f7c40d1c8b652835f19744d970c1613b40ddac6bcfc87b9c46e16a0b",
+      "index_namespace": "zero-based original FashionMNIST official TRAIN IDX row before any shuffle",
+      "source_config_sha256": "c3e337754d58ec4f2d48c02aeeecffeb7125220a112636810841ac901d9d3f34"
+    }
+  },
+  "fresh_result_arrays_read": false,
+  "raw_data_read": false,
+  "cnn_executed": false,
+  "formal_training_executed": false,
+  "waiting_for_root_complete_results_notification": true
+}

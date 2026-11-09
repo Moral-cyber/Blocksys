@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "time": "2026-11-04T20:38:43+08:00",
+  "pdf_sha256": "42528d280c0003e11132f81752366849351513f25b0aac1a3f87a5a8e2d83e23",
+  "pages_inspected": 14,
+  "all_page_contact_sheets": [
+    "/private/tmp/paper-prior-centered-build/final_contact1.png",
+    "/private/tmp/paper-prior-centered-build/final_contact2.png"
+  ],
+  "manual_detail_pages": [
+    3,
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "render_scope": "Latest fourteen pages rendered at110dpi; all-page sheets and equation/table/system/appendix details inspected",
+  "findings": "No clipping, missing glyphs or overlaps; workflow/plot labels, equations, tables and references legible; original template spacing retained",
+  "all_top_level_fonts_embedded": true,
+  "independent_source_review": "Same-session independent readers checked prior-center mechanism, system/replay counts and trust scope; PASS; not external cross-model review",
+  "temporary_render_policy": "Render PNGs and build products stay temporary; no duplicate page images in the research bundle"
+}

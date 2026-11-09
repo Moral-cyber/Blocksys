@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-11-04T12:22:15.774166+00:00",
+  "destination": "User-supplied BlockSys svproc template; final figure width 122 mm",
+  "venue_rule_scope": "Width follows supplied class; current official 2027 rules not independently established here",
+  "script": {
+    "path": "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/blocksys_template/figures.py",
+    "sha256": "b23b664dcbf5a223af8863cc1b25a605c7b9d562e73bba41658170b7cc5e0e3f"
+  },
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "skill": "/Users/wind/.codex/skills/scientific-visualization/SKILL.md"
+  },
+  "common_export": {
+    "png_dpi": 600,
+    "opaque_white": true,
+    "font": "DejaVu Sans",
+    "minimum_text_pt": 7.1,
+    "pdf_fonttype": 42,
+    "svg_text": "Editable text; font not embedded",
+    "physical_size_preserved": "bbox_inches=None"
+  },
+  "workflow": {
+    "width_mm": 122.0,
+    "height_mm": 104.0,
+    "minimum_text_pt": 7.1,
+    "node_text_overflow": [],
+    "outputs": [
+      {
+        "path": "workflow.pdf",
+        "sha256": "728e98c029c154a7e4cca10c9cce1828f85870d56e2861cdb0c122daf1d7aa16",
+        "bytes": 27251
+      },
+      {
+        "path": "workflow.svg",
+        "sha256": "f195fa7835abc9951dda4c42bec4e16f05916fdd98de5f5c58464ea33a997228",
+        "bytes": 17610
+      },
+      {
+        "path": "workflow.png",
+        "sha256": "9f372007c8d558fcf2eea77e4046e36c4bcd966dcef8d8207ae0230809622e97",
+        "bytes": 396691
+      }
+    ],
+    "source_sha256": {
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/learning_protocol_smoke.py": "153d7dd8effb3817fb43f2c0bce04e25947ee7bd9e67f8d11be4dec2b32b4374",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/run_learning.py": "39eabe32b4325d33e1365c39d578bfa103659e22920548c7a74cc0234cca8524",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/network_service.py": "f21dcbd4ea498d4e83892ce6903fb1404510675be0c50035dfadb30a3be6d0d5",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/ledger_bridge.cjs": "b7b947419316f2bdb370efef9054f5dbd1cc53fdbcccde1287de7751b9b48244",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/UploadRegistry.sol": "8e51fc13e5a7b42eaca6194786edfa00ee7bfb0a5e7222c473612735e5c31744",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/repro/work/durable_integrity_v2/protocol.py": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51",
+      "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/results/chain_integration/result.json": "b6cb1f52a27ca1d8c5e118466efbd41c26ea24c89f10243f4be4faa9f55a3928"
+    },
+    "evidence_boundary": "Two original CIFAR TRAIN clients over two fresh rounds passed 128 checks through loopback HTTP, four actual contract registration transactions on a single-node Ganache EVM, exact readback with two descendant blocks, SQLite incorporation and challenge-bound HMAC-SM3 receipts before EF commit. Service/database reopen and lost-ACK recovery reuse identical bytes. No multi-node consensus, public-chain finality, embedded watermark or distributed atomicity claim.",
+    "arithmetic_scope": "Main predictive runs use FP32 model / EF arithmetic. The integration uses float64 protocol residual subtraction, weighted aggregation and server state, with the existing codec casting effective updates and each training-round SmallCNN to FP32. It is an integration diagnostic, not a new predictive result or exact reproduction of the full FP32 predictive trajectory.",
+    "local_correction_scope": "The centered log-count TRAIN prior is a correctable ridge center, not a fixed inference shift. The frozen shared logits feed the local affine predictor with 20 retained FP32 parameters (80 bytes); no adaptation upload. This correction was evaluated in the full predictive experiments, not in the two-round integration; the connecting arrow states the architecture."
+  },
+  "prediction": {
+    "width_mm": 122.0,
+    "height_mm": 65.0,
+    "axis_limits": {
+      "cifar": {
+        "accuracy_percent": [
+          74.41802955311994,
+          76.35793701520653
+        ],
+        "nll": [
+          0.6226111490539047,
+          0.7026087057115191
+        ]
+      },
+      "fashion": {
+        "accuracy_percent": [
+          92.31192278385105,
+          93.59369821089379
+        ],
+        "nll": [
+          0.16969398822247808,
+          0.22410699648101617
+        ]
+      }
+    },
+    "outputs": [
+      {
+        "path": "prediction.pdf",
+        "sha256": "ac9b8986d22908c934c108da9e66ed8adb4cf99e61cbe9c996b5a9b500e1f593",
+        "bytes": 28212
+      },
+      {
+        "path": "prediction.svg",
+        "sha256": "9d65df20c946d9f63a4d430c725033494791b653ca453a8e80c54244e27931ea",
+        "bytes": 27940
+      },
+      {
+        "path": "prediction.png",
+        "sha256": "a3d77917e62f1def97cd4d955f462001369d6da307559a9423ad4c184ff7681a",
+        "bytes": 165559
+      }
+    ],
+    "source_sha256": {
+      "work/predictive_final_test/official_cifar/result.json": "3f71f68feb8bda6047bf15e50abfb4ca7716d32d039cccaf45b15502b368753f",
+      "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261231/result.json": "92410251daeae4ba67e812269d94b9f7dd8057c1540d29f2107d11d7b44250ea",
+      "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261232/result.json": "d093f26ed1a8d07f1d9db14ad58ba50741a88e088ba1f95fc9488698c7cbcaf0",
+      "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261233/result.json": "8e13c6c329f081724ad0f6cf6de9954d4a72f5d1d3504c8f1035c60cd7402ab8",
+      "work/predictive_final_test/official_fashion/result.json": "835134b7812f64e9abb1f6c11b7c852f5f65b04e32e4f0449198ea6e09fd5215",
+      "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261241/result.json": "cc0f0c7020bcc077bf66cdc6230ac6da051a6ae81a7db9555106c21b305e3545",
+      "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261242/result.json": "f7d4042a57a1f8f53eab6f412bed2f432343d0c51f6b21be14f720404bef3e0c",
+      "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261243/result.json": "c19964d3d8ed8441617efd7b5c307a2d8a58234069246fb58edda8d8563c0a5a"
+    },
+    "unit": "Exactly three predefined training seeds per task; one fixed client assignment per task",
+    "transformations": "macro_accuracy * 100; no NLL transformation, smoothing, jitter, filtering, or seed selection",
+    "uncertainty": "Arithmetic mean and sample SD, ddof=1; both independently matched to frozen aggregate JSON",
+    "raw_points": 18,
+    "encoding": "Each raw point is an open shape; means are larger filled shapes; horizontal and vertical sample-SD bars",
+    "data_file": "prediction.data.json"
+  },
+  "workflow_update_scope": {
+    "updated": "workflow artwork, text alternative and workflow provenance only",
+    "prediction": "Historical prediction subtree and all prediction artifacts preserved unchanged",
+    "prediction_original_created_utc": "2026-11-04T04:14:48.690058+00:00",
+    "prediction_original_script": {
+      "path": "work/blocksys_template/figures.py",
+      "sha256": "0f403f5cf6977cb3ce268c6d1d719f5e3595a8d8d102502a59f14cf8e0b0bfde"
+    },
+    "prediction_individual_record": "prediction.provenance.json"
+  }
+}

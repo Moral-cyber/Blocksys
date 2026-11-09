@@ -1,0 +1,33 @@
+{
+  "status": "OFFICIAL_PROCEEDINGS_VERIFIED",
+  "checked_at": "2026-11-05T15:16:58.922412+00:00",
+  "author_difference": "Official NeurIPS: Jiancheng Lv; arXiv v2: Jiangcheng Lv",
+  "published_doi": "10.52202/075280-1234",
+  "arxiv_doi": "10.48550/arXiv.2310.09183",
+  "files": [
+    {
+      "path": "/private/tmp/scientisttwo_sources/near/prior_official.html",
+      "sha256": "bc3cbc0b23acddd3dc4477dba4218e4fb15e546544b505512213282be2cdd17e"
+    },
+    {
+      "path": "/private/tmp/scientisttwo_sources/near/neurips2023_index.html",
+      "sha256": "52308a22f85d130a535514e158b885637452aa939cc0c15613c4544bc8dc217c"
+    },
+    {
+      "path": "/private/tmp/scientisttwo_sources/near/prior_abs_v2.html",
+      "sha256": "667af36d8f19bd2fe85a8a75dc0b16d4ac99c73b69b505b46ce379a0372a5f8f"
+    },
+    {
+      "path": "/private/tmp/pr_lfl_route_a/03_英文论文/revision_artifacts/route_a_20261105/literature/near_neighbors/prior_crossref.json",
+      "sha256": "aec0aa3594acad8bc4ae4db665bd55c85659f3e01e8f397d384685280cdcac37"
+    },
+    {
+      "path": "/Users/wind/Desktop/Codex/paper/06_ScientistTwo/sources/fl/prior_verified_append.bib",
+      "sha256": "4b95d96a2eb2fd02379e589f1debd8ab24232fbf3cf6276c167cead8605594c9"
+    },
+    {
+      "path": "/Users/wind/Desktop/Codex/paper/06_ScientistTwo/sources/fl/PRIOR_CITATION_VERIFICATION.md",
+      "sha256": "d9ead774caf0dec023d6fa26482cccf5bdb7e51e7411c19bb0e8c66afb20d8e2"
+    }
+  ]
+}

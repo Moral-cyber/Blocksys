@@ -1,0 +1,12 @@
+\begin{table}[!htb]\centering\small
+\caption{Additional controls separate class information, capacity and correction. Client-macro accuracy (\%) / NLL, three-seed mean $\pm$ sample SD.}\label{tab:full}
+\begin{tabular}{lrrrr}\toprule
+& \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{FashionMNIST}\\
+Predictor & Acc. (\%) & NLL & Acc. (\%) & NLL\\\midrule
+TRAIN prior only & $63.06\pm0.00$ & $0.965\pm0.000$ & $60.62\pm0.00$ & $0.982\pm0.000$\\
+Prior bias (10d) & $75.08\pm0.59$ & $0.655\pm0.013$ & $92.79\pm0.46$ & $0.197\pm0.012$\\
+Temperature (1d) & $38.96\pm0.77$ & $1.647\pm0.030$ & $69.79\pm1.69$ & $0.712\pm0.038$\\
+Zero BCTS (11d) & $75.21\pm0.55$ & $0.690\pm0.013$ & $91.76\pm0.46$ & $0.231\pm0.012$\\
+\bottomrule
+\end{tabular}
+\end{table}

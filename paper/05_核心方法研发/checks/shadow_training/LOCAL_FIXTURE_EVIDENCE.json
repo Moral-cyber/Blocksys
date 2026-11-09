@@ -1,0 +1,60 @@
+{
+  "single_batch_independent_numpy_ce_formula": {
+    "standard": {
+      "max_abs_parameter_error": 0.0,
+      "optimizer_steps": 1,
+      "gradient_evaluations": 1,
+      "batches": 1
+    },
+    "samebatch": {
+      "max_abs_parameter_error": 0.0,
+      "optimizer_steps": 2,
+      "gradient_evaluations": 2,
+      "batches": 1
+    },
+    "shadow": {
+      "max_abs_parameter_error": 0.0,
+      "optimizer_steps": 2,
+      "gradient_evaluations": 2,
+      "batches": 1,
+      "support": [
+        0,
+        6,
+        1
+      ],
+      "actual_not_overwritten_by_shadow": true,
+      "outside_support_second_half_unchanged": true
+    }
+  },
+  "two_batch_fixed_residual": {
+    "synthetic_rows": 68,
+    "max_abs_parameter_error": 1.0408340855860843e-17,
+    "global_unchanged": true,
+    "old_residual_unchanged": true,
+    "optimizer_steps": 4,
+    "gradient_evaluations": 4,
+    "batches": 2
+  },
+  "terminal_upload_ef": {
+    "selected_coordinates": 3,
+    "ef_conservation_exact": true,
+    "candidate_is_actual_theta_minus_anchor_plus_old_residual": true,
+    "no_extra_repair": true
+  },
+  "data_budget_identity": {
+    "fresh_seed": 20261161,
+    "train_n": 37500,
+    "dev_n": 2000,
+    "holdout_pool_n": 12500,
+    "k_coordinates": 6843,
+    "per_client_analytical_upload_bytes": 54808,
+    "per_round_upload_bytes": 1096160,
+    "round20_upload_bytes": 21923200
+  },
+  "source_hashes": {
+    "run.py": "33154270563c9858459d18d3d027f2326d004cb3437cc9dbf37b82665d5ba0cf",
+    "PLAN.md": "3b7b5c9a30e099d0af580d8876e137889e5b2da3af02560c09f1401dbbf600bb"
+  },
+  "status": "PASS",
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE"
+}

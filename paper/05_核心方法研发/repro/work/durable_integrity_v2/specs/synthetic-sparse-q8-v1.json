@@ -1,0 +1,12 @@
+{
+  "name": "synthetic-sparse-q8-v1",
+  "wire_spec_version": "synthetic-sparse-q8-wire/1",
+  "scope": "synthetic protocol fixture, not an ML compression contribution",
+  "header": "little-endian <4sIIfB3x: magic SYQ1, uint32 numel, uint32 count, float32 scale, uint8 bitwidth, three zero reserved bytes",
+  "body": "exactly count little-endian <Ib pairs: uint32 index and signed int8 code; no trailing bytes",
+  "size_constraints": "1 <= numel <= 1048576/8; count <= numel; total bytes exactly 20+5*count",
+  "value_constraints": "scale exactly float32 0.25; bitwidth exactly 8; code -128 forbidden; indices strictly increasing and less than numel",
+  "decoder_semantics": "flat vector of numel zeros, each transmitted coordinate replaced with code*0.25, exact binary values represented as Python float64",
+  "encoder_fixture": "retain even coordinates, round(value/0.25) using Python ties-to-even, clip to [-127,127], emit indices in increasing order",
+  "identity_boundary": "SHA256 of these exact specification bytes is a semantic identifier; trusted implementations must faithfully implement it; equality does not prove decoder execution correctness"
+}

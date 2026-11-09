@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "scope": "preprocessing integrity and one forward batch only; no training or official test evaluation",
+  "dataset_checks": [
+    {
+      "dataset": "Cifar10IndexA0p1",
+      "seeds": [
+        20261121,
+        20261122
+      ],
+      "train_samples": [
+        37500,
+        37497
+      ],
+      "holdout_samples": [
+        12500,
+        12503
+      ],
+      "attempts": [
+        1,
+        3
+      ],
+      "repeat_same_seed_exact_membership": true,
+      "changed_seed_changes_image_membership_and_label_counts": true,
+      "validation_class_counts": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "dataset": "Cifar10IndexA0p5",
+      "seeds": [
+        20261121,
+        20261122
+      ],
+      "train_samples": [
+        37498,
+        37500
+      ],
+      "holdout_samples": [
+        12502,
+        12500
+      ],
+      "attempts": [
+        1,
+        1
+      ],
+      "repeat_same_seed_exact_membership": true,
+      "changed_seed_changes_image_membership_and_label_counts": true,
+      "validation_class_counts": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "dataset": "Cifar10IndexA1",
+      "seeds": [
+        20261121,
+        20261122
+      ],
+      "train_samples": [
+        37499,
+        37500
+      ],
+      "holdout_samples": [
+        12501,
+        12500
+      ],
+      "attempts": [
+        1,
+        1
+      ],
+      "repeat_same_seed_exact_membership": true,
+      "changed_seed_changes_image_membership_and_label_counts": true,
+      "validation_class_counts": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  ],
+  "mixing_checks": [
+    {
+      "mixing": 0,
+      "all_integrity_checks": {
+        "original_train_total_50000": true,
+        "train_holdout_disjoint": true,
+        "each_original_row_assigned_once": true,
+        "validation_unique_and_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      },
+      "train_indices_sha256": "49bb9783975c286e71c11602d836aef1fa733be8f04969a9f3f5c094b12d70c0"
+    },
+    {
+      "mixing": 0.5,
+      "all_integrity_checks": {
+        "original_train_total_50000": true,
+        "train_holdout_disjoint": true,
+        "each_original_row_assigned_once": true,
+        "validation_unique_and_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      },
+      "train_indices_sha256": "89d9db9c91e443341366ca6eae4f4977d61e0b3b06f6cc608a470297ac7c5db2"
+    },
+    {
+      "mixing": 1,
+      "all_integrity_checks": {
+        "original_train_total_50000": true,
+        "train_holdout_disjoint": true,
+        "each_original_row_assigned_once": true,
+        "validation_unique_and_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      },
+      "train_indices_sha256": "3e43bf57d6b397545ac786eb346664a170fca970aa538c977cd29c60618baaa6"
+    }
+  ],
+  "batch_shape": [
+    8,
+    3,
+    32,
+    32
+  ],
+  "logits_shape": [
+    8,
+    10
+  ],
+  "normalization_max_abs_difference_vs_original_numpy": 0.0,
+  "source_hashes": [
+    {
+      "name": "data_batch_1",
+      "sha256": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"
+    },
+    {
+      "name": "data_batch_2",
+      "sha256": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"
+    },
+    {
+      "name": "data_batch_3",
+      "sha256": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"
+    },
+    {
+      "name": "data_batch_4",
+      "sha256": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"
+    },
+    {
+      "name": "data_batch_5",
+      "sha256": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+    }
+  ],
+  "generator_sha256": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+  "source_uint8_images_shared": true,
+  "no_image_shards_written": true,
+  "elapsed_seconds": 2.2636426250101067
+}

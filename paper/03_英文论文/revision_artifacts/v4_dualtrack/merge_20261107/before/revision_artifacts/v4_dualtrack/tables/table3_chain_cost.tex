@@ -1,0 +1,16 @@
+\begin{table}[!htb]\centering\small
+\caption{Anchoring preserves the 54,408 B application message as the activity grows. Registration gas excludes contract deployment; receipt verification measures local authentication and bound chain fields.}\label{tab:chaincost}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrr}\toprule
+Metric & $2\times2$ & $5\times3$\\\midrule
+Fresh uploads & 4 & 15\\
+Codec payload / upload (B) & 54,067 & 54,067\\
+Authenticated message / upload (B) & 54,408 & 54,408\\
+Total fresh message bytes & 217,632 & 816,120\\
+Registration gas, total & 1,140,380 & 4,229,478\\
+Registration gas / upload, mean & 285,095.0 & 281,965.2\\
+Deployment gas, once & 530,120 & 601,869\\
+Receipt verification, mean (ms) & 0.457 & 0.380\\
+Ledger readback, mean (ms) & 17.912 & 15.573\\\bottomrule
+\end{tabular}
+\end{table}

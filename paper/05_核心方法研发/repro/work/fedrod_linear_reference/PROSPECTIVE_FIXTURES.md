@@ -1,0 +1,9 @@
+# Prospective FedRoD wrapper: 81 CPU synthetic checks PASS
+
+只新增prospective.py与独立fixtures；旧PLAN/reference/train的SHA256及原13依赖检查前后不变。新PLAN SHA固定703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b。未联网、未读原始数据，raw打开尝试0，未导入真实TRAIN loader/torchvision，未正式训练。
+
+显式p20261217，训练seed20261231/32/33，固定20轮。模块SEED/PARTITION_SEED/ROUNDS仅在作用域内覆盖，记录于config/runtime；新PLAN与wrapperhash进入source和config签名。三seed初始化逐位匹配直接冻结SmallCNN，新batch顺序匹配seed+100r+i；三seed签名/初始化不同。旧seed/partition、另一允许seed、wrapper/PLAN/runtime身份误配恢复均拒绝。
+
+各seed只跑7张CPU合成图的1个本地batch；真实shared-only uniform3 wire均54067B，EF经实际decode。一次纯合成编排在首个训练更新前截停，确认prepare实际收到p20261217、模型/首batch实际用20261231。默认DESIGN_ONLY且不创建训练目录，退出恢复旧globals。
+
+沿用原文分离梯度、持久650头和G+P预测，未改旧accuracy STOP。冻结入口client_macro_ce即NLL；Brier/ECE仍需锁定的统一最终评估器补齐。没有prospective准确率/NLL结果；REVIEW_UNAVAILABLE / LOCAL_CHECK_ONLY。

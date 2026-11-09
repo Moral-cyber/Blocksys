@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_STATE_REPLAY",
+  "client_exports": 40,
+  "arm_client_rows": 240,
+  "independent_metric_max_error": 1.536964999715451e-15,
+  "all_locked_inputs_unchanged": true,
+  "maximum_reported_projected_gradient_inf": 7.505606500757267e-07,
+  "python_traced_peak_entire_new_geometry_fit_bytes": {
+    "minimum": 681016,
+    "maximum": 26210680
+  },
+  "memory_scope": "tracemalloc entire fit includes baseline design/workspace and Python/NumPy allocations; excludes untracked native allocator/RSS, not incremental geometry-only cost",
+  "new_training_or_fits": 0,
+  "official_test_reads": 0,
+  "new_partition_output_reads": 0,
+  "scope": "local independent formula replay; not external or cross-family audit"
+}

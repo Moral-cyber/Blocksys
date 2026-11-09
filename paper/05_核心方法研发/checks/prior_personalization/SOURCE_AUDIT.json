@@ -1,0 +1,102 @@
+{
+  "scope": {
+    "successful_keyword_queries": 2,
+    "page_size": 15,
+    "pagination": false,
+    "reviewed_hits_per_query": 15,
+    "counts": [
+      237,
+      71
+    ],
+    "no_training": true,
+    "no_model_or_official_data_loading": true,
+    "no_effectiveness_verdict": true,
+    "initial_dns_denial": "The same two query URLs failed before network permission, then succeeded unchanged; no third query."
+  },
+  "nearest_primary": {
+    "FedRoD": {
+      "version": "arXiv:2107.00778v2, 11 Jul 2022",
+      "url": "https://arxiv.org/html/2107.00778v2",
+      "anchors": [
+        "S4.E6",
+        "S4.SS2",
+        "S4.SS3"
+      ],
+      "exact_training": "CE(g + gamma * log N_m, y); candidate gamma=1 and +1 smoothing is a variant of this established training objective",
+      "generic": "hG(f(x))",
+      "personalized": "hG(f(x)) + hP(f(x); phi_m)",
+      "state": "phi_m is a learned local FC head, kept across rounds; personal ERM gradients do not update theta or psi",
+      "hyper": "learned and aggregated hypernetwork H(a_m; nu) maps class proportions to phi_m",
+      "match_boundary": "Explicit BSM generic / personalized scheme and class-frequency-conditioned no-further-training adaptation. No read equation fixes hP to log(n+1). Not an absence proof."
+    },
+    "MenonLA": {
+      "url": "https://arxiv.org/html/2007.07314",
+      "anchors": [
+        "S4.E9",
+        "S5.E10",
+        "S5.SS3"
+      ],
+      "posthoc": "argmax f_y - tau log pi_y (Eq9)",
+      "training": "CE(f+tau log pi,y), raw f at inference (Eq10)",
+      "boundary": "non-PFL atomic source; Bayes log target/source adaptation is an existing algebraic consequence, not candidate novelty; Sec5.3 warns against removing the source prior again after a balanced loss"
+    },
+    "FedBalance": {
+      "version": "arXiv:2311.08202v1",
+      "url": "https://arxiv.org/html/2311.08202",
+      "formula": "Eq3 CE(phi_i(x)+alpha_i psi_i(x),y), alpha uses class frequency",
+      "boundary": "private weak learner psi is trained by backpropagation (Alg1), not a fixed analytic prior vector; not an exact candidate"
+    },
+    "MuPFL": {
+      "version": "arXiv:2405.06413v1",
+      "url": "https://arxiv.org/html/2405.06413",
+      "formula": "SecIII-E PKCF uploads averaged per-class feature gradients (Eq16), server creates global features, client classifier takes gradient steps Eq21",
+      "boundary": "learned classifier / transmitted statistics, not no-gradient analytic prior adaptation"
+    }
+  },
+  "reused_primary": {
+    "FedNoRo": {
+      "url": "https://www.ijcai.org/proceedings/2023/0492.pdf",
+      "path": "work/exposure_prior/sources/fednoro.txt",
+      "anchors": "Sec4.1 / Sec5.3",
+      "fact": "local f+log pi is training; LA baseline named FedLA with Menon2021 reference. Acronym alone does not identify a unique PFL method"
+    },
+    "FedLC": {
+      "url": "https://arxiv.org/html/2209.00189v2",
+      "path": "work/exposure_prior/sources/fedlc.txt",
+      "fact": "local margin calibration with -tau*n_c^(-1/4); not the same loss as BSM and does not automatically imply uniform-posterior raw logits"
+    }
+  },
+  "formula_boundary": {
+    "q": "q_ic=(n_ic+1)/(n_i+C); log(n_ic+1) differs from log q only by a clientwise constant",
+    "BSM_if_uniform_source": "z + log q_i",
+    "CE_if_pooled_source": "z + log q_i - log pi_pool",
+    "extra_pool_subtraction_after_BSM": "changes target prior to proportional q_i/pi_pool unless pool is exactly uniform; near-uniform means approximate, not constant",
+    "conditions": "calibrated source posterior, shared p(x|y), accurate target/source priors, support, optimization. Smoothing and missing classes weaken the exact interpretation. Analytic bias is not an entire classifier and still uses local class-count state."
+  },
+  "minimum_controls": [
+    "Same BSM checkpoint raw versus +logq_i",
+    "CE and FedLC with same prior; CE standard target/source correction explicitly",
+    "FedRoD-linear nearest-neighbor with matched body/communication budget and reported extra compute/state",
+    "Frozen-body lastLinear local1epoch, evaluate raw and same prior; not equivalent to FedRoD or automatically equal compute",
+    "prior-only",
+    "dense BSM+prior as compression control"
+  ],
+  "paper_position": "Combination study of known smoothed BSM, analytic prior adaptation, and low-bit EF. The two-query finite check did not locate the whole same-formula same-compressor implementation. Do not rename an exact prior combination as a new algorithm; no nonexistence or effect claim.",
+  "source_sha256": {
+    "work/prior_personalization/sources/01_openalex_fedrod.json": "b907b5ae044d29583da40a328fa6911adcec43006d7a06332554c1d28b762323",
+    "work/prior_personalization/sources/01_openalex_fedrod.json.error.txt": "35281279d8e2164cee8666d6f8aad891326911e887ab1b2ab778c8ac6d09dc6c",
+    "work/prior_personalization/sources/02_openalex_prior_pfl.json": "906a66e661c5110ead5c35149f1a4c1d53e91065a417d3f58cacd842568491da",
+    "work/prior_personalization/sources/02_openalex_prior_pfl.json.error.txt": "35281279d8e2164cee8666d6f8aad891326911e887ab1b2ab778c8ac6d09dc6c",
+    "work/prior_personalization/sources/fedrod.html": "f20e9d08f1573c149998483d07e10b0305162795a2b134305af82fd3759710c7",
+    "work/prior_personalization/sources/fedrod.txt": "b33fbbd8f63cce4aa78067c9f95b79ebd9c01a4e8da3cfdbd287aada0a8025f3",
+    "work/prior_personalization/sources/logit_primary_manifest.json": "f303f31c7428774c5b94fcdd5c12d4dc1ab38c9584b444d4b9ae4cac25dbf187",
+    "work/prior_personalization/sources/logits_fusion.html": "703d27637a010ee412a33a0290959be792cede5ed623d737ea5eb8cdc23c13f6",
+    "work/prior_personalization/sources/logits_fusion.txt": "d7725d0d68f647a969cc75fb202c618f36883ae94550c5ff46dbcb1707326663",
+    "work/prior_personalization/sources/menon_la.html": "92f158f2ef5e0b200de1b00240750a053eecc03f9be69aa74817b86f19929bed",
+    "work/prior_personalization/sources/menon_la.txt": "1f4a6276320f7fbdc14c7dda1f0d22775e571b422078278fa02d4e87fc07a2a4",
+    "work/prior_personalization/sources/multi_level.html": "9e1bfd2b79e00eed5c9b02bf898bb87dc5e8cbea7f45fc0dc3e80a41f7c21969",
+    "work/prior_personalization/sources/multi_level.txt": "a7832722c4223aa454c7688735b5362025b7e6fa01e1497a4aa9be729afbfa8a",
+    "work/prior_personalization/sources/primary_manifest.json": "2ae3c5e588f58ca8d2fe07be9d80c7ca37610643687229028383484872b1b33f",
+    "work/prior_personalization/sources/queries_manifest.json": "f1e8acaf7a719563def8dd114475c8f5729330530c806de5e6120a3844a8a8ed"
+  }
+}

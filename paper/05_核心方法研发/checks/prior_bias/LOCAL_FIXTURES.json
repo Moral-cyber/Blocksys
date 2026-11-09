@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "seed": 20261231,
+  "scope": "NumPy synthetic logits only; no CNN/data access",
+  "analytic_gradient_fd_error": 2.362644302422723e-09,
+  "analytic_hessian_fd_error": 2.8136426521996327e-10,
+  "hessian_positive_definite_with_minimum_10": true,
+  "hessian_data_gauge_null_direction": true,
+  "objective_gauge_checks": true,
+  "fixed_armijo_descent_cases": [
+    {
+      "case": "imbalanced",
+      "accepted_steps": 3,
+      "initial_objective": 156.51245326966708,
+      "final_objective": 155.30587696892474,
+      "gradient_inf": 1.2089884648958105e-11,
+      "stop_reason": "gradient_tolerance",
+      "mean_fp32_bias": -1.1920929132713809e-08,
+      "state_bytes": 40,
+      "logit_constant_shift_solution_max_error": 0.0
+    },
+    {
+      "case": "single_class",
+      "accepted_steps": 3,
+      "initial_objective": 500.2527014607327,
+      "final_objective": 486.846723033696,
+      "gradient_inf": 2.156497203031904e-12,
+      "stop_reason": "gradient_tolerance",
+      "mean_fp32_bias": -5.9604645663569045e-09,
+      "state_bytes": 40,
+      "logit_constant_shift_solution_max_error": 0.0
+    },
+    {
+      "case": "one_example",
+      "accepted_steps": 2,
+      "initial_objective": 1.704748092238333,
+      "final_objective": 1.6681740425207698,
+      "gradient_inf": 8.258760342272353e-11,
+      "stop_reason": "gradient_tolerance",
+      "mean_fp32_bias": 0.0,
+      "state_bytes": 40,
+      "logit_constant_shift_solution_max_error": 0.0
+    },
+    {
+      "case": "uniform_zero_logits",
+      "accepted_steps": 0,
+      "initial_objective": 230.2585092994046,
+      "final_objective": 230.2585092994046,
+      "gradient_inf": 1.9539925233402755e-14,
+      "stop_reason": "gradient_tolerance",
+      "mean_fp32_bias": 4.440892098500626e-16,
+      "state_bytes": 40,
+      "logit_constant_shift_solution_max_error": 0.0
+    }
+  ],
+  "source_sha256": {
+    "solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "PLAN.md": "120472270ba4fdff1d5fc211d6b7cb1d9ee352daee013de4321d396aae8b3310",
+    "local_fixture_check.py": "f522d7d1e9a3c5a2c7dfb0228d21c30e5b89a0e7e5f3809a8ef152032157412e"
+  }
+}

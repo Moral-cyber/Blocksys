@@ -1,0 +1,59 @@
+[
+  {
+    "anchor": "Sx3.EGx1",
+    "latex": [
+      "\\displaystyle minF(w)=\\sum_{i=1}^{N}\\frac{\\left|D_{i}\\right|}{\\sum\\left|D_{i}\\right|}L_{i}(F(w),D_{i})"
+    ]
+  },
+  {
+    "anchor": "Sx3.EGx2",
+    "latex": [
+      "\\displaystyle w_{1}^{\\ast},...,w_{N}^{\\ast}=\\underset{w_{1},...,w_{N}}{argmin}\\sum_{i=1}^{N}\\frac{\\left|D_{i}\\right|}{\\sum\\left|D_{i}\\right|}L_{i}(F_{i}(w_{i}),D_{i})"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx3",
+    "latex": [
+      "\\displaystyle\\theta_{a}^{t}=CosSim(FW_{i}^{t},FW^{t})=\\frac{FW_{i}^{t}\\cdot FW^{t}}{\\parallel FW_{i}^{t}\\parallel\\parallel FW^{t}\\parallel}"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx4",
+    "latex": [
+      "\\displaystyle\\theta_{i,j}^{t}=\\frac{PW_{i,j}^{t}\\cdot PW_{j}^{t}}{\\parallel PW_{i,j}^{t}\\parallel\\parallel PW_{j}^{t}\\parallel},\\;j\\in\\left|PW_{i}^{t}\\right|"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx5",
+    "latex": [
+      "\\displaystyle PW_{i,k}^{t}=TopK(PW_{i,j}^{t},\\theta_{i,j}^{t},\\theta_{a}^{t}),\\;j\\in\\left|PW_{i}^{t}\\right|"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx6",
+    "latex": [
+      "\\displaystyle M_{i,j}^{t}",
+      "\\displaystyle=\\begin{cases}\\theta_{i,k}^{t}&\\theta_{i,k}^{t}\\in\\theta_{i,j}^{t}\\\\\n0&\\theta_{i,j}\\setminus\\theta_{i,k}^{t}\\end{cases}"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx7",
+    "latex": [
+      "\\displaystyle\\beta_{i,j}^{t}=\\sum PW_{i,j}^{t}\\log\\frac{PW_{i,j}^{t}}{PW_{j}^{t}},\\;j\\in\\left|PW_{i}^{t}\\right|"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx8",
+    "latex": [
+      "\\displaystyle M_{i,j}^{t}",
+      "\\displaystyle=\\begin{cases}\\theta_{i,k}^{t}+\\beta_{i,k}^{t}&\\theta_{i,k}^{t}\\in\\theta_{i,j}\\\\\n0&\\theta_{i,j}\\setminus\\theta_{i,k}^{t}\\end{cases}"
+    ]
+  },
+  {
+    "anchor": "Sx4.EGx9",
+    "latex": [
+      "\\displaystyle PW_{i,j}^{t}",
+      "\\displaystyle=\\begin{cases}\\sum_{i=1}^{S_{t}}\\frac{M_{i,j}^{t}}{M_{j}^{t+1}}PW_{i,k}^{t}&M_{i,j}^{t}\\neq 0\\\\\n0&else\\end{cases}"
+    ]
+  }
+]

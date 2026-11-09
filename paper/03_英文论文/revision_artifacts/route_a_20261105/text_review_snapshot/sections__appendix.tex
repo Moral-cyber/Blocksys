@@ -1,0 +1,33 @@
+\appendix
+\section{Additional Results}\label{app:complete}
+\input{tables/seeds}
+Original partitions: CIFAR 20261217, Fashion 20261219 (seeds: Table~\ref{tab:seeds}).
+
+\input{tables/mechanism}
+\input{tables/training}
+The TopK reference sends 6,843 coordinates as sorted uint32/FP32 pairs (54,808 B). The persistent FedRoD-linear reference follows the generic and private residual prediction of Appendix B.2 in~\cite{chen2022fedrod}.
+
+Dense FedAvg uses CE; FedProx adds $0.1\|w-w_{\rm global}\|^2/2$ per step. Both match the original data, backbone, seeds and training schedule; Fits use TRAIN before TEST. Prior centering lowers CIFAR macro accuracy by 0.043/0.076 points, Fashion FedAvg q10 by 0.047 points, and raises CIFAR FedProx pooled ECE by 0.000621 in raw units.
+
+Two new partitions repeat the original development protocol. Macro NLL improves in all nine configurations per task and in 177/180 CIFAR and 176/180 Fashion client pairs.
+
+\subsection*{Paired analysis and diagnostics}\label{app:statistics}
+All sixty paired NLL differences and twenty client means favor the prior center ($W=0$). Nominal two-sided Wilcoxon values are $p=1.735\times10^{-18}$ / $1.907\times10^{-6}$, descriptive under shared-model dependence. Conditional 95\% percentile intervals resample twenty client clusters 1,000 times (PCG64 seed 20261104), retaining their three seeds; they omit new-partition and training-run uncertainty. 
+
+\paragraph{Penalty and reallocation diagnostics.}\label{app:sensitivity}
+TRAIN fits score existing holdouts; $\lambda=\infty$ uses fixed prior addition. Missing classes prevent a finite $\lambda=0$ minimizer: lowering absent-class bias keeps decreasing CE.
+
+\begin{table}[!htb]\centering\small
+\caption{A frozen prior-centered predictor loses its NLL advantage under label reallocation. Entries are prior-minus-zero client-macro NLL; negative favors the prior center.}\label{tab:drift}
+\begin{tabular}{lrrrrr}\toprule
+Task & $\rho=0$ & 0.25 & 0.5 & 0.75 & 1\\\midrule
+CIFAR-10 & $-0.041112$ & 0.336270 & 0.604060 & 0.857850 & 1.239329\\
+FashionMNIST & $-0.013788$ & 0.171311 & 0.317382 & 0.450069 & 0.633471\\\bottomrule
+\end{tabular}\end{table}
+For Table~\ref{tab:drift}, frozen models/predictors score a within-class fraction $\rho$ of development holdouts reassigned to new clients. PCG64 seed 20261105 generates classwise shuffles and Dirichlet$(0.1)$ targets; largest-remainder quotas assign each example once. Seeds share assignments; $\rho=0$ preserves membership.
+
+\subsection*{Implementation}\label{app:implementation}
+FP64 Newton fitting uses analytic derivatives, at most 50 steps, Armijo $10^{-4}$, 40 halvings, projected-gradient fallback and $10^{-8}$ tolerance; centered states are stored in FP32. Training uses $\operatorname{CE}(z-s_i,y)$, $s_{ic}=\max(n_{ic},1)^{-1/4}$~\cite{zhang2022fedlc}. Error feedback sends decoded $q_i^t$ from $u_i^t=\Delta_i^t+r_i^t$ and commits $r_i^{t+1}=u_i^t-q_i^t$ after incorporation; aggregation weights are $|D_i|/\sum_j|D_j|$. Uniform3 uses 256-coordinate blocks, codes $-3,\ldots,3$, a width byte, FP32 scale and 64-byte header. Four refinements follow maximum-magnitude initialization; lengths/codes/scales/padding are validated. Its $136{,}874\times3/8+535\times(1+4)+64=54{,}066.75$ B rounds to 54,067 B.
+
+\paragraph{Recoverable upload implementation.}
+Length-prefixed HMAC-SM3 authenticates bytes/context~\cite{rfc2104,shen2018sm3}; Solidity digest registration~\cite{kim2020blockfl}, Ganache readback and SQLite gate incorporation/residual commitment. HMAC receipts permit retries. The two-client/two-round integration uses FP32 CNN/codec and double protocol state: 54,408 B/message (341 B context/tag), 217,632 B total. Server, bridge, keys, database and decoder are trusted; the MAC authenticates externally.

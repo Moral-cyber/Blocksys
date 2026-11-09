@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "finite saved-artifact provenance, score-order, support, energy and gradient-dot replay; not an external integrity verdict",
+  "new_rows_checked": [
+    "current_dense_delta_oracle__signed_product",
+    "current_dense_delta_oracle__absolute_product",
+    "current_dense_delta_oracle__sign_reference",
+    "BASE_train_negative_gradient_oracle__signed_product",
+    "BASE_train_negative_gradient_oracle__absolute_product",
+    "BASE_train_negative_gradient_oracle__sign_reference"
+  ],
+  "full_train_gradient_recomputed": false,
+  "official_test_accessed": false,
+  "confirmation_results_accessed": false,
+  "validation_gradient_used": false,
+  "checker_sha256": "73e2f664e96ee8e6eca735179d9d519d1feb40e6371e3015250964bc239dd93d"
+}

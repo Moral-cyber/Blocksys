@@ -1,0 +1,420 @@
+{
+  "status": "COMPLETE",
+  "created_at": "2026-11-07T13:36:02.074953+08:00",
+  "settings": {
+    "chain": "local EVM development chain",
+    "clients_and_rounds": [
+      [
+        2,
+        2
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "runs_per_setting": 1,
+    "primary_timing_unit": "first successful commit-path INCORPORATED receipt verification per unique client-round",
+    "timing_scope": "local JSON/HMAC/context/embedded-chain validation; excludes retrieval, waiting and SQLite commit",
+    "no_general_linear_scalability_claim": true
+  },
+  "rows": [
+    {
+      "configuration": "c2_r2_measured",
+      "clients": 2,
+      "rounds": 2,
+      "registrations": 4,
+      "gas_registration_total": 1140380,
+      "gas_registration_per_upload": {
+        "n": 4,
+        "mean": 285095.0,
+        "median": 280826.0,
+        "min": 280802.0,
+        "max": 297926.0,
+        "sample_sd": 8554.00748187655,
+        "values": [
+          297926.0,
+          280826.0,
+          280826.0,
+          280802.0
+        ]
+      },
+      "gas_deployment": 530120,
+      "incorporation_verification_ms": {
+        "n": 4,
+        "mean": 0.4574585,
+        "median": 0.46395850000000005,
+        "min": 0.405125,
+        "max": 0.496792,
+        "sample_sd": 0.045407455133123976,
+        "values": [
+          0.494084,
+          0.405125,
+          0.496792,
+          0.433833
+        ]
+      },
+      "registration_wall_ms": {
+        "n": 4,
+        "mean": 50.262010750032005,
+        "median": 49.377625500028444,
+        "min": 46.134875000007014,
+        "max": 56.15791700006412,
+        "sample_sd": 4.218474190395672,
+        "values": [
+          56.15791700006412,
+          49.26070900000923,
+          49.49454200004766,
+          46.134875000007014
+        ]
+      },
+      "ledger_readback_wall_ms": {
+        "n": 12,
+        "mean": 17.911621666636773,
+        "median": 17.70650049991218,
+        "min": 16.193459000078292,
+        "max": 20.426791000090816,
+        "sample_sd": 1.5620605426257503,
+        "values": [
+          18.105957999978273,
+          17.669208999905095,
+          20.101791999877605,
+          19.033042000046407,
+          17.743791999919267,
+          16.840457999933278,
+          16.67508299988185,
+          16.193459000078292,
+          20.426791000090816,
+          19.673416999921756,
+          16.204667000010886,
+          16.27179199999773
+        ]
+      },
+      "payload_bytes_each": 54067,
+      "message_bytes_each": 54408,
+      "context_and_tag_bytes_each": 341,
+      "payload_bytes_total": 216268,
+      "message_bytes_total": 217632,
+      "calldata_bytes": {
+        "n": 4,
+        "mean": 356.0,
+        "median": 356.0,
+        "min": 356.0,
+        "max": 356.0,
+        "sample_sd": 0.0,
+        "values": [
+          356.0,
+          356.0,
+          356.0,
+          356.0
+        ]
+      },
+      "signed_transaction_bytes": {
+        "n": 4,
+        "mean": 473.0,
+        "median": 473.0,
+        "min": 473.0,
+        "max": 473.0,
+        "sample_sd": 0.0,
+        "values": [
+          473.0,
+          473.0,
+          473.0,
+          473.0
+        ]
+      },
+      "serialized_RPC_receipt_bytes": {
+        "n": 4,
+        "mean": 1718.0,
+        "median": 1718.0,
+        "min": 1718.0,
+        "max": 1718.0,
+        "sample_sd": 0.0,
+        "values": [
+          1718.0,
+          1718.0,
+          1718.0,
+          1718.0
+        ]
+      },
+      "raw_result": "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3/c2_r2_measured/result.json",
+      "all_protocol_direct_model_and_EF_equal": true,
+      "fresh_gradients": 22,
+      "checks_passed": 128,
+      "client_sizes": [
+        450,
+        159
+      ],
+      "elapsed_seconds": 5.5508575829999245,
+      "recovery_summary": {
+        "drop_after_chain_before_local_register": "PASS",
+        "drop_after_finalize_before_reply": "PASS",
+        "service_database_reopen_exact_retry": "PASS",
+        "duplicate_upload_finalize_EF_commit": "PASS"
+      },
+      "timing_boundaries": {
+        "local_receipt_verification_ms": "JSON parsing + HMAC-SM3 + session/challenge/full-context + embedded chain-field verification; excludes HTTP/RPC/wait/SQLite commit",
+        "ledger_readback_ms": "actual GET /record roundtrip including contract read/event/transaction/canonical-block/readback verification; includes loopback transport",
+        "registration_ms": "actual POST /register including submission, inclusion, two descendant blocks, readback and loopback transport"
+      }
+    },
+    {
+      "configuration": "c5_r3_measured",
+      "clients": 5,
+      "rounds": 3,
+      "registrations": 15,
+      "gas_registration_total": 4229478,
+      "gas_registration_per_upload": {
+        "n": 15,
+        "mean": 281965.2,
+        "median": 280826.0,
+        "min": 280802.0,
+        "max": 297926.0,
+        "sample_sd": 4415.442045497014,
+        "values": [
+          297926.0,
+          280826.0,
+          280814.0,
+          280838.0,
+          280814.0,
+          280838.0,
+          280814.0,
+          280826.0,
+          280838.0,
+          280802.0,
+          280838.0,
+          280826.0,
+          280838.0,
+          280838.0,
+          280802.0
+        ]
+      },
+      "gas_deployment": 601869,
+      "incorporation_verification_ms": {
+        "n": 15,
+        "mean": 0.3801499333333333,
+        "median": 0.379541,
+        "min": 0.342292,
+        "max": 0.407208,
+        "sample_sd": 0.018598722215965986,
+        "values": [
+          0.355167,
+          0.378709,
+          0.375833,
+          0.382458,
+          0.342292,
+          0.407208,
+          0.394417,
+          0.39075,
+          0.377166,
+          0.379041,
+          0.405875,
+          0.392125,
+          0.389834,
+          0.379541,
+          0.351833
+        ]
+      },
+      "registration_wall_ms": {
+        "n": 15,
+        "mean": 46.02942506665689,
+        "median": 45.00504199995703,
+        "min": 41.429041000128564,
+        "max": 52.83162500018079,
+        "sample_sd": 3.449580287963021,
+        "values": [
+          52.83162500018079,
+          50.30954099993323,
+          46.130082999980004,
+          51.18420899998455,
+          47.00454199996784,
+          42.934709000064686,
+          44.25258399987797,
+          45.00504199995703,
+          43.98366600003101,
+          41.429041000128564,
+          49.67770799999016,
+          43.4397919998446,
+          43.559082999991006,
+          45.687667000038346,
+          43.012083999883544
+        ]
+      },
+      "ledger_readback_wall_ms": {
+        "n": 45,
+        "mean": 15.57271388887279,
+        "median": 15.33779099986532,
+        "min": 13.542582999889419,
+        "max": 17.82874999980777,
+        "sample_sd": 0.9554054670559722,
+        "values": [
+          17.82874999980777,
+          17.3227500001758,
+          17.038749999983338,
+          16.72966599994652,
+          16.524249999974927,
+          17.396457999893755,
+          16.73962500012749,
+          16.652583999984927,
+          16.65579199993772,
+          15.795541999978013,
+          16.04841700009274,
+          15.945166999927096,
+          15.235334000180956,
+          16.330292000020563,
+          15.095750000000407,
+          15.860792000012225,
+          15.30958299986196,
+          15.858916999832218,
+          16.75295800009735,
+          15.29079199985972,
+          15.085875000067972,
+          15.246875000002547,
+          14.61925000012343,
+          13.542582999889419,
+          15.58266699998967,
+          14.716833000193219,
+          14.852000000018961,
+          14.418209000041315,
+          15.189792000001034,
+          15.33779099986532,
+          15.361540999947465,
+          15.703000000030443,
+          15.167625000003682,
+          15.614791999951194,
+          16.328457999861712,
+          15.455582999948092,
+          14.959540999825549,
+          14.979374999938955,
+          14.509207999935825,
+          14.993499999945925,
+          14.707833999864306,
+          14.937291000023833,
+          14.636667000104353,
+          14.767040999913661,
+          13.646625000092172
+        ]
+      },
+      "payload_bytes_each": 54067,
+      "message_bytes_each": 54408,
+      "context_and_tag_bytes_each": 341,
+      "payload_bytes_total": 811005,
+      "message_bytes_total": 816120,
+      "calldata_bytes": {
+        "n": 15,
+        "mean": 356.0,
+        "median": 356.0,
+        "min": 356.0,
+        "max": 356.0,
+        "sample_sd": 0.0,
+        "values": [
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0,
+          356.0
+        ]
+      },
+      "signed_transaction_bytes": {
+        "n": 15,
+        "mean": 472.73333333333335,
+        "median": 473.0,
+        "min": 472.0,
+        "max": 473.0,
+        "sample_sd": 0.45773770821706344,
+        "values": [
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          473.0,
+          472.0,
+          472.0,
+          472.0,
+          472.0
+        ]
+      },
+      "serialized_RPC_receipt_bytes": {
+        "n": 15,
+        "mean": 1718.3333333333333,
+        "median": 1718.0,
+        "min": 1717.0,
+        "max": 1719.0,
+        "sample_sd": 0.6172133998483678,
+        "values": [
+          1718.0,
+          1718.0,
+          1718.0,
+          1718.0,
+          1717.0,
+          1719.0,
+          1719.0,
+          1719.0,
+          1719.0,
+          1719.0,
+          1719.0,
+          1718.0,
+          1718.0,
+          1718.0,
+          1718.0
+        ]
+      },
+      "raw_result": "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3/c5_r3_measured/result.json",
+      "all_protocol_direct_model_and_EF_equal": true,
+      "fresh_gradients": 393,
+      "checks_passed": 417,
+      "client_sizes": [
+        450,
+        159,
+        1661,
+        3446,
+        2558
+      ],
+      "elapsed_seconds": 16.491422791999867,
+      "recovery_summary": {
+        "drop_after_chain_before_local_register": "PASS",
+        "drop_after_finalize_before_reply": "PASS",
+        "service_database_reopen_exact_retry": "PASS",
+        "duplicate_upload_finalize_EF_commit": "PASS"
+      },
+      "timing_boundaries": {
+        "local_receipt_verification_ms": "JSON parsing + HMAC-SM3 + session/challenge/full-context + embedded chain-field verification; excludes HTTP/RPC/wait/SQLite commit",
+        "ledger_readback_ms": "actual GET /record roundtrip including contract read/event/transaction/canonical-block/readback verification; includes loopback transport",
+        "registration_ms": "actual POST /register including submission, inclusion, two descendant blocks, readback and loopback transport"
+      }
+    }
+  ],
+  "source_and_input_sha256": {
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3/c2_r2_measured/result.json": "b68c9346443207f507208d1d0f47a419fea2d0546edc52e8cc016893a0372029",
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3/c5_r3_measured/result.json": "d7d75f873fc23cddb37334a3df3b512b2b0387e0d45d193f00a80bb9943f7347"
+  },
+  "source_lock_sha256": "6b2cba680f89005db179dca8bdb3edee72103b41f708338bea8a8dbff1a5064c",
+  "limitations": [
+    "Two configurations change clients and rounds together; not an isolated client-count scaling estimate.",
+    "Timing samples share one host/process activity, not independent deployment replications.",
+    "Development-chain gas is execution gas, not a monetary fee.",
+    "Protocol/direct equivalence uses FP32 local CNN/codec and FP64 protocol state, not the main MPS trajectory."
+  ],
+  "output_sha256": {
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3_receipts.jsonl": "5c0660a9979a56cedcd19ea46fe72b5427276b0706c513002a9718c73f1d585b",
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/e3_cost_table.csv": "203894d3d7d93167ff0f977d4c37e31db8c2fecdc40535f9e1737be10dd2cdfb",
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/tables/table3_chain_cost.tex": "c2db9aeb06295b2fd3bfc6eead7ec63b2ddbb019c48087259a18375b8d424cf0",
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/revision_artifacts/v4_dualtrack/figures/figure4_chain_cost.pdf": "9121cf0f3952ab511daf9c9f0a275c3ea3a4e42b16f34b600cfdce3111d06945"
+  }
+}

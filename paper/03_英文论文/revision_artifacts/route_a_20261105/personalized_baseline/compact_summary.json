@@ -1,0 +1,159 @@
+{
+  "status": "PASS_SIX_RUN_AGGREGATION",
+  "created_at": "2026-11-05T15:59:43.688283+00:00",
+  "method": "pFedMe author optimizer with matched protocol adapter",
+  "predictor": "raw final personalized theta; no post-hoc calibrator",
+  "model_lock_inputs_checked": 43,
+  "seed_runs": 6,
+  "metrics_per_task": 10,
+  "summary_max_absolute_error": 0.0,
+  "independent_score_replay_max_absolute_error": 1.4779288903810084e-12,
+  "metric_units": "accuracy, q10 and ECE are proportions; Brier is multiclass sum; NLL is natural-log units",
+  "tasks": {
+    "cifar": {
+      "macro_accuracy": {
+        "mean": 0.6438245867827841,
+        "sample_sd": 0.006907027469343883
+      },
+      "weighted_accuracy": {
+        "mean": 0.6406666666666667,
+        "sample_sd": 0.01823083468559064
+      },
+      "macro_nll": {
+        "mean": 1.0072316452381105,
+        "sample_sd": 0.029097689069628806
+      },
+      "weighted_nll": {
+        "mean": 0.9629863173662115,
+        "sample_sd": 0.03395037024589603
+      },
+      "macro_brier": {
+        "mean": 0.4893966889012309,
+        "sample_sd": 0.013171335335716999
+      },
+      "weighted_brier": {
+        "mean": 0.48095435247583573,
+        "sample_sd": 0.01809521497542178
+      },
+      "macro_ece15": {
+        "mean": 0.14795842343392612,
+        "sample_sd": 0.023162462055930276
+      },
+      "weighted_ece15": {
+        "mean": 0.12580893859913997,
+        "sample_sd": 0.025313466065492316
+      },
+      "client_accuracy_q10": {
+        "mean": 0.44095593369326114,
+        "sample_sd": 0.06058941769731646
+      },
+      "pooled_ece15": {
+        "mean": 0.05138756131051853,
+        "sample_sd": 0.015025149139821867
+      }
+    },
+    "fashion": {
+      "macro_accuracy": {
+        "mean": 0.8886090446926415,
+        "sample_sd": 0.013303773179797017
+      },
+      "weighted_accuracy": {
+        "mean": 0.9169666666666666,
+        "sample_sd": 0.006465549731719196
+      },
+      "macro_nll": {
+        "mean": 0.35571006229737917,
+        "sample_sd": 0.03593280040789677
+      },
+      "weighted_nll": {
+        "mean": 0.26306566092645245,
+        "sample_sd": 0.021251764721623635
+      },
+      "macro_brier": {
+        "mean": 0.1707197245298895,
+        "sample_sd": 0.01676045966323559
+      },
+      "weighted_brier": {
+        "mean": 0.12821402418126335,
+        "sample_sd": 0.008651819634935672
+      },
+      "macro_ece15": {
+        "mean": 0.0693151189053272,
+        "sample_sd": 0.004926443778636671
+      },
+      "weighted_ece15": {
+        "mean": 0.04508708055795976,
+        "sample_sd": 0.005650277946695356
+      },
+      "client_accuracy_q10": {
+        "mean": 0.766849032029843,
+        "sample_sd": 0.05364112540420919
+      },
+      "pooled_ece15": {
+        "mean": 0.02381312463296507,
+        "sample_sd": 0.00649619109705431
+      }
+    }
+  },
+  "runtime_rows": [
+    {
+      "task": "cifar",
+      "seed": 20261231,
+      "seconds": 361.7756768340478,
+      "gradient_evaluations": 59500,
+      "outer_steps": 11900
+    },
+    {
+      "task": "cifar",
+      "seed": 20261232,
+      "seconds": 334.2526319171884,
+      "gradient_evaluations": 59500,
+      "outer_steps": 11900
+    },
+    {
+      "task": "cifar",
+      "seed": 20261233,
+      "seconds": 333.02220291888807,
+      "gradient_evaluations": 59500,
+      "outer_steps": 11900
+    },
+    {
+      "task": "fashion",
+      "seed": 20261241,
+      "seconds": 450.6648329148884,
+      "gradient_evaluations": 71200,
+      "outer_steps": 14240
+    },
+    {
+      "task": "fashion",
+      "seed": 20261242,
+      "seconds": 385.3594112509163,
+      "gradient_evaluations": 71200,
+      "outer_steps": 14240
+    },
+    {
+      "task": "fashion",
+      "seed": 20261243,
+      "seconds": 420.6752872490906,
+      "gradient_evaluations": 71200,
+      "outer_steps": 14240
+    }
+  ],
+  "training_seconds_total": 2285.7500430850196,
+  "source_sha256": {
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/cifar/result.json": "bf795b7c9bf0c832fdb3ccb7978a2ec3b7863d739a0b203ffbd106aa85bae97e",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/cifar/pfedme_dense_s20261231/result.json": "8a34ffdea50e28c296d3912e8a05963928d0fba21187bc439480d56cd1a68d8a",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/cifar/pfedme_dense_s20261232/result.json": "9c3e47ae05a9af54c0050982a8fa65beae36793512231c830a4da65bf2a1a231",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/cifar/pfedme_dense_s20261233/result.json": "08adef384e95e2f6f9e856c27bed7f8838b516f6d7134cd4ee2f5d18e90e627e",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/fashion/result.json": "613d6e45e4ee3caa7d2015152338544a22276b10b4a1ca0265300757fb0194b4",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/fashion/pfedme_dense_s20261241/result.json": "26f3f39d2dee280e5cdf93667be85444ec9af7de6b9954cfc27099c92511c2b4",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/fashion/pfedme_dense_s20261242/result.json": "ed5637051ca9c24b4418ed1a6c50ce0af910834d012a3f3f984ede4aabb84a3f",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/official_test/fashion/pfedme_dense_s20261243/result.json": "0ddcb12fe324d9c61b2fc57fd9318f5934818161a1bbfce4927608fd0ef9bb60",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/MODEL_LOCK.json": "8982b2aac66d9991b63508e17927e4b2f95b6a6dc3edf97af550ff95c619382b",
+    "/private/tmp/pr_lfl_route_a/03_\u82f1\u6587\u8bba\u6587/revision_artifacts/route_a_20261105/personalized_baseline/INDEPENDENT_SCORE_VERIFICATION.json": "1344433053709f864c759aa6340efd1bfb88f8c931814a8369b67040d70757da"
+  },
+  "new_training": 0,
+  "new_fits": 0,
+  "new_inference": 0,
+  "raw_test_reads": 0
+}

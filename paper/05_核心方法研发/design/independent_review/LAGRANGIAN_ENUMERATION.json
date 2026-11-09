@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "review_type": "independent local small-N exhaustive support check; not external cross-model audit",
+  "cases": 540,
+  "nonfallback_scalarized_cases": 540,
+  "feasible_but_not_exact_constrained_optimum_cases": 52,
+  "max_scaled_scalarization_argmax_gap": 0.0,
+  "max_relative_raw_lambda_conversion_error": 3.5151817898979446e-16,
+  "minimum_energy_ratio_minus_tau": 0.002659233353596524,
+  "minimum_actual_alignment_gain": 0.0,
+  "source_sha256": {
+    "lagrangian_codec.py": "2fbbe6a7afc8664ae6e40516e7978b4adf30830773e55899cdc41bdcb394eb2e",
+    "run_lagrangian.py": "b1df038d83adcce18e0aef1315f960f691a29c658d5ef03e8fe13e9811562178",
+    "check_lagrangian.py": "25ddc2cd1681015c817905bbd14d1f1b144f24c49a52005fce5a1c99c0891d24"
+  },
+  "elapsed_seconds": 0.32301608301349916,
+  "scope": "exact K, actual guards, raw lambda equivalence, scalarization argmax, final bisection bracket; no learning or test data used"
+}

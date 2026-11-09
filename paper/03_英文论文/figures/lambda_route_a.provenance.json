@@ -1,0 +1,150 @@
+{
+  "created_at": "2026-11-04T16:23:26.941078+00:00",
+  "figure": "lambda_route_a",
+  "destination": "Route A working manuscript in the user-selected svproc template; 122 mm text width. Final track requirements not independently asserted.",
+  "script": {
+    "delivery_relative_path": "figures/route_a_figures.py",
+    "relative_to": "03_英文论文",
+    "sha256": "b19043b2754f5a4c15fb9784e69e7b6e5a621fe62941ab4c08117f62c7b53aab"
+  },
+  "sources": [
+    {
+      "delivery_relative_path": "revision_artifacts/route_a_20261105/p1/plot_data.json",
+      "relative_to": "03_英文论文",
+      "temporary_source_path": "/private/tmp/pr_lfl_route_a/p1/plot_data.json",
+      "sha256": "01658e5779759c0aac67cdf38f4db22069cfd0506016bc9f9ee5877ea7d23ab1"
+    }
+  ],
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  },
+  "export": {
+    "format": "vector PDF",
+    "width_mm": 122.0,
+    "height_mm": 48,
+    "minimum_label_font_pt": 7.6,
+    "font": "DejaVu Sans; TrueType embedded",
+    "pdf_fonttype": 42,
+    "opaque_white_background": true,
+    "bbox_inches": null,
+    "embedded_image_xobjects": [],
+    "embedded_fonts": [
+      "/DOEIZL+DejaVuSans",
+      "/GKEONA+DejaVuSans"
+    ],
+    "canvas_text_overflow": []
+  },
+  "meaning": {
+    "title": "Finite prior-centered fits outperform the fixed-prior limit on development holdouts",
+    "data_split": "Existing development TRAIN logits for fitting and disjoint development holdout scoring; no official TEST parameter selection.",
+    "units": "Client-macro NLL, averaged over the same three original seeds per task.",
+    "uncertainty": "Mean ± sample SD across three predefined training seeds.",
+    "x_axis": "Finite0.1/1/10/100 values are equally spaced in log10; lambda0 and infinity have separated categorical positions. The curve connects finite sampled coefficients only.",
+    "zero_policy": "No finite minimizer at lambda0 because each client TRAIN set has absent classes; no score is plotted there. This is not a measured finite endpoint.",
+    "infinity_policy": "Independent square is the fixed prior-offset limit A=1,b=mu; no line bridges it to finite coefficients.",
+    "selected_coefficient": "Lambda10 was prespecified in the original evaluation and is marked, not selected or claimed optimal from this scan."
+  },
+  "plotted_values": {
+    "cifar": {
+      "coefficient": [
+        "0.1",
+        "1",
+        "10",
+        "100",
+        "inf"
+      ],
+      "macro_nll_mean": [
+        0.6102955642511588,
+        0.6109443257523476,
+        0.6124467807952949,
+        0.6193474480652659,
+        0.642072737251464
+      ],
+      "macro_nll_sd": [
+        0.013926733567335378,
+        0.01389686260515558,
+        0.013953828302370694,
+        0.01401482888194374,
+        0.014715702400191525
+      ],
+      "lambda0_status": "No finite minimizer (TRAIN-absent classes for every client)",
+      "seed_values": {
+        "20261231": [
+          0.597573214340916,
+          0.5981090337082662,
+          0.5992794845592393,
+          0.6058324697407632,
+          0.6277971223731085
+        ],
+        "20261232": [
+          0.6081385077333422,
+          0.6090214532728846,
+          0.6109882863713127,
+          0.6183962117001469,
+          0.6412288774453438
+        ],
+        "20261233": [
+          0.6251749706792185,
+          0.6257024902758921,
+          0.6270725714553328,
+          0.6338136627548876,
+          0.6571922119359395
+        ]
+      }
+    },
+    "fashion": {
+      "coefficient": [
+        "0.1",
+        "1",
+        "10",
+        "100",
+        "inf"
+      ],
+      "macro_nll_mean": [
+        0.16563262910842272,
+        0.16488810248852995,
+        0.166384147862216,
+        0.17240224083826974,
+        0.19771867789588896
+      ],
+      "macro_nll_sd": [
+        0.011656110150033658,
+        0.011857428773745862,
+        0.011603444259211398,
+        0.010983372947344427,
+        0.010666647617253578
+      ],
+      "lambda0_status": "No finite minimizer (TRAIN-absent classes for every client)",
+      "seed_values": {
+        "20261241": [
+          0.15217616160126748,
+          0.1511965686136789,
+          0.152988912126712,
+          0.15977993687270592,
+          0.18558429786201724
+        ],
+        "20261242": [
+          0.17212103896541361,
+          0.17166286069543318,
+          0.17282551708249158,
+          0.17764448531750376,
+          0.20195693727284897
+        ],
+        "20261243": [
+          0.17260068675858709,
+          0.17180487815647782,
+          0.17333801437744442,
+          0.17978230032459958,
+          0.20561479855280074
+        ]
+      }
+    }
+  },
+  "alt_text": "Two task panels show development holdout macro NLL for lambda0.1,1,10,100 with mean and sample-SD error bars across three original seeds. Lambda10 is circled as the prespecified setting. A separate square marks the fixed-prior infinity limit. Lambda0 has no plotted score and is labelled no finite minimum because every client TRAIN set lacks classes. No line connects the finite curve across either endpoint gap.",
+  "output": {
+    "path": "lambda_route_a.pdf",
+    "sha256": "904aa2c770e9d16456ae1d9209b612387468bbe955e3fe09a70c94c2d39e27a3",
+    "bytes": 19293
+  }
+}

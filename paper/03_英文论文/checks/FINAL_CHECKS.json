@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "language": "english",
+  "pdf_pages": 14,
+  "cited_references": 20,
+  "bibliography_inventory": 22,
+  "first_citation_order": [
+    "mcmahan2017fedavg",
+    "li2020fedprox",
+    "karimireddy2020scaffold",
+    "wang2020fednova",
+    "arivazhagan2019fedper",
+    "chen2022fedrod",
+    "menon2021logitadjust",
+    "ren2020balanced",
+    "zhang2022fedlc",
+    "guo2017calibration",
+    "alexandari2020labelshift",
+    "krizhevsky2009tiny",
+    "xiao2017fashion",
+    "rfc2104",
+    "peng2024fedcal",
+    "maddock2025privatecal",
+    "alistarh2017qsgd",
+    "stich2018sparsified",
+    "karimireddy2019errorfeedback",
+    "kim2020blockfl"
+  ],
+  "citation_numbering": "spmpsci_unsrt; temporary build aux and bbl independently checked against first occurrence",
+  "template_sha256": {
+    "svproc.cls": "c44824ffa40e21c2ce7f2bf706163fb977a10592795e4c057dee10e5e9f35163",
+    "spmpsci_unsrt.bst": "6e124ff8fefb465c38f0a45963f65b7256776daac851b20a2d41ec14969e59a7"
+  },
+  "english_abstract_words": 116,
+  "compile_errors_or_overflows": [],
+  "nonfatal_underfull_notices": [
+    "Underfull \\vbox (badness 2181) has occurred while \\output is active []",
+    "Underfull \\hbox (badness 6792) in paragraph at lines 10--16",
+    "Underfull \\hbox (badness 1917) in paragraph at lines 119--125",
+    "Underfull \\hbox (badness 4505) in paragraph at lines 119--125",
+    "Underfull \\hbox (badness 3323) in paragraph at lines 127--132",
+    "Underfull \\hbox (badness 2582) in paragraph at lines 127--132"
+  ],
+  "tables": {
+    "main": "3e80bc0f29cf1fa4ee805ce95a21e24054a95b185d6ea1e8b56fcfeb3e0ae5af",
+    "quality": "8d5a86463550776e8e4d13ed943c27f2e67c679cf1fdd651f7be64433f80bee7",
+    "reference": "6fd123044818c4ad93669cded0699b41e37738936db1a05f567a2a357f3950b9",
+    "training": "8a3d8f9e081cfba9c26dfcb5f5c85755faaa1b40792ac1bd6e1baeb929855637",
+    "seeds": "1c08e1022e8592f44963e0e41838e4ebf4f8975ae40317120f11e58df9251754"
+  },
+  "numbers": "Five fixed official TEST tables unchanged; development alignment probe, actual local EVM/HTTP learning integration and independent main-method image replay have separate scopes",
+  "visual_check": "Latest fourteen pages inspected; no overlap/clipping; original template preserved",
+  "scope": "user-selected 2026 BlockSys svproc kit reused for 2027 by explicit user instruction",
+  "external_cross_model_review": "REVIEW_UNAVAILABLE",
+  "independent_numerical_checks": [
+    "CIFAR PASS9/9",
+    "Fashion PASS9/9"
+  ],
+  "remaining_system_work": "No required technical work for the current scoped manuscript. Multi-node/public-chain production deployment and permanent-dropout liveness are optional extensions.",
+  "time": "2026-11-04T20:38:43+08:00",
+  "pdf_sha256": "42528d280c0003e11132f81752366849351513f25b0aac1a3f87a5a8e2d83e23",
+  "current_core_thesis": "A class-aligned TRAIN prior is a correctable local regularization center, decoupling compact prediction from low-bit shared training",
+  "new_evidence": {
+    "core_probe": {
+      "status": "PASS",
+      "checked": 256,
+      "failures": [],
+      "path_mapping": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/* -> /Users/wind/Desktop/Codex/paper/05_核心方法研发/results/*",
+      "result_sha256": "97c6dd1ea44c73c64d515c5b8449c8ebe309518a2955ff8bd8a7ccd756257d5b",
+      "actual_numeric_scope": {
+        "analysis_type": "exploratory development mechanism diagnostic",
+        "new_vector_fits": 120,
+        "tasks": [
+          "cifar",
+          "fashion"
+        ],
+        "official_test_reads": 0,
+        "interpretation": "The fixed class-alignment contrast on existing development data; no new final TEST, new model choice or independent client-replicate claim."
+      },
+      "numeric_validation": "recorded counts and audit fields only; experiment not rerun"
+    },
+    "learning_smoke": {
+      "status": "PASS",
+      "checked": 11,
+      "failures": [],
+      "path_mapping": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/* -> /Users/wind/Desktop/Codex/paper/05_核心方法研发/results/*",
+      "result_sha256": "8396e2bc79902ce90910ac7efb9c5e4bb680e2d973a3c1b2b8fdf96325ef7759",
+      "actual_numeric_scope": {
+        "scope": "Two original CIFAR clients, two fresh CPU full-local-epoch rounds with real TRAIN data; local durable-learning integration diagnostic",
+        "clients": [
+          0,
+          1
+        ],
+        "rounds": 2,
+        "checks_passed": 119,
+        "gradient_evaluations": 22,
+        "payload_bytes": 216268,
+        "application_bytes": 217640,
+        "limitations": [
+          "This is not a new predictive-quality seed/result and does not update any official TEST table.",
+          "Two-client renormalized participation is a system diagnostic, not the original twenty-client experiment.",
+          "Both arms deliberately use the existing durable protocol double arithmetic; no bitwise equivalence with original FP32/MPS main-experiment trajectories is claimed.",
+          "The smoke has real learning deltas and new quantization each round, rather than replayed historical payloads.",
+          "Reopen recovery discards Python objects and reopens SQLite; this run does not inject process kills or operating-system crashes.",
+          "No real network, ledger, consensus, embedded model watermark, poisoning resistance or honest-training proof is established.",
+          "HMAC keys, server, query/receipts and correct decoder remain trusted; record_id is an external upload identifier.",
+          "Time is observed CPU diagnostic wall time, not an isolated deployment performance benchmark."
+        ]
+      },
+      "numeric_validation": "recorded counts and audit fields only; experiment not rerun"
+    },
+    "chain_integration": {
+      "status": "PASS",
+      "checked": 14,
+      "failures": [],
+      "path_mapping": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/* -> /Users/wind/Desktop/Codex/paper/05_核心方法研发/results/*",
+      "result_sha256": "b6cb1f52a27ca1d8c5e118466efbd41c26ea24c89f10243f4be4faa9f55a3928",
+      "checks_passed": 128,
+      "gradient_evaluations": 22,
+      "rounds": 2,
+      "fresh_payloads": 4,
+      "registration_transactions": 4,
+      "learning_helper_cross_check": {
+        "sha256": "153d7dd8effb3817fb43f2c0bce04e25947ee7bd9e67f8d11be4dec2b32b4374",
+        "basis": "earlier smoke result and current bytes; delivery-time check, not chain pre-run pinning"
+      },
+      "rpc_counter_scope": "recorded bridge snapshot; not an independently replayed RPC trace",
+      "scope": "Two original CIFAR clients/two actual CPU TRAIN rounds over loopback HTTP and a real single-node local EVM development chain",
+      "limitations": [
+        "This diagnostic is not another main predictive-quality seed or twenty-client experiment.",
+        "Single-node Ganache development EVM with manually mined descendants does not establish PoW, multi-node consensus or public-chain finality.",
+        "The registry attests a binding of upload metadata/digest, not honest training, poisoning resistance or an embedded model watermark.",
+        "The server, its HMAC keys, SQLite incorporation authority, bridge/EVM endpoint and matching decoder remain trusted.",
+        "Fixed full participation retains OPEN/pending/old EF during a missing client; it resumes the same round when that client returns. Permanent dropout advancement is not implemented.",
+        "A chain registration never authorizes EF commit; only a fresh context-bound HMAC-SM3 INCORPORATED receipt does.",
+        "Recovery rebuilds the HTTP service and SQLite objects after deliberate connection closure; no process kill or OS crash was injected.",
+        "Float64 reference equivalence applies to this system profile, not to the original FP32/MPS main-training trajectory.",
+        "Observed loopback latency and gas are development diagnostic measurements, not production latency, throughput, network fees or consensus cost."
+      ],
+      "numeric_validation": "recorded hashes/counts/audits only; training/network/ledger not rerun"
+    },
+    "saved_inference_replay": {
+      "status": "PASS",
+      "checked": 291,
+      "failures": [],
+      "path_mapping": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/* -> /Users/wind/Desktop/Codex/paper/05_核心方法研发/results/*",
+      "result_sha256": "96ec5483cadf92668cd40ff97b71440f57f13832da729ac7eae450e8c2e6eae2",
+      "counts": {
+        "models": 6,
+        "client_seed_combinations": 120,
+        "cnn_forward_images": 60000,
+        "cnn_forward_batches": 240,
+        "official_test_raw_source_bytes": 35462776,
+        "new_training_rounds": 0,
+        "new_training_seeds": 0,
+        "new_fit_calls": 0,
+        "new_backward_calls": 0
+      },
+      "maximum_raw_abs_error": 0.0,
+      "maximum_main_summary_abs_error": 3.660266534311063e-16,
+      "scope": "Independent current-path CPU image -> original checkpoint -> raw logits -> locked prior-vector TEST metrics replay; no model selection",
+      "limitations": [
+        "Replays the fixed main fedlc_uniform3 raw network and prior-vector predictor only; reference methods and adapted Linear heads are not rerun.",
+        "Original TEST network inference used CPU even though shared model training used MPS; this replay is not a new training trajectory.",
+        "This is a local verification, not external cross-model review or real network/ledger validation."
+      ],
+      "numeric_validation": "recorded hashes/counts/tolerances only; inference not rerun"
+    }
+  },
+  "source_checks": {
+    "official_test_sources": 21,
+    "core_probe_sources": 256,
+    "learning_smoke_sources": 11,
+    "chain_integration_sources": 14,
+    "saved_inference_replay_sources": 291,
+    "all_match": true
+  },
+  "same_session_independent_review": "PASS for mechanism, EVM/HTTP learning result, image replay and final prose; not external cross-model review",
+  "pending_user_information": [
+    "Actual author names/order, affiliations and email",
+    "Final submission track and anonymity requirements"
+  ],
+  "real_ledger_executed": true,
+  "ledger_scope": "Single-node local Ganache EVM; canonical status/readback plus two manually mined descendant blocks; not public-chain finality"
+}

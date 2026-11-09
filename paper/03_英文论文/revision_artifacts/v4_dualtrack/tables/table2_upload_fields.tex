@@ -1,0 +1,11 @@
+\begin{table}[!htb]\centering\small
+\caption{The record binds transmitted context to ledger evidence and local learning state.}\label{tab:uploadfields}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.23\linewidth}p{0.32\linewidth}p{0.35\linewidth}}\toprule
+Role & Application / local state & Registry / receipt evidence\\\midrule
+Identity and freshness & Activity, client, round, record, nonce & Digests of activity/client/nonce; round; submitting account\\
+Model and decoder & Base-model digest, layout, codec and specification & Base-model, layout and specification digests\\
+Update content & Exact compressed payload and HMAC-SM3 tag & Authenticated-envelope digest and inclusion block\\
+Incorporation & Pending bytes, staged residual and generation & Authenticated session/challenge, state and result-model digest\\\bottomrule
+\end{tabular}
+\end{table}

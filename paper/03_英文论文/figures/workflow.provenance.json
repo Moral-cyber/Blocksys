@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-11-04T12:22:15.774166+00:00",
+  "figure": "workflow",
+  "destination": "User-supplied BlockSys svproc template; final figure width 122 mm",
+  "script": {
+    "path": "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/blocksys_template/figures.py",
+    "sha256": "b23b664dcbf5a223af8863cc1b25a605c7b9d562e73bba41658170b7cc5e0e3f"
+  },
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "skill": "/Users/wind/.codex/skills/scientific-visualization/SKILL.md"
+  },
+  "export": {
+    "png_dpi": 600,
+    "opaque_white": true,
+    "font": "DejaVu Sans",
+    "minimum_text_pt": 7.1,
+    "pdf_fonttype": 42,
+    "svg_text": "Editable text; font not embedded",
+    "physical_size_preserved": "bbox_inches=None"
+  },
+  "width_mm": 122.0,
+  "height_mm": 104.0,
+  "minimum_text_pt": 7.1,
+  "node_text_overflow": [],
+  "outputs": [
+    {
+      "path": "workflow.pdf",
+      "sha256": "728e98c029c154a7e4cca10c9cce1828f85870d56e2861cdb0c122daf1d7aa16",
+      "bytes": 27251
+    },
+    {
+      "path": "workflow.svg",
+      "sha256": "f195fa7835abc9951dda4c42bec4e16f05916fdd98de5f5c58464ea33a997228",
+      "bytes": 17610
+    },
+    {
+      "path": "workflow.png",
+      "sha256": "9f372007c8d558fcf2eea77e4046e36c4bcd966dcef8d8207ae0230809622e97",
+      "bytes": 396691
+    }
+  ],
+  "source_sha256": {
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/learning_protocol_smoke.py": "153d7dd8effb3817fb43f2c0bce04e25947ee7bd9e67f8d11be4dec2b32b4374",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/run_learning.py": "39eabe32b4325d33e1365c39d578bfa103659e22920548c7a74cc0234cca8524",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/network_service.py": "f21dcbd4ea498d4e83892ce6903fb1404510675be0c50035dfadb30a3be6d0d5",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/ledger_bridge.cjs": "b7b947419316f2bdb370efef9054f5dbd1cc53fdbcccde1287de7751b9b48244",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/chain_integration/UploadRegistry.sol": "8e51fc13e5a7b42eaca6194786edfa00ee7bfb0a5e7222c473612735e5c31744",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/scripts/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/repro/work/durable_integrity_v2/protocol.py": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51",
+    "05_\u6838\u5fc3\u65b9\u6cd5\u7814\u53d1/results/chain_integration/result.json": "b6cb1f52a27ca1d8c5e118466efbd41c26ea24c89f10243f4be4faa9f55a3928"
+  },
+  "evidence_boundary": "Two original CIFAR TRAIN clients over two fresh rounds passed 128 checks through loopback HTTP, four actual contract registration transactions on a single-node Ganache EVM, exact readback with two descendant blocks, SQLite incorporation and challenge-bound HMAC-SM3 receipts before EF commit. Service/database reopen and lost-ACK recovery reuse identical bytes. No multi-node consensus, public-chain finality, embedded watermark or distributed atomicity claim.",
+  "arithmetic_scope": "Main predictive runs use FP32 model / EF arithmetic. The integration uses float64 protocol residual subtraction, weighted aggregation and server state, with the existing codec casting effective updates and each training-round SmallCNN to FP32. It is an integration diagnostic, not a new predictive result or exact reproduction of the full FP32 predictive trajectory.",
+  "local_correction_scope": "The centered log-count TRAIN prior is a correctable ridge center, not a fixed inference shift. The frozen shared logits feed the local affine predictor with 20 retained FP32 parameters (80 bytes); no adaptation upload. This correction was evaluated in the full predictive experiments, not in the two-round integration; the connecting arrow states the architecture."
+}

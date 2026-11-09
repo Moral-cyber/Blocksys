@@ -1,0 +1,20 @@
+\begin{table}[!ht]
+\centering\small
+\caption{Every fixed training seed; differences compare prior vector with same-dimensional zero vector.}
+\label{tab:seeds}
+\begin{tabular}{lrrrr}
+\toprule
+Seed & Acc. (\%) & NLL & $\Delta$Acc. (pp) & $-\Delta$NLL\\
+\midrule
+\multicolumn{5}{l}{CIFAR-10}\\
+20261231 & 76.0956 & 0.632057 & +0.3741 & 0.034321\\
+20261232 & 75.6965 & 0.642482 & -0.1473 & 0.037891\\
+20261233 & 74.9120 & 0.659311 & +0.3063 & 0.035041\\
+\midrule
+\multicolumn{5}{l}{FashionMNIST}\\
+20261241 & 93.4697 & 0.175308 & +0.2781 & 0.016792\\
+20261242 & 92.6338 & 0.194890 & +0.1653 & 0.019176\\
+20261243 & 92.8185 & 0.193788 & +0.0756 & 0.018739\\
+\bottomrule
+\end{tabular}
+\end{table}

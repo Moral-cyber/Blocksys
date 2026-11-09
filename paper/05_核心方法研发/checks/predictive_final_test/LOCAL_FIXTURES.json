@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "10000 synthetic rows;1000 per class; no official TEST bytes or model inference",
+  "fixture_root": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/predictive_final_test_cpu_vfcj99i4",
+  "source_identities_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_final_test/FINAL_TEST_PLAN.md": "a188e4e566e22804df7a08e89fd5ce5e1f23264be48eb1231330d3ca803f40e4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_final_test/data.py": "0366aa408b22220a4098be8aa14abb672c7480b264a77e95145b10c9ee918412",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_final_test/scorer.py": "9bba7e92e142a6c6c101da99a26734257f0abcb9f46feb9c242ae7aacdf99041"
+  },
+  "assignment_hash": "b7b3a40d0ed8433c329ae5f9def1472a4af518fb55d7db62385a4bb30343d219",
+  "train_count_hash": "bb466eaf405f0796061d15449b3b44d71a034a5ed6a2e9c48ef4feedd844db9f",
+  "checks": [
+    "root-lock/execute closed before any TEST open",
+    "exact integer quota/remainder tie",
+    "all10000 assigned once",
+    "missing-TRAIN-class smoothing",
+    "deterministic per-class PCG64 replay",
+    "realized-vs-TRAIN frequency difference export",
+    "empty client explicit refusal",
+    "bounded in-memory CIFAR/IDX parsers and malformed rejection",
+    "both input normalizations",
+    "uniform/perfect/wrong stable metric known cases and confidence1 closed bin",
+    "complete FP32 states/no fitting",
+    "20client NPZ score/ID/GT/state export",
+    "fixed-three-seed sampleSD"
+  ],
+  "verified_final_score_elements": 1200000,
+  "recomputed_metric_max_error": 0.0,
+  "official_test_open_attempts": [],
+  "real_cnn_forwards": 0,
+  "cnn_backwards": 0,
+  "fit_calls": 0,
+  "root_lock_created": false,
+  "official_final_run_started": false,
+  "elapsed_seconds": 2.524578750017099,
+  "runtime": {
+    "python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 21:53:23) [Clang 21.1.8 ]",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "assignment_rng": "numpy.random.Generator(PCG64(SeedSequence([20261301,class_id])))",
+    "byte_order": "hash arrays explicitly little-endian; quota integer arithmetic"
+  },
+  "harness_sha256": "9c9dcf3d359d0e211f9aea31781c100f6e87daa0637a7065da155be8c24b31e8"
+}

@@ -1,0 +1,2568 @@
+{
+  "scope": "runtime sources, accompanying Markdown, exact partial-fusion warmup, fixed balanced config TRAIN identity reference and declared frozen security references; private test keys excluded",
+  "entries": [
+    "partial_fusion",
+    "receiver_feedback",
+    "normalized_sparse",
+    "shadow_training",
+    "mixed_precision",
+    "head_control",
+    "control_reference",
+    "balanced_quant",
+    "prior_bias",
+    "calibrated_lowbit_confirm",
+    "calibration_baselines",
+    "calibrated_fashion",
+    "prior_vector",
+    "predictive_pfl_confirm",
+    "calibrated_topk_reference",
+    "fedrod_linear_reference",
+    "predictive_final_test",
+    "predictive_manuscript"
+  ],
+  "external_runtime_inputs": {
+    "image_routes": "explicit project helpers and official CIFAR TRAIN cache; Fashion requires explicit two-TRAIN-gzip raw directory",
+    "prior_bias": "explicit original frozen model root and completed prior_personalization arrays; original absolute-path identity relationship retained",
+    "calibration_baselines": "explicit completed old-four or confirm-three saved-array result directory; no images or project needed",
+    "prior_vector": "explicit complete saved-array source and protocol PLAN/registration; no decision in generic evaluator",
+    "prospective": "copied immutable PLAN/registration/assessment and FedRoD source locks; every new route requires explicit operation and fresh outputs",
+    "checkpoint_portability": "source paths are signed; use fresh portable output, never rewrite or reuse an original-location checkpoint"
+  },
+  "security_entry": "work/durable_integrity_v2/test_protocol.py",
+  "prospective_source_pins": {
+    "work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "work/prior_vector/evaluate_saved.py": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05",
+    "work/predictive_pfl_confirm/assess.py": "bdb0bac2d4809d100e3112e1516e14d8f295c8dbe77fa4da34ce0543706b7b17"
+  },
+  "fedrod_locked_reference_hashes": {
+    "work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "work/balanced_quant/PLAN.md": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397",
+    "work/prior_personalization/sources/fedrod.html": "f20e9d08f1573c149998483d07e10b0305162795a2b134305af82fd3759710c7",
+    "work/prior_personalization/sources/fedrod.txt": "b33fbbd8f63cce4aa78067c9f95b79ebd9c01a4e8da3cfdbd287aada0a8025f3"
+  },
+  "security_upstream_hashes": {
+    "work/durable_integrity/protocol.py": "a55d75048dffffd2e8b20a63548688138769ef53d43b0cbe419a3767dc3240e6",
+    "work/durable_integrity/test_protocol.py": "40cbabb74a9883a1fc5390c0f77df89a07477e1a731114b9e416047849bbf420",
+    "work/durable_integrity/REPORT.md": "61247689ec81cb138caba7b04793382bb724bd1a24c22cc72d48bf861edf1435",
+    "work/durable_integrity/results/test_results.json": "2634633c2f457f2f345b49b9d7c22a098262775d7192cff5a068e279f8287b64",
+    "work/durable_integrity/results/durability_audit.json": "c490a0fcc8e11d9df7e19056fa1e46d51de2b1b6896a092e167d98796e1054e4",
+    "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "work/tinyproto_diag/tools/integrity_attack_matrix.py": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2"
+  },
+  "records": [
+    {
+      "source": "work/portable_final_stage.py",
+      "path": "final_stage.py",
+      "bytes": 2877,
+      "sha256": "c04a1ff18f4c53fa98f5da7ca0b5d11bb60a262b159814e3d8efd0364414a961"
+    },
+    {
+      "source": "work/feedback_portable_launch.py",
+      "path": "launch.py",
+      "bytes": 13050,
+      "sha256": "ff5bf19012474bf10b128ff40e3d5a032e13af52ab3b9e47c0efc0554a4308f6"
+    },
+    {
+      "source": "work/balanced_quant/LITERATURE_CHECK.md",
+      "path": "work/balanced_quant/LITERATURE_CHECK.md",
+      "bytes": 5015,
+      "sha256": "e4835206731c10b7f1d065e3d2b8b70397a1601d64390fcce60d4c1357b7ebbc"
+    },
+    {
+      "source": "work/balanced_quant/LOCAL_FIXTURES.md",
+      "path": "work/balanced_quant/LOCAL_FIXTURES.md",
+      "bytes": 5161,
+      "sha256": "f378ac254272d179501166549d97e64b7797fb6d00e35d20ff079323f6930a6a"
+    },
+    {
+      "source": "work/balanced_quant/LOCAL_RESULTS_CHECK.md",
+      "path": "work/balanced_quant/LOCAL_RESULTS_CHECK.md",
+      "bytes": 7845,
+      "sha256": "27755e3faea750d3b7e90219a3b8389c06c9136dc16cf4969d838698e5b7dec6"
+    },
+    {
+      "source": "work/balanced_quant/PLAN.md",
+      "path": "work/balanced_quant/PLAN.md",
+      "bytes": 2592,
+      "sha256": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397"
+    },
+    {
+      "source": "work/balanced_quant/STOP_DECISION.md",
+      "path": "work/balanced_quant/STOP_DECISION.md",
+      "bytes": 1157,
+      "sha256": "2ac6808cbba3d2a33c8e9a55e242124f791fe6437276f379ab3a977548f70422"
+    },
+    {
+      "source": "work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json",
+      "path": "work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json",
+      "bytes": 779177,
+      "sha256": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7"
+    },
+    {
+      "source": "work/balanced_quant/local_fixture_check.py",
+      "path": "work/balanced_quant/local_fixture_check.py",
+      "bytes": 18232,
+      "sha256": "a0631d9cc838b4bc3a3f0eaee43792315785fd887280799af130d9142d9465a4"
+    },
+    {
+      "source": "work/balanced_quant/run.py",
+      "path": "work/balanced_quant/run.py",
+      "bytes": 6735,
+      "sha256": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4"
+    },
+    {
+      "source": "work/balanced_quant/verify_results.py",
+      "path": "work/balanced_quant/verify_results.py",
+      "bytes": 26944,
+      "sha256": "41a6904e38ad90f2566253cf1fcaa4b44656a81ac4760a8beafdd12b6caff84a"
+    },
+    {
+      "source": "work/blocksys_template/COMPLIANCE_NOTE.md",
+      "path": "work/blocksys_template/COMPLIANCE_NOTE.md",
+      "bytes": 2395,
+      "sha256": "b2410f65525c2273e64d79cef0f23f0a4deeb45f771fa0ca2809b2367530593c"
+    },
+    {
+      "source": "work/blocksys_template/INDEPENDENT_ADAPTATION_REVIEW.md",
+      "path": "work/blocksys_template/INDEPENDENT_ADAPTATION_REVIEW.md",
+      "bytes": 1142,
+      "sha256": "1d2ada3481c4ce6084cc2c013d9be7e8a83362723ffc4337e1b10a956084adce"
+    },
+    {
+      "source": "work/blocksys_template/README.md",
+      "path": "work/blocksys_template/README.md",
+      "bytes": 2508,
+      "sha256": "eee081c6c125559219c14927ad1c605e2360bf8cbc667cf173b77245f7a0ae25"
+    },
+    {
+      "source": "work/blocksys_template/TEMPLATE_SHA256.json",
+      "path": "work/blocksys_template/TEMPLATE_SHA256.json",
+      "bytes": 178,
+      "sha256": "8882faba6c8f2fd57b2f9cbeaf1194a5670f4e508f976d06942f64b85c547e92"
+    },
+    {
+      "source": "work/blocksys_template/adapt.py",
+      "path": "work/blocksys_template/adapt.py",
+      "bytes": 14001,
+      "sha256": "0d280ea5ee80ca16127dd6f658096012db39b6545c6a30d3aed32b52d870d956"
+    },
+    {
+      "source": "work/blocksys_template/compact_sections.py",
+      "path": "work/blocksys_template/compact_sections.py",
+      "bytes": 5442,
+      "sha256": "3d278ec4efbdff63aa767cd2ea5f6f8816c4eecc8d5bf9ed0cc8d3ccd689e1ef"
+    },
+    {
+      "source": "work/blocksys_template/compile.py",
+      "path": "work/blocksys_template/compile.py",
+      "bytes": 1832,
+      "sha256": "bd927778de34a8b536750c06a6f9d25a292906ebcf1ab62ad3c59498f778612a"
+    },
+    {
+      "source": "work/blocksys_template/figures.py",
+      "path": "work/blocksys_template/figures.py",
+      "bytes": 17826,
+      "sha256": "0f403f5cf6977cb3ce268c6d1d719f5e3595a8d8d102502a59f14cf8e0b0bfde"
+    },
+    {
+      "source": "work/blocksys_template/refresh_bundle.py",
+      "path": "work/blocksys_template/refresh_bundle.py",
+      "bytes": 3482,
+      "sha256": "cdbbdc592b8d3979cdb810b02852e9da4847679ca5734af06f6e81432318efca"
+    },
+    {
+      "source": "work/blocksys_template/render.py",
+      "path": "work/blocksys_template/render.py",
+      "bytes": 2098,
+      "sha256": "c34f7929e25f25ccbea8b9b45ee0b75aecf5ff5d679bd46243a5508a459f6594"
+    },
+    {
+      "source": "work/blocksys_template/retrieval.json",
+      "path": "work/blocksys_template/retrieval.json",
+      "bytes": 363,
+      "sha256": "6b592b495444bc7d387a0443c036b3ebd1d822bc363eb292ee1db41041064f4b"
+    },
+    {
+      "source": "work/blocksys_template/tables.py",
+      "path": "work/blocksys_template/tables.py",
+      "bytes": 2557,
+      "sha256": "3518fb9feadf63e033d2019282408cec61e76dca1715967e7f5436c35b4c4cb0"
+    },
+    {
+      "source": "work/blocksys_template/template/spmpsci_unsrt.bst",
+      "path": "work/blocksys_template/template/spmpsci_unsrt.bst",
+      "bytes": 30491,
+      "sha256": "6e124ff8fefb465c38f0a45963f65b7256776daac851b20a2d41ec14969e59a7"
+    },
+    {
+      "source": "work/blocksys_template/template/svproc.cls",
+      "path": "work/blocksys_template/template/svproc.cls",
+      "bytes": 42969,
+      "sha256": "c44824ffa40e21c2ce7f2bf706163fb977a10592795e4c057dee10e5e9f35163"
+    },
+    {
+      "source": "work/calibrated_fashion/LOCAL_FIXTURES.md",
+      "path": "work/calibrated_fashion/LOCAL_FIXTURES.md",
+      "bytes": 5423,
+      "sha256": "c444b73da1b8254b2526e74a21bc3756186f222dadf306296c9819142e457952"
+    },
+    {
+      "source": "work/calibrated_fashion/PLAN.md",
+      "path": "work/calibrated_fashion/PLAN.md",
+      "bytes": 1619,
+      "sha256": "05963718ab8a59c647099511ae5d0290daf37ecb58b921b52ade85c8db5ffc0a"
+    },
+    {
+      "source": "work/calibrated_fashion/adapter.py",
+      "path": "work/calibrated_fashion/adapter.py",
+      "bytes": 7427,
+      "sha256": "624109d019433ed1983bdc810063cdd5fe46116f0896c9dd8636214d553915d2"
+    },
+    {
+      "source": "work/calibrated_fashion/evaluate.py",
+      "path": "work/calibrated_fashion/evaluate.py",
+      "bytes": 1657,
+      "sha256": "6776c9ed0492f7b171f5168fc6d851ee3a35e8d093f60a49790693b8c8713038"
+    },
+    {
+      "source": "work/calibrated_fashion/local_fixture_check.py",
+      "path": "work/calibrated_fashion/local_fixture_check.py",
+      "bytes": 9973,
+      "sha256": "95f88a6eff08e36c10802ae2663a0cf4ebd52cd9a38fca1eda00a6f214d28d1a"
+    },
+    {
+      "source": "work/calibrated_fashion/train.py",
+      "path": "work/calibrated_fashion/train.py",
+      "bytes": 1221,
+      "sha256": "23b8d617c844ce2fc5b34fd3a82da95cd895ecb334c4be0ec3a4296863a3a777"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/LOCAL_CHECK.md",
+      "path": "work/calibrated_lowbit_confirm/LOCAL_CHECK.md",
+      "bytes": 1639,
+      "sha256": "2e730d91d218081facbf305396964f210dfc9514bb69bc0dadddf7b1d7aacbe0"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/LOCAL_FIXTURES.md",
+      "path": "work/calibrated_lowbit_confirm/LOCAL_FIXTURES.md",
+      "bytes": 5868,
+      "sha256": "721467c5c869f611c49532533da1e91c76bd52e1609355c493dfecba7e8b5b87"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/PLAN.md",
+      "path": "work/calibrated_lowbit_confirm/PLAN.md",
+      "bytes": 2168,
+      "sha256": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/common.py",
+      "path": "work/calibrated_lowbit_confirm/common.py",
+      "bytes": 6883,
+      "sha256": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/evaluate.py",
+      "path": "work/calibrated_lowbit_confirm/evaluate.py",
+      "bytes": 11382,
+      "sha256": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/local_fixture_check.py",
+      "path": "work/calibrated_lowbit_confirm/local_fixture_check.py",
+      "bytes": 14582,
+      "sha256": "062f2c7491b4205f88aec4880ab34be1d30d2d4ef04cfe1fa3977b0c3c4d92e8"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/train.py",
+      "path": "work/calibrated_lowbit_confirm/train.py",
+      "bytes": 7031,
+      "sha256": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/verify_independent.py",
+      "path": "work/calibrated_lowbit_confirm/verify_independent.py",
+      "bytes": 38123,
+      "sha256": "f5db4270a7b6b9d280fdeba68e165467e62c0e1ac556724f0fab94c5c9237b1c"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/verify_seed.py",
+      "path": "work/calibrated_lowbit_confirm/verify_seed.py",
+      "bytes": 5027,
+      "sha256": "ef7486d9164b8369729c29fd16657d4f57a3e3c5938a6faa29f52c29a78c4558"
+    },
+    {
+      "source": "work/calibrated_topk_reference/LOCAL_FIXTURES.md",
+      "path": "work/calibrated_topk_reference/LOCAL_FIXTURES.md",
+      "bytes": 5031,
+      "sha256": "e8ec023c4618fa0edadfb0cfbcf9bf1728318fcf895069b38403568a647038f1"
+    },
+    {
+      "source": "work/calibrated_topk_reference/PLAN.md",
+      "path": "work/calibrated_topk_reference/PLAN.md",
+      "bytes": 1954,
+      "sha256": "b0daad197d50f71c4d18e3ea3d12878192ab9705a3d6b6179479048e8c6d7130"
+    },
+    {
+      "source": "work/calibrated_topk_reference/PROSPECTIVE_FIXTURES.md",
+      "path": "work/calibrated_topk_reference/PROSPECTIVE_FIXTURES.md",
+      "bytes": 4329,
+      "sha256": "e9e164549daf0bd1c52e218bd46617957caf76126eb2f68a38f429a1ec9e427d"
+    },
+    {
+      "source": "work/calibrated_topk_reference/SAVED_PRIOR_VECTOR_FIXTURES.md",
+      "path": "work/calibrated_topk_reference/SAVED_PRIOR_VECTOR_FIXTURES.md",
+      "bytes": 1788,
+      "sha256": "21a8c7d56c2e16ab80b3ece1504dfa5a160ea2c6747cd8fa6d7bd0083e19dea0"
+    },
+    {
+      "source": "work/calibrated_topk_reference/common.py",
+      "path": "work/calibrated_topk_reference/common.py",
+      "bytes": 2468,
+      "sha256": "37976f773cbaca44ee444d95091cb77cb916e06a9943837dbbee8586425a4a58"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluate.py",
+      "path": "work/calibrated_topk_reference/evaluate.py",
+      "bytes": 8473,
+      "sha256": "22cec15467ae06629c361a8f510da45cc1637bdf2ef1242db42169c88dbb3e8c"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluate_saved_prior_vector.py",
+      "path": "work/calibrated_topk_reference/evaluate_saved_prior_vector.py",
+      "bytes": 5852,
+      "sha256": "867b7145c934978be60c7f406b9e1d1b46b0fb27cd3dc7dd164f62a37da858a4"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluate_saved_prior_vector_fixture.py",
+      "path": "work/calibrated_topk_reference/evaluate_saved_prior_vector_fixture.py",
+      "bytes": 17653,
+      "sha256": "e518716f918b536ca16e2c7fce2b5ef0735d8d2b08379be7cb2d88ba3ae2e501"
+    },
+    {
+      "source": "work/calibrated_topk_reference/local_fixture_check.py",
+      "path": "work/calibrated_topk_reference/local_fixture_check.py",
+      "bytes": 16053,
+      "sha256": "11a6b0341a01bace9fda83748d83456e3051a1f3dae783c4e32466af6a0d441f"
+    },
+    {
+      "source": "work/calibrated_topk_reference/prospective.py",
+      "path": "work/calibrated_topk_reference/prospective.py",
+      "bytes": 5110,
+      "sha256": "af3e654d1c9f7710d10096d12419a92eedb3e962583a4d1c7774fd546d95f1d4"
+    },
+    {
+      "source": "work/calibrated_topk_reference/prospective_evaluate.py",
+      "path": "work/calibrated_topk_reference/prospective_evaluate.py",
+      "bytes": 2971,
+      "sha256": "83e97c50d770da661861f8e982164973883e2a45a186bbce602c97a7ca4e7bd3"
+    },
+    {
+      "source": "work/calibrated_topk_reference/prospective_fixture_check.py",
+      "path": "work/calibrated_topk_reference/prospective_fixture_check.py",
+      "bytes": 8478,
+      "sha256": "a0b72ed40f1d65e058e89ea6b3fe7b48fb24e0ae15b113f50f54991bced91f45"
+    },
+    {
+      "source": "work/calibrated_topk_reference/train.py",
+      "path": "work/calibrated_topk_reference/train.py",
+      "bytes": 6961,
+      "sha256": "13d8538e671302e1f8ec891fea3f0b87c6cb6a996774222aef4d36856946affe"
+    },
+    {
+      "source": "work/calibrated_topk_reference/wire.py",
+      "path": "work/calibrated_topk_reference/wire.py",
+      "bytes": 2713,
+      "sha256": "6bf9856e73fba6d601bbcd8ce19cb9ec3bdfe09f17e58ca79e0faef000c86693"
+    },
+    {
+      "source": "work/calibration_baselines/LOCAL_FIXTURES.md",
+      "path": "work/calibration_baselines/LOCAL_FIXTURES.md",
+      "bytes": 1417,
+      "sha256": "5b68a74625750abac9e2b4c9a31a6f75bda700fc566262e0a16f8bc8b0836297"
+    },
+    {
+      "source": "work/calibration_baselines/LOCAL_INDEPENDENT_CHECK.md",
+      "path": "work/calibration_baselines/LOCAL_INDEPENDENT_CHECK.md",
+      "bytes": 1541,
+      "sha256": "4a935bbec31c9894d2c06bc5146f83b65dacdaed762b1b5e80377d63764805b3"
+    },
+    {
+      "source": "work/calibration_baselines/PLAN.md",
+      "path": "work/calibration_baselines/PLAN.md",
+      "bytes": 2169,
+      "sha256": "33864fe167b461f5d9d7aa8777b932fdfecc752f9553fda14d1fb23c8ad091a9"
+    },
+    {
+      "source": "work/calibration_baselines/REPORT.md",
+      "path": "work/calibration_baselines/REPORT.md",
+      "bytes": 5775,
+      "sha256": "5a40dedcf93037f9c40f897f2f035044546ca9e15bca325ccff80a68d791e528"
+    },
+    {
+      "source": "work/calibration_baselines/independent_numpy_check.py",
+      "path": "work/calibration_baselines/independent_numpy_check.py",
+      "bytes": 25164,
+      "sha256": "581c7bfefbd191304fcc391d4a8877a0dc1ae717e52d4abf05fc57e723f5131d"
+    },
+    {
+      "source": "work/calibration_baselines/local_fixture_check.py",
+      "path": "work/calibration_baselines/local_fixture_check.py",
+      "bytes": 4977,
+      "sha256": "8acc5d9cabeb0094b2311f1b61e8dc5b401b0db8b8300fd967b2e8370285165a"
+    },
+    {
+      "source": "work/calibration_baselines/probe.py",
+      "path": "work/calibration_baselines/probe.py",
+      "bytes": 9534,
+      "sha256": "d1fab28871824163a6d2fc2ee44e043698537b00dabc0e02af2618531adcd0c7"
+    },
+    {
+      "source": "work/calibration_baselines/score_quality.py",
+      "path": "work/calibration_baselines/score_quality.py",
+      "bytes": 7567,
+      "sha256": "5f14f01a25f64c9ed495214aa57f4277370f315ce08b7686b985faa03666fc98"
+    },
+    {
+      "source": "work/calibration_baselines/solver.py",
+      "path": "work/calibration_baselines/solver.py",
+      "bytes": 10345,
+      "sha256": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c"
+    },
+    {
+      "source": "work/calibration_baselines/verify_quality_independent.py",
+      "path": "work/calibration_baselines/verify_quality_independent.py",
+      "bytes": 12249,
+      "sha256": "9be6eb929b0a16b472f90123e53eab815620b1c1de43549395864d0e894b8517"
+    },
+    {
+      "source": "work/control_reference/LOCAL_FIXTURES.md",
+      "path": "work/control_reference/LOCAL_FIXTURES.md",
+      "bytes": 5882,
+      "sha256": "1d67487b197f389fbf67e7ebcd8bdceb1f65a51f2e90529acc1f6d8376ef8613"
+    },
+    {
+      "source": "work/control_reference/LOCAL_RESULTS_CHECK.md",
+      "path": "work/control_reference/LOCAL_RESULTS_CHECK.md",
+      "bytes": 7031,
+      "sha256": "ba007111c9f54904fe26bc254bb87c9b21d12aa8211b4d71844bb7da7aeddd75"
+    },
+    {
+      "source": "work/control_reference/PLAN.md",
+      "path": "work/control_reference/PLAN.md",
+      "bytes": 1815,
+      "sha256": "d67374ec7621b9977b345be85c464b23c10192745f27c03d133576b1187b97db"
+    },
+    {
+      "source": "work/control_reference/SCAFCOM_RECONSTRUCTION.md",
+      "path": "work/control_reference/SCAFCOM_RECONSTRUCTION.md",
+      "bytes": 2024,
+      "sha256": "48d43e360a06128a05fc46fc5de6c36bb0160f3f13b63993fd7d160a551eb087"
+    },
+    {
+      "source": "work/control_reference/local_fixture_check.py",
+      "path": "work/control_reference/local_fixture_check.py",
+      "bytes": 16641,
+      "sha256": "dce8df5f3255914eca4ea9e90714479bebfd084ebb2f2ef705a590c224c572cb"
+    },
+    {
+      "source": "work/control_reference/run.py",
+      "path": "work/control_reference/run.py",
+      "bytes": 13937,
+      "sha256": "5a6f1376c6e5b997cd05a044fbc52060382484e80118314f8599d2ff13490223"
+    },
+    {
+      "source": "work/control_reference/verify_results.py",
+      "path": "work/control_reference/verify_results.py",
+      "bytes": 23308,
+      "sha256": "5fe05fa5f7206822855078dbaefaa1baa736e7d349a2f22569645ef7586595c6"
+    },
+    {
+      "source": "work/durable_integrity/REPORT.md",
+      "path": "work/durable_integrity/REPORT.md",
+      "bytes": 6161,
+      "sha256": "61247689ec81cb138caba7b04793382bb724bd1a24c22cc72d48bf861edf1435"
+    },
+    {
+      "source": "work/durable_integrity/protocol.py",
+      "path": "work/durable_integrity/protocol.py",
+      "bytes": 24932,
+      "sha256": "a55d75048dffffd2e8b20a63548688138769ef53d43b0cbe419a3767dc3240e6"
+    },
+    {
+      "source": "work/durable_integrity/results/durability_audit.json",
+      "path": "work/durable_integrity/results/durability_audit.json",
+      "bytes": 24894,
+      "sha256": "c490a0fcc8e11d9df7e19056fa1e46d51de2b1b6896a092e167d98796e1054e4"
+    },
+    {
+      "source": "work/durable_integrity/results/test_results.json",
+      "path": "work/durable_integrity/results/test_results.json",
+      "bytes": 22635,
+      "sha256": "2634633c2f457f2f345b49b9d7c22a098262775d7192cff5a068e279f8287b64"
+    },
+    {
+      "source": "work/durable_integrity/test_protocol.py",
+      "path": "work/durable_integrity/test_protocol.py",
+      "bytes": 28907,
+      "sha256": "40cbabb74a9883a1fc5390c0f77df89a07477e1a731114b9e416047849bbf420"
+    },
+    {
+      "source": "work/durable_integrity_v2/REPORT.md",
+      "path": "work/durable_integrity_v2/REPORT.md",
+      "bytes": 6994,
+      "sha256": "5ac8e851ea51d1b83ef413bb319856b35c426d12b2b52f2ba40329fed278cec2"
+    },
+    {
+      "source": "work/durable_integrity_v2/protocol.py",
+      "path": "work/durable_integrity_v2/protocol.py",
+      "bytes": 27366,
+      "sha256": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51"
+    },
+    {
+      "source": "work/durable_integrity_v2/specs/frozen-mixed-precision-v1.json",
+      "path": "work/durable_integrity_v2/specs/frozen-mixed-precision-v1.json",
+      "bytes": 1561,
+      "sha256": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226"
+    },
+    {
+      "source": "work/durable_integrity_v2/specs/synthetic-sparse-q8-v1.json",
+      "path": "work/durable_integrity_v2/specs/synthetic-sparse-q8-v1.json",
+      "bytes": 1157,
+      "sha256": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec"
+    },
+    {
+      "source": "work/durable_integrity_v2/test_protocol.py",
+      "path": "work/durable_integrity_v2/test_protocol.py",
+      "bytes": 38045,
+      "sha256": "b27894b2e07fbc52b083dbbeece15e0cd871db770af27ab0fe46cb385c7b3974"
+    },
+    {
+      "source": "work/durable_integrity_v2/upstream_hashes_before.json",
+      "path": "work/durable_integrity_v2/upstream_hashes_before.json",
+      "bytes": 806,
+      "sha256": "4320dc1ceff21a8e927ec1e2c3923333c6a58692de8cbd454c05ddd0b1b5d45c"
+    },
+    {
+      "source": "work/fedrod_linear_reference/EXPORT_QUALITY_FIXTURES.md",
+      "path": "work/fedrod_linear_reference/EXPORT_QUALITY_FIXTURES.md",
+      "bytes": 4391,
+      "sha256": "efe5d7418acef16ba23c50f4465852c780a0de20ae807b71fd0a3394aee2efd9"
+    },
+    {
+      "source": "work/fedrod_linear_reference/LOCAL_FIXTURES.md",
+      "path": "work/fedrod_linear_reference/LOCAL_FIXTURES.md",
+      "bytes": 1533,
+      "sha256": "11521da0570d85fcb8bf2c1e6bd0345b165c080ca352cf882ebd8d84c58292cc"
+    },
+    {
+      "source": "work/fedrod_linear_reference/PLAN.md",
+      "path": "work/fedrod_linear_reference/PLAN.md",
+      "bytes": 4773,
+      "sha256": "c5817d080e4ac55ba9a3ea8a4739b1885ba33a84a26be5056e97aed51eacd895"
+    },
+    {
+      "source": "work/fedrod_linear_reference/PROSPECTIVE_FIXTURES.md",
+      "path": "work/fedrod_linear_reference/PROSPECTIVE_FIXTURES.md",
+      "bytes": 1330,
+      "sha256": "38eee5aee906a831fd2cf1c0d5f6df13471804a6d7c868d5bce9f62b2b5098b6"
+    },
+    {
+      "source": "work/fedrod_linear_reference/SOURCE_LOCK.json",
+      "path": "work/fedrod_linear_reference/SOURCE_LOCK.json",
+      "bytes": 1462,
+      "sha256": "2303784cf1288bdc3798577049b39d12acb99b87eed5c5eebfc857aab15df904"
+    },
+    {
+      "source": "work/fedrod_linear_reference/export_quality.py",
+      "path": "work/fedrod_linear_reference/export_quality.py",
+      "bytes": 12866,
+      "sha256": "294aa4356fb0b335c83dbf07bab2003c972708f5e129178208088cba332b1dae"
+    },
+    {
+      "source": "work/fedrod_linear_reference/export_quality_fixture.py",
+      "path": "work/fedrod_linear_reference/export_quality_fixture.py",
+      "bytes": 9008,
+      "sha256": "71f8f4a324816cd13c6fde39149192ce932d4f8efae193643d1611db6190ee2a"
+    },
+    {
+      "source": "work/fedrod_linear_reference/local_fixture_check.py",
+      "path": "work/fedrod_linear_reference/local_fixture_check.py",
+      "bytes": 21983,
+      "sha256": "428b5f3857c9489bfc1b475cb92d8a0c54aabaaf63bda9f9ecf7f6c01c497508"
+    },
+    {
+      "source": "work/fedrod_linear_reference/prospective.py",
+      "path": "work/fedrod_linear_reference/prospective.py",
+      "bytes": 5797,
+      "sha256": "9e7325bd8de7c6d3cd32a2dbf060521d1e073d1c1fc86520411fb34e6b7ef501"
+    },
+    {
+      "source": "work/fedrod_linear_reference/prospective_fixture_check.py",
+      "path": "work/fedrod_linear_reference/prospective_fixture_check.py",
+      "bytes": 15927,
+      "sha256": "5226914b044bec2be15f44b12f241ce3266490b33c939c8a6206027b0989b593"
+    },
+    {
+      "source": "work/fedrod_linear_reference/reference.py",
+      "path": "work/fedrod_linear_reference/reference.py",
+      "bytes": 15989,
+      "sha256": "3649edec016ac3b06005a624bbf2dcea22d23965d53637b8ec36875b5be74dfc"
+    },
+    {
+      "source": "work/fedrod_linear_reference/train.py",
+      "path": "work/fedrod_linear_reference/train.py",
+      "bytes": 11939,
+      "sha256": "7ff112e2e3f5575835d1c0358e501a4815231fb6572be0ef33b148dc05eaac70"
+    },
+    {
+      "source": "work/head_control/LITERATURE_CHECK.md",
+      "path": "work/head_control/LITERATURE_CHECK.md",
+      "bytes": 2586,
+      "sha256": "029470ff29b6a6687dd8bb31d09c6263a9119ca271d24b078c716992a6a1ee1f"
+    },
+    {
+      "source": "work/head_control/LOCAL_FIXTURES.md",
+      "path": "work/head_control/LOCAL_FIXTURES.md",
+      "bytes": 5602,
+      "sha256": "0f25220c68572fd704130f2e80b3d7f6907042053bb31c15ebd9a3a5e6659dd7"
+    },
+    {
+      "source": "work/head_control/LOCAL_RESULTS_CHECK.md",
+      "path": "work/head_control/LOCAL_RESULTS_CHECK.md",
+      "bytes": 6237,
+      "sha256": "8640088bf4b8c716c153d958eedb18c761feb3c0d973faf9f9ab86384faabdbb"
+    },
+    {
+      "source": "work/head_control/PLAN.md",
+      "path": "work/head_control/PLAN.md",
+      "bytes": 2994,
+      "sha256": "31b014425b47eb7af3fe36c51d755246e57127ebed68034f4e02572db277b48e"
+    },
+    {
+      "source": "work/head_control/STOP_DECISION.md",
+      "path": "work/head_control/STOP_DECISION.md",
+      "bytes": 1345,
+      "sha256": "791f17614374c2c8c864157544e79bc488c3a6c01f0937ecb922fc73f9309626"
+    },
+    {
+      "source": "work/head_control/fetch_originals.py",
+      "path": "work/head_control/fetch_originals.py",
+      "bytes": 1141,
+      "sha256": "9bc7dd88259886b52791ffdc7ca48640f67f0d866f0577f612d6a5013c1c8e4d"
+    },
+    {
+      "source": "work/head_control/fetch_primary.py",
+      "path": "work/head_control/fetch_primary.py",
+      "bytes": 1444,
+      "sha256": "8b4a6808922fbb5bef8058d6fe0ccbc89b35392301bc4557d2ccceea358f151f"
+    },
+    {
+      "source": "work/head_control/fetch_searches.py",
+      "path": "work/head_control/fetch_searches.py",
+      "bytes": 1486,
+      "sha256": "fb60b83956b3855559528128f407e062e881a01da4f1bbad3a015bd8c37e4239"
+    },
+    {
+      "source": "work/head_control/local_fixture_check.py",
+      "path": "work/head_control/local_fixture_check.py",
+      "bytes": 14700,
+      "sha256": "1cf78ded0bb0b64e8924c0ac2d17a982a09072a9f1b156223222da557ec095a8"
+    },
+    {
+      "source": "work/head_control/run.py",
+      "path": "work/head_control/run.py",
+      "bytes": 9906,
+      "sha256": "8ee487ea523ee772a99e3555174cc9f41d2c9e1ade300f58b3df778562c63b82"
+    },
+    {
+      "source": "work/head_control/verify_results.py",
+      "path": "work/head_control/verify_results.py",
+      "bytes": 25634,
+      "sha256": "56ca40c84d02d70d297dbbb52da9b96e12661fbcaaae4078edfdfdfbd44c1e8e"
+    },
+    {
+      "source": "work/method_followup/benchmark_codec.py",
+      "path": "work/method_followup/benchmark_codec.py",
+      "bytes": 21817,
+      "sha256": "369b8a997e889915c2bfc636b3659a518746430048dfbef2f627ea4eef128dc4"
+    },
+    {
+      "source": "work/method_followup/check_accelerated.py",
+      "path": "work/method_followup/check_accelerated.py",
+      "bytes": 7893,
+      "sha256": "9659643dc9bd2fdf632c09c2468d4c77196a62175ec3d3a2e3b423c9f0f98dda"
+    },
+    {
+      "source": "work/method_followup/check_checkpoint_probe.py",
+      "path": "work/method_followup/check_checkpoint_probe.py",
+      "bytes": 8275,
+      "sha256": "fbc25d09e8466e1ded54a4e5dd0e2cb353e19bea1371939d93e38c9dff8ad398"
+    },
+    {
+      "source": "work/method_followup/check_confirmatory_and_batch.py",
+      "path": "work/method_followup/check_confirmatory_and_batch.py",
+      "bytes": 6059,
+      "sha256": "e9116d441893509dc6acd4e31980320a327e31e8b3db75e300dc417bfbb4d765"
+    },
+    {
+      "source": "work/method_followup/check_controls.py",
+      "path": "work/method_followup/check_controls.py",
+      "bytes": 10331,
+      "sha256": "bacf931869a6593c17abec7a936c0aae804af05e6acd0cf513ae7c26d3d98bf3"
+    },
+    {
+      "source": "work/method_followup/check_guarded_codec.py",
+      "path": "work/method_followup/check_guarded_codec.py",
+      "bytes": 5904,
+      "sha256": "81b691d7819e647bde510e976ad9f6d0a5a4a8db884c3aacc3269ba1c9d8b934"
+    },
+    {
+      "source": "work/method_followup/check_lagrangian.py",
+      "path": "work/method_followup/check_lagrangian.py",
+      "bytes": 7516,
+      "sha256": "25ddc2cd1681015c817905bbd14d1f1b144f24c49a52005fce5a1c99c0891d24"
+    },
+    {
+      "source": "work/method_followup/check_launch.py",
+      "path": "work/method_followup/check_launch.py",
+      "bytes": 3546,
+      "sha256": "70bf4f917bae2db71e91dec4b118ac63437948198744adff75566048b42c5876"
+    },
+    {
+      "source": "work/method_followup/check_membership.py",
+      "path": "work/method_followup/check_membership.py",
+      "bytes": 3653,
+      "sha256": "939d41874c30a659a896a46d2dc3fa300583d8e9bf57f77869b0f580c0408a42"
+    },
+    {
+      "source": "work/method_followup/check_oracle_replay_artifacts.py",
+      "path": "work/method_followup/check_oracle_replay_artifacts.py",
+      "bytes": 3648,
+      "sha256": "73e2f664e96ee8e6eca735179d9d519d1feb40e6371e3015250964bc239dd93d"
+    },
+    {
+      "source": "work/method_followup/check_replay_oracle_probe.py",
+      "path": "work/method_followup/check_replay_oracle_probe.py",
+      "bytes": 468,
+      "sha256": "d725d278bb738a824f99fd5ca27c8596143fec88fe90d814c7eb5c63d3cdad42"
+    },
+    {
+      "source": "work/method_followup/guarded_codec.py",
+      "path": "work/method_followup/guarded_codec.py",
+      "bytes": 9963,
+      "sha256": "3dcb6636f12d6dc17fe023a978a9016ce10593ed3da5472b1ad498a33b8c948e"
+    },
+    {
+      "source": "work/method_followup/lagrangian_codec.py",
+      "path": "work/method_followup/lagrangian_codec.py",
+      "bytes": 7462,
+      "sha256": "2fbbe6a7afc8664ae6e40516e7978b4adf30830773e55899cdc41bdcb394eb2e"
+    },
+    {
+      "source": "work/method_followup/launch.py",
+      "path": "work/method_followup/launch.py",
+      "bytes": 8530,
+      "sha256": "6108663ca1e8e0366784875c517b6c91a844719b84f1cf232b42f4bb5a901c27"
+    },
+    {
+      "source": "work/method_followup/prepare_fashionmnist.py",
+      "path": "work/method_followup/prepare_fashionmnist.py",
+      "bytes": 4632,
+      "sha256": "0b230c576a5e21a99fb04338f62e170a1b322d3b820b599c5eb1404c00a1edcb"
+    },
+    {
+      "source": "work/method_followup/probe_checkpoint.py",
+      "path": "work/method_followup/probe_checkpoint.py",
+      "bytes": 8958,
+      "sha256": "7d448dd031ef6cf7a0f0a3dd3d721782353618a886f97b10adcabacbbc1afdc0"
+    },
+    {
+      "source": "work/method_followup/probe_sparse_repair.py",
+      "path": "work/method_followup/probe_sparse_repair.py",
+      "bytes": 18832,
+      "sha256": "2ad6ad8d7c4a7856cc7c31628d17e11a90076ede1acbcfe246bd59f80708ade8"
+    },
+    {
+      "source": "work/method_followup/replay_oracle_probe.py",
+      "path": "work/method_followup/replay_oracle_probe.py",
+      "bytes": 22531,
+      "sha256": "52a0aa814c9b7e69247f375a9565f7955f1d51173e537906d554272cc077e399"
+    },
+    {
+      "source": "work/method_followup/replay_oracle_probe_v2.py",
+      "path": "work/method_followup/replay_oracle_probe_v2.py",
+      "bytes": 12120,
+      "sha256": "9bd571f9f90c8f8176143c1ea2ba2f15a0cbecc01bebad959452ee7f70dcdfa7"
+    },
+    {
+      "source": "work/method_followup/run_accelerated.py",
+      "path": "work/method_followup/run_accelerated.py",
+      "bytes": 13954,
+      "sha256": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a"
+    },
+    {
+      "source": "work/method_followup/run_batch.py",
+      "path": "work/method_followup/run_batch.py",
+      "bytes": 8199,
+      "sha256": "10218ff19dd10089a9933bbb5656f48c6e3aad4400aed697e217e6dd16eba5ca"
+    },
+    {
+      "source": "work/method_followup/run_controls.py",
+      "path": "work/method_followup/run_controls.py",
+      "bytes": 17267,
+      "sha256": "0ec1485702bcfe8293f90e99f46bdb9f363cad43b7f457a95e342260b4b0d881"
+    },
+    {
+      "source": "work/method_followup/run_fashion.py",
+      "path": "work/method_followup/run_fashion.py",
+      "bytes": 18802,
+      "sha256": "f87e281acaf9a46a62eb31be588c9505ea7bb53c67162fd8fcf2ccc3440111d4"
+    },
+    {
+      "source": "work/method_followup/run_followup.py",
+      "path": "work/method_followup/run_followup.py",
+      "bytes": 16591,
+      "sha256": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d"
+    },
+    {
+      "source": "work/method_followup/run_lagrangian.py",
+      "path": "work/method_followup/run_lagrangian.py",
+      "bytes": 3623,
+      "sha256": "b1df038d83adcce18e0aef1315f960f691a29c658d5ef03e8fe13e9811562178"
+    },
+    {
+      "source": "work/method_followup/run_partitions.py",
+      "path": "work/method_followup/run_partitions.py",
+      "bytes": 13813,
+      "sha256": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6"
+    },
+    {
+      "source": "work/method_followup/summarize_accelerated.py",
+      "path": "work/method_followup/summarize_accelerated.py",
+      "bytes": 3414,
+      "sha256": "1024f4e005d08927a1b9db549d7ffeff90f9df241ab7d674a97664f27b72e54e"
+    },
+    {
+      "source": "work/method_followup/summarize_confirmatory.py",
+      "path": "work/method_followup/summarize_confirmatory.py",
+      "bytes": 15205,
+      "sha256": "167fa3857cc3a9b05361af1177e129155d8f580f2428475e4098f45acafd6ed0"
+    },
+    {
+      "source": "work/method_followup/summarize_followup.py",
+      "path": "work/method_followup/summarize_followup.py",
+      "bytes": 20374,
+      "sha256": "0bc5f770f2f8226cdf201c1fffc5678b4463257a5d27f1897368b7b12a95b56a"
+    },
+    {
+      "source": "work/mixed_precision/EXPERIMENT_PLAN.md",
+      "path": "work/mixed_precision/EXPERIMENT_PLAN.md",
+      "bytes": 3750,
+      "sha256": "7ccd6cc96cd6c9e7bfe39a33289880755a61cd3417b169f6c16a1a59a801035b"
+    },
+    {
+      "source": "work/mixed_precision/LITERATURE_CHECK.md",
+      "path": "work/mixed_precision/LITERATURE_CHECK.md",
+      "bytes": 2688,
+      "sha256": "97256fc41423da63c3e011686d944a30735f875b4699ae8dfa129d28581908df"
+    },
+    {
+      "source": "work/mixed_precision/PROXY_BOUND_CHECK.md",
+      "path": "work/mixed_precision/PROXY_BOUND_CHECK.md",
+      "bytes": 1863,
+      "sha256": "c40917abbb25fc96909850d1cea1477aec046e3a992d20027460bb69251e89c0"
+    },
+    {
+      "source": "work/mixed_precision/QUANTIZATION_CHECK.md",
+      "path": "work/mixed_precision/QUANTIZATION_CHECK.md",
+      "bytes": 5927,
+      "sha256": "46edb9603a7a36fd5e37ee2fa3e8ff30d6f80cb591820d3c89fef4f1ef4f2536"
+    },
+    {
+      "source": "work/mixed_precision/README_CODEC.md",
+      "path": "work/mixed_precision/README_CODEC.md",
+      "bytes": 6024,
+      "sha256": "82e80ef3c8c14cafb5ca8d26ce637c3f6705622979b5e4332a48a0c799d2964a"
+    },
+    {
+      "source": "work/mixed_precision/SOURCES.md",
+      "path": "work/mixed_precision/SOURCES.md",
+      "bytes": 4726,
+      "sha256": "b0558a1bd74e5aff3ad30ce63912e6548a8a61659f29d827ae65572f7c5100f1"
+    },
+    {
+      "source": "work/mixed_precision/STAGE1_DECISION.md",
+      "path": "work/mixed_precision/STAGE1_DECISION.md",
+      "bytes": 976,
+      "sha256": "09df0ccd5c05431095f7f58d9a316263169d1097f9190f8d2ea610b4826bbb70"
+    },
+    {
+      "source": "work/mixed_precision/STAGE2_DECISION.md",
+      "path": "work/mixed_precision/STAGE2_DECISION.md",
+      "bytes": 1515,
+      "sha256": "c83b1c19786f51e52fffe68e6970f5e5c3d9bb9234501877536c2ec88861a5f5"
+    },
+    {
+      "source": "work/mixed_precision/TRAINING_CHECK.md",
+      "path": "work/mixed_precision/TRAINING_CHECK.md",
+      "bytes": 4634,
+      "sha256": "f8106d3053c10e5041f158ace30fee151832e15dcead15f6848c062779c207bb"
+    },
+    {
+      "source": "work/mixed_precision/benchmark_codec.py",
+      "path": "work/mixed_precision/benchmark_codec.py",
+      "bytes": 1950,
+      "sha256": "eb487a590e54d97916647c93a5c97e70b79e757a7de885f040c59521c1d6246a"
+    },
+    {
+      "source": "work/mixed_precision/codec.py",
+      "path": "work/mixed_precision/codec.py",
+      "bytes": 14440,
+      "sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863"
+    },
+    {
+      "source": "work/mixed_precision/independent_quant_fixtures.py",
+      "path": "work/mixed_precision/independent_quant_fixtures.py",
+      "bytes": 6205,
+      "sha256": "2d0a6d23c42d410126ce6e6b64d9a406529a71af6084313a9fe989c2334d0994"
+    },
+    {
+      "source": "work/mixed_precision/local_training_fixtures.py",
+      "path": "work/mixed_precision/local_training_fixtures.py",
+      "bytes": 6314,
+      "sha256": "a97dfc45c6ec760403ae69f82e310716c53756a6140b5a20efd58ffa05bc1635"
+    },
+    {
+      "source": "work/mixed_precision/run.py",
+      "path": "work/mixed_precision/run.py",
+      "bytes": 7807,
+      "sha256": "f08b0fa40ad32a7d486153737f3225ba9e386f1aa2f4b69a125949b679436cd7"
+    },
+    {
+      "source": "work/mixed_precision/test_codec.py",
+      "path": "work/mixed_precision/test_codec.py",
+      "bytes": 15847,
+      "sha256": "412757fc25a115e9086f54b4880ae49c2a332077d8191f7b1ce8a469b137db14"
+    },
+    {
+      "source": "work/mixed_precision/verify_stage1.py",
+      "path": "work/mixed_precision/verify_stage1.py",
+      "bytes": 5120,
+      "sha256": "17688998c398d618fb51b03e3af3a801321fa310b2a0fba117ca508879b65f65"
+    },
+    {
+      "source": "work/mixed_precision/verify_stage2.py",
+      "path": "work/mixed_precision/verify_stage2.py",
+      "bytes": 7216,
+      "sha256": "ca8f7d67396ce545782c758c9842a792813d00548b56b82bf8ffb4ca61e682ed"
+    },
+    {
+      "source": "work/normalized_sparse/LOCAL_CHECK.md",
+      "path": "work/normalized_sparse/LOCAL_CHECK.md",
+      "bytes": 5663,
+      "sha256": "2d421bf907b6e82359b79a7eb18231a827c5146edff4cda56d30c25c460a415a"
+    },
+    {
+      "source": "work/normalized_sparse/PLAN.md",
+      "path": "work/normalized_sparse/PLAN.md",
+      "bytes": 2671,
+      "sha256": "02205457d290df0871bffb4332cb057af523364eef066732370ed735b6b5c0ce"
+    },
+    {
+      "source": "work/normalized_sparse/local_fixture_check.py",
+      "path": "work/normalized_sparse/local_fixture_check.py",
+      "bytes": 5669,
+      "sha256": "6f23abfecc512301d662e0dc08a86eff2313ae6d8433d07f97be33cd23213fc6"
+    },
+    {
+      "source": "work/normalized_sparse/run.py",
+      "path": "work/normalized_sparse/run.py",
+      "bytes": 5388,
+      "sha256": "f568d9e907ddbb4c52bf1802d1aedf8fc03fa75a8c9af33cbf97531022697fd3"
+    },
+    {
+      "source": "work/normalized_sparse/verify_results.py",
+      "path": "work/normalized_sparse/verify_results.py",
+      "bytes": 6275,
+      "sha256": "2ed1768b66ab4f9d3d910afabdcf739b9f31f5e2d88f48bf823598c28ae79abf"
+    },
+    {
+      "source": "work/partial_fusion/ALA_CAC_CHECK.md",
+      "path": "work/partial_fusion/ALA_CAC_CHECK.md",
+      "bytes": 5312,
+      "sha256": "1982e15a049202f1df66825f36c1424aa971fb0226352a4a48e438893d2cd14c"
+    },
+    {
+      "source": "work/partial_fusion/EXPERIMENT_PLAN.md",
+      "path": "work/partial_fusion/EXPERIMENT_PLAN.md",
+      "bytes": 3290,
+      "sha256": "1ef5f2a673bb131d9e9c822b8fdee269a4008a7e72b52f29f228ffad13bd46ab"
+    },
+    {
+      "source": "work/partial_fusion/LITERATURE_CHECK.md",
+      "path": "work/partial_fusion/LITERATURE_CHECK.md",
+      "bytes": 8425,
+      "sha256": "2719911b856cba537afa5194b8157cdc616a270e7579a09f769a31664a471c8b"
+    },
+    {
+      "source": "work/partial_fusion/LOCAL_CODE_CHECK.md",
+      "path": "work/partial_fusion/LOCAL_CODE_CHECK.md",
+      "bytes": 9955,
+      "sha256": "7d6bd6e66f86fabdbb2b1430b8868f1662b85fa38cfb645ebc6969a1d9f6f8d1"
+    },
+    {
+      "source": "work/partial_fusion/RESULT_DECISION.md",
+      "path": "work/partial_fusion/RESULT_DECISION.md",
+      "bytes": 1064,
+      "sha256": "4cbf184f33d2fbc520594fc9d6d99d985fa203f638d9b0433e3970dc8348e543"
+    },
+    {
+      "source": "work/partial_fusion/dev_seed20261143/config.json",
+      "path": "work/partial_fusion/dev_seed20261143/config.json",
+      "bytes": 779139,
+      "sha256": "9e1c3da2e2748c5a17771ed00d78c50627351288f51cec9725fae963aee622a8"
+    },
+    {
+      "source": "work/partial_fusion/dev_seed20261143/warmup.pt",
+      "path": "work/partial_fusion/dev_seed20261143/warmup.pt",
+      "bytes": 550975,
+      "sha256": "6c2889778d4fb09f0cd5ca9eab4d17eb82935b7d12b5bd67d64ffeac3e819d81"
+    },
+    {
+      "source": "work/partial_fusion/fedcspack_note.md",
+      "path": "work/partial_fusion/fedcspack_note.md",
+      "bytes": 2682,
+      "sha256": "1d725caf6e2031bfb7843444f8e1578a6a3c6ca9e767be65f0551f367860c2df"
+    },
+    {
+      "source": "work/partial_fusion/local_check_fixtures.py",
+      "path": "work/partial_fusion/local_check_fixtures.py",
+      "bytes": 13377,
+      "sha256": "6ec4f04e7bed3bd434fa8392cd472926d879ea99b74b8fb6fb7c31b66cc864cb"
+    },
+    {
+      "source": "work/partial_fusion/probe_fusion.py",
+      "path": "work/partial_fusion/probe_fusion.py",
+      "bytes": 11006,
+      "sha256": "adc720706453793c68bca758e4f8c43296ea10ae6ae5d243449cfaa165c715ae"
+    },
+    {
+      "source": "work/predictive_final_test/FINAL_TEST_PLAN.md",
+      "path": "work/predictive_final_test/FINAL_TEST_PLAN.md",
+      "bytes": 9841,
+      "sha256": "a188e4e566e22804df7a08e89fd5ce5e1f23264be48eb1231330d3ca803f40e4"
+    },
+    {
+      "source": "work/predictive_final_test/HELPER_REVIEW.md",
+      "path": "work/predictive_final_test/HELPER_REVIEW.md",
+      "bytes": 9341,
+      "sha256": "6394889a21a52df14099f67ef8655719a2320f769c24bb9530b565b7eb953d57"
+    },
+    {
+      "source": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK.md",
+      "path": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK.md",
+      "bytes": 1199,
+      "sha256": "9c837719e8aa9567dbe10855d2acf72cf1c43d0a3919820b678fd4aec2a3ce2b"
+    },
+    {
+      "source": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK_FASHION.md",
+      "path": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK_FASHION.md",
+      "bytes": 1198,
+      "sha256": "33969148ff2ee29073319c29f70a0da7c4a91892b2022856d1f0d60fe7a0479d"
+    },
+    {
+      "source": "work/predictive_final_test/README.md",
+      "path": "work/predictive_final_test/README.md",
+      "bytes": 8650,
+      "sha256": "b434cbf85f9ed6597a5c00f65991bad2d71b37319eb2e017406ae59149f04a23"
+    },
+    {
+      "source": "work/predictive_final_test/data.py",
+      "path": "work/predictive_final_test/data.py",
+      "bytes": 13243,
+      "sha256": "0366aa408b22220a4098be8aa14abb672c7480b264a77e95145b10c9ee918412"
+    },
+    {
+      "source": "work/predictive_final_test/export_ready.py",
+      "path": "work/predictive_final_test/export_ready.py",
+      "bytes": 1570,
+      "sha256": "d3887d5501af739f73e22c8b620136fbdfc0259cc13ff041259f664f302e1539"
+    },
+    {
+      "source": "work/predictive_final_test/export_train_states.py",
+      "path": "work/predictive_final_test/export_train_states.py",
+      "bytes": 22008,
+      "sha256": "5102deb9408d807b73ef246506f85474cf8623378c73f83db811b460a8c5212b"
+    },
+    {
+      "source": "work/predictive_final_test/export_train_states_fixture.py",
+      "path": "work/predictive_final_test/export_train_states_fixture.py",
+      "bytes": 7917,
+      "sha256": "7b8a76eb5173b8cae5f5edea65c0f89da1acb22c467643c7800f79c72111d65d"
+    },
+    {
+      "source": "work/predictive_final_test/independent_final_check.py",
+      "path": "work/predictive_final_test/independent_final_check.py",
+      "bytes": 18562,
+      "sha256": "a00101929ab0942afd10994a926d97ac18df3723dde4e2c84c97fbe5663cde75"
+    },
+    {
+      "source": "work/predictive_final_test/infer.py",
+      "path": "work/predictive_final_test/infer.py",
+      "bytes": 11453,
+      "sha256": "ccc8e3bae5a2a940ba4cc319bbe31595f7bff52c9fc245965ad99dcc5e05df9f"
+    },
+    {
+      "source": "work/predictive_final_test/local_fixture_check.py",
+      "path": "work/predictive_final_test/local_fixture_check.py",
+      "bytes": 11079,
+      "sha256": "9c9dcf3d359d0e211f9aea31781c100f6e87daa0637a7065da155be8c24b31e8"
+    },
+    {
+      "source": "work/predictive_final_test/reference_inference.py",
+      "path": "work/predictive_final_test/reference_inference.py",
+      "bytes": 23466,
+      "sha256": "3e379e5e352ec8c992a6971e7719bf3c0da15f9d0c51230ee76aeef93adb1c77"
+    },
+    {
+      "source": "work/predictive_final_test/scorer.py",
+      "path": "work/predictive_final_test/scorer.py",
+      "bytes": 15223,
+      "sha256": "9bba7e92e142a6c6c101da99a26734257f0abcb9f46feb9c242ae7aacdf99041"
+    },
+    {
+      "source": "work/predictive_manuscript/DISCUSSION_EN.tex",
+      "path": "work/predictive_manuscript/DISCUSSION_EN.tex",
+      "bytes": 2127,
+      "sha256": "9abb3a1fa2fcfb64db34fc3cbb33780001daba02661817ff00f6364d2be71ec8"
+    },
+    {
+      "source": "work/predictive_manuscript/FRONT_EN.tex",
+      "path": "work/predictive_manuscript/FRONT_EN.tex",
+      "bytes": 6855,
+      "sha256": "0701080e2f5cc37a814b515be084c79f61b4b5698b9f3751adcc7b9a4847c366"
+    },
+    {
+      "source": "work/predictive_manuscript/METHOD_EN.md",
+      "path": "work/predictive_manuscript/METHOD_EN.md",
+      "bytes": 12413,
+      "sha256": "9b4d8403b737e6b42fccd1a88cd4a33223dd477f0fc565c7faf9eaffb3b2cc05"
+    },
+    {
+      "source": "work/predictive_manuscript/METHOD_EN.tex",
+      "path": "work/predictive_manuscript/METHOD_EN.tex",
+      "bytes": 12605,
+      "sha256": "811684a980dda992b7a4cc31bb104de51c5c56caf4ea2a177e89c5f89fd996a0"
+    },
+    {
+      "source": "work/predictive_manuscript/PAPER_BUILDER_REVIEW.md",
+      "path": "work/predictive_manuscript/PAPER_BUILDER_REVIEW.md",
+      "bytes": 5621,
+      "sha256": "c7f98d60daf8e407f328675571bcc9b748213c11e51fc48d4f7991b01000e6ec"
+    },
+    {
+      "source": "work/predictive_manuscript/REFERENCE_AUDIT.md",
+      "path": "work/predictive_manuscript/REFERENCE_AUDIT.md",
+      "bytes": 24033,
+      "sha256": "4e1365b8fba4c73470957f514fc9602f610f6750d3e53580bd38d566bb9fde1e"
+    },
+    {
+      "source": "work/predictive_manuscript/SOFTWARE_NOTE_EN.tex",
+      "path": "work/predictive_manuscript/SOFTWARE_NOTE_EN.tex",
+      "bytes": 648,
+      "sha256": "ffd5ed06b3051fbb3ba86cd9ae1e50b7ea46a35f5d8180296d4166ce9878b46d"
+    },
+    {
+      "source": "work/predictive_manuscript/WRITING_NOTES.md",
+      "path": "work/predictive_manuscript/WRITING_NOTES.md",
+      "bytes": 11653,
+      "sha256": "fa3eede92990da047a8404fa2465e65cc991265e7b48b89260ed96f4e0336d20"
+    },
+    {
+      "source": "work/predictive_manuscript/build_papers.py",
+      "path": "work/predictive_manuscript/build_papers.py",
+      "bytes": 44345,
+      "sha256": "4ece9bf6ed9da48a4528fe2ecc0654dcee96602ae3ec5d8cf7a67b43beadf42c"
+    },
+    {
+      "source": "work/predictive_manuscript/close_research.py",
+      "path": "work/predictive_manuscript/close_research.py",
+      "bytes": 9090,
+      "sha256": "30c6cf064c7777dc9fa89fc44699dbfd04cf81bae88dbe97616d52790d86d667"
+    },
+    {
+      "source": "work/predictive_manuscript/final_checks.py",
+      "path": "work/predictive_manuscript/final_checks.py",
+      "bytes": 9541,
+      "sha256": "4a252e6389ee0f2f08c5571001976ac8c74b3056f01fa43ff95b66f804232e29"
+    },
+    {
+      "source": "work/predictive_manuscript/publish_papers.py",
+      "path": "work/predictive_manuscript/publish_papers.py",
+      "bytes": 2371,
+      "sha256": "2ddb8e35d891b1e1589a8aadae92535c59064d187a9baf6e384b8320f68791fb"
+    },
+    {
+      "source": "work/predictive_manuscript/verified_references.bib",
+      "path": "work/predictive_manuscript/verified_references.bib",
+      "bytes": 9040,
+      "sha256": "b5ac259c7c015ed7ac7596dbd642240b9beda431d297c2a35bbe4673bae10c26"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/ASSESSMENT_LOCK.json",
+      "path": "work/predictive_pfl_confirm/ASSESSMENT_LOCK.json",
+      "bytes": 495,
+      "sha256": "7036f66a84ff871b2c8057ea0be300b714b1912f3bfc3d789cef95d8989dae0d"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/PLAN.md",
+      "path": "work/predictive_pfl_confirm/PLAN.md",
+      "bytes": 6127,
+      "sha256": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/PREREGISTRATION.json",
+      "path": "work/predictive_pfl_confirm/PREREGISTRATION.json",
+      "bytes": 1362,
+      "sha256": "1eb7d284c43992a3cca58e31448a4b595b88e67abdf167c24a605342bf2f0568"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/SCOPE_ADDENDUM.md",
+      "path": "work/predictive_pfl_confirm/SCOPE_ADDENDUM.md",
+      "bytes": 1415,
+      "sha256": "3e6ded2fc1ac22f0607c12b6989e7ac369d728d884cfffd003f671c365d48116"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assess.py",
+      "path": "work/predictive_pfl_confirm/assess.py",
+      "bytes": 5928,
+      "sha256": "bdb0bac2d4809d100e3112e1516e14d8f295c8dbe77fa4da34ce0543706b7b17"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/check_bcts_independent.py",
+      "path": "work/predictive_pfl_confirm/check_bcts_independent.py",
+      "bytes": 25695,
+      "sha256": "567f2a663ac81231b863d1cf5f6b10c5d17e4f624018c0d09d967298d51e7885"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/check_next.py",
+      "path": "work/predictive_pfl_confirm/check_next.py",
+      "bytes": 32569,
+      "sha256": "e40dd7d005b0361b850af66ee51150a397f52c4afb800aa55399599d9d50f080"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/finish_fashion.py",
+      "path": "work/predictive_pfl_confirm/finish_fashion.py",
+      "bytes": 2832,
+      "sha256": "042b46cc588ca7bd365290596d87ae48f6ddedff880659a38b5b3eed98d6da76"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/run_references.py",
+      "path": "work/predictive_pfl_confirm/run_references.py",
+      "bytes": 3056,
+      "sha256": "66f4b3184514d6f20912bb5980b6115dbb2d20da71c0ef57fce084b08be61663"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/summarize.py",
+      "path": "work/predictive_pfl_confirm/summarize.py",
+      "bytes": 3472,
+      "sha256": "28b0fd81eed40c9c17fcf99f2545b6f8be3a85c692c70961a1e70c10933e659a"
+    },
+    {
+      "source": "work/prior_bias/LITERATURE_CHECK.md",
+      "path": "work/prior_bias/LITERATURE_CHECK.md",
+      "bytes": 1481,
+      "sha256": "50fb4b21e1b29ae8dc892eaf41b9c8bf6497056954bdb1950ebd35030fb291b8"
+    },
+    {
+      "source": "work/prior_bias/LOCAL_CHECK.md",
+      "path": "work/prior_bias/LOCAL_CHECK.md",
+      "bytes": 1763,
+      "sha256": "0f5ee5c83c3b27052a22741e31312a8bf064c5e5e191c97c2a86b60bbab4771c"
+    },
+    {
+      "source": "work/prior_bias/PLAN.md",
+      "path": "work/prior_bias/PLAN.md",
+      "bytes": 2200,
+      "sha256": "120472270ba4fdff1d5fc211d6b7cb1d9ee352daee013de4321d396aae8b3310"
+    },
+    {
+      "source": "work/prior_bias/REPORT.md",
+      "path": "work/prior_bias/REPORT.md",
+      "bytes": 5072,
+      "sha256": "01d6d33f29c831d7e098c949a079955cc3810631d99ee8ba24165878b5a99abd"
+    },
+    {
+      "source": "work/prior_bias/fetch_atomic_primary.py",
+      "path": "work/prior_bias/fetch_atomic_primary.py",
+      "bytes": 916,
+      "sha256": "fd20308d60d81bd1f3e073f035efe34a52cbce458c141c3a823bac4750e2213a"
+    },
+    {
+      "source": "work/prior_bias/fetch_primary.py",
+      "path": "work/prior_bias/fetch_primary.py",
+      "bytes": 913,
+      "sha256": "0ea86759f4241b829e5ffd565bdceef18e85ed4b1636dca616dd6c81ece15043"
+    },
+    {
+      "source": "work/prior_bias/local_fixture_check.py",
+      "path": "work/prior_bias/local_fixture_check.py",
+      "bytes": 3925,
+      "sha256": "f522d7d1e9a3c5a2c7dfb0228d21c30e5b89a0e7e5f3809a8ef152032157412e"
+    },
+    {
+      "source": "work/prior_bias/probe.py",
+      "path": "work/prior_bias/probe.py",
+      "bytes": 14729,
+      "sha256": "527cd00d7c36ac2faa3e3af83a4d15bef09deeb6b361e9743e0737491a0e1113"
+    },
+    {
+      "source": "work/prior_bias/retrieve_limited.py",
+      "path": "work/prior_bias/retrieve_limited.py",
+      "bytes": 1520,
+      "sha256": "aabbd61ab143c28e70fe63fc927f4c253223d62f184d54549bca494ab2e35bb4"
+    },
+    {
+      "source": "work/prior_bias/solver.py",
+      "path": "work/prior_bias/solver.py",
+      "bytes": 6007,
+      "sha256": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96"
+    },
+    {
+      "source": "work/prior_bias/verify_independent.py",
+      "path": "work/prior_bias/verify_independent.py",
+      "bytes": 30932,
+      "sha256": "84f26dac175a2fe0189999f942aa250dcf6d559d21c051415f234248b3ada471"
+    },
+    {
+      "source": "work/prior_personalization/sources/fedrod.html",
+      "path": "work/prior_personalization/sources/fedrod.html",
+      "bytes": 836011,
+      "sha256": "f20e9d08f1573c149998483d07e10b0305162795a2b134305af82fd3759710c7"
+    },
+    {
+      "source": "work/prior_personalization/sources/fedrod.txt",
+      "path": "work/prior_personalization/sources/fedrod.txt",
+      "bytes": 132443,
+      "sha256": "b33fbbd8f63cce4aa78067c9f95b79ebd9c01a4e8da3cfdbd287aada0a8025f3"
+    },
+    {
+      "source": "work/prior_vector/BCTS_CONTROL.md",
+      "path": "work/prior_vector/BCTS_CONTROL.md",
+      "bytes": 3170,
+      "sha256": "9ebecc0ef6475f4e88483ab259b402dcd3bfcf40a729a4fd5056c7f154926741"
+    },
+    {
+      "source": "work/prior_vector/BCTS_CONTROL_PLAN.md",
+      "path": "work/prior_vector/BCTS_CONTROL_PLAN.md",
+      "bytes": 1699,
+      "sha256": "9ea93ea8496f33f4f7330a1ea7a3764e3aa101432c04c0bb916903370116d1cc"
+    },
+    {
+      "source": "work/prior_vector/EVALUATE_SAVED.md",
+      "path": "work/prior_vector/EVALUATE_SAVED.md",
+      "bytes": 4416,
+      "sha256": "b0ce8c0c9aa60c08f55e63be96cc97bf059a248f19518f35d0b652169bd3caef"
+    },
+    {
+      "source": "work/prior_vector/PLAN.md",
+      "path": "work/prior_vector/PLAN.md",
+      "bytes": 2118,
+      "sha256": "2d606bb226c08b73d24270250bf7fe676b56c515afba9e420a1b2f6e8dea5cd0"
+    },
+    {
+      "source": "work/prior_vector/REPORT.md",
+      "path": "work/prior_vector/REPORT.md",
+      "bytes": 6454,
+      "sha256": "f4af16794dd0a849363b6ecad0f327f54009da54e8e63cf0cd2c2d760278a3c2"
+    },
+    {
+      "source": "work/prior_vector/bcts_control.py",
+      "path": "work/prior_vector/bcts_control.py",
+      "bytes": 2157,
+      "sha256": "1dd83808fb0685e7136a24d8c4f9ff711abba754c5a06b0ef17ff40d83c9130f"
+    },
+    {
+      "source": "work/prior_vector/bcts_control_fixture.py",
+      "path": "work/prior_vector/bcts_control_fixture.py",
+      "bytes": 9118,
+      "sha256": "9595aafa1bf38a62cdebd0916a3e8549fdb52c7dfc1b5024246b08cc0f2026bd"
+    },
+    {
+      "source": "work/prior_vector/bcts_control_probe.py",
+      "path": "work/prior_vector/bcts_control_probe.py",
+      "bytes": 11828,
+      "sha256": "4f474299a27be96b58d39dd78b2ea5736f4d675fc56b455576f1696c799cb5a8"
+    },
+    {
+      "source": "work/prior_vector/evaluate_saved.py",
+      "path": "work/prior_vector/evaluate_saved.py",
+      "bytes": 15523,
+      "sha256": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05"
+    },
+    {
+      "source": "work/prior_vector/evaluate_saved_fixture.py",
+      "path": "work/prior_vector/evaluate_saved_fixture.py",
+      "bytes": 8346,
+      "sha256": "c06f910acec211b7d7d13cf284255dc6899f49039a766e9a781d4f3d18f4c6f2"
+    },
+    {
+      "source": "work/prior_vector/independent_check.py",
+      "path": "work/prior_vector/independent_check.py",
+      "bytes": 9073,
+      "sha256": "285517017ab7fb1f8a72a999672d918005602e3f04763c527d0c7d0d9604b4c8"
+    },
+    {
+      "source": "work/prior_vector/local_fixture_check.py",
+      "path": "work/prior_vector/local_fixture_check.py",
+      "bytes": 4854,
+      "sha256": "fc287910a0dfcedd3039095a132ad9949d27822f2404127c453f2054a616a8f5"
+    },
+    {
+      "source": "work/prior_vector/probe.py",
+      "path": "work/prior_vector/probe.py",
+      "bytes": 11560,
+      "sha256": "eb3831a0bcfaf602ca691b3b198663ab29d5ecd39d4f36f68a5e01b820dc7011"
+    },
+    {
+      "source": "work/prior_vector/solver.py",
+      "path": "work/prior_vector/solver.py",
+      "bytes": 6747,
+      "sha256": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae"
+    },
+    {
+      "source": "work/receiver_feedback/LOCAL_CHECK.md",
+      "path": "work/receiver_feedback/LOCAL_CHECK.md",
+      "bytes": 6944,
+      "sha256": "600b411c52eec97fd7369da97c83870794387745872f3538b5f2d3ad467e3220"
+    },
+    {
+      "source": "work/receiver_feedback/PLAN.md",
+      "path": "work/receiver_feedback/PLAN.md",
+      "bytes": 3485,
+      "sha256": "9f26ba4ddae8e9c26421b8f9300baea5a11941030254d9978a68b047c3627da7"
+    },
+    {
+      "source": "work/receiver_feedback/RESULT_DECISION.md",
+      "path": "work/receiver_feedback/RESULT_DECISION.md",
+      "bytes": 1246,
+      "sha256": "b9ce19335cd3d694c4d5b971ed64b59a344c72ed6e82b091435d607dbd9ed3ca"
+    },
+    {
+      "source": "work/receiver_feedback/local_check_fixtures.py",
+      "path": "work/receiver_feedback/local_check_fixtures.py",
+      "bytes": 6662,
+      "sha256": "d0ce7b74a537efc7ea5da196fe812e465c541b02427d7773854ec07fdeb5f10e"
+    },
+    {
+      "source": "work/receiver_feedback/run.py",
+      "path": "work/receiver_feedback/run.py",
+      "bytes": 10199,
+      "sha256": "3b5cf73f695585d61d9f2dc9d1e347fec78190f2ae2a5f2ee3527bd3bb67b633"
+    },
+    {
+      "source": "work/receiver_feedback/verify_results.py",
+      "path": "work/receiver_feedback/verify_results.py",
+      "bytes": 7991,
+      "sha256": "218fa5838ee802d20950738f45e16c969e15a042952e1f96e31a434a6e508882"
+    },
+    {
+      "source": "work/shadow_training/LOCAL_CHECK.md",
+      "path": "work/shadow_training/LOCAL_CHECK.md",
+      "bytes": 4861,
+      "sha256": "f885c23d5fae6bed5ecf0fd216418967c2f2aec45266918a1fa163a871a235e8"
+    },
+    {
+      "source": "work/shadow_training/PLAN.md",
+      "path": "work/shadow_training/PLAN.md",
+      "bytes": 2572,
+      "sha256": "3b7b5c9a30e099d0af580d8876e137889e5b2da3af02560c09f1401dbbf600bb"
+    },
+    {
+      "source": "work/shadow_training/RESULT_DECISION.md",
+      "path": "work/shadow_training/RESULT_DECISION.md",
+      "bytes": 868,
+      "sha256": "d0a69118d13b1058738698ba2934f390ba8f4832cce00e17e8f4fb86e2e24f4f"
+    },
+    {
+      "source": "work/shadow_training/local_fixture_check.py",
+      "path": "work/shadow_training/local_fixture_check.py",
+      "bytes": 5691,
+      "sha256": "f959883911826ddfdf7d4c269446a8ee0ef6c75e2723fa6d9e7060812ea84778"
+    },
+    {
+      "source": "work/shadow_training/run.py",
+      "path": "work/shadow_training/run.py",
+      "bytes": 7224,
+      "sha256": "33154270563c9858459d18d3d027f2326d004cb3437cc9dbf37b82665d5ba0cf"
+    },
+    {
+      "source": "work/shadow_training/verify_results.py",
+      "path": "work/shadow_training/verify_results.py",
+      "bytes": 4726,
+      "sha256": "c1232655f8fe6070520171bda094a1a2c495e7f04363d2eaf73ee3f121924852"
+    },
+    {
+      "source": "work/tinyproto_diag/tools/fedavg_update_diagnostic.py",
+      "path": "work/tinyproto_diag/tools/fedavg_update_diagnostic.py",
+      "bytes": 8553,
+      "sha256": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496"
+    },
+    {
+      "source": "work/tinyproto_diag/tools/integrity_attack_matrix.py",
+      "path": "work/tinyproto_diag/tools/integrity_attack_matrix.py",
+      "bytes": 7313,
+      "sha256": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2"
+    },
+    {
+      "source": "work/tinyproto_diag/tools/sparse_update_benchmark.py",
+      "path": "work/tinyproto_diag/tools/sparse_update_benchmark.py",
+      "bytes": 14748,
+      "sha256": "4bb2ecbc9b5ad6353497ac75f70557796e56c53b64a6acdf701045168b2c813a"
+    }
+  ],
+  "excluded_from_runtime_layout": [
+    {
+      "source": "work/partial_fusion/ALA_CAC_SOURCES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/LOCAL_CHECK_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/SOURCES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/ala_cac_search.xml",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/dev_seed20261143",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedala.html",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedala.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedcac.html",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedcac.pdf",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedcac.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedcac_pdf.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedcspack_equations.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedlp.html",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedlp.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/fedlp_metadata.xml",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/feedback_priority_search",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/local_check_fixture_stdout.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/official_fedcspack",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/perfedmask_access_failure.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/perfedmask_crossref.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/perfedmask_metadata.xml",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/perfedmask_openalex.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/partial_fusion/perfedmask_title_search.xml",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/receiver_feedback/LOCAL_FIXTURE_EVIDENCE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/receiver_feedback/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/receiver_feedback/development_s20261144",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/normalized_sparse/LOCAL_FIXTURE_EVIDENCE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/normalized_sparse/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/normalized_sparse/development_s20261151",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/normalized_sparse/local_check_stdout.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/shadow_training/LOCAL_FIXTURE_EVIDENCE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/shadow_training/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/shadow_training/development_s20261161",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/CODEC_BENCHMARK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/CODEC_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedFQ_page3.png",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedFQ_page4.png",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedFQ_primary.pdf",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedFQ_primary.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedMPQ_CVPR2024_primary.pdf",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedMPQ_CVPR2024_primary.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedMPQ_primary.pdf",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/FedMPQ_primary.txt",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/QUANTIZATION_FIXTURE_EVIDENCE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/QUANTIZATION_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/TRAINING_FIXTURE_EVIDENCE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/TRAINING_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/development_s20261181",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/search_fedfq_openalex.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/mixed_precision/search_fedmpq_openalex.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/head_control/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/head_control/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/head_control/development_s20261191",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/head_control/sources",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/control_reference/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/control_reference/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/control_reference/development_s20261191",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/balanced_quant/INITIAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/balanced_quant/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/balanced_quant/LOCAL_STATS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/balanced_quant/development_p20261193_s20261201",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/balanced_quant/sources",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_bias/LOCAL_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_bias/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_bias/SOURCE_AUDIT.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_bias/diagnostic_v1",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_bias/sources",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/LOCAL_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/development_p20261203_s20261211",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/development_p20261203_s20261212",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/development_p20261203_s20261213",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/evaluation_p20261203_s20261211",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/evaluation_p20261203_s20261212",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_lowbit_confirm/evaluation_p20261203_s20261213",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/LOCAL_INDEPENDENT_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/LOCAL_RESULTS_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/confirm_p20261203_s20261211",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/confirm_p20261203_s20261212",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/confirm_p20261203_s20261213",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/confirm_p20261203_s20261213.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/diagnostic_v1",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/fashion_p20261207_s20261221",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/fashion_p20261207_s20261221.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/predictive_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_fashion_p20261207_s20261221",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_fashion_p20261207_s20261221.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_p20261203_s20261211",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_p20261203_s20261212",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_p20261203_s20261212.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_p20261203_s20261213",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_p20261203_s20261213.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_predictive_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibration_baselines/quality_predictive_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_fashion/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_fashion/TRAIN_PARTITION_FIXTURE.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_fashion/development_p20261207_s20261221",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_fashion/evaluation_p20261207_s20261221",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_fashion/evaluation_p20261207_s20261221.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/BCTS_CONTROL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/BCTS_CONTROL_INTEGRATION.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/EVALUATE_SAVED_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/INDEPENDENT_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/prior_vector/diagnostic_v1",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/ASSESSMENT_LOCK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/CHECK_NEXT_STATIC.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/CIFAR_THREE_SEED_SUMMARY.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/PREREGISTRATION.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/TWO_TASK_DEVELOPMENT_SUMMARY.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/adaptation_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/assessment_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/bcts_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/development_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/evaluation_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_bcts_cifar_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_bcts_fashion_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_cifar_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_cifar_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_cifar_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_fashion_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_fashion_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/independent_fashion_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/reference_fedrod_runner.jsonl",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/reference_topk_runner.jsonl",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_pfl_confirm/tables",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/PROSPECTIVE_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/SAVED_PRIOR_VECTOR_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/adaptation_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/development_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/calibrated_topk_reference/evaluation_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/EXPORT_QUALITY_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/PROSPECTIVE_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/SOURCE_LOCK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/development_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/fedrod_linear_reference/quality_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/CIFAR_ROOT_LOCK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/EXPORT_TRAIN_STATES_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/FASHION_ROOT_LOCK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/INDEPENDENT_FINAL_CHECK_FASHION.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/INFER_REVIEW.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/LOCAL_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/REFERENCE_INFERENCE_FIXTURES.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/REFERENCE_ROOT_LOCK.json",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/official_cifar",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/official_cifar.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/official_fashion",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/official_fashion.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/official_references.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/reference_preflight",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261231",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261231.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261232",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261232.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261233",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_cifar_p20261217_s20261233.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261241",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261241.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261242",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261242.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261243",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_final_test/train_states_fashion_p20261219_s20261243.log",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_manuscript/figures",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    },
+    {
+      "source": "work/predictive_manuscript/reference_primary_followup",
+      "reason": "non-runtime evidence/results staged by sync_method_bundle.py"
+    }
+  ],
+  "files": 245,
+  "bytes": 5148207,
+  "template_update": "2026 kit selected for2027; formatting source refresh only; no experimental code or data changed",
+  "current_policy": {
+    "updated_at": "2026-11-04T20:38:43+08:00",
+    "chinese_manuscript_sources_removed": true,
+    "priority": 4,
+    "portable_reproduction_required": false,
+    "historical_source_paths_retained_for_provenance": true,
+    "current_core_thesis": "established; local single-node EVM/HTTP integration and current-path image replay completed; source paths retain historical provenance",
+    "latest_checks": "scripts/predictive_manuscript/final_checks.py checks current English-only sources, hashes, result scope and build; old repro generation scripts remain historical"
+  }
+}

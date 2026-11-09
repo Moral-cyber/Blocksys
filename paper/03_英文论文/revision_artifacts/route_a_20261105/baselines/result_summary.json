@@ -1,0 +1,596 @@
+{
+  "status": "DONE",
+  "tasks": {
+    "cifar": {
+      "status": "DONE",
+      "task": "cifar",
+      "seeds": [
+        20261231,
+        20261232,
+        20261233
+      ],
+      "summaries": {
+        "fedavg_dense": {
+          "raw": {
+            "macro_accuracy": {
+              "mean": 0.3846586550041686,
+              "sample_sd": 0.004413467171267923
+            },
+            "weighted_accuracy": {
+              "mean": 0.3772,
+              "sample_sd": 0.004158124577258341
+            },
+            "macro_nll": {
+              "mean": 1.6853966160264866,
+              "sample_sd": 0.02637348909028708
+            },
+            "weighted_nll": {
+              "mean": 1.68921162049403,
+              "sample_sd": 0.026891329536933548
+            },
+            "macro_brier": {
+              "mean": 0.7457023496393612,
+              "sample_sd": 0.007545001838352528
+            },
+            "weighted_brier": {
+              "mean": 0.7462014319697374,
+              "sample_sd": 0.007209710703578819
+            },
+            "macro_ece15": {
+              "mean": 0.13064575385569768,
+              "sample_sd": 0.004640354531979609
+            },
+            "weighted_ece15": {
+              "mean": 0.13397950280949636,
+              "sample_sd": 0.0034231335913366442
+            },
+            "client_accuracy_q10": {
+              "mean": 0.20093405566971792,
+              "sample_sd": 0.009084081870110752
+            },
+            "pooled_ece15": {
+              "mean": 0.02302512813297668,
+              "sample_sd": 0.004268340732424727
+            }
+          },
+          "zero_anchor_vector": {
+            "macro_accuracy": {
+              "mean": 0.7562053649054047,
+              "sample_sd": 0.005247473163623358
+            },
+            "weighted_accuracy": {
+              "mean": 0.7480666666666665,
+              "sample_sd": 0.006879195689419819
+            },
+            "macro_nll": {
+              "mean": 0.6794329882030613,
+              "sample_sd": 0.012790433138013127
+            },
+            "weighted_nll": {
+              "mean": 0.6781389911515818,
+              "sample_sd": 0.014528679578491912
+            },
+            "macro_brier": {
+              "mean": 0.3429674590856963,
+              "sample_sd": 0.006807743013290054
+            },
+            "weighted_brier": {
+              "mean": 0.3481357608478432,
+              "sample_sd": 0.007989519570445571
+            },
+            "macro_ece15": {
+              "mean": 0.061429852802505465,
+              "sample_sd": 0.0008055451054323237
+            },
+            "weighted_ece15": {
+              "mean": 0.04444491963279381,
+              "sample_sd": 0.0019230810857901364
+            },
+            "client_accuracy_q10": {
+              "mean": 0.6061744073536527,
+              "sample_sd": 0.004987574265498852
+            },
+            "pooled_ece15": {
+              "mean": 0.012624613677600136,
+              "sample_sd": 0.004287689898907999
+            }
+          },
+          "prioranchored_vector": {
+            "macro_accuracy": {
+              "mean": 0.7557758173534896,
+              "sample_sd": 0.005352837503787032
+            },
+            "weighted_accuracy": {
+              "mean": 0.7476333333333334,
+              "sample_sd": 0.0065493002170715405
+            },
+            "macro_nll": {
+              "mean": 0.6440964582914078,
+              "sample_sd": 0.012425719452916354
+            },
+            "weighted_nll": {
+              "mean": 0.656640214435683,
+              "sample_sd": 0.01466176545871216
+            },
+            "macro_brier": {
+              "mean": 0.33961257779207354,
+              "sample_sd": 0.006961767941491929
+            },
+            "weighted_brier": {
+              "mean": 0.34717471446663706,
+              "sample_sd": 0.008070996812383999
+            },
+            "macro_ece15": {
+              "mean": 0.05343887092736976,
+              "sample_sd": 0.0005396568891448902
+            },
+            "weighted_ece15": {
+              "mean": 0.0390916653205084,
+              "sample_sd": 0.0013341205981568431
+            },
+            "client_accuracy_q10": {
+              "mean": 0.6064546040961135,
+              "sample_sd": 0.00246031157925882
+            },
+            "pooled_ece15": {
+              "mean": 0.012195371220874657,
+              "sample_sd": 0.00172474666670918
+            }
+          }
+        },
+        "fedprox01_dense": {
+          "raw": {
+            "macro_accuracy": {
+              "mean": 0.3775150159746678,
+              "sample_sd": 0.004667717348085284
+            },
+            "weighted_accuracy": {
+              "mean": 0.3700666666666666,
+              "sample_sd": 0.004536885862938706
+            },
+            "macro_nll": {
+              "mean": 1.708583642298619,
+              "sample_sd": 0.024185320530114924
+            },
+            "weighted_nll": {
+              "mean": 1.7126624230266767,
+              "sample_sd": 0.02486209326282461
+            },
+            "macro_brier": {
+              "mean": 0.7524118116787749,
+              "sample_sd": 0.0069648500234467505
+            },
+            "weighted_brier": {
+              "mean": 0.7528359139355713,
+              "sample_sd": 0.006731957140731066
+            },
+            "macro_ece15": {
+              "mean": 0.13303155039315084,
+              "sample_sd": 0.005289653633598071
+            },
+            "weighted_ece15": {
+              "mean": 0.13642861207895965,
+              "sample_sd": 0.0028867086997469748
+            },
+            "client_accuracy_q10": {
+              "mean": 0.19276830930131186,
+              "sample_sd": 0.01358096581510463
+            },
+            "pooled_ece15": {
+              "mean": 0.021264436140706378,
+              "sample_sd": 0.0031800150345849265
+            }
+          },
+          "zero_anchor_vector": {
+            "macro_accuracy": {
+              "mean": 0.7503475844510262,
+              "sample_sd": 0.004058375995496535
+            },
+            "weighted_accuracy": {
+              "mean": 0.7428666666666666,
+              "sample_sd": 0.006185736280616361
+            },
+            "macro_nll": {
+              "mean": 0.6908494291159015,
+              "sample_sd": 0.013358875997079111
+            },
+            "weighted_nll": {
+              "mean": 0.6896755267303013,
+              "sample_sd": 0.014848172544014075
+            },
+            "macro_brier": {
+              "mean": 0.34890774608107616,
+              "sample_sd": 0.0070880978508111895
+            },
+            "weighted_brier": {
+              "mean": 0.3541704988657528,
+              "sample_sd": 0.00814543650781588
+            },
+            "macro_ece15": {
+              "mean": 0.0606397920904114,
+              "sample_sd": 0.004595287824988373
+            },
+            "weighted_ece15": {
+              "mean": 0.044629243881317,
+              "sample_sd": 0.002502610844626507
+            },
+            "client_accuracy_q10": {
+              "mean": 0.5983866849432887,
+              "sample_sd": 0.0014934431635247735
+            },
+            "pooled_ece15": {
+              "mean": 0.014218268972482415,
+              "sample_sd": 0.005264577312389538
+            }
+          },
+          "prioranchored_vector": {
+            "macro_accuracy": {
+              "mean": 0.7495915116428543,
+              "sample_sd": 0.005928034385018563
+            },
+            "weighted_accuracy": {
+              "mean": 0.7426333333333334,
+              "sample_sd": 0.0070323064021224155
+            },
+            "macro_nll": {
+              "mean": 0.6550918621270273,
+              "sample_sd": 0.012847369755893597
+            },
+            "weighted_nll": {
+              "mean": 0.6680059266451376,
+              "sample_sd": 0.014924240989530702
+            },
+            "macro_brier": {
+              "mean": 0.34549980091491284,
+              "sample_sd": 0.007162182248395497
+            },
+            "weighted_brier": {
+              "mean": 0.35320450587143,
+              "sample_sd": 0.008197279107819921
+            },
+            "macro_ece15": {
+              "mean": 0.053946818459664335,
+              "sample_sd": 0.0013386649328561231
+            },
+            "weighted_ece15": {
+              "mean": 0.041551222645199316,
+              "sample_sd": 0.00014852886649587097
+            },
+            "client_accuracy_q10": {
+              "mean": 0.6019956458635704,
+              "sample_sd": 0.0014145960439458955
+            },
+            "pooled_ece15": {
+              "mean": 0.014839178707768132,
+              "sample_sd": 0.001813587547293496
+            }
+          }
+        }
+      },
+      "assignment_hash": "08d8954ee4da54785f801a4310b3d39f4999bb879c2b74958794b817df1a215f",
+      "all_model_state_hashes_unchanged": true,
+      "official_test_fits": 0
+    },
+    "fashion": {
+      "status": "DONE",
+      "task": "fashion",
+      "seeds": [
+        20261241,
+        20261242,
+        20261243
+      ],
+      "summaries": {
+        "fedavg_dense": {
+          "raw": {
+            "macro_accuracy": {
+              "mean": 0.6943108150761969,
+              "sample_sd": 0.0172535372067457
+            },
+            "weighted_accuracy": {
+              "mean": 0.7557999999999999,
+              "sample_sd": 0.01647907764409147
+            },
+            "macro_nll": {
+              "mean": 0.7597339347712347,
+              "sample_sd": 0.035741005619600086
+            },
+            "weighted_nll": {
+              "mean": 0.6443060981047039,
+              "sample_sd": 0.03895758975507656
+            },
+            "macro_brier": {
+              "mean": 0.3989706480740452,
+              "sample_sd": 0.02046625772128889
+            },
+            "weighted_brier": {
+              "mean": 0.333651519888362,
+              "sample_sd": 0.02149715892339128
+            },
+            "macro_ece15": {
+              "mean": 0.13737307913627086,
+              "sample_sd": 0.008408472740359744
+            },
+            "weighted_ece15": {
+              "mean": 0.11066771240550954,
+              "sample_sd": 0.010250019502215855
+            },
+            "client_accuracy_q10": {
+              "mean": 0.4028759057971015,
+              "sample_sd": 0.014284785734391448
+            },
+            "pooled_ece15": {
+              "mean": 0.017160252851512816,
+              "sample_sd": 0.0014141771443992356
+            }
+          },
+          "zero_anchor_vector": {
+            "macro_accuracy": {
+              "mean": 0.9269473553384383,
+              "sample_sd": 0.004076113241417106
+            },
+            "weighted_accuracy": {
+              "mean": 0.9463333333333335,
+              "sample_sd": 0.0036610563138709472
+            },
+            "macro_nll": {
+              "mean": 0.20544058776801263,
+              "sample_sd": 0.01265861046719717
+            },
+            "weighted_nll": {
+              "mean": 0.15813793516723051,
+              "sample_sd": 0.01126410523720042
+            },
+            "macro_brier": {
+              "mean": 0.10724405720960417,
+              "sample_sd": 0.0064978458570641735
+            },
+            "weighted_brier": {
+              "mean": 0.08077230312494775,
+              "sample_sd": 0.0058181607977518
+            },
+            "macro_ece15": {
+              "mean": 0.03422455012661784,
+              "sample_sd": 0.0003852655781429378
+            },
+            "weighted_ece15": {
+              "mean": 0.020395236670611744,
+              "sample_sd": 0.0016966536954642817
+            },
+            "client_accuracy_q10": {
+              "mean": 0.8565303596470226,
+              "sample_sd": 0.002556734037525237
+            },
+            "pooled_ece15": {
+              "mean": 0.005399542571150706,
+              "sample_sd": 0.0019909152409393594
+            }
+          },
+          "prioranchored_vector": {
+            "macro_accuracy": {
+              "mean": 0.9293527834869223,
+              "sample_sd": 0.004145906990599019
+            },
+            "weighted_accuracy": {
+              "mean": 0.9472333333333333,
+              "sample_sd": 0.00315647482697616
+            },
+            "macro_nll": {
+              "mean": 0.1868161313228394,
+              "sample_sd": 0.011368479545563104
+            },
+            "weighted_nll": {
+              "mean": 0.1478175573776942,
+              "sample_sd": 0.01064052992674893
+            },
+            "macro_brier": {
+              "mean": 0.10255706544601545,
+              "sample_sd": 0.005992240456916893
+            },
+            "weighted_brier": {
+              "mean": 0.07884005824107172,
+              "sample_sd": 0.005530599232839673
+            },
+            "macro_ece15": {
+              "mean": 0.03132225696852682,
+              "sample_sd": 0.0020722993840227803
+            },
+            "weighted_ece15": {
+              "mean": 0.019352417654461263,
+              "sample_sd": 0.0010815503480870675
+            },
+            "client_accuracy_q10": {
+              "mean": 0.8560577849414553,
+              "sample_sd": 0.0011936038845948627
+            },
+            "pooled_ece15": {
+              "mean": 0.004036477480408384,
+              "sample_sd": 0.0017465665325237542
+            }
+          }
+        },
+        "fedprox01_dense": {
+          "raw": {
+            "macro_accuracy": {
+              "mean": 0.692398521237419,
+              "sample_sd": 0.015718317219679496
+            },
+            "weighted_accuracy": {
+              "mean": 0.7536,
+              "sample_sd": 0.015488059917239538
+            },
+            "macro_nll": {
+              "mean": 0.7648329374685489,
+              "sample_sd": 0.033745994257232494
+            },
+            "weighted_nll": {
+              "mean": 0.6518504557672414,
+              "sample_sd": 0.03785171845284032
+            },
+            "macro_brier": {
+              "mean": 0.40079774752749026,
+              "sample_sd": 0.01963692403903168
+            },
+            "weighted_brier": {
+              "mean": 0.33645509039226923,
+              "sample_sd": 0.021044346553302434
+            },
+            "macro_ece15": {
+              "mean": 0.13702622587473914,
+              "sample_sd": 0.012124830540336333
+            },
+            "weighted_ece15": {
+              "mean": 0.11173977484299104,
+              "sample_sd": 0.010612509879651975
+            },
+            "client_accuracy_q10": {
+              "mean": 0.4060835897500042,
+              "sample_sd": 0.016362786826836114
+            },
+            "pooled_ece15": {
+              "mean": 0.01653948643318616,
+              "sample_sd": 0.003812886900935063
+            }
+          },
+          "zero_anchor_vector": {
+            "macro_accuracy": {
+              "mean": 0.9261669590528859,
+              "sample_sd": 0.002579447121871952
+            },
+            "weighted_accuracy": {
+              "mean": 0.9451000000000002,
+              "sample_sd": 0.0029308701779506893
+            },
+            "macro_nll": {
+              "mean": 0.20776538727811078,
+              "sample_sd": 0.012493638121718807
+            },
+            "weighted_nll": {
+              "mean": 0.16130558406479759,
+              "sample_sd": 0.011141408542759253
+            },
+            "macro_brier": {
+              "mean": 0.10858898966239583,
+              "sample_sd": 0.006428574006904499
+            },
+            "weighted_brier": {
+              "mean": 0.08245941781097027,
+              "sample_sd": 0.005759738287003438
+            },
+            "macro_ece15": {
+              "mean": 0.03583997745915086,
+              "sample_sd": 0.0006578103884879344
+            },
+            "weighted_ece15": {
+              "mean": 0.02053423383692676,
+              "sample_sd": 0.000630039544928088
+            },
+            "client_accuracy_q10": {
+              "mean": 0.8554660689651241,
+              "sample_sd": 0.0011936038845948627
+            },
+            "pooled_ece15": {
+              "mean": 0.0062695862469504425,
+              "sample_sd": 0.0024969975409849647
+            }
+          },
+          "prioranchored_vector": {
+            "macro_accuracy": {
+              "mean": 0.9283893091251675,
+              "sample_sd": 0.0034993044837589877
+            },
+            "weighted_accuracy": {
+              "mean": 0.9460666666666667,
+              "sample_sd": 0.0031005375877957556
+            },
+            "macro_nll": {
+              "mean": 0.18928348560519626,
+              "sample_sd": 0.011176708337747338
+            },
+            "weighted_nll": {
+              "mean": 0.15095392945033234,
+              "sample_sd": 0.01049083058093268
+            },
+            "macro_brier": {
+              "mean": 0.10390386537443248,
+              "sample_sd": 0.005890611685761825
+            },
+            "weighted_brier": {
+              "mean": 0.08049450792283626,
+              "sample_sd": 0.005452109797014453
+            },
+            "macro_ece15": {
+              "mean": 0.030068910508124408,
+              "sample_sd": 0.0010636462432480364
+            },
+            "weighted_ece15": {
+              "mean": 0.018892059949099375,
+              "sample_sd": 0.0012230769944309734
+            },
+            "client_accuracy_q10": {
+              "mean": 0.8560577849414553,
+              "sample_sd": 0.0016687966718712704
+            },
+            "pooled_ece15": {
+              "mean": 0.0037814624293670226,
+              "sample_sd": 0.0012269687185069115
+            }
+          }
+        }
+      },
+      "assignment_hash": "844576190704f1d995daecee886d896c7225d4d2f46adf818d45e1c65241cecf",
+      "all_model_state_hashes_unchanged": true,
+      "official_test_fits": 0
+    }
+  },
+  "paired_nll": {
+    "cifar": {
+      "fedavg_dense": {
+        "prior_minus_zero_macro_nll": [
+          -0.033710469070532434,
+          -0.037930547881356635,
+          -0.03436857278307126
+        ],
+        "mean": -0.035336529911653446,
+        "sample_sd": 0.00227045635158918,
+        "all_three_negative": true
+      },
+      "fedprox01_dense": {
+        "prior_minus_zero_macro_nll": [
+          -0.03400935166178298,
+          -0.03828626529430057,
+          -0.03497708401053934
+        ],
+        "mean": -0.0357575669888743,
+        "sample_sd": 0.002242735565020239,
+        "all_three_negative": true
+      }
+    },
+    "fashion": {
+      "fedavg_dense": {
+        "prior_minus_zero_macro_nll": [
+          -0.017197812044952077,
+          -0.020037113762672254,
+          -0.018638443527895343
+        ],
+        "mean": -0.018624456445173226,
+        "sample_sd": 0.001419702535718132,
+        "all_three_negative": true
+      },
+      "fedprox01_dense": {
+        "prior_minus_zero_macro_nll": [
+          -0.01705550626824681,
+          -0.020067409007150788,
+          -0.01832278974334603
+        ],
+        "mean": -0.018481901672914542,
+        "sample_sd": 0.0015122423687202327,
+        "all_three_negative": true
+      }
+    }
+  },
+  "definitions": {
+    "raw": "base algorithm predictor",
+    "zero/prior": "our added post-hoc calibrators"
+  },
+  "no_test_selection": true
+}

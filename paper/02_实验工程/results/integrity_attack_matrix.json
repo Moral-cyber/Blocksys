@@ -1,0 +1,110 @@
+[
+  {
+    "case": "valid",
+    "attempts": 100,
+    "accepted": 100,
+    "rejected": 0,
+    "acceptance_rate": 1.0,
+    "rejection_rate": 0.0,
+    "latency_us_mean": 6.31292,
+    "latency_us_p95": 7.083,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "value_tamper",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 5.3775699999999995,
+    "latency_us_p95": 5.667,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "index_tamper",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 5.3262599999999996,
+    "latency_us_p95": 5.583,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "round_substitution",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 5.2916300000000005,
+    "latency_us_p95": 5.5,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "client_substitution",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 5.27085,
+    "latency_us_p95": 5.375,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "truncation",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 5.25957,
+    "latency_us_p95": 5.542,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "pair_mismatch",
+    "attempts": 100,
+    "accepted": 0,
+    "rejected": 100,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 1.0,
+    "latency_us_mean": 6.56585,
+    "latency_us_p95": 10.958,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "reordered_payload",
+    "attempts": 100,
+    "accepted": 100,
+    "rejected": 0,
+    "acceptance_rate": 1.0,
+    "rejection_rate": 0.0,
+    "latency_us_mean": 5.73374,
+    "latency_us_p95": 6.208,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  },
+  {
+    "case": "replay",
+    "attempts": 100,
+    "accepted": 1,
+    "rejected": 99,
+    "acceptance_rate": 0.01,
+    "rejection_rate": 0.99,
+    "latency_us_mean": 5.6637,
+    "latency_us_p95": 5.75,
+    "tag_bytes": 32,
+    "canonical_bytes": 92
+  }
+]

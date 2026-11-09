@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "random_property_cases": 960,
+  "fallback_cases_in_grid": 480,
+  "max_observed_solver_iters": 19,
+  "checks": [
+    "exact K and sorted pair payload",
+    "unmodified values and residual conservation",
+    "actual reconstructed energy floor",
+    "actual reference alignment nondecrease",
+    "missing/zero/product-zero and tau-one fallbacks",
+    "finite expansion/bisection budgets",
+    "forced failure fallback",
+    "discrete suboptimality counterexample",
+    "tiny train and snapshot adapter integration; new source hashes in config"
+  ],
+  "scope": "Implementation properties only; not exact constrained optimality, convergence, novelty or learning benefit."
+}

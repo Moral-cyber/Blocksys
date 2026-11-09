@@ -1,0 +1,31 @@
+{
+  "registered_at": "2026-11-04T02:14:31.001806+08:00",
+  "new_objective": "prospective NLL advantage at preserved accuracy; previous accuracy STOP unchanged",
+  "partition_before_any_new_model": {
+    "cifar": 20261217,
+    "fashion": 20261219
+  },
+  "seeds": {
+    "cifar": [
+      20261231,
+      20261232,
+      20261233
+    ],
+    "fashion": [
+      20261241,
+      20261242,
+      20261243
+    ]
+  },
+  "frozen_sources": {
+    "work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "work/calibrated_fashion/adapter.py": "624109d019433ed1983bdc810063cdd5fe46116f0896c9dd8636214d553915d2",
+    "work/calibrated_fashion/train.py": "23b8d617c844ce2fc5b34fd3a82da95cd895ecb334c4be0ec3a4296863a3a777",
+    "work/calibrated_fashion/evaluate.py": "6776c9ed0492f7b171f5168fc6d851ee3a35e8d093f60a49790693b8c8713038"
+  },
+  "official_test_forbidden": true
+}

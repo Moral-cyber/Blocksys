@@ -1,0 +1,99 @@
+{
+  "scope": "CPU toy plus strict real TRAIN parsing/partition only; no real-data optimization",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/calibrated_fashion_fixture_10n0j4it",
+  "source_identities": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_bias/solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_fashion.py": "f87e281acaf9a46a62eb31be588c9505ea7bb53c67162fd8fcf2ccc3440111d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/PLAN.md": "05963718ab8a59c647099511ae5d0290daf37ecb58b921b52ade85c8db5ffc0a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/adapter.py": "624109d019433ed1983bdc810063cdd5fe46116f0896c9dd8636214d553915d2",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/train.py": "23b8d617c844ce2fc5b34fd3a82da95cd895ecb334c4be0ec3a4296863a3a777",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/evaluate.py": "6776c9ed0492f7b171f5168fc6d851ee3a35e8d093f60a49790693b8c8713038"
+  },
+  "checks": {
+    "real_TRAIN_readonly_partition": {
+      "source_total": 60000,
+      "train_actual": 44999,
+      "holdout_actual": 15001,
+      "globaldev": 2000,
+      "partition_seed": 20261207,
+      "labels_sha256": "e3245b63f7c40d1c8b652835f19744d970c1613b40ddac6bcfc87b9c46e16a0b",
+      "data_identities": {
+        "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/datasets/FashionMNIST/raw/train-images-idx3-ubyte.gz": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+        "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/datasets/FashionMNIST/raw/train-labels-idx1-ubyte.gz": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+      },
+      "official_md5_sha_verified": true,
+      "deterministic_membership": true,
+      "full_coverage_disjoint": true,
+      "normalization_manual_bitwise": true,
+      "pad_zero_maps_minus_one_repeat3": true,
+      "real_cnn_forwards": 0,
+      "real_backwards": 0
+    },
+    "toy_training": {
+      "methods": [
+        {
+          "method": "ce_uniform3",
+          "tiny_rounds": 2,
+          "signature": "db8bbae5f66b077e392a94cd481ccf6624ffffb0ae9b95ab3f11c939a964e38d",
+          "source_route_runtime_signed": true,
+          "wire_or_dense_bytes": 54067
+        },
+        {
+          "method": "fedlc_uniform3",
+          "tiny_rounds": 2,
+          "signature": "7fc3ebdbfb2c12ee082c355615d584d5edc950f78d6e1fc905f65f827b17fee9",
+          "source_route_runtime_signed": true,
+          "wire_or_dense_bytes": 54067
+        },
+        {
+          "method": "fedlc_dense",
+          "tiny_rounds": 2,
+          "signature": "f8e93d5833604b8c2d825c5629e4670840fceee4e4a6faf7eb51652fb9024b93",
+          "source_route_runtime_signed": true,
+          "wire_or_dense_bytes": 547560
+        }
+      ],
+      "same_seed_batch_anchor": true,
+      "fedlc_quant_dense_initial_delta_bitwise_equal": true
+    },
+    "toy_evaluation_resume": {
+      "completed_resume_no_training": true,
+      "different_task_resume_rejected": true,
+      "final_fashion_dataset_proxy": true,
+      "three_methods_all_variants": true,
+      "TRAIN_only_bias_recomputed": true,
+      "bias_forwards": 24,
+      "bias_backwards": 0,
+      "head_gradient_evaluations": 6,
+      "synthetic_gates_not_a_scientific_result": {
+        "same_loss_prior_accuracy_plus_half_pp": false,
+        "same_loss_prior_lower_ce": true,
+        "ce_bias_accuracy_noninferior_half_pp": true,
+        "ce_bias_ce_within_001": true,
+        "matched_head_accuracy_noninferior_half_pp": true,
+        "quant_dense_accuracy_noninferior_half_pp": true
+      }
+    }
+  },
+  "status": "PASS",
+  "sources_before_after_equal": true,
+  "actual_gzip_paths_opened": [
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/datasets/FashionMNIST/raw/train-images-idx3-ubyte.gz",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/datasets/FashionMNIST/raw/train-labels-idx1-ubyte.gz"
+  ],
+  "intentional_guard_dummy_rejections": 3,
+  "real_test_byte_read_attempts": 0,
+  "formal_ML_training_started": false,
+  "harness_sha256": "95f88a6eff08e36c10802ae2663a0cf4ebd52cd9a38fca1eda00a6f214d28d1a"
+}

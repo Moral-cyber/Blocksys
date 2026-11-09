@@ -1,0 +1,18 @@
+\begin{table}[!htb]\centering\small\setlength{\tabcolsep}{2.1pt}
+\caption{Prior-centered vector scaling lowers NLL and Brier score; BCTS gives lower client ECE. Upper: Brier/ECE (lower is better), ECE in percentage points. P denotes prior centering. Lower: means; accuracy is a proportion.}\label{tab:quality}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+& \multicolumn{3}{c}{CIFAR-10} & \multicolumn{3}{c}{FashionMNIST}\\
+Predictor & Brier & ECE$_c$ & ECE$_p$ & Brier & ECE$_c$ & ECE$_p$\\\midrule
+Zero & $0.343\pm0.008$ & $6.15\pm0.20$ & $1.35\pm0.41$ & $0.108\pm0.006$ & $3.69\pm0.45$ & $0.58\pm0.20$\\
+P-BCTS & $0.341\pm0.007$ & $5.37\pm0.23$ & $1.30\pm0.10$ & $0.105\pm0.005$ & $2.82\pm0.07$ & $0.45\pm0.21$\\
+P-vector & $0.340\pm0.008$ & $5.48\pm0.17$ & $1.49\pm0.24$ & $0.103\pm0.006$ & $3.05\pm0.18$ & $0.47\pm0.20$\\\bottomrule
+\end{tabular}
+\par\medskip
+\begin{tabular}{lrrrr}\toprule
+& \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{FashionMNIST}\\
+Endpoint & Zero & Prior & Zero & Prior\\\midrule
+Weighted NLL & 0.6788 & 0.6571 & 0.1588 & 0.1486\\
+Weighted accuracy & 0.7475 & 0.7471 & 0.9462 & 0.9473\\
+Client accuracy $q_{10}$ & 0.6027 & 0.6065 & 0.8578 & 0.8566\\\bottomrule
+\end{tabular}
+\end{table}

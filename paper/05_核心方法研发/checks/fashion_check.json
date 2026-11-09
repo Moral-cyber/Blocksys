@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "scope": "official TRAIN parsing and preprocessing, independent partition integrity, one forward batch and fake-factory dry routing only; no training or official TEST evaluation",
+  "adapter_source_sha256": "f87e281acaf9a46a62eb31be588c9505ea7bb53c67162fd8fcf2ccc3440111d4",
+  "frozen_sources_unchanged": true,
+  "frozen_source_sha256": {
+    "run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "run_controls.py": "0ec1485702bcfe8293f90e99f46bdb9f363cad43b7f457a95e342260b4b0d881",
+    "run_lagrangian.py": "b1df038d83adcce18e0aef1315f960f691a29c658d5ef03e8fe13e9811562178",
+    "guarded_codec.py": "3dcb6636f12d6dc17fe023a978a9016ce10593ed3da5472b1ad498a33b8c948e",
+    "lagrangian_codec.py": "2fbbe6a7afc8664ae6e40516e7978b4adf30830773e55899cdc41bdcb394eb2e",
+    "run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6"
+  },
+  "source_gzip_files": [
+    {
+      "file": "train-images-idx3-ubyte.gz",
+      "compressed_bytes": 26421880,
+      "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+      "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+      "expected_official_md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+      "official_md5_verified": true
+    },
+    {
+      "file": "train-labels-idx1-ubyte.gz",
+      "compressed_bytes": 29515,
+      "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845",
+      "md5": "25c81989df183df01b3e8a0aad5dffbe",
+      "expected_official_md5": "25c81989df183df01b3e8a0aad5dffbe",
+      "official_md5_verified": true
+    },
+    {
+      "file": "t10k-images-idx3-ubyte.gz",
+      "compressed_bytes": 4422102,
+      "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+      "md5": "bef4ecab320f06d8554ea6380940ec79",
+      "expected_official_md5": "bef4ecab320f06d8554ea6380940ec79",
+      "official_md5_verified": true
+    },
+    {
+      "file": "t10k-labels-idx1-ubyte.gz",
+      "compressed_bytes": 5148,
+      "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5",
+      "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+      "expected_official_md5": "bb300cfdad3c16e7a12a480ee83cd310",
+      "official_md5_verified": true
+    }
+  ],
+  "idx_payloads_loaded": [
+    "train-images-idx3-ubyte.gz",
+    "train-labels-idx1-ubyte.gz"
+  ],
+  "official_test_examples_loaded": false,
+  "official_test_evaluated": false,
+  "partition_checks": [
+    {
+      "dataset": "FashionIndexA0p1",
+      "seeds": [
+        20261124,
+        20261125
+      ],
+      "train_samples": [
+        44998,
+        45001
+      ],
+      "holdout_samples": [
+        15002,
+        14999
+      ],
+      "attempts": [
+        1,
+        1
+      ],
+      "same_seed_exact_reproducibility": true,
+      "different_seed_changes_membership_and_class_counts": true
+    },
+    {
+      "dataset": "FashionIndexA0p5",
+      "seeds": [
+        20261124,
+        20261125
+      ],
+      "train_samples": [
+        44997,
+        45001
+      ],
+      "holdout_samples": [
+        15003,
+        14999
+      ],
+      "attempts": [
+        1,
+        1
+      ],
+      "same_seed_exact_reproducibility": true,
+      "different_seed_changes_membership_and_class_counts": true
+    },
+    {
+      "dataset": "FashionIndexA1",
+      "seeds": [
+        20261124,
+        20261125
+      ],
+      "train_samples": [
+        45000,
+        45001
+      ],
+      "holdout_samples": [
+        15000,
+        14999
+      ],
+      "attempts": [
+        1,
+        1
+      ],
+      "same_seed_exact_reproducibility": true,
+      "different_seed_changes_membership_and_class_counts": true
+    }
+  ],
+  "mixing_checks": [
+    {
+      "mixing": 0,
+      "integrity": {
+        "official_train_total_60000": true,
+        "each_official_train_row_once": true,
+        "train_holdout_disjoint": true,
+        "validation_unique_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      }
+    },
+    {
+      "mixing": 0.5,
+      "integrity": {
+        "official_train_total_60000": true,
+        "each_official_train_row_once": true,
+        "train_holdout_disjoint": true,
+        "validation_unique_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      }
+    },
+    {
+      "mixing": 1,
+      "integrity": {
+        "official_train_total_60000": true,
+        "each_official_train_row_once": true,
+        "train_holdout_disjoint": true,
+        "validation_unique_holdout_only": true,
+        "mixing_preserves_each_client_train_count": true,
+        "mixing_preserves_global_train_id_multiset": true
+      }
+    }
+  ],
+  "batch_shape": [
+    8,
+    3,
+    32,
+    32
+  ],
+  "logits_shape": [
+    8,
+    10
+  ],
+  "parameter_count": 136874,
+  "normalization_max_abs_difference": 0.0,
+  "raw_zero_padding_maps_to_minus_one": true,
+  "three_channels_identical": true,
+  "factory_routes_checked_with_sentinels": [
+    "Fashion",
+    "Fashion",
+    "Fashion",
+    "CIFAR"
+  ],
+  "dry_adapter_metadata_and_registry_routing": true,
+  "elapsed_seconds": 0.7959837080270518
+}

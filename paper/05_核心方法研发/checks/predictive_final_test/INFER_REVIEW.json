@@ -1,0 +1,75 @@
+{
+  "reviewed_at": "2026-11-04T11:20:04.230658+08:00",
+  "status": "READ_ONLY_REVIEW_COMPLETE_TARGETED_METADATA_BINDING_FIXED_BY_ROOT",
+  "scope": "infer.py static audit, three completed CIFAR TRAIN exports metadata/hash checks, random-initialized synthetic forward/cache check; no official TEST data or trained-model forward",
+  "reviewed_infer_sha256": "ccc8e3bae5a2a940ba4cc319bbe31595f7bff52c9fc245965ad99dcc5e05df9f",
+  "helper_sha256": {
+    "FINAL_TEST_PLAN.md": "a188e4e566e22804df7a08e89fd5ce5e1f23264be48eb1231330d3ca803f40e4",
+    "data.py": "0366aa408b22220a4098be8aa14abb672c7480b264a77e95145b10c9ee918412",
+    "scorer.py": "9bba7e92e142a6c6c101da99a26734257f0abcb9f46feb9c242ae7aacdf99041",
+    "export_train_states.py": "5102deb9408d807b73ef246506f85474cf8623378c73f83db811b460a8c5212b"
+  },
+  "snapshot_main_groups_per_task": 9,
+  "snapshot_main_groups_all_tasks": 18,
+  "snapshot_client_states_per_task": 180,
+  "synthetic_forward": {
+    "rows_per_task": 257,
+    "seed": 20261302,
+    "model": "random-initialized frozen SmallCNN",
+    "cifar": {
+      "raw_vs_direct_bitwise_equal": true,
+      "cached_head_max_abs_diff": 2.9802322387695312e-08
+    },
+    "fashion": {
+      "raw_vs_direct_bitwise_equal": true,
+      "cached_head_max_abs_diff": 1.862645149230957e-08
+    },
+    "logits_dtype": "float32",
+    "feature_dtype": "float32",
+    "feature_shape": [
+      257,
+      64
+    ]
+  },
+  "completed_cifar_export_checks": {
+    "seeds": [
+      20261231,
+      20261232,
+      20261233
+    ],
+    "exports_per_seed": 60,
+    "report_export_hashes_match": true,
+    "report_checkpoint_hashes_match": true,
+    "counts_equal_export_manifest": true,
+    "all_three_model_manifests_equal_export_manifest": true,
+    "actual_contract_issues": []
+  },
+  "findings": [
+    {
+      "priority": "P2",
+      "status": "FIXED_BY_ROOT_AND_READ_ONLY_RECHECKED",
+      "location": "infer.inputs_for_task",
+      "issue": "DONE-only export validation can accept a misplaced full export from a different task/seed with identical TRAIN counts",
+      "targeted_remedy": "bind export task/seed/partition/rounds/methods, report exports/checkpoint hashes, manifest/class counts before freeze",
+      "remedy": "inputs_for_task binds task/seed/partition/rounds/methods, export file/checkpoint/config hashes and manifest/classcounts before freeze"
+    }
+  ],
+  "official_test_open_attempts": [],
+  "real_trained_model_forwards": 0,
+  "fit_calls": 0,
+  "root_lock_created": false,
+  "live_stage_or_publish": false,
+  "limits": [
+    "No actual TEST loader compatibility or actual final inference was tested.",
+    "CIFAR metadata checks are a point-in-time read-only snapshot; later source changes require root final refresh.",
+    "Native training targets are integer0..9 with no remapping; output metadata records class_order0..9.",
+    "CPU cached-head reordered matrix products differ from batched original outputs by normal sub1e-7 FP32 rounding."
+  ],
+  "cifar_inputs_for_task_run": {
+    "status": "PASS",
+    "snapshot_files": 222,
+    "checkpoint_count": 9,
+    "client_npz_count": 180,
+    "official_test_open_attempts": []
+  }
+}

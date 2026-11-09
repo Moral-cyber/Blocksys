@@ -1,0 +1,2733 @@
+{
+  "experiment_status": "ALL_DONE",
+  "artifact_check": "PASS",
+  "checks_passed": 444,
+  "checks_total": 444,
+  "failures": [],
+  "review": "REVIEW_UNAVAILABLE",
+  "scope": "independent saved-artifact arithmetic; existing control baselines; no new-algorithm GO claim",
+  "arms": {
+    "plain_dense": {
+      "status": "DONE",
+      "rounds": 20,
+      "checkpoint_rounds": 20,
+      "role": "existing SCAFFOLD control diagnostic baseline",
+      "control_coordinates": 0,
+      "control_scope": "none",
+      "actual_steps_per_client_per_round": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "gradient_evaluations_total": 11940,
+      "optimizer_steps_total": 11940,
+      "optimizer_steps_background_note": null,
+      "upload_bytes_analytical_total": 219024000,
+      "download_model_bytes_analytical_total": 219024000,
+      "download_control_bytes_analytical_total": 0,
+      "total_communication_bytes_analytical": 438048000,
+      "extra_control_download_bytes_per_client_per_round": 0,
+      "control_state_per_client_bytes": 0,
+      "global_control_state_bytes": 0,
+      "simulation_control_state_bytes": 0,
+      "control_formula_max_error_recorded": 0.0,
+      "prior_control_invariant_max_error_recorded": 0.0,
+      "control_invariant_max_error_recorded": 0.0,
+      "checkpoint_weighted_control_max_error": 0.0,
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.798503283691406,
+        "accuracy": 0.3581999957561493,
+        "class_accuracy_mean": [
+          0.264,
+          0.41100000000000003,
+          0.152,
+          0.15,
+          0.693,
+          0.5269999999999999,
+          0.0,
+          0.244,
+          0.7290000000000001,
+          0.4119999999999999
+        ],
+        "macro_accuracy_mean": 0.35819999999999996,
+        "worst_class_accuracy_mean_over_round_minima": 0.0,
+        "minimum_of_mean_class_accuracy": 0.0,
+        "minimum_mean_class_indices": [
+          6
+        ],
+        "round_worst_class_indices": [
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    },
+    "body_control": {
+      "status": "DONE",
+      "rounds": 20,
+      "checkpoint_rounds": 20,
+      "role": "existing SCAFFOLD control diagnostic baseline",
+      "control_coordinates": 136224,
+      "control_scope": "prefix body",
+      "actual_steps_per_client_per_round": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "gradient_evaluations_total": 11940,
+      "optimizer_steps_total": 11940,
+      "optimizer_steps_background_note": null,
+      "upload_bytes_analytical_total": 219024000,
+      "download_model_bytes_analytical_total": 219024000,
+      "download_control_bytes_analytical_total": 217964800,
+      "total_communication_bytes_analytical": 656012800,
+      "extra_control_download_bytes_per_client_per_round": 544912,
+      "control_state_per_client_bytes": 544896,
+      "global_control_state_bytes": 544896,
+      "simulation_control_state_bytes": 11442816,
+      "control_formula_max_error_recorded": 4.4330954551696777e-07,
+      "prior_control_invariant_max_error_recorded": 0.0,
+      "control_invariant_max_error_recorded": 5.587935447692871e-09,
+      "checkpoint_weighted_control_max_error": 0.0,
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.8455745239257813,
+        "accuracy": 0.33089999556541444,
+        "class_accuracy_mean": [
+          0.267,
+          0.48100000000000004,
+          0.166,
+          0.052000000000000005,
+          0.6990000000000001,
+          0.499,
+          0.0,
+          0.14800000000000002,
+          0.72,
+          0.277
+        ],
+        "macro_accuracy_mean": 0.3309,
+        "worst_class_accuracy_mean_over_round_minima": 0.0,
+        "minimum_of_mean_class_accuracy": 0.0,
+        "minimum_mean_class_indices": [
+          6
+        ],
+        "round_worst_class_indices": [
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    },
+    "full_control": {
+      "status": "DONE",
+      "rounds": 20,
+      "checkpoint_rounds": 20,
+      "role": "existing SCAFFOLD control diagnostic baseline",
+      "control_coordinates": 136874,
+      "control_scope": "all parameters",
+      "actual_steps_per_client_per_round": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "gradient_evaluations_total": 11940,
+      "optimizer_steps_total": 11940,
+      "optimizer_steps_background_note": null,
+      "upload_bytes_analytical_total": 219024000,
+      "download_model_bytes_analytical_total": 219024000,
+      "download_control_bytes_analytical_total": 219004800,
+      "total_communication_bytes_analytical": 657052800,
+      "extra_control_download_bytes_per_client_per_round": 547512,
+      "control_state_per_client_bytes": 547496,
+      "global_control_state_bytes": 547496,
+      "simulation_control_state_bytes": 11497416,
+      "control_formula_max_error_recorded": 4.76837158203125e-07,
+      "prior_control_invariant_max_error_recorded": 0.0,
+      "control_invariant_max_error_recorded": 1.210719347000122e-08,
+      "checkpoint_weighted_control_max_error": 0.0,
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.9033007507324218,
+        "accuracy": 0.31570000052452085,
+        "class_accuracy_mean": [
+          0.31100000000000005,
+          0.28,
+          0.17500000000000002,
+          0.086,
+          0.6950000000000001,
+          0.379,
+          0.047,
+          0.153,
+          0.6599999999999999,
+          0.37100000000000005
+        ],
+        "macro_accuracy_mean": 0.31570000000000004,
+        "worst_class_accuracy_mean_over_round_minima": 0.026999999999999996,
+        "minimum_of_mean_class_accuracy": 0.047,
+        "minimum_mean_class_indices": [
+          6
+        ],
+        "round_worst_class_indices": [
+          [
+            3,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ],
+          [
+            7
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    },
+    "head_control_dense_same_seed_background": {
+      "status": "DONE",
+      "rounds": 20,
+      "checkpoint_rounds": 20,
+      "role": "reused same-seed/partition background; not independent repetition",
+      "control_coordinates": 650,
+      "control_scope": "suffix head",
+      "actual_steps_per_client_per_round": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "gradient_evaluations_total": 11940,
+      "optimizer_steps_total": null,
+      "optimizer_steps_background_note": "not separately logged in reused background",
+      "upload_bytes_analytical_total": 219024000,
+      "download_model_bytes_analytical_total": 219024000,
+      "download_control_bytes_analytical_total": 1046400,
+      "total_communication_bytes_analytical": 439094400,
+      "extra_control_download_bytes_per_client_per_round": 2616,
+      "control_state_per_client_bytes": 2600,
+      "global_control_state_bytes": 2600,
+      "simulation_control_state_bytes": 54600,
+      "control_formula_max_error_recorded": 4.6193599700927734e-07,
+      "prior_control_invariant_max_error_recorded": 0.0,
+      "control_invariant_max_error_recorded": 4.6566128730773926e-09,
+      "checkpoint_weighted_control_max_error": 0.0,
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.7712562713623048,
+        "accuracy": 0.3609000027179718,
+        "class_accuracy_mean": [
+          0.30199999999999994,
+          0.418,
+          0.167,
+          0.125,
+          0.689,
+          0.502,
+          0.005,
+          0.261,
+          0.7260000000000001,
+          0.41400000000000003
+        ],
+        "macro_accuracy_mean": 0.3609,
+        "worst_class_accuracy_mean_over_round_minima": 0.005,
+        "minimum_of_mean_class_accuracy": 0.005,
+        "minimum_mean_class_indices": [
+          6
+        ],
+        "round_worst_class_indices": [
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ],
+          [
+            6
+          ]
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "body_control": {
+      "ce_reduction_vs_plain": -0.047071240234375145,
+      "accuracy_gain_vs_plain": -0.027300000190734863,
+      "mean_round_worst_class_gain_vs_plain": 0.0,
+      "per_class_accuracy_gain_vs_plain": [
+        0.0030000000000000027,
+        0.07,
+        0.014000000000000012,
+        -0.09799999999999999,
+        0.006000000000000116,
+        -0.027999999999999914,
+        0.0,
+        -0.09599999999999997,
+        -0.009000000000000119,
+        -0.1349999999999999
+      ]
+    },
+    "full_control": {
+      "ce_reduction_vs_plain": -0.10479746704101567,
+      "accuracy_gain_vs_plain": -0.04249999523162845,
+      "mean_round_worst_class_gain_vs_plain": 0.026999999999999996,
+      "per_class_accuracy_gain_vs_plain": [
+        0.04700000000000004,
+        -0.131,
+        0.02300000000000002,
+        -0.064,
+        0.002000000000000113,
+        -0.1479999999999999,
+        0.047,
+        -0.091,
+        -0.06900000000000017,
+        -0.04099999999999987
+      ]
+    },
+    "head_control_dense_same_seed_background": {
+      "ce_reduction_vs_plain": 0.027247012329101317,
+      "accuracy_gain_vs_plain": 0.0027000069618224876,
+      "mean_round_worst_class_gain_vs_plain": 0.005,
+      "per_class_accuracy_gain_vs_plain": [
+        0.03799999999999992,
+        0.006999999999999951,
+        0.015000000000000013,
+        -0.024999999999999994,
+        -0.0040000000000000036,
+        -0.02499999999999991,
+        0.005,
+        0.017000000000000015,
+        -0.0030000000000000027,
+        0.002000000000000113
+      ]
+    }
+  },
+  "snapshots": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/config.json": {
+      "bytes": 780273,
+      "sha256": "959de9a49ec3796e0e3eb1249459cb25936475d4110f30e60b23f46048b41ef1"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/result.json": {
+      "bytes": 180245,
+      "sha256": "2ba0c7c26bf5e6716c330088a541672e86072456c7d984ee7d14a0c7cb69e5f5"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/plain_dense/checkpoint.pt": {
+      "bytes": 777781,
+      "sha256": "359ffece8da9df1e616680f03aea964fab268e5833610974d38d93b9300b5c8c"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/body_control/config.json": {
+      "bytes": 780303,
+      "sha256": "6dfae6482dd99a148600b9b7ec7b3f5c5c4e3dde4c41157998363afc62f15b99"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/body_control/result.json": {
+      "bytes": 194328,
+      "sha256": "3831575f3b77bc7d97619236e22fb8962af55e76feb184696b08246371934e1a"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/body_control/checkpoint.pt": {
+      "bytes": 12222133,
+      "sha256": "3e9d869c591c30de0b5bb15ba06856a50f45b77c318a9ad7de6ac8869d01a8c5"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/full_control/config.json": {
+      "bytes": 780303,
+      "sha256": "7e19479dce8dd6449ae5a97d16be9f56b7e700923fa7c979a972521598141cfb"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/full_control/result.json": {
+      "bytes": 194238,
+      "sha256": "aed1f678546f8c98ab549e010cd60138b7d758f37aa8faee411f7a434bfd2d3d"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/control_reference/development_s20261191/full_control/checkpoint.pt": {
+      "bytes": 12275893,
+      "sha256": "dc3df4730de04d5299338797bbfda0ba7f80fd3a28ebebfd7c66b9fe07fe7748"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/head_control/development_s20261191/head_control_dense/config.json": {
+      "bytes": 779171,
+      "sha256": "ef6f0268756fa3e98fc7ac6f7b3af5b2a1bbbe76e56eb18a3cb989cf14bb40a9"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/head_control/development_s20261191/head_control_dense/result.json": {
+      "bytes": 170388,
+      "sha256": "a0d99092531cfb7522f907d4a253f42f6b0a906bbefa4f89295d0d3c94602970"
+    },
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/head_control/development_s20261191/head_control_dense/checkpoint.pt": {
+      "bytes": 11567477,
+      "sha256": "36169960c8629ee8153bf086a2226ee79859ab4e63e12a12d4d67c5964b38d97"
+    }
+  },
+  "saved_inputs_unchanged_after_verification": true,
+  "checks": [
+    {
+      "check": "plain_dense: config/result/checkpoint signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: frozen source/plan metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: fixed setup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: sample weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: official test excluded in metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: development split integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: manifest ID hashes/sizes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: finite saved values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round identifiers/status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: checkpoint/result common rows",
+      "pass": true,
+      "detail": {
+        "result_rounds": 20,
+        "checkpoint_rounds": 20
+      }
+    },
+    {
+      "check": "plain_dense: final checkpoint/result complete rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: model parameter layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: control tensor layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: final independently weighted control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: checkpoint/config identity and weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: final client control norms match checkpoint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: control dimensions/state accounting",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: analytical config communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 1: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 1: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 1: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 1: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 1: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 2: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 2: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 2: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 2: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 2: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 3: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 3: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 3: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 3: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 3: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 4: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 4: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 4: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 4: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 4: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 5: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 5: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 5: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 5: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 5: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 6: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 6: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 6: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 6: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 6: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 7: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 7: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 7: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 7: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 7: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 8: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 8: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 8: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 8: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 8: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 9: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 9: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 9: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 9: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 9: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 10: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 10: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 10: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 10: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 10: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 11: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 11: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 11: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 11: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 11: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 12: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 12: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 12: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 12: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 12: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 13: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 13: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 13: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 13: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 13: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 14: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 14: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 14: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 14: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 14: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 15: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 15: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 15: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 15: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 15: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 16: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 16: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 16: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 16: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 16: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 17: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 17: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 17: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 17: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 17: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 18: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 18: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 18: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 18: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 18: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 19: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 19: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 19: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 19: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 19: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 20: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 20: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 20: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 20: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: round 20: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: recorded control diagnostics bounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: plain zero control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: config/result/checkpoint signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: frozen source/plan metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: fixed setup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: sample weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: official test excluded in metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: development split integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: manifest ID hashes/sizes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: finite saved values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round identifiers/status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: checkpoint/result common rows",
+      "pass": true,
+      "detail": {
+        "result_rounds": 20,
+        "checkpoint_rounds": 20
+      }
+    },
+    {
+      "check": "body_control: final checkpoint/result complete rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: model parameter layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: control tensor layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: final independently weighted control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: checkpoint/config identity and weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: final client control norms match checkpoint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: control dimensions/state accounting",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: analytical config communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 1: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 1: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 1: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 1: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 1: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 2: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 2: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 2: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 2: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 2: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 3: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 3: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 3: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 3: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 3: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 4: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 4: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 4: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 4: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 4: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 5: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 5: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 5: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 5: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 5: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 6: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 6: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 6: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 6: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 6: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 7: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 7: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 7: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 7: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 7: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 8: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 8: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 8: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 8: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 8: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 9: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 9: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 9: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 9: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 9: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 10: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 10: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 10: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 10: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 10: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 11: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 11: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 11: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 11: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 11: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 12: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 12: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 12: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 12: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 12: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 13: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 13: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 13: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 13: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 13: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 14: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 14: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 14: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 14: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 14: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 15: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 15: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 15: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 15: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 15: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 16: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 16: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 16: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 16: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 16: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 17: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 17: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 17: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 17: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 17: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 18: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 18: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 18: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 18: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 18: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 19: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 19: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 19: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 19: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 19: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 20: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 20: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 20: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 20: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: round 20: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: recorded control diagnostics bounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: config/result/checkpoint signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: frozen source/plan metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: fixed setup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: sample weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: official test excluded in metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: development split integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: manifest ID hashes/sizes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: finite saved values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round identifiers/status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: checkpoint/result common rows",
+      "pass": true,
+      "detail": {
+        "result_rounds": 20,
+        "checkpoint_rounds": 20
+      }
+    },
+    {
+      "check": "full_control: final checkpoint/result complete rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: model parameter layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: control tensor layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: final independently weighted control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: checkpoint/config identity and weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: final client control norms match checkpoint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: control dimensions/state accounting",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: analytical config communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 1: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 1: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 1: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 1: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 1: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 2: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 2: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 2: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 2: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 2: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 3: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 3: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 3: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 3: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 3: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 4: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 4: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 4: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 4: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 4: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 5: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 5: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 5: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 5: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 5: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 6: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 6: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 6: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 6: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 6: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 7: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 7: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 7: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 7: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 7: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 8: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 8: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 8: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 8: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 8: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 9: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 9: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 9: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 9: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 9: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 10: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 10: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 10: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 10: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 10: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 11: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 11: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 11: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 11: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 11: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 12: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 12: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 12: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 12: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 12: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 13: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 13: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 13: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 13: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 13: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 14: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 14: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 14: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 14: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 14: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 15: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 15: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 15: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 15: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 15: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 16: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 16: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 16: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 16: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 16: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 17: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 17: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 17: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 17: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 17: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 18: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 18: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 18: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 18: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 18: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 19: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 19: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 19: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 19: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 19: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 20: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 20: actual optimizer counts/seeds/samples/weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 20: fixed global anchor diagnostic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 20: analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: round 20: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: recorded control diagnostics bounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: config/result/checkpoint signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: frozen source/plan metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: fixed setup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: sample weights",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: official test excluded in metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: development split integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: manifest ID hashes/sizes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: finite saved values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round identifiers/status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: checkpoint/result common rows",
+      "pass": true,
+      "detail": {
+        "result_rounds": 20,
+        "checkpoint_rounds": 20
+      }
+    },
+    {
+      "check": "head_control_dense_same_seed_background: final checkpoint/result complete rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: model parameter layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: control tensor layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: final independently weighted control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: background exact dense transport",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 1: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 1: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 1: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 2: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 2: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 2: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 3: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 3: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 3: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 4: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 4: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 4: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 5: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 5: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 5: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 6: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 6: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 6: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 7: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 7: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 7: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 8: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 8: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 8: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 9: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 9: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 9: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 10: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 10: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 10: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 11: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 11: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 11: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 12: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 12: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 12: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 13: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 13: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 13: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 14: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 14: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 14: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 15: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 15: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 15: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 16: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 16: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 16: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 17: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 17: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 17: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 18: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 18: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 18: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 19: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 19: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 19: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 20: actual K/gradients",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 20: background analytical communication",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: round 20: class/macro/worst/micro saved metric arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: recorded control diagnostics bounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: common development protocol/partition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "plain_dense: common helper identities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: common development protocol/partition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "body_control: common helper identities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: common development protocol/partition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_control: common helper identities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: common development protocol/partition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_control_dense_same_seed_background: common helper identities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "new reference arms share saved initial global anchor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "saved inputs unchanged after verification",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "separately_read_static_source_notes": [
+    "run.py:43-51,89-98: checked last-650 head layout; none/body/full select 0/136224/136874 coordinate prefixes. Body correction stops before the head.",
+    "run.py:75,85-103: fixed c-ci per round, one CE backward per actual batch, raw gradient accumulated before correction; ci_new=ci-c-delta_subset/(.03*actual_steps) is checked against raw gradient mean at 5e-6.",
+    "run.py:143-146,196-220: with full participation and fixed p, sum(p*ci)=c implies sum(p*ci_new)=-sum(p*delta_subset/(eta*K)); prior and new invariants are checked. This does not establish partial-participation support.",
+    "run.py:161-169,223-236: one analytical dense delta upload, analytical dense model download, plus 16+4d control download; per-client/global controls are each 4d and all 21 simulated control vectors cost 21*4d. The 64B header/K layout is assumed, not serialized.",
+    "run.py:239-244: version/config/signature/weights/client_sizes/control tensors and complete metric rows are checkpointed; result uses those same metric rows.",
+    "run.py:267-271; PLAN.md:3-13: fixed official-TRAIN development split, existing SCAFFOLD/SCALLION references; reused head_control_dense has the same seed/partition and is not an independent repeat or new algorithm."
+  ],
+  "limits": [
+    "Existing SCAFFOLD full/body/head control references, not a new algorithm or independent confirmation of a contribution.",
+    "Outcomes apply to this fixed 20-round, lr=.03, local-epoch1 SmallCNN/CIFAR10 development protocol. They do not establish what longer schedules or other fixed protocols would do, or invalidate SCAFFOLD generally.",
+    "Same seed20261191 and partition20261143; reused head_control_dense adds no independent seed. Rounds are not independent repeats.",
+    "No training or dataset/official TEST load in this checker; saved metrics are checked/reaveraged, not recomputed from predictions.",
+    "Per-step raw gradients and updates are not saved; local telescoping and historical server invariants are recorded training diagnostics. Final control weighting is independently recomputed.",
+    "MPS local training is supported by saved metadata/static source; this CPU checker does not independently reproduce its trajectory.",
+    "All communication values are analytical, including assumed 64B delta header with actual K. No serialization/network/authentication/energy/chain measurement.",
+    "Fixed full participation and fixed sample weights are essential to server delta-only control reconstruction.",
+    "No external cross-model reviewer is available: REVIEW_UNAVAILABLE."
+  ]
+}

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Partition check on development holdouts: client-macro NLL, mean $\pm$ sample SD over three paired model seeds per partition. $\Delta$ is prior minus zero center; fitting uses TRAIN only. Original TEST scores are separate.}
+\label{tab:partitiondev}
+\begin{tabular}{llrrr}
+\toprule
+Task & Partition & Zero center & Prior center & $\Delta$ \\
+\midrule
+CIFAR-10 & 20261217 & $0.6536\pm0.0140$ & $0.6124\pm0.0140$ & $-0.0411$ \\
+CIFAR-10 & 20261105 & $0.6912\pm0.0170$ & $0.6521\pm0.0174$ & $-0.0391$ \\
+CIFAR-10 & 20261106 & $0.6314\pm0.0214$ & $0.5851\pm0.0213$ & $-0.0463$ \\
+Fashion & 20261219 & $0.1802\pm0.0121$ & $0.1664\pm0.0116$ & $-0.0138$ \\
+Fashion & 20261105 & $0.2201\pm0.0125$ & $0.2098\pm0.0123$ & $-0.0103$ \\
+Fashion & 20261106 & $0.1672\pm0.0098$ & $0.1564\pm0.0087$ & $-0.0109$ \\
+\bottomrule
+\end{tabular}
+\end{table}

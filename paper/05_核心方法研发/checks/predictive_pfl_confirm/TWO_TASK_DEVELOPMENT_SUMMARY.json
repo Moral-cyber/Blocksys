@@ -1,0 +1,46 @@
+{
+  "cifar": {
+    "status": "DEVELOPMENT_TASK_SUPPORTED",
+    "seeds": [
+      20261231,
+      20261232,
+      20261233
+    ],
+    "accuracy_preserved_each_seed": true,
+    "nll_reduction_vs_zero_each_seed": [
+      0.039670082598868395,
+      0.04378302206173068,
+      0.039883703088266276
+    ],
+    "nll_reduction_vs_prior_each_seed": [
+      0.02851763799714302,
+      0.03024058998059609,
+      0.030119640654259983
+    ],
+    "mean_nll_reduction_vs_zero": 0.04111226924962178,
+    "mean_nll_reduction_vs_prior": 0.029625956210666365,
+    "scope": "development only; official TEST reported separately"
+  },
+  "fashion": {
+    "status": "DEVELOPMENT_TASK_SUPPORTED",
+    "seeds": [
+      20261241,
+      20261242,
+      20261243
+    ],
+    "accuracy_preserved_each_seed": true,
+    "nll_reduction_vs_zero_each_seed": [
+      0.01319365993750482,
+      0.014739828019477874,
+      0.013429147102775735
+    ],
+    "nll_reduction_vs_prior_each_seed": [
+      0.032595384036033764,
+      0.02913141872024827,
+      0.0322767826768465
+    ],
+    "mean_nll_reduction_vs_zero": 0.013787545019919476,
+    "mean_nll_reduction_vs_prior": 0.03133452847770951,
+    "scope": "development only; official TEST reported separately"
+  }
+}

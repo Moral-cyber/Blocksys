@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "simulation_only": true,
+  "review_status": "REVIEW_UNAVAILABLE",
+  "review_scope": "local independent rerun and same-model static review; no external review",
+  "output": "check_independent/final_62",
+  "tests": {"run": 62, "passed": 62, "failed": 0, "same_cases_as_formal": true},
+  "sqlite": {"files": 188, "integrity_ok": 188},
+  "identity": {"wire_authenticated": true, "spec_bytes_pinned": true, "sqlite_persisted": true, "pending_retry_checked": true, "client_spec_mismatch_decoder_calls": 0, "reopen_registry_mismatch_decoder_calls": 0},
+  "trust_boundary": {"matching_claim_does_not_prove_execution": true, "lying_same_spec_decoder_accepted": true},
+  "preservation": {"protected_files": 203, "unchanged": true, "upstream_baselines": 7, "all_match": true},
+  "private_keys": {"new_files": 62, "all_mode_0600": true, "inside_result_tree": 0, "contents_reproduced": false},
+  "external_sharing": false,
+  "evidence": ["check_independent/final_62/test_results.json", "check_independent/final_62/audit_independent.json", "check_independent/rerun_audit.json"]
+}

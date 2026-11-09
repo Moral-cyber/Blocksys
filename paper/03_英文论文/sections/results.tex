@@ -1,0 +1,23 @@
+\section{Results}
+\subsection{Main results}
+PR-LFL reaches client-macro NLL 0.645/0.188 (0.6446/0.1880 before rounding) and accuracy 75.57\%/92.97\% on CIFAR-10/FashionMNIST. Changing the center gives NLL gains of 0.0358/0.0182 and accuracy gains of 0.1777/0.1730 percentage points (Table~\ref{tab:main}). Learned correction reduces NLL over fixed prior addition by 0.0282/0.0222, placing the prior inside a fitted predictor.
+
+At a matched budget (54,067 B for uniform3, 54,808 B for TopK), a TopK compressor reaches NLL 0.670 and a FedRoD-linear reference 0.677 on CIFAR-10, against 0.645 for uniform3 with the prior center; both are matched in-house implementations over the same three paired seeds. Table~\ref{tab:main} shows that the correction also holds under dense FedAvg and FedProx.\par\vspace{-\baselineskip}
+\input{tables/main}
+
+\input{tables/quality}
+The prior vector lowers mean NLL and Brier score, whereas same-prior BCTS gives lower mean client ECE (Table~\ref{tab:quality}). Weighted NLL falls by 0.0217/0.0102, compared with the larger client-macro gains, motivating a closer look at how benefit varies across heterogeneous clients.
+
+\subsection{Heterogeneity sweep}
+In this three-point sweep, mean gain increases as heterogeneity strengthens (Fig.~\ref{fig:heterogeneity}a). As $\alpha$ decreases from 1.0 through 0.5 to 0.1, gain rises from 0.0042 through 0.0101 to 0.0408 on CIFAR-10 and from 0.0024 through 0.0047 to 0.0132 on FashionMNIST. Each $\alpha$ uses one partition realization and three model seeds. At $\alpha=0.1$, development NLL improves in 60/60 CIFAR and 59/60 Fashion client--seed pairs, concentrating the largest mean benefit at the strongest heterogeneity measured in this sweep.
+
+\begin{figure}[!htb]\centering
+\includegraphics[width=0.8\linewidth]{figures/figure2_heterogeneity_dual.pdf}
+\caption{Mean gain is larger under stronger heterogeneity across the three-point sweep. (a) Development gain versus $\alpha$: three-seed means, sample SD and seed markers. (b) Saved TEST gain versus client TRAIN sample count $n_i$ (log axis): twenty client means per task and seed observations. Positive $\Delta\mathrm{NLL}=\mathrm{NLL}(\mathrm{zero})-\mathrm{NLL}(\mathrm{prior})$ favors prior centering.}\label{fig:heterogeneity}
+\end{figure}
+
+\subsection{Who benefits: client sample count}
+Gain is negatively associated with client TRAIN sample count, with Spearman $\rho=-0.771/-0.729$ on CIFAR-10/FashionMNIST (Fig.~\ref{fig:heterogeneity}b). Each client mean averages three seeds within the original fixed partition. This association places the measured gain among smaller clients, where the mean-loss penalty $\lambda/|D_i|$ gives the prior center greater weight.
+
+\subsection{Class-alignment control}
+Permuting class labels in the prior raises development NLL by 0.071/0.044 on CIFAR-10/FashionMNIST at fixed center norm and predictor capacity, attributing the benefit to class alignment.

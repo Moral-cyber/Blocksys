@@ -1,0 +1,20 @@
+\begin{table}[!tbp]
+\centering
+\small
+\setlength{\tabcolsep}{0.6pt}
+\caption{Prior centering lowers NLL on dense FedAvg/FedProx models. Matched in-house implementations, three original seeds; client-macro mean $\pm$ sample SD, accuracy in percent. Zero/prior add post-hoc fits to each raw baseline.}
+\label{tab:dense_baselines}
+\begin{tabular}{llrrrr}
+\toprule
+& & \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{FashionMNIST} \\
+Training & Predictor & NLL & Acc. & NLL & Acc. \\
+\midrule
+FedAvg & Raw & 1.6854 $\pm$ 0.026 & 38.47 $\pm$ 0.44 & 0.7597 $\pm$ 0.036 & 69.43 $\pm$ 1.73 \\
+FedAvg & + zero & 0.6794 $\pm$ 0.013 & 75.62 $\pm$ 0.52 & 0.2054 $\pm$ 0.013 & 92.69 $\pm$ 0.41 \\
+FedAvg & + prior & 0.6441 $\pm$ 0.012 & 75.58 $\pm$ 0.54 & 0.1868 $\pm$ 0.011 & 92.94 $\pm$ 0.41 \\
+FedProx & Raw & 1.7086 $\pm$ 0.024 & 37.75 $\pm$ 0.47 & 0.7648 $\pm$ 0.034 & 69.24 $\pm$ 1.57 \\
+FedProx & + zero & 0.6908 $\pm$ 0.013 & 75.03 $\pm$ 0.41 & 0.2078 $\pm$ 0.013 & 92.62 $\pm$ 0.26 \\
+FedProx & + prior & 0.6551 $\pm$ 0.013 & 74.96 $\pm$ 0.59 & 0.1893 $\pm$ 0.011 & 92.84 $\pm$ 0.35 \\
+\bottomrule
+\end{tabular}
+\end{table}

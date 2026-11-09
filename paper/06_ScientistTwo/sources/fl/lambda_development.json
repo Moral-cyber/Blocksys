@@ -1,0 +1,135 @@
+{
+  "status": "DONE",
+  "scope": "fixed-grid development sensitivity, no selection",
+  "coefficient_grid": [
+    "0",
+    "0.1",
+    "1",
+    "10",
+    "100",
+    "inf"
+  ],
+  "tasks": {
+    "cifar": {
+      "summary": {
+        "0.1": {
+          "nll": {
+            "mean": 0.6102955642511588,
+            "sample_sd": 0.013926733567335378
+          },
+          "accuracy": {
+            "mean": 0.763510236035356,
+            "sample_sd": 0.004744782266889895
+          }
+        },
+        "1": {
+          "nll": {
+            "mean": 0.6109443257523476,
+            "sample_sd": 0.01389686260515558
+          },
+          "accuracy": {
+            "mean": 0.7633396901313058,
+            "sample_sd": 0.004876259242193653
+          }
+        },
+        "10": {
+          "nll": {
+            "mean": 0.6124467807952949,
+            "sample_sd": 0.013953828302370694
+          },
+          "accuracy": {
+            "mean": 0.7643703127518613,
+            "sample_sd": 0.00607517231332802
+          }
+        },
+        "100": {
+          "nll": {
+            "mean": 0.6193474480652659,
+            "sample_sd": 0.01401482888194374
+          },
+          "accuracy": {
+            "mean": 0.7630856574215897,
+            "sample_sd": 0.0062443233987297675
+          }
+        },
+        "inf": {
+          "nll": {
+            "mean": 0.642072737251464,
+            "sample_sd": 0.014715702400191525
+          },
+          "accuracy": {
+            "mean": 0.7547397558377669,
+            "sample_sd": 0.005787175942887831
+          }
+        }
+      },
+      "lambda0_clients_without_finite_minimizer": 60
+    },
+    "fashion": {
+      "summary": {
+        "0.1": {
+          "nll": {
+            "mean": 0.16563262910842272,
+            "sample_sd": 0.011656110150033658
+          },
+          "accuracy": {
+            "mean": 0.9409572668790706,
+            "sample_sd": 0.0024901492381837757
+          }
+        },
+        "1": {
+          "nll": {
+            "mean": 0.16488810248852995,
+            "sample_sd": 0.011857428773745862
+          },
+          "accuracy": {
+            "mean": 0.9413529587534807,
+            "sample_sd": 0.002796029524369812
+          }
+        },
+        "10": {
+          "nll": {
+            "mean": 0.166384147862216,
+            "sample_sd": 0.011603444259211398
+          },
+          "accuracy": {
+            "mean": 0.9427512669248838,
+            "sample_sd": 0.004323910902474634
+          }
+        },
+        "100": {
+          "nll": {
+            "mean": 0.17240224083826974,
+            "sample_sd": 0.010983372947344427
+          },
+          "accuracy": {
+            "mean": 0.9413305567386425,
+            "sample_sd": 0.0051579308066783515
+          }
+        },
+        "inf": {
+          "nll": {
+            "mean": 0.19771867789588896,
+            "sample_sd": 0.010666647617253578
+          },
+          "accuracy": {
+            "mean": 0.9293896600460462,
+            "sample_sd": 0.0038902245491843263
+          }
+        }
+      },
+      "lambda0_clients_without_finite_minimizer": 60
+    }
+  },
+  "new_fits": 480,
+  "new_training_seeds": 0,
+  "cnn_forwards": 0,
+  "cnn_backwards": 0,
+  "official_test_reads": 0,
+  "lambda10_states_bitwise_equal": true,
+  "lambda10_max_metric_error": 0.0,
+  "completed_at": "2026-11-04T15:55:39.258495+00:00",
+  "input_hashes_unchanged": true,
+  "forbidden_open_attempts": [],
+  "elapsed_seconds": 7.499544958001934
+}

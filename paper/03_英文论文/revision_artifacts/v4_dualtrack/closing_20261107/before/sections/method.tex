@@ -1,0 +1,32 @@
+\section{Method}
+
+\subsection{A correctable prior center}
+For $C$ classes, client $i$ fits its predictor on TRAIN set $D_i$ with frozen shared logits $z(x;w)\in\mathbb{R}^C$; $H_i$ is its disjoint development holdout.
+
+TRAIN counts $n_{ic}$ give add-one priors $\widehat\pi_{ic}=(n_{ic}+1)/(|D_i|+C)$ and centered log-priors $\mu_{ic}=\log\widehat\pi_{ic}-C^{-1}\sum_k\log\widehat\pi_{ik}$.
+Instead of fixing the offset at $z+\log\widehat\pi_i$, we minimize penalized cross-entropy (CE) centered at $\mu_i$:
+\begin{equation}\label{eq:priorfit}
+\begin{aligned}
+\min_{A_i,b_i}\;&\sum_{(x,y)\in D_i}\operatorname{CE}(A_i\odot z(x;w)+b_i,y)\\
+&+\frac{\lambda}{2}\|A_i-\mathbf{1}\|_2^2
+ +\frac{\lambda}{2}\|b_i-\mu_i\|_2^2,\\
+\text{subject to }&A_i\in\mathbb{R}^C,\quad\mathbf{1}^{\mathsf T}b_i=0.
+\end{aligned}
+\end{equation}
+Vector scaling~\cite{guo2017calibration} gives $p_i(x)=\operatorname{softmax}(A_i\odot z(x;w)+b_i)$. Bias centering fixes translation freedom; scales permit ranking changes. At $C=10$, twenty 32-bit floating-point (FP32) values occupy 80 B.
+
+\paragraph{How the center acts.}
+At the exact minimizer of Eq.~\ref{eq:priorfit}, the bias satisfies
+\begin{equation}\label{eq:mass}
+\lambda(b_{ic}-\mu_{ic})
+=n_{ic}-\sum_{x\in D_i}p_{ic}(x).
+\end{equation}
+Centered biases and zero-sum CE gradients imply a zero constraint multiplier, giving Eq.~\ref{eq:mass}. As $\lambda\to\infty$, $(A_i,b_i)\to(\mathbf{1},\mu_i)$ recovers fixed prior addition; $\lambda\to0$ removes regularization but may lack a finite minimizer with missing TRAIN classes. The mean-loss penalty $\lambda/|D_i|$ shrinks smaller clients more strongly. This shrinkage is strongest for the smallest clients, which is where the measured gain concentrates.
+
+For $\lambda>0$ the objective is strictly convex. We fix $\lambda=10$, fit TRAIN logits with double-precision (FP64) Newton updates and evaluate stored FP32 states in FP64 (Appendix~\ref{app:implementation}, Implementation).
+
+\subsection{Low-bit shared training}
+Shared training uses 20 full-participation rounds, one local epoch, batch 64 and stochastic gradient descent (SGD), learning rate $0.03$. Error feedback adds a residual before three-bit quantization; aggregation weights decoded updates by TRAIN size~\cite{karimireddy2019errorfeedback}. The 136,874-coordinate uniform3 payload occupies 54,067 B within a 54,808 B cap, including scales and its header. Dense downlinks are retained; Appendix~\ref{app:implementation} gives the codec and training-loss details.
+
+\paragraph{Matched controls.}
+Zero centering fixes logits, capacity, penalty and solver. Prior-only, fixed-prior and a 650-parameter Linear head isolate counts, correction and capacity. Ridge-10 controls fit bias-only $z+b$, temperature $az$, or eleven-value BCTS $az+b$ ($a\ge0.001$)~\cite{guo2017calibration,alexandari2020labelshift}; same-prior controls center $b$ at $\mu_i$. Linear runs one epoch. Frozen FP32 TRAIN logits cost $40|D_i|$ B plus FP64 solver caches.

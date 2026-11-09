@@ -1,0 +1,124 @@
+{
+  "checked_on": "2026-11-03",
+  "scope": "4 full primary papers; bounded PerFedMask locating unsuccessful; later 1 author repository inspected statically, no training; separate one-query feedback-priority check in feedback_priority_search/",
+  "databases_queried": [
+    {
+      "database": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query?search_query=all:FedALA%20OR%20all:FedCAC&max_results=10",
+      "raw_response": "ala_cac_search.xml",
+      "note": "Returned target titles among 9 entries; irrelevant records were not followed."
+    },
+    {
+      "database": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query?search_query=all%3APerFedMask&max_results=3",
+      "raw_response": "perfedmask_metadata.xml",
+      "result": "0 results"
+    },
+    {
+      "database": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query?search_query=ti%3AFedLP&max_results=3",
+      "raw_response": "fedlp_metadata.xml",
+      "result": "2 records; only exact FedLP followed, not FedLPS"
+    },
+    {
+      "database": "Crossref",
+      "endpoint": "https://api.crossref.org/works?query=PerFedMask&rows=3",
+      "raw_response": "perfedmask_crossref.json",
+      "result": "0 results"
+    },
+    {
+      "database": "arXiv",
+      "endpoint": "https://export.arxiv.org/api/query?search_query=ti%3A%22federated%22+AND+ti%3A%22mask%22&max_results=20",
+      "raw_response": "perfedmask_title_search.xml",
+      "result": "29 total, first20 returned; exact PerFedMask title absent in first20, no returned off-target paper followed"
+    },
+    {
+      "database": "OpenAlex",
+      "endpoint": "https://api.openalex.org/works?search=PerFedMask&per_page=3",
+      "raw_response": "perfedmask_openalex.json",
+      "result": "14 total, first3 returned, no target record"
+    },
+    {
+      "database": "OpenReview",
+      "endpoint": "https://api.openreview.net/notes?content.title=PerFedMask%3A+Personalized+Federated+Learning+with+Optimized+Masking+Vectors",
+      "raw_response": null,
+      "result": "HTTP403 Forbidden; primary text not obtained"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Tackling Resource-Constrained and Data-Heterogeneity in Federated Learning with Double-Weight Sparse Pack",
+      "arxiv": "2601.01840v1",
+      "url": "https://arxiv.org/html/2601.01840v1",
+      "local_files": [
+        "../literature_followup/fedcspack.html",
+        "../literature_followup/fedcspack.txt",
+        "fedcspack_equations.json"
+      ],
+      "anchors": [
+        "Top-k Based Cosine Parameter Packing, Eq.(3)-(6), first paragraph",
+        "Mask Double Weight Aggregation, Eq.(7)-(9)",
+        "Algorithm1 lines8,12,15,17-18",
+        "HTML p2.1, code link"
+      ],
+      "author_code_link": "https://github.com/NigeloYang/FedCSPACK",
+      "code_checked": true,
+      "code_followup": {
+        "commit": "6bb6d9ef68d8e74873cbd3480337deabbe3a7e76",
+        "report": "official_fedcspack/CODE_CHECK.md",
+        "manifest": "official_fedcspack/SOURCE_MANIFEST.json",
+        "execution": "none, static-only",
+        "critical_difference": "Public fixed commit sends no mask downstream and fully overwrites local model; paper describes mask-based partial application"
+      }
+    },
+    {
+      "title": "FedALA: Adaptive Local Aggregation for Personalized Federated Learning",
+      "arxiv": "2212.01197v4",
+      "url": "https://arxiv.org/html/2212.01197v4",
+      "local_files": [
+        "fedala.html",
+        "fedala.txt"
+      ],
+      "anchors": [
+        "Method / Adaptive Local Aggregation, Eq.(3)-(5)",
+        "Algorithm 1, lines7,9-21",
+        "Appendix A, Eq.(7)"
+      ]
+    },
+    {
+      "title": "Bold but Cautious: Unlocking the Potential of Personalized Federated Learning through Cautiously Aggressive Collaboration",
+      "arxiv": "2309.11103v1",
+      "url": "https://arxiv.org/html/2309.11103v1",
+      "pdf_url": "https://arxiv.org/pdf/2309.11103v1",
+      "local_files": [
+        "fedcac.html",
+        "fedcac.txt",
+        "fedcac.pdf",
+        "fedcac_pdf.txt"
+      ],
+      "anchors": [
+        "Sec3.1 Steps1-5",
+        "Sec3.3 Eq.(5)-(6)",
+        "Sec3.4 Eq.(7)-(11)",
+        "Algorithm1"
+      ],
+      "caution": "The overlap expression is an L1 mask difference although narrative and >= selection describe increasing similarity; confirmed in HTML and PDF, no code audit."
+    },
+    {
+      "title": "FedLP: Layer-wise Pruning Mechanism for Communication-Computation Efficient Federated Learning",
+      "arxiv": "2303.06360v1",
+      "url": "https://arxiv.org/html/2303.06360v1",
+      "local_files": [
+        "fedlp.html",
+        "fedlp.txt"
+      ],
+      "anchors": [
+        "SecIII-A Eq.(2)-(3)",
+        "SecIII-B Eq.(4), Algorithm1, full-model download paragraph",
+        "SecIII-C Eq.(5), Algorithm2, private output layers paragraph"
+      ],
+      "author_code_link": "https://github.com/Zhuzzq/FedLP",
+      "code_checked": false
+    }
+  ]
+}

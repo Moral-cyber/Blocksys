@@ -1,0 +1,1350 @@
+{
+  "status": "PASS",
+  "scope": "simulation_only",
+  "review_status": "LOCAL_CHECK_ONLY / REVIEW_UNAVAILABLE",
+  "claim": "full-shape v2 protocol integration around a real historical training-generated first wire; NOT real FL training end-to-end",
+  "real_input": {
+    "path": "work/balanced_quant/development_p20261193_s20261201/fedlc_uniform3/first_payload.bin",
+    "sha256": "29f1c54c8c7d774b21bc18eaaccaedf2d4b052e4294a59ae12c5fd47cec93fa7",
+    "payload_bytes": 54067,
+    "decoded_dimension": 136874,
+    "provenance": "existing fedlc_uniform3 development artifact; no historical delta/checkpoint loaded",
+    "codec_source_sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "codec_spec_sha256": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226",
+    "training_config_signature": "5d832a321cf96e2765fbd677740f3108a12535038389bdbf8f14abe09cc9e267"
+  },
+  "synthetic_boundary": {
+    "two_clients_both_replay_identical_real_wire": true,
+    "weights": {
+      "c1": 0.25,
+      "c2": 0.75
+    },
+    "model_initialization": "all-zero SmallCNN; exact source class AST, no dataset-module import, no forward or backward",
+    "update_rule": "c1 q+((j%11)-5)*2^-12; c2 q+((j%13)-6)*2^-11; initial committed EF residual zero",
+    "encoder": "test-only replay stub returns frozen first wire for both synthetic effective updates; no recompression/ML validity claim",
+    "weight_oracle_limitation": "both clients replay identical q; tests full-shape fixed-roster path, not differential weights on unequal updates"
+  },
+  "checks": {
+    "pass": 183,
+    "fail": 0,
+    "by_phase": {
+      "accept": 8,
+      "prepare": 27,
+      "recover_clients_and_replay": 36,
+      "recover_finalized": 11,
+      "recover_rollback": 9,
+      "register": 7,
+      "tamper_and_context": 85
+    },
+    "distinct_normal_subprocess_pids": 7,
+    "expected_hard_process_exits": {
+      "crash_before_sql_commit": 91,
+      "finalize_then_lose_ack": 92,
+      "client_commit_then_lose_ack": 93
+    },
+    "tamper_rejection_cases": 32,
+    "max_abs_aggregate_error": 0.0,
+    "sqlite_integrity_ok": 3,
+    "protected_inputs_unchanged": 10
+  },
+  "packet_sizes": {
+    "c1": {
+      "payload_bytes": 54067,
+      "durint02_metadata_bytes": 306,
+      "wire_bytes": 54373,
+      "hmac_sm3_tag_bytes": 32,
+      "application_wire_plus_tag_bytes": 54405,
+      "saved_envelope_bytes": 54405
+    },
+    "c2": {
+      "payload_bytes": 54067,
+      "durint02_metadata_bytes": 306,
+      "wire_bytes": 54373,
+      "hmac_sm3_tag_bytes": 32,
+      "application_wire_plus_tag_bytes": 54405,
+      "saved_envelope_bytes": 54405
+    }
+  },
+  "layout": {
+    "sha256": "951112568d56f5da9e5e1f368e86da35df09a2e8ba33aa97d5d509ebbba71198",
+    "manifest": "layout.json"
+  },
+  "sqlite_files": [
+    {
+      "path": "work/full_payload_integrity/results/c1.sqlite",
+      "bytes_after_wal_checkpoint": 3411968,
+      "page_size": 4096,
+      "page_count": 833,
+      "integrity_check": "ok",
+      "tables": {
+        "ef": 1,
+        "pending": 1
+      },
+      "wal_bytes": 0,
+      "shm_bytes": 0,
+      "wal_checkpoint_result": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "work/full_payload_integrity/results/c2.sqlite",
+      "bytes_after_wal_checkpoint": 3411968,
+      "page_size": 4096,
+      "page_count": 833,
+      "integrity_check": "ok",
+      "tables": {
+        "ef": 1,
+        "pending": 1
+      },
+      "wal_bytes": 0,
+      "shm_bytes": 0,
+      "wal_checkpoint_result": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "work/full_payload_integrity/results/server.sqlite",
+      "bytes_after_wal_checkpoint": 7221248,
+      "page_size": 4096,
+      "page_count": 1763,
+      "integrity_check": "ok",
+      "tables": {
+        "activity": 1,
+        "rounds": 2,
+        "records": 11
+      },
+      "wal_bytes": 0,
+      "shm_bytes": 0,
+      "wal_checkpoint_result": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "sqlite_total_bytes": 14045184,
+  "private_key_handling": {
+    "key_count": 2,
+    "key_bytes_each": 32,
+    "random_generation": "secrets.token_bytes",
+    "directory_outside_result_tree": "work/full_payload_integrity/results_private_test_keys",
+    "keyfile_count": 1,
+    "keyfile_mode": "0o600",
+    "private_key_files_in_result_tree": 0,
+    "values_printed": false
+  },
+  "source_hashes_before": {
+    "work/balanced_quant/PLAN.md": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397",
+    "work/balanced_quant/development_p20261193_s20261201/fedlc_uniform3/config.json": "4c4d7de30b6f99bce3f2a719c4d2f864029514ca42003b464c9667c5e6522917",
+    "work/balanced_quant/development_p20261193_s20261201/fedlc_uniform3/first_payload.bin": "29f1c54c8c7d774b21bc18eaaccaedf2d4b052e4294a59ae12c5fd47cec93fa7",
+    "work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "work/durable_integrity_v2/protocol.py": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51",
+    "work/durable_integrity_v2/specs/frozen-mixed-precision-v1.json": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226",
+    "work/durable_integrity_v2/specs/synthetic-sparse-q8-v1.json": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec",
+    "work/durable_integrity_v2/test_protocol.py": "b27894b2e07fbc52b083dbbeece15e0cd871db770af27ab0fe46cb385c7b3974",
+    "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496"
+  },
+  "source_hashes_after": {
+    "work/balanced_quant/PLAN.md": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397",
+    "work/balanced_quant/development_p20261193_s20261201/fedlc_uniform3/config.json": "4c4d7de30b6f99bce3f2a719c4d2f864029514ca42003b464c9667c5e6522917",
+    "work/balanced_quant/development_p20261193_s20261201/fedlc_uniform3/first_payload.bin": "29f1c54c8c7d774b21bc18eaaccaedf2d4b052e4294a59ae12c5fd47cec93fa7",
+    "work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "work/durable_integrity_v2/protocol.py": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51",
+    "work/durable_integrity_v2/specs/frozen-mixed-precision-v1.json": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226",
+    "work/durable_integrity_v2/specs/synthetic-sparse-q8-v1.json": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec",
+    "work/durable_integrity_v2/test_protocol.py": "b27894b2e07fbc52b083dbbeece15e0cd871db770af27ab0fe46cb385c7b3974",
+    "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496"
+  },
+  "integration_source_sha256": "3a2c1448e66befa8def5f125424e08f7779fff4c74f4b3e461e1a29315de23a5",
+  "phases": [
+    {
+      "phase": "prepare",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.9248407089908142
+    },
+    {
+      "phase": "register",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.6849165410094429
+    },
+    {
+      "phase": "accept",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.7555661250080448
+    },
+    {
+      "phase": "crash_before_sql_commit",
+      "returncode": 91,
+      "expected_returncode": 91,
+      "seconds": 0.5959880409936886
+    },
+    {
+      "phase": "recover_rollback",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.725065334001556
+    },
+    {
+      "phase": "finalize_then_lose_ack",
+      "returncode": 92,
+      "expected_returncode": 92,
+      "seconds": 0.6274224579974543
+    },
+    {
+      "phase": "recover_finalized",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.7643476250232197
+    },
+    {
+      "phase": "client_commit_then_lose_ack",
+      "returncode": 93,
+      "expected_returncode": 93,
+      "seconds": 0.546312291000504
+    },
+    {
+      "phase": "recover_clients_and_replay",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.8754046669928357
+    },
+    {
+      "phase": "tamper_and_context",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.7723217499733437
+    }
+  ],
+  "phase_evidence": {
+    "accept": {
+      "phase": "accept",
+      "pid": 78943,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "accepted_c1",
+          "pass": true
+        },
+        {
+          "name": "accepted_no_EF_commit_c1",
+          "pass": true
+        },
+        {
+          "name": "accepted_EF_still_zero_c1",
+          "pass": true
+        },
+        {
+          "name": "accepted_c2",
+          "pass": true
+        },
+        {
+          "name": "accepted_no_EF_commit_c2",
+          "pass": true
+        },
+        {
+          "name": "accepted_EF_still_zero_c2",
+          "pass": true
+        },
+        {
+          "name": "one_real_decode_per_accept",
+          "pass": true
+        },
+        {
+          "name": "accepted_not_incorporated_model_zero",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 2
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "check_count": 8
+    },
+    "prepare": {
+      "phase": "prepare",
+      "pid": 78941,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "zero_model_hash",
+          "pass": true
+        },
+        {
+          "name": "open_round_base",
+          "pass": true
+        },
+        {
+          "name": "real_first_wire_c1",
+          "pass": true
+        },
+        {
+          "name": "full_dimension_c1",
+          "pass": true
+        },
+        {
+          "name": "hmac_32_bytes_c1",
+          "pass": true
+        },
+        {
+          "name": "prepare_keeps_committed_residual_zero_c1",
+          "pass": true
+        },
+        {
+          "name": "rnext_exact_update_minus_realdecode_c1",
+          "pass": true
+        },
+        {
+          "name": "rnext_nonzero_c1",
+          "pass": true
+        },
+        {
+          "name": "unknown_status_no_EF_commit_c1",
+          "pass": true
+        },
+        {
+          "name": "application_envelope_exact_length_c1",
+          "pass": true
+        },
+        {
+          "name": "pending_reopen_exact_bytes_no_reencode_c1",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c1",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c1_decode_count",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c1_encode_count",
+          "pass": true
+        },
+        {
+          "name": "real_first_wire_c2",
+          "pass": true
+        },
+        {
+          "name": "full_dimension_c2",
+          "pass": true
+        },
+        {
+          "name": "hmac_32_bytes_c2",
+          "pass": true
+        },
+        {
+          "name": "prepare_keeps_committed_residual_zero_c2",
+          "pass": true
+        },
+        {
+          "name": "rnext_exact_update_minus_realdecode_c2",
+          "pass": true
+        },
+        {
+          "name": "rnext_nonzero_c2",
+          "pass": true
+        },
+        {
+          "name": "unknown_status_no_EF_commit_c2",
+          "pass": true
+        },
+        {
+          "name": "application_envelope_exact_length_c2",
+          "pass": true
+        },
+        {
+          "name": "pending_reopen_exact_bytes_no_reencode_c2",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c2",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c2_decode_count",
+          "pass": true
+        },
+        {
+          "name": "pending_spec_drift_c2_encode_count",
+          "pass": true
+        },
+        {
+          "name": "encoder_called_once_per_original_client",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 2,
+        "decode_calls": 4
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "packet_sizes": {
+        "c1": {
+          "payload_bytes": 54067,
+          "durint02_metadata_bytes": 306,
+          "wire_bytes": 54373,
+          "hmac_sm3_tag_bytes": 32,
+          "application_wire_plus_tag_bytes": 54405,
+          "saved_envelope_bytes": 54405
+        },
+        "c2": {
+          "payload_bytes": 54067,
+          "durint02_metadata_bytes": 306,
+          "wire_bytes": 54373,
+          "hmac_sm3_tag_bytes": 32,
+          "application_wire_plus_tag_bytes": 54405,
+          "saved_envelope_bytes": 54405
+        }
+      },
+      "codec_spec_sha256": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226",
+      "layout_sha256": "951112568d56f5da9e5e1f368e86da35df09a2e8ba33aa97d5d509ebbba71198",
+      "model_parameter_count": 136874,
+      "q_sha256_f64": "75ecb23c737e2c6fd9ecf50bbf164e92c64b05b69dc90cfdd01bce3402f63487",
+      "base_zero_sm3": "e9ffdb9b8ce219c3b3d699c8581f435f11869349ed8fd774e97c9868c0968785",
+      "synthetic_updates": {
+        "c1": {
+          "rule": "q + deterministic dyadic coordinate perturbation",
+          "sha256_f64": "ccd37c3799dc9f96e757c83daa9bdf9cc24b421c6b76089b0304dda40e1bb619",
+          "rnext_sha256_f64": "b2d500f5e93932ed240abf30bd6cd77a4a5b9bb77ad99d227a7938d1e7fe892b",
+          "rnext_nonzero_count": 124431
+        },
+        "c2": {
+          "rule": "q + deterministic dyadic coordinate perturbation",
+          "sha256_f64": "fda4f7246cb11dc9ab5b6205a64af0f37261ad62ec55bd6d3e073ebec4c6db8e",
+          "rnext_sha256_f64": "84747fdfcfab05543655ce3e3513f8485064dbbe3d3f1c71a746c14cca120b0d",
+          "rnext_nonzero_count": 126345
+        }
+      },
+      "check_count": 27
+    },
+    "recover_clients_and_replay": {
+      "phase": "recover_clients_and_replay",
+      "pid": 78953,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "c1_saved_commit_survived_process_exit",
+          "pass": true
+        },
+        {
+          "name": "c1_commit_retry_not_new",
+          "pass": true
+        },
+        {
+          "name": "c2_commit_after_server_ack_loss",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c1_0",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c1_0",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c1_0",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c2_0",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c2_0",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c2_0",
+          "pass": true
+        },
+        {
+          "name": "finalize_replay_0",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c1_1",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c1_1",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c1_1",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c2_1",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c2_1",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c2_1",
+          "pass": true
+        },
+        {
+          "name": "finalize_replay_1",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c1_2",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c1_2",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c1_2",
+          "pass": true
+        },
+        {
+          "name": "replay_register_c2_2",
+          "pass": true
+        },
+        {
+          "name": "replay_accept_c2_2",
+          "pass": true
+        },
+        {
+          "name": "EF_commit_idempotent_c2_2",
+          "pass": true
+        },
+        {
+          "name": "finalize_replay_2",
+          "pass": true
+        },
+        {
+          "name": "incorporated_replay_never_decodes_again",
+          "pass": true
+        },
+        {
+          "name": "exactly_one_EF_generation_c1",
+          "pass": true
+        },
+        {
+          "name": "committed_residual_exact_c1",
+          "pass": true
+        },
+        {
+          "name": "no_outstanding_pending_c1",
+          "pass": true
+        },
+        {
+          "name": "wrong_client_layout_reopen_c1",
+          "pass": true
+        },
+        {
+          "name": "wrong_client_layout_reopen_c1_decode_count",
+          "pass": true
+        },
+        {
+          "name": "exactly_one_EF_generation_c2",
+          "pass": true
+        },
+        {
+          "name": "committed_residual_exact_c2",
+          "pass": true
+        },
+        {
+          "name": "no_outstanding_pending_c2",
+          "pass": true
+        },
+        {
+          "name": "wrong_client_layout_reopen_c2",
+          "pass": true
+        },
+        {
+          "name": "wrong_client_layout_reopen_c2_decode_count",
+          "pass": true
+        },
+        {
+          "name": "exactly_one_server_finalization",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 0
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "client_residual_sha256_f64": {
+        "c1": "b2d500f5e93932ed240abf30bd6cd77a4a5b9bb77ad99d227a7938d1e7fe892b",
+        "c2": "84747fdfcfab05543655ce3e3513f8485064dbbe3d3f1c71a746c14cca120b0d"
+      },
+      "check_count": 36
+    },
+    "recover_finalized": {
+      "phase": "recover_finalized",
+      "pid": 78951,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "fullshape_weighted_model_exact",
+          "pass": true
+        },
+        {
+          "name": "fullshape_weighted_accumulator_exact",
+          "pass": true
+        },
+        {
+          "name": "finalized_count_one_after_lost_ack",
+          "pass": true
+        },
+        {
+          "name": "finalize_retry_is_not_new",
+          "pass": true
+        },
+        {
+          "name": "same_layout_zero_SmallCNN_receives_q_exactly",
+          "pass": true
+        },
+        {
+          "name": "incorporated_c1",
+          "pass": true
+        },
+        {
+          "name": "ack_loss_client_generation_still_zero_c1",
+          "pass": true
+        },
+        {
+          "name": "ack_loss_client_pending_bytes_survive_c1",
+          "pass": true
+        },
+        {
+          "name": "incorporated_c2",
+          "pass": true
+        },
+        {
+          "name": "ack_loss_client_generation_still_zero_c2",
+          "pass": true
+        },
+        {
+          "name": "ack_loss_client_pending_bytes_survive_c2",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 0
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "aggregate_model_sha256_f64": "75ecb23c737e2c6fd9ecf50bbf164e92c64b05b69dc90cfdd01bce3402f63487",
+      "expected_model_sha256_f64": "75ecb23c737e2c6fd9ecf50bbf164e92c64b05b69dc90cfdd01bce3402f63487",
+      "max_abs_aggregate_error": 0.0,
+      "model_storage_numeric_semantics": "v2 SQLite vectors FP64; reconstructed SmallCNN parameters FP32",
+      "weight_oracle_limitation": "both clients replay identical q; tests full-shape fixed-roster path, not differential weights on unequal updates",
+      "check_count": 11
+    },
+    "recover_rollback": {
+      "phase": "recover_rollback",
+      "pid": 78949,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "process_crash_atomic_rollback_count",
+          "pass": true
+        },
+        {
+          "name": "process_crash_atomic_model_rollback",
+          "pass": true
+        },
+        {
+          "name": "process_crash_atomic_accumulator_rollback",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_accepted_c1",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_pending_c1",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_generation_zero_c1",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_accepted_c2",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_pending_c2",
+          "pass": true
+        },
+        {
+          "name": "crash_keeps_generation_zero_c2",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 0
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "check_count": 9
+    },
+    "register": {
+      "phase": "register",
+      "pid": 78942,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "registered_c1",
+          "pass": true
+        },
+        {
+          "name": "registered_no_EF_commit_c1",
+          "pass": true
+        },
+        {
+          "name": "registered_generation_zero_c1",
+          "pass": true
+        },
+        {
+          "name": "registered_c2",
+          "pass": true
+        },
+        {
+          "name": "registered_no_EF_commit_c2",
+          "pass": true
+        },
+        {
+          "name": "registered_generation_zero_c2",
+          "pass": true
+        },
+        {
+          "name": "register_does_not_decode",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 0
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "check_count": 7
+    },
+    "tamper_and_context": {
+      "phase": "tamper_and_context",
+      "pid": 78954,
+      "scope": "simulation_only; synthetic integration around a real training-generated first wire",
+      "checks": [
+        {
+          "name": "unsigned_single_byte_payload_magic",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_magic_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_version",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_version_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_numel",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_numel_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_reserved",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_payload_reserved_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_bitwidth",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_bitwidth_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte0",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte0_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte1",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte1_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte2",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte2_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte3",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_block_scale_byte3_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_byte0",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_byte0_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_byte1",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_byte1_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_last",
+          "pass": true
+        },
+        {
+          "name": "unsigned_single_byte_packed_code_last_decode_count",
+          "pass": true
+        },
+        {
+          "name": "tag_byte_tamper",
+          "pass": true
+        },
+        {
+          "name": "tag_byte_tamper_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_activity",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_activity_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_client",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_client_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_record_id",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_record_id_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_nonce",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_nonce_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_base_model_hash",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_base_model_hash_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_layout",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_layout_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_codec",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_codec_decode_count",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_codec_spec_sha256",
+          "pass": true
+        },
+        {
+          "name": "unsigned_meta_codec_spec_sha256_decode_count",
+          "pass": true
+        },
+        {
+          "name": "signed_context_base_model_hash",
+          "pass": true
+        },
+        {
+          "name": "signed_context_base_model_hash_decode_count",
+          "pass": true
+        },
+        {
+          "name": "signed_context_stays_REGISTERED_base_model_hash",
+          "pass": true
+        },
+        {
+          "name": "signed_context_layout_hash",
+          "pass": true
+        },
+        {
+          "name": "signed_context_layout_hash_decode_count",
+          "pass": true
+        },
+        {
+          "name": "signed_context_stays_REGISTERED_layout_hash",
+          "pass": true
+        },
+        {
+          "name": "signed_context_codec_name_version",
+          "pass": true
+        },
+        {
+          "name": "signed_context_codec_name_version_decode_count",
+          "pass": true
+        },
+        {
+          "name": "signed_context_stays_REGISTERED_codec_name_version",
+          "pass": true
+        },
+        {
+          "name": "signed_context_codec_spec_sha256",
+          "pass": true
+        },
+        {
+          "name": "signed_context_codec_spec_sha256_decode_count",
+          "pass": true
+        },
+        {
+          "name": "signed_context_stays_REGISTERED_codec_spec_sha256",
+          "pass": true
+        },
+        {
+          "name": "first_real_scale_positive",
+          "pass": true
+        },
+        {
+          "name": "structural_case_changes_exactly_one_byte_negative_scale",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_negative_scale",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_negative_scale_decode_count",
+          "pass": true
+        },
+        {
+          "name": "decoder_rejection_stays_REGISTERED_negative_scale",
+          "pass": true
+        },
+        {
+          "name": "structural_case_changes_exactly_one_byte_unused_all_ones_code",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_unused_all_ones_code",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_unused_all_ones_code_decode_count",
+          "pass": true
+        },
+        {
+          "name": "decoder_rejection_stays_REGISTERED_unused_all_ones_code",
+          "pass": true
+        },
+        {
+          "name": "structural_case_changes_exactly_one_byte_invalid_bitwidth",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_invalid_bitwidth",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_invalid_bitwidth_decode_count",
+          "pass": true
+        },
+        {
+          "name": "decoder_rejection_stays_REGISTERED_invalid_bitwidth",
+          "pass": true
+        },
+        {
+          "name": "structural_case_changes_exactly_one_byte_reserved_nonzero",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_reserved_nonzero",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_reserved_nonzero_decode_count",
+          "pass": true
+        },
+        {
+          "name": "decoder_rejection_stays_REGISTERED_reserved_nonzero",
+          "pass": true
+        },
+        {
+          "name": "structural_case_changes_exactly_one_byte_codec_wire_version",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_codec_wire_version",
+          "pass": true
+        },
+        {
+          "name": "signed_bad_payload_codec_wire_version_decode_count",
+          "pass": true
+        },
+        {
+          "name": "decoder_rejection_stays_REGISTERED_codec_wire_version",
+          "pass": true
+        },
+        {
+          "name": "registry_spec_drift_on_incorporated_packet",
+          "pass": true
+        },
+        {
+          "name": "registry_spec_drift_on_incorporated_packet_decode_count",
+          "pass": true
+        },
+        {
+          "name": "application_version_rejected",
+          "pass": true
+        },
+        {
+          "name": "application_version_rejected_decode_count",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_full_model_unchanged",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_finalized_count_one",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_EF_unchanged_c1",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_EF_generation_one_c1",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_EF_unchanged_c2",
+          "pass": true
+        },
+        {
+          "name": "tamper_leaves_EF_generation_one_c2",
+          "pass": true
+        }
+      ],
+      "counter": {
+        "encode_calls": 0,
+        "decode_calls": 5
+      },
+      "official_data_loaded": false,
+      "ml_training_performed": false,
+      "network_used": false,
+      "rejections": [
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "payload_magic",
+          "payload_byte_offset": 0,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "payload_version",
+          "payload_byte_offset": 8,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "payload_numel",
+          "payload_byte_offset": 12,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "payload_reserved",
+          "payload_byte_offset": 24,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "block_bitwidth",
+          "payload_byte_offset": 64,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "block_scale_byte0",
+          "payload_byte_offset": 65,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "block_scale_byte1",
+          "payload_byte_offset": 66,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "block_scale_byte2",
+          "payload_byte_offset": 67,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "block_scale_byte3",
+          "payload_byte_offset": 68,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "packed_code_byte0",
+          "payload_byte_offset": 69,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "packed_code_byte1",
+          "payload_byte_offset": 70,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte payload tamper with original tag",
+          "field": "packed_code_last",
+          "payload_byte_offset": 54066,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte tag tamper",
+          "tag_byte_offset": 0,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "activity",
+          "wire_byte_offset": 18,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "client",
+          "wire_byte_offset": 50,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "record_id",
+          "wire_byte_offset": 54,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "nonce",
+          "wire_byte_offset": 65,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "base_model_hash",
+          "wire_byte_offset": 75,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "layout",
+          "wire_byte_offset": 141,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "codec",
+          "wire_byte_offset": 207,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "one-byte context tamper with original tag",
+          "field": "codec_spec_sha256",
+          "wire_byte_offset": 234,
+          "exception_type": "AuthenticationError",
+          "reason": "HMAC-SM3 mismatch or unknown client"
+        },
+        {
+          "kind": "validly authenticated context mismatch",
+          "field": "base_model_hash",
+          "exception_type": "StateError",
+          "reason": "packet does not match the fixed round context"
+        },
+        {
+          "kind": "validly authenticated context mismatch",
+          "field": "layout_hash",
+          "exception_type": "StateError",
+          "reason": "packet does not match the fixed round context"
+        },
+        {
+          "kind": "validly authenticated context mismatch",
+          "field": "codec_name_version",
+          "exception_type": "StateError",
+          "reason": "codec specification identity/configuration mismatch"
+        },
+        {
+          "kind": "validly authenticated context mismatch",
+          "field": "codec_spec_sha256",
+          "exception_type": "StateError",
+          "reason": "codec specification identity/configuration mismatch"
+        },
+        {
+          "kind": "valid tag; structural decoder rejection",
+          "field": "negative_scale",
+          "payload_byte_offset": 68,
+          "exception_type": "ValueError",
+          "reason": "scale must be finite and nonnegative"
+        },
+        {
+          "kind": "valid tag; structural decoder rejection",
+          "field": "unused_all_ones_code",
+          "payload_byte_offset": 69,
+          "exception_type": "ValueError",
+          "reason": "unused maximum code is not canonical"
+        },
+        {
+          "kind": "valid tag; structural decoder rejection",
+          "field": "invalid_bitwidth",
+          "payload_byte_offset": 64,
+          "exception_type": "ValueError",
+          "reason": "invalid block bitwidth"
+        },
+        {
+          "kind": "valid tag; structural decoder rejection",
+          "field": "reserved_nonzero",
+          "payload_byte_offset": 24,
+          "exception_type": "ValueError",
+          "reason": "reserved header bytes must be zero"
+        },
+        {
+          "kind": "valid tag; structural decoder rejection",
+          "field": "codec_wire_version",
+          "payload_byte_offset": 8,
+          "exception_type": "ValueError",
+          "reason": "unsupported magic or version"
+        },
+        {
+          "kind": "reopened server registry spec drift before idempotent accept",
+          "exception_type": "StateError",
+          "reason": "codec specification identity/configuration mismatch"
+        },
+        {
+          "kind": "unsupported application envelope version",
+          "exception_type": "ProtocolError",
+          "reason": "invalid envelope version"
+        }
+      ],
+      "check_count": 85
+    }
+  },
+  "security_boundaries": [
+    "Trusted key-holding server, SQLite state and status-query/Receipt remain assumptions; HMAC is not public verifiability or poisoning resistance.",
+    "Codec name and pinned spec/source identify intended semantics; they do not prove actual decoder execution. Trusted matching decode implementation remains required.",
+    "Single-host SQLite registration and atomicity only; no actual blockchain, consensus, network authentication channel, distributed atomicity or smart-contract deployment.",
+    "Unauthenticated raw payload corruption is rejected by HMAC; validly tagged structurally invalid payloads rejected by decoder. A key holder can still sign semantically valid malicious updates."
+  ],
+  "resources": {
+    "wall_seconds": 7.284160165989306,
+    "python": "/opt/anaconda3/envs/Tinyproto/bin/python",
+    "numpy": "2.5.3",
+    "torch": "2.13.0",
+    "official_data_loaded": false,
+    "ml_training_performed": false,
+    "network_used": false
+  }
+}

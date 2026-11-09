@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "single frozen development oracle replay independent audit",
+  "fixture": {
+    "status": "PASS",
+    "score_supports": {
+      "signed_product": [
+        0,
+        2
+      ],
+      "absolute_product": [
+        0,
+        3
+      ],
+      "sign_reference": [
+        0,
+        1
+      ]
+    },
+    "shared_core": [
+      0
+    ],
+    "shared_q": 1,
+    "signed_matches_frozen_codec": true,
+    "tau1_and_zero_reference_match_topk": true,
+    "unequal_client_gradient_matches_all_sample_mean": true,
+    "incorrect_equal_client_gradient_detected": true,
+    "official_test_accessed": false,
+    "validation_gradient_used": false
+  },
+  "input_and_executed_dependency_hashes_match": true,
+  "all_42_consumed_file_hashes_match": true,
+  "full_train_gradient_independently_recomputed": {
+    "samples": 37500,
+    "at": "base + Q (TopK aggregate)",
+    "bitwise_equal_saved_gradient": true,
+    "loss": 1.591569663213094,
+    "uses_validation": false,
+    "model_parameters_unchanged": true
+  },
+  "support_and_metric_arithmetic_rows": 12,
+  "validation_metric_rows_recomputed": 4,
+  "official_test_data_or_results_accessed": false,
+  "confirmation_results_accessed": false,
+  "no_optimizer_or_closed_loop_training": true,
+  "elapsed_seconds": 16.03181212497293
+}

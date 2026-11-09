@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "scope": "CPU synthetic head replay/state-copy contract only",
+  "scratch": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/train_state_export_fixture_3ljmwt8v",
+  "clients_with_exact_head_weight_bias_replay": 20,
+  "max_raw_and_head_holdout_error": 0.0,
+  "head_backward_observed_per_client": 1,
+  "same_frozen_matched_head_code_cifar_fashion": true,
+  "copied_calibration_families": [
+    "analytic_prior",
+    "prioranchor_bias",
+    "zero_anchor_bias",
+    "temperature_scaling",
+    "bcts",
+    "zero_anchor_vector",
+    "prioranchored_vector",
+    "prioranchored_bcts"
+  ],
+  "scorer_state_API_accepted": true,
+  "negative_checks": [
+    {
+      "case": "FP64_deployment_state",
+      "error": "exact finite FP32 calibration state required: prioranchored_vector"
+    },
+    {
+      "case": "wrong_prior",
+      "error": "analytic prior differs from smoothed TRAIN counts"
+    },
+    {
+      "case": "membership_mismatch",
+      "error": "calibration TRAIN/holdout original membership differs"
+    },
+    {
+      "case": "fractional_counts",
+      "error": "saved TRAIN classcounts differ from labels"
+    },
+    {
+      "case": "nonpositive_temperature",
+      "error": "positive scalar below fixed bound"
+    },
+    {
+      "case": "paired_vector_mismatch",
+      "error": "BCTS cached paired vector state differs"
+    },
+    {
+      "case": "changed_saved_head_logits",
+      "error": "holdout reproduction exceeds fixed1e-6: raw=0.0, learned=0.01000000536441803"
+    },
+    {
+      "case": "existing_output",
+      "error": "fresh TRAIN-state output required"
+    }
+  ],
+  "source_hashes_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/adapter.py": "624109d019433ed1983bdc810063cdd5fe46116f0896c9dd8636214d553915d2",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PREREGISTRATION.json": "1eb7d284c43992a3cca58e31448a4b595b88e67abdf167c24a605342bf2f0568",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_bias/solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_fashion.py": "f87e281acaf9a46a62eb31be588c9505ea7bb53c67162fd8fcf2ccc3440111d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/PLAN.md": "05963718ab8a59c647099511ae5d0290daf37ecb58b921b52ade85c8db5ffc0a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/train.py": "23b8d617c844ce2fc5b34fd3a82da95cd895ecb334c4be0ec3a4296863a3a777",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_fashion/evaluate.py": "6776c9ed0492f7b171f5168fc6d851ee3a35e8d093f60a49790693b8c8713038"
+  },
+  "exporter_sha256": "5102deb9408d807b73ef246506f85474cf8623378c73f83db811b460a8c5212b",
+  "fixture_sha256": "7b8a76eb5173b8cae5f5edea65c0f89da1acb22c467643c7800f79c72111d65d",
+  "official_test_open_attempts": [],
+  "official_test_bytes": 0,
+  "real_TRAIN_export_run": false,
+  "new_FL_rounds": 0,
+  "new_calibration_fits": 0,
+  "external_review": "REVIEW_UNAVAILABLE"
+}

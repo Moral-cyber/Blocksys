@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "scope": "tiny functional checks only; no target-size timing or efficiency conclusion",
+  "checks": [
+    {
+      "n": 31,
+      "k": 1,
+      "method": "topk_ef",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 1,
+      "method": "prefix90",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 1,
+      "method": "prefix99",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 1,
+      "method": "lagrange90",
+      "explicit_ops": {
+        "torch.topk": 18,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 31,
+      "k": 1,
+      "method": "lagrange99",
+      "explicit_ops": {
+        "torch.topk": 18,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 31,
+      "k": 1,
+      "method": "regtopk5",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 2,
+        "Tensor.unique": 1
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "topk_ef",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "prefix90",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "prefix99",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "lagrange90",
+      "explicit_ops": {
+        "torch.topk": 16,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "lagrange99",
+      "explicit_ops": {
+        "torch.topk": 18,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 127,
+      "k": 17,
+      "method": "regtopk5",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 2,
+        "Tensor.unique": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "topk_ef",
+      "explicit_ops": {
+        "torch.topk": 1,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "prefix90",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "prefix99",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 1
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "lagrange90",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "lagrange99",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 2
+      }
+    },
+    {
+      "n": 31,
+      "k": 31,
+      "method": "regtopk5",
+      "explicit_ops": {
+        "torch.topk": 2,
+        "torch.sort": 2,
+        "Tensor.unique": 1
+      }
+    }
+  ],
+  "visible_storage_alias_and_release_check": true,
+  "target_sizes_not_timed": {
+    "n": 136874,
+    "ks": [
+      6843,
+      27374
+    ]
+  },
+  "target_arithmetic_only_ledgers": {
+    "6843": {
+      "topk_ef": {
+        "ef_residual_fp32_per_client_bytes": 547496,
+        "history_reference_fp32_bytes": 547496,
+        "reference_storage_scope": "one shared vector in synchronous simulator; per-client caching costs this amount when deployed",
+        "regtopk_previous_candidate_fp32_per_client_bytes": 0,
+        "regtopk_previous_support_int64_per_client_bytes": 0,
+        "extra_persistent_state_over_topk_ef_per_client_bytes": 0,
+        "wire_values_fp32_bytes": 27372,
+        "wire_indices_uint32_bytes": 27372,
+        "wire_fixed_header_bytes": 64,
+        "wire_total_bytes": 54808,
+        "extra_uploaded_fields_bytes_over_same_k_topk": 0,
+        "excluded_common_state": "global/local models, optimizer, training activations, source data; reconstructing g may require another cached global model",
+        "note": "storage uses actual current int64 support and dense RegTopK candidate history, not minimal theoretical K pairs"
+      },
+      "regtopk5": {
+        "ef_residual_fp32_per_client_bytes": 547496,
+        "history_reference_fp32_bytes": 547496,
+        "reference_storage_scope": "one shared vector in synchronous simulator; per-client caching costs this amount when deployed",
+        "regtopk_previous_candidate_fp32_per_client_bytes": 547496,
+        "regtopk_previous_support_int64_per_client_bytes": 54744,
+        "extra_persistent_state_over_topk_ef_per_client_bytes": 602240,
+        "wire_values_fp32_bytes": 27372,
+        "wire_indices_uint32_bytes": 27372,
+        "wire_fixed_header_bytes": 64,
+        "wire_total_bytes": 54808,
+        "extra_uploaded_fields_bytes_over_same_k_topk": 0,
+        "excluded_common_state": "global/local models, optimizer, training activations, source data; reconstructing g may require another cached global model",
+        "note": "storage uses actual current int64 support and dense RegTopK candidate history, not minimal theoretical K pairs"
+      }
+    },
+    "27374": {
+      "topk_ef": {
+        "ef_residual_fp32_per_client_bytes": 547496,
+        "history_reference_fp32_bytes": 547496,
+        "reference_storage_scope": "one shared vector in synchronous simulator; per-client caching costs this amount when deployed",
+        "regtopk_previous_candidate_fp32_per_client_bytes": 0,
+        "regtopk_previous_support_int64_per_client_bytes": 0,
+        "extra_persistent_state_over_topk_ef_per_client_bytes": 0,
+        "wire_values_fp32_bytes": 109496,
+        "wire_indices_uint32_bytes": 109496,
+        "wire_fixed_header_bytes": 64,
+        "wire_total_bytes": 219056,
+        "extra_uploaded_fields_bytes_over_same_k_topk": 0,
+        "excluded_common_state": "global/local models, optimizer, training activations, source data; reconstructing g may require another cached global model",
+        "note": "storage uses actual current int64 support and dense RegTopK candidate history, not minimal theoretical K pairs"
+      },
+      "regtopk5": {
+        "ef_residual_fp32_per_client_bytes": 547496,
+        "history_reference_fp32_bytes": 547496,
+        "reference_storage_scope": "one shared vector in synchronous simulator; per-client caching costs this amount when deployed",
+        "regtopk_previous_candidate_fp32_per_client_bytes": 547496,
+        "regtopk_previous_support_int64_per_client_bytes": 218992,
+        "extra_persistent_state_over_topk_ef_per_client_bytes": 766488,
+        "wire_values_fp32_bytes": 109496,
+        "wire_indices_uint32_bytes": 109496,
+        "wire_fixed_header_bytes": 64,
+        "wire_total_bytes": 219056,
+        "extra_uploaded_fields_bytes_over_same_k_topk": 0,
+        "excluded_common_state": "global/local models, optimizer, training activations, source data; reconstructing g may require another cached global model",
+        "note": "storage uses actual current int64 support and dense RegTopK candidate history, not minimal theoretical K pairs"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.13.0",
+    "torch_git_version": "Unknown",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_threads": 1,
+    "actual_torch_threads": 1,
+    "actual_torch_interop_threads": 1,
+    "system_load_1_5_15min": [
+      3.66162109375,
+      4.22802734375,
+      4.37109375
+    ],
+    "source_sha256": {
+      "benchmark_codec.py": "369b8a997e889915c2bfc636b3659a518746430048dfbef2f627ea4eef128dc4",
+      "guarded_codec.py": "3dcb6636f12d6dc17fe023a978a9016ce10593ed3da5472b1ad498a33b8c948e",
+      "lagrangian_codec.py": "2fbbe6a7afc8664ae6e40516e7978b4adf30830773e55899cdc41bdcb394eb2e",
+      "run_controls.py": "0ec1485702bcfe8293f90e99f46bdb9f363cad43b7f457a95e342260b4b0d881",
+      "run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d"
+    },
+    "timer": "time.perf_counter_ns; CPU synchronous calls"
+  }
+}

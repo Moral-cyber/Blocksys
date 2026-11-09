@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "root-executed CPU synthetic objective/codec fixtures, not independent external audit",
+  "checks": {
+    "normalized_prior_loss_abs_error": 0.0,
+    "normalized_prior_gradient_max_error": 2.7755575615628914e-17,
+    "uniform_counts_reduce_to_ce": true,
+    "single_class_train_finite": {
+      "ce": 0.1771513819694519,
+      "fedlc": 0.16815507411956787,
+      "balanced": 0.09250233322381973
+    },
+    "global_anchor_unchanged": true,
+    "fedlc_fixed_rule_match": true,
+    "wire_bytes": 54067,
+    "ef_max_error": 0.0,
+    "sources_unchanged": true
+  },
+  "source_hashes": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/PLAN.md": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863"
+  }
+}

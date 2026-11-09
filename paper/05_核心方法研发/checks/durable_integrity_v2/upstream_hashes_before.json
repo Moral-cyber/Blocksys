@@ -1,0 +1,9 @@
+{
+  "work/durable_integrity/protocol.py": "a55d75048dffffd2e8b20a63548688138769ef53d43b0cbe419a3767dc3240e6",
+  "work/durable_integrity/test_protocol.py": "40cbabb74a9883a1fc5390c0f77df89a07477e1a731114b9e416047849bbf420",
+  "work/durable_integrity/REPORT.md": "61247689ec81cb138caba7b04793382bb724bd1a24c22cc72d48bf861edf1435",
+  "work/durable_integrity/results/test_results.json": "2634633c2f457f2f345b49b9d7c22a098262775d7192cff5a068e279f8287b64",
+  "work/durable_integrity/results/durability_audit.json": "c490a0fcc8e11d9df7e19056fa1e46d51de2b1b6896a092e167d98796e1054e4",
+  "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "work/tinyproto_diag/tools/integrity_attack_matrix.py": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2"
+}

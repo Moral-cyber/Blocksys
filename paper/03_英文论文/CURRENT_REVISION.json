@@ -1,0 +1,40 @@
+{
+  "status": "ROUTE_A_REVISION_DELIVERED_WITH_COMPLETED_FL_EVIDENCE",
+  "method": "prior-regularized vector + uniform3/EF",
+  "language": "en",
+  "previous_revision": "../01_论文材料/历史论文版本/route_A_before_20261104T235231+0800/03_英文论文",
+  "pages": 12,
+  "format": "user-supplied BlockSys svproc",
+  "template_sha256": {
+    "svproc.cls": "c44824ffa40e21c2ce7f2bf706163fb977a10592795e4c057dee10e5e9f35163",
+    "spmpsci_unsrt.bst": "6e124ff8fefb465c38f0a45963f65b7256776daac851b20a2d41ec14969e59a7"
+  },
+  "authors": "not supplied; empty fields; anonymity policy unverified",
+  "updated_at": "2026-11-05T16:14:32.587956+00:00",
+  "title": "Prior as Center, Not Offset: Post-hoc Calibration for Label-Skewed Federated Learning",
+  "core_contribution_document": "../06_ScientistTwo/runs/fl_heterogeneity_20261105/FINAL_RESEARCH_ASSESSMENT.md",
+  "submission_status": "NOT_SUBMITTED; author metadata and final track/anonymity not supplied",
+  "taskbook_sha256": "6ba87f18803a47be333162220fed47bacaff159d1f6e849e4f4586090b79f407",
+  "revision_status": "checks/REVISION_STATUS.md",
+  "revision_artifacts": "revision_artifacts/route_a_20261105",
+  "cited_references": 33,
+  "bibliography_entries": 34,
+  "abstract_source_whitespace_tokens": 136,
+  "primary_test_table_values_preserved": true,
+  "primary_test_tables_unchanged_note": "Layout and caption changed; original result values preserved. Seed table byte-identical.",
+  "evidence_scope": {
+    "original_evidence": "unchanged evidence/ and historical checks/",
+    "new_paired_statistics": "revision_artifacts/route_a_20261105/stats/result.json",
+    "new_lambda_scan": "revision_artifacts/route_a_20261105/p1/lambda_result.json",
+    "new_frozen_predictor_reallocation": "revision_artifacts/route_a_20261105/p1/drift_result.json",
+    "dense_baselines": "COMPLETE: six FedAvg and six FedProx task-seed runs, final TEST",
+    "personalized_baseline": "COMPLETE: six pFedMe runs with author optimizer/task adapter, final TEST",
+    "multipartition": "COMPLETE:18 development configurations, not independent seed IDs",
+    "cifar100": "COMPLETE:3 development runs,no official TEST",
+    "geometry_candidate": "STOP: failed frozen two-task development gate",
+    "experimental_completion": "Selected taskbook FL evidence and manuscript revision complete; not arbitrary heterogeneity solution or acceptance guarantee"
+  },
+  "pdf_sha256": "30a5fa1694810e3e46c6862003e59754825f6af0de71d585854e14f1ff85a0b8",
+  "delivery_manifest": "revision_artifacts/route_a_20261105/DELIVERY_MANIFEST.json",
+  "scientisttwo": "Unofficial Open-ScientistTwo 0.4.0 plus native-agent/MPS adapter; no upstream live campaign"
+}

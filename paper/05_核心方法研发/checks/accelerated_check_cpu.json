@@ -1,0 +1,24 @@
+{
+  "status": "CPU_PASS_MPS_UNAVAILABLE",
+  "mps_available": false,
+  "cpu_checks": [
+    {
+      "mu": 0.0,
+      "bitwise_passthrough": true
+    },
+    {
+      "mu": 0.01,
+      "bitwise_passthrough": true
+    },
+    {
+      "mu": 0.1,
+      "bitwise_passthrough": true
+    }
+  ],
+  "mps_checks": [],
+  "adapter_integration_backends": [
+    "cpu"
+  ],
+  "summary_backend_dependency_source_isolation": true,
+  "scope": "Small local-objective and adapter checks; no real data training or learning-benefit claim."
+}

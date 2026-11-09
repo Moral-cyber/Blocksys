@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_BEFORE_PROSPECTIVE_EVALUATION",
+  "sources": {
+    "work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b",
+    "work/predictive_pfl_confirm/PREREGISTRATION.json": "1eb7d284c43992a3cca58e31448a4b595b88e67abdf167c24a605342bf2f0568",
+    "work/predictive_pfl_confirm/assess.py": "bdb0bac2d4809d100e3112e1516e14d8f295c8dbe77fa4da34ce0543706b7b17"
+  },
+  "synthetic_fixture": "PASS; good case passes, insufficient NLL fails"
+}

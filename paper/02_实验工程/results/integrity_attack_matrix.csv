@@ -1,0 +1,10 @@
+case,attempts,accepted,rejected,acceptance_rate,rejection_rate,latency_us_mean,latency_us_p95,tag_bytes,canonical_bytes
+valid,100,100,0,1.0,0.0,6.31292,7.083,32,92
+value_tamper,100,0,100,0.0,1.0,5.3775699999999995,5.667,32,92
+index_tamper,100,0,100,0.0,1.0,5.3262599999999996,5.583,32,92
+round_substitution,100,0,100,0.0,1.0,5.2916300000000005,5.5,32,92
+client_substitution,100,0,100,0.0,1.0,5.27085,5.375,32,92
+truncation,100,0,100,0.0,1.0,5.25957,5.542,32,92
+pair_mismatch,100,0,100,0.0,1.0,6.56585,10.958,32,92
+reordered_payload,100,100,0,1.0,0.0,5.73374,6.208,32,92
+replay,100,1,99,0.01,0.99,5.6637,5.75,32,92

@@ -1,0 +1,33 @@
+\documentclass{svproc}
+\usepackage{url}
+\usepackage{amsmath,amssymb,booktabs,array,graphicx}
+\def\UrlFont{\rmfamily}
+% Permit long source URLs to wrap without changing the class or bibliography.
+\makeatletter
+\g@addto@macro\UrlBreaks{\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+\makeatother
+\begin{document}
+\mainmatter
+\title{Prior as Center, Not Offset: Post-hoc Calibration for Label-Skewed Federated Learning}
+\titlerunning{Prior as Center for Federated Prediction}
+% Author and affiliation are intentionally empty until supplied by the author.
+% This does not assert a conference anonymity policy.
+\author{}
+\authorrunning{}
+\tocauthor{}
+\institute{}
+\maketitle
+\input{sections/abstract}
+\input{sections/front}
+
+\input{sections/method}
+\input{sections/evaluation}
+\input{sections/results}
+\input{sections/anchored_uploads}
+\input{sections/upload_evaluation}
+\input{sections/discussion}
+\input{sections/conclusion}
+\input{sections/appendix}
+\bibliographystyle{spmpsci_unsrt}
+\bibliography{references}
+\end{document}

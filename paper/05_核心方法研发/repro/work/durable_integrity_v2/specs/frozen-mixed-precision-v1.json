@@ -1,0 +1,13 @@
+{
+  "name": "frozen-mixed-precision-v1",
+  "wire_spec_version": "MPQCODEC-wire/1",
+  "reference_source_sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "reference_source": "work/mixed_precision/codec.py; frozen, read-only reference for this test",
+  "header": "64 bytes, little-endian <8sIIII40s: MPQCODEC magic, uint32 version 1, positive uint32 numel, uint32 block size 256, uint32 ceil(numel/256), forty zero bytes",
+  "blocks": "one uint8 bitwidth in {2,3,4}, one finite nonnegative little-endian float32 scale, then ceil(block_length*bitwidth/8) packed code bytes per block; final block may be shorter than 256",
+  "packed_code_order": "each unsigned code uses bitwidth little-endian bits, codes concatenated in coordinate order, unused final-byte bits zero",
+  "code_constraints": "all-ones code forbidden; qmax=2^(bitwidth-1)-1; scale zero requires code=qmax",
+  "decoder_semantics": "flat CPU FP32 vector; signed value code-qmax is multiplied by FP32 scale with FP32 arithmetic; all reconstructed coordinates finite; exact length required, no trailing bytes",
+  "encoder_scope": "existing encode uses maxabs initialization and four LS/reassignment iterations with scalar block candidates and existing allocation; this identity binds wire decode semantics, not an optimality or ML performance claim",
+  "identity_boundary": "SHA256 of these exact specification bytes is a semantic identifier; trusted implementations must faithfully implement it; source reference and matching identity do not prove execution correctness"
+}

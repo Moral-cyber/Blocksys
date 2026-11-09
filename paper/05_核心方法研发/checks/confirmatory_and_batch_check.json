@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "fixture_type": "SYNTHETIC FIXTURE ONLY; TEMPORARY INPUTS REMOVED",
+  "real_confirmatory_runs_read": false,
+  "real_official_test_results_read": false,
+  "checks": [
+    "40 continuous DONE finite rounds only",
+    "explicit final-test access gate",
+    "seed-level sample SD and df2 wide t interval",
+    "same backend/source paired differences",
+    "config/result paths and SHA provenance",
+    "failure-stop finite queue",
+    "cwd and logs",
+    "dry-run no writes",
+    "nonempty log overwrite/resume refused",
+    "all-success queue"
+  ]
+}

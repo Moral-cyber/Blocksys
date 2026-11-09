@@ -1,0 +1,17 @@
+{
+  "backend": "Codex native collaboration",
+  "agent_id": "/root/route_a_stats",
+  "request_id": "count-geometry-subset-20261105",
+  "produced_at": "2026-11-05T15:12:06.933878+00:00",
+  "task": "Authorized fail-fast two-task first-seed count-geometry screen with fixed controls; stop on failed task.",
+  "status": "completed",
+  "capture": "written_by_native_agent",
+  "decision": "STOP_CANDIDATE",
+  "outputs": {
+    "PLAN.md": "83c9efd742a1574cea1fead2ed82935a0aaf55f32a745bcb95ae280ddf2c88b7",
+    "SOURCE_LOCK.json": "ddaee3fcdc3c5636e07ed373898e3f9134eb95ad62ef66a29b718a2080e9ac01",
+    "SUBSET_RESULT.json": "53d5ffa810413166e69b587494ec6e6d892fd4300590c437e63d105924858444",
+    "VERIFICATION.json": "b78b4da37501c8c2b992d2df66885f1e7acd254da91a7438068745b31ff31619",
+    "CONCLUSION.md": "9cba19214f1a1d32c9639e738989805dab57de87fe11caf94273a4ff08a1fb80"
+  }
+}

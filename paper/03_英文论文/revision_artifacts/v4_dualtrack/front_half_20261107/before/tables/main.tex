@@ -1,0 +1,15 @@
+\begin{table}[!htb]
+\centering\small
+\caption{Prior centering lowers NLL on both tasks. Client-macro accuracy (\%) / NLL, three-seed mean $\pm$ sample SD.}\label{tab:main}
+\begin{tabular}{lrrrr}\toprule
+& \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{FashionMNIST}\\
+Predictor & Acc. (\%) & NLL & Acc. (\%) & NLL\\\midrule
+Shared model & $38.96\pm0.77$ & $1.677\pm0.029$ & $69.79\pm1.69$ & $0.749\pm0.035$\\
+Shared + prior & $74.60\pm0.82$ & $0.673\pm0.014$ & $91.97\pm0.29$ & $0.210\pm0.011$\\
+Zero vector (20d) & $75.39\pm0.68$ & $0.680\pm0.014$ & $92.80\pm0.37$ & $0.206\pm0.012$\\
+Prior BCTS (11d) & $75.56\pm0.52$ & $0.646\pm0.013$ & $92.84\pm0.38$ & $0.192\pm0.011$\\
+Prior vector (20d) & $75.57\pm0.60$ & $0.645\pm0.014$ & $92.97\pm0.44$ & $0.188\pm0.011$\\
+Local Linear (650d) & $74.10\pm0.34$ & $0.725\pm0.019$ & $92.22\pm0.46$ & $0.226\pm0.018$\\
+\bottomrule
+\end{tabular}
+\end{table}

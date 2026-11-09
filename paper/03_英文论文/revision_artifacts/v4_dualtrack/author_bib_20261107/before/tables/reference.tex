@@ -1,0 +1,14 @@
+\begin{table}[!ht]
+\centering\small
+\caption{Uniform3 uses fewer bytes than the same-budget TopK reference. CIFAR-10 official TEST, three paired seeds; rows use the stated implementations.}
+\label{tab:reference}
+\begin{tabular}{lrrr}
+\toprule
+Method & Acc. (\%) & NLL & Upload (B)\\
+\midrule
+Prior vector + uniform3 & $75.57\pm0.60$ & $0.645\pm0.014$ & 54,067\\
+Prior vector + TopK & $74.27\pm0.64$ & $0.670\pm0.014$ & 54,808\\
+FedRoD-linear + uniform3 & $74.30\pm0.41$ & $0.677\pm0.016$ & 54,067\\
+\bottomrule
+\end{tabular}
+\end{table}

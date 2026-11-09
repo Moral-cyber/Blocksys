@@ -1,0 +1,15 @@
+{
+  "work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+  "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+  "work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+  "work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+  "work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+  "work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+  "work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+  "work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+  "work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+  "work/balanced_quant/PLAN.md": "6c58ed74e04c8b7477faa7fcaee2e45f11f86f02775bd0642c6b08da2a304397",
+  "work/prior_personalization/sources/fedrod.html": "f20e9d08f1573c149998483d07e10b0305162795a2b134305af82fd3759710c7",
+  "work/prior_personalization/sources/fedrod.txt": "b33fbbd8f63cce4aa78067c9f95b79ebd9c01a4e8da3cfdbd287aada0a8025f3"
+}

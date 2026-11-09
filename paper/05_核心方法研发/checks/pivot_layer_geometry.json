@@ -1,0 +1,64 @@
+{
+  "scope": "one existing development shared state; descriptive only",
+  "source": "checkpoint_probes/cpu_topk20",
+  "weighted_residual_energy": 3.2388260455507356,
+  "parameter_count": 136874,
+  "layers": [
+    {
+      "name": "features.0.weight",
+      "size": 432,
+      "weighted_residual_energy": 0.013159602023260572,
+      "weighted_delta_energy": 0.012638886340695838,
+      "residual_energy_fraction": 0.004063077744276596
+    },
+    {
+      "name": "features.0.bias",
+      "size": 16,
+      "weighted_residual_energy": 0.000391736057558165,
+      "weighted_delta_energy": 0.0018215574960468593,
+      "residual_energy_fraction": 0.00012095001461912522
+    },
+    {
+      "name": "features.3.weight",
+      "size": 4608,
+      "weighted_residual_energy": 0.12499690434281836,
+      "weighted_delta_energy": 0.02106640066184198,
+      "residual_energy_fraction": 0.038593275027700255
+    },
+    {
+      "name": "features.3.bias",
+      "size": 32,
+      "weighted_residual_energy": 0.0009783776831770086,
+      "weighted_delta_energy": 0.0012816566890212614,
+      "residual_energy_fraction": 0.00030207787309881394
+    },
+    {
+      "name": "classifier.1.weight",
+      "size": 131072,
+      "weighted_residual_energy": 3.08111615899348,
+      "weighted_delta_energy": 0.17138324293363935,
+      "residual_energy_fraction": 0.9513064658801587
+    },
+    {
+      "name": "classifier.1.bias",
+      "size": 64,
+      "weighted_residual_energy": 0.001868248836235145,
+      "weighted_delta_energy": 0.0005152712465184168,
+      "residual_energy_fraction": 0.0005768290145750834
+    },
+    {
+      "name": "classifier.3.weight",
+      "size": 640,
+      "weighted_residual_energy": 0.01608015191069539,
+      "weighted_delta_energy": 0.06570831028624625,
+      "residual_energy_fraction": 0.004964808756180388
+    },
+    {
+      "name": "classifier.3.bias",
+      "size": 10,
+      "weighted_residual_energy": 0.00023486570351101556,
+      "weighted_delta_energy": 0.0011817119515283938,
+      "residual_energy_fraction": 7.251568939111659e-05
+    }
+  ]
+}

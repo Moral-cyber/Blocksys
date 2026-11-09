@@ -1,0 +1,212 @@
+{
+  "status": "ALL_DONE",
+  "conditions": {
+    "mixing0/dense": {
+      "status": "DONE",
+      "actual_loader_batches_one_epoch": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "samples_train": 37500,
+      "samples_dev": 2000,
+      "test_final": false,
+      "run_signature_verified": true,
+      "rounds": 20,
+      "analytical_upload_bytes": 219024000,
+      "current_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.3543999969959259,
+        "ce": 1.7844544311523438
+      }
+    },
+    "mixing0/topk_ef": {
+      "status": "DONE",
+      "actual_loader_batches_one_epoch": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "samples_train": 37500,
+      "samples_dev": 2000,
+      "test_final": false,
+      "run_signature_verified": true,
+      "rounds": 20,
+      "analytical_upload_bytes": 21923200,
+      "current_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.3440000057220459,
+        "ce": 1.8223577545166016
+      }
+    },
+    "mixing1/dense": {
+      "status": "DONE",
+      "actual_loader_batches_one_epoch": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "samples_train": 37500,
+      "samples_dev": 2000,
+      "test_final": false,
+      "run_signature_verified": true,
+      "rounds": 20,
+      "analytical_upload_bytes": 219024000,
+      "current_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.46519999504089354,
+        "ce": 1.491365431213379
+      }
+    },
+    "mixing1/topk_ef": {
+      "status": "DONE",
+      "actual_loader_batches_one_epoch": [
+        30,
+        46,
+        4,
+        93,
+        39,
+        8,
+        2,
+        5,
+        27,
+        51,
+        9,
+        62,
+        66,
+        5,
+        44,
+        22,
+        16,
+        3,
+        40,
+        25
+      ],
+      "samples_train": 37500,
+      "samples_dev": 2000,
+      "test_final": false,
+      "run_signature_verified": true,
+      "rounds": 20,
+      "analytical_upload_bytes": 21923200,
+      "current_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.44649999737739565,
+        "ce": 1.5386679122924805
+      }
+    }
+  },
+  "cross_mixing": {
+    "status": "PASS",
+    "same_client_train_counts": true,
+    "same_actual_loader_steps": true,
+    "same_global_train_row_multiset": true,
+    "same_holdout": true,
+    "same_validation": true,
+    "only_train_assignment_changed_in_data": true,
+    "mixing1_matches_independent_permutation": true,
+    "runtime_optimizer_step_counts_logged": false
+  },
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE",
+  "expected_mixing1_from_current_mixing0": {
+    "train_indices_sha256": "b0968c8ae420f9debf7707e387dd7af87d89172eff7e0c78e5e67e8d1339f002",
+    "counts_preserved": true,
+    "train_global_multiset_preserved": true
+  },
+  "compression_penalties": {
+    "mixing0": {
+      "ce_sparse_minus_dense": 0.037903323364257835,
+      "accuracy_dense_minus_sparse_pp": 1.0399991273879972
+    },
+    "mixing1": {
+      "ce_sparse_minus_dense": 0.0473024810791014,
+      "accuracy_dense_minus_sparse_pp": 1.8699997663497891
+    }
+  },
+  "descriptive_interaction_mixing0_minus_mixing1": {
+    "ce_sparse_minus_dense": -0.009399157714843565,
+    "accuracy_dense_minus_sparse_pp": -0.830000638961792
+  },
+  "dense_heterogeneity_gap_mixing0_minus_mixing1": {
+    "ce": 0.29308899993896476,
+    "accuracy_pp": -11.079999804496765
+  }
+}

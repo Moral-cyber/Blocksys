@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "synthetic 3-model/20-client saved-array integration only; no existing/fresh real split evaluated",
+  "fixture_root": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/prior_vector_saved_evaluator_fixture_rf4l0mjr",
+  "metric_known_cases": [
+    "uniform balanced",
+    "perfect saturated",
+    "confident wrong saturated"
+  ],
+  "max_independent_metric_summary_error": 1.1102230246251565e-16,
+  "states_float32_score_application_float64": true,
+  "complete_schema_and_fresh_output_negative_checks": true,
+  "evaluator_contains_no_gate_or_decision": true,
+  "synthetic_vector_fits": 120,
+  "new_cnn_forwards": 0,
+  "new_cnn_backwards": 0,
+  "real_dataset_bytes": 0,
+  "source_identities_unchanged": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/solver.py": "9c3196eb3e6ff7f5f32073e3bc4aae8d986ac7e44bdf0d719258343847d4dbae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_vector/evaluate_saved.py": "7b45a055df8c3e03421fd9edd6749c1e2bfba1203864e0b41695413db1fb8b05",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/probe.py": "d1fab28871824163a6d2fc2ee44e043698537b00dabc0e02af2618531adcd0c7"
+  },
+  "harness_sha256": "c06f910acec211b7d7d13cf284255dc6899f49039a766e9a781d4f3d18f4c6f2",
+  "real_array_probe_started": false,
+  "formal_ML_training_started": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "synthetic final checkpoint with nonzero P; no real training/official image inference",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/fedrod_quality_fixture_i78wo63p",
+  "source_identities": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/reference.py": "3649edec016ac3b06005a624bbf2dcea22d23965d53637b8ec36875b5be74dfc",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/train.py": "7ff112e2e3f5575835d1c0358e501a4815231fb6572be0ef33b148dc05eaac70",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/prospective.py": "9e7325bd8de7c6d3cd32a2dbf060521d1e073d1c1fc86520411fb34e6b7ef501",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/PLAN.md": "c5817d080e4ac55ba9a3ea8a4739b1885ba33a84a26be5056e97aed51eacd895",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/SOURCE_LOCK.json": "2303784cf1288bdc3798577049b39d12acb99b87eed5c5eebfc857aab15df904",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibration_baselines/score_quality.py": "5f14f01a25f64c9ed495214aa57f4277370f315ce08b7686b985faa03666fc98",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/fedrod_linear_reference/export_quality.py": "294aa4356fb0b335c83dbf07bab2003c972708f5e129178208088cba332b1dae",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/predictive_pfl_confirm/PLAN.md": "703d5956c9edd24d5a03501a75f678a43222d19bd3dd1ede515ed77545b0830b"
+  },
+  "source_identities_unchanged": true,
+  "nonzero_P_for_all20_clients": true,
+  "G_P_GplusP_bitwise_equal_to_independent_linear": true,
+  "one_feature_forward_per_batch_verified_by_hooks": true,
+  "actual_feature_forward_images": 30,
+  "actual_feature_forward_batches": 20,
+  "TRAIN_image_forwards": 0,
+  "TRAIN_fits": 0,
+  "new_cnn_backwards": 0,
+  "max_handcomputed_metric_error": 8.881784197001252e-16,
+  "max_handcomputed_summary_error": 4.440892098500626e-16,
+  "rejected": [
+    "incomplete19",
+    "nonfinite_P",
+    "signature_mismatch",
+    "config_self_signature",
+    "fractional_GT_before_metric_cast"
+  ],
+  "dummy_TEST_path_rejected": true,
+  "official_files_read": 0,
+  "formal_ML_training_started": false,
+  "harness_sha256": "71f8f4a324816cd13c6fde39149192ce932d4f8efae193643d1611db6190ee2a",
+  "review": "REVIEW_UNAVAILABLE"
+}

@@ -1,0 +1,5 @@
+# Prediction text alternative
+
+English: Two scatter panels show client-macro accuracy (%) horizontally and client-macro NLL vertically for CIFAR-10 and FashionMNIST. Each compares zero-anchor vector, same-prior BCTS, and prior-anchor vector on the same FedLC-inspired uniform3 shared models. Open symbols show all three fixed training seeds without jitter; larger filled symbols and horizontal/vertical bars show the mean and sample SD (ddof=1). Color and marker shape jointly identify methods. Axis ranges differ by task and include every raw point and mean ± SD. Prior-anchor vector has lower mean NLL than zero-anchor vector on both tasks; same-prior BCTS is close. These panels do not display ECE or Brier. Exact plotted values accompany the artwork in prediction.data.json.
+
+中文：两个散点面板分别展示CIFAR-10与FashionMNIST，横轴为客户端宏平均准确率（%），纵轴为客户端宏平均NLL。比较相同FedLC-inspired uniform3共享模型上的零锚向量、同先验BCTS、先验锚向量。空心标记显示全部三个固定训练种子且无抖动；较大的实心标记及水平/垂直误差条表示均值与样本标准差（ddof=1）。颜色与形状共同标识方法。各任务使用不同轴范围，并包含所有原始点与均值±SD。先验锚向量在两个任务的平均NLL均低于零锚向量，同先验BCTS与其接近；本图不展示ECE或Brier。完整绘图数值见prediction.data.json。

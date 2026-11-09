@@ -1,0 +1,68 @@
+{
+  "raw_logit_inference": {
+    "reported_ce": 2.3865325927734373,
+    "independent_raw_ce": 2.3865325283772227,
+    "shifted_ce_not_used": 2.290887369939338,
+    "status": "PASS"
+  },
+  "single_batch_independent_calibration": {
+    "ce": {
+      "label_counts": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_delta_abs_error": 7.087786678752761e-09,
+      "max_gradient_square_abs_error": 1.469786707619658e-08,
+      "forward_ce": 1,
+      "backward": 1
+    },
+    "cal": {
+      "label_counts": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_delta_abs_error": 7.444660258051905e-09,
+      "max_gradient_square_abs_error": 4.876295998934577e-09,
+      "forward_ce": 1,
+      "backward": 1
+    }
+  },
+  "uneven_batch_proxy": {
+    "batch_sizes": [
+      64,
+      4
+    ],
+    "equal_batch_weighting": true,
+    "max_gradient_square_abs_error": 5.1797121869423535e-09,
+    "not_sample_weighted_fisher": true,
+    "additional_backward_for_importance": 0
+  },
+  "stage1_compression": {
+    "dense_uses_raw_delta_no_EF": true,
+    "topk_uses_delta_plus_old_residual": true,
+    "topk_ef_conservation_exact": true,
+    "quantizer_not_reviewed": true
+  },
+  "source_hashes": {
+    "run.py": "f08b0fa40ad32a7d486153737f3225ba9e386f1aa2f4b69a125949b679436cd7",
+    "EXPERIMENT_PLAN.md": "7ccd6cc96cd6c9e7bfe39a33289880755a61cd3417b169f6c16a1a59a801035b"
+  },
+  "status": "PASS",
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE"
+}

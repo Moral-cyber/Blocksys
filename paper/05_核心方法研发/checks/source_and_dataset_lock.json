@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-11-03T22:02:08.121019+08:00",
+  "python": "3.13.15 | packaged by conda-forge | (main, Sep  2 2026, 21:53:23) [Clang 21.1.8 ]",
+  "executable": "/opt/anaconda3/envs/Tinyproto/bin/python",
+  "numpy": "2.5.3",
+  "torch": "2.13.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "files": [
+    {
+      "path": "work/tinyproto_diag/tools/fedavg_update_diagnostic.py",
+      "bytes": 8553,
+      "sha256": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496"
+    },
+    {
+      "path": "work/tinyproto_diag/tools/sparse_update_benchmark.py",
+      "bytes": 14748,
+      "sha256": "4bb2ecbc9b5ad6353497ac75f70557796e56c53b64a6acdf701045168b2c813a"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/config.json",
+      "bytes": 5558,
+      "sha256": "5dbff2684fd6a4fee4ba2e8920d4145889e42b14f23e2c74553d0951c2a76ece"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/0.npz",
+      "bytes": 442914,
+      "sha256": "a1bb209b5fab632f4bbd0fb4b8f5d00321603a8fb4017c44a706c23442b51a91"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/1.npz",
+      "bytes": 170899,
+      "sha256": "f2ea2d23ad3360216b0864c34dcdd617c7f80c6f7efa13cde044c0eb8e7a435f"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/10.npz",
+      "bytes": 130225,
+      "sha256": "ef981b675f6f50b9830967870135f01b40de5822f9c54c605425e7daf9fde0cb"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/11.npz",
+      "bytes": 3055932,
+      "sha256": "305a9f744f3f244918d23ebad3975f8026c044301a0c00f950a2d47e12c16ca5"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/12.npz",
+      "bytes": 4823994,
+      "sha256": "93df3ea74d83f2595900bb12b11e3a31d1c9467815430f1ee5f8182e43059a00"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/13.npz",
+      "bytes": 4752530,
+      "sha256": "723444b567dd3f7f084879129579c800c0acce228adc9528c1b9c1a180b228cc"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/14.npz",
+      "bytes": 1716736,
+      "sha256": "418fa4f3c27c3817bd2c337d83d0c06d9230faf60703fe4f2e7f671936a2e236"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/15.npz",
+      "bytes": 10088966,
+      "sha256": "0bd6aaf03d1a72f7288c1a8e7a339a834b44c383d102ff51a44dc8b655ee84dd"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/16.npz",
+      "bytes": 534259,
+      "sha256": "2553d15a9575510448b267806d434a8c1e29d381c6e85bcae08fdfd2726fc163"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/17.npz",
+      "bytes": 1376981,
+      "sha256": "62fb4ae4ce4553ecd90421dfc17b366d97d3728f55fb65255342a72c3c38ca07"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/18.npz",
+      "bytes": 1007755,
+      "sha256": "876a5a7502a2131321e723fd9f4c60c51da073db99bd7ab5e802fea8c7600ce1"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/19.npz",
+      "bytes": 4391158,
+      "sha256": "db403b8640684a6965c46f3239811009a9815827b0a6237608e43e913b626adb"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/2.npz",
+      "bytes": 6390395,
+      "sha256": "5e7df63dd5346ca5ae7bda4ea8d8721725890c3d0b6486d980db210c15816d15"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/3.npz",
+      "bytes": 1515081,
+      "sha256": "22c6fed9e4eca10a502a840e6875e7583ac1ede27ae44232872f7d9a7532fd90"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/4.npz",
+      "bytes": 5128093,
+      "sha256": "d802c2432587097fd1cc610439c928f757c23bb2899be939c8f00482afd40358"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/5.npz",
+      "bytes": 1016023,
+      "sha256": "7aebde4b817db17a24f60752e159227ea8c2d2a7748402ea3b8a33f16f20576a"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/6.npz",
+      "bytes": 1719072,
+      "sha256": "3a07eb18801cec7259bf6d864eb5e9b2dbee2dd3a6d82c66125642b0d5fa0b69"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/7.npz",
+      "bytes": 781927,
+      "sha256": "0f2dacc7afd1d3c8ac905f34e253cac28ea3f2325f3ce0002df011b35835980f"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/8.npz",
+      "bytes": 638177,
+      "sha256": "bd65922f45ed5cd66f9ea04b7d668d0078ef83138ab676bd8a01526ddef8bfdd"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/test/9.npz",
+      "bytes": 478086,
+      "sha256": "3f1aa9c8e417b6eec5e6f03706959bb401adc3eb35e8a18db622ee80100c2abb"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/0.npz",
+      "bytes": 1355131,
+      "sha256": "70dab892524593643b0e749ce9ec7e6a56b21046d8f42223bdcca1a86f746746"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/1.npz",
+      "bytes": 482467,
+      "sha256": "d5eeaa0e82189741da3290f9f47a72d1c32cc346eda6302e36c5408790ffd1a4"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/10.npz",
+      "bytes": 384471,
+      "sha256": "65ac20f403bbfcd5bb0470461bd0705bbab47bac61073423ee45019fc3f1a0cc"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/11.npz",
+      "bytes": 9173003,
+      "sha256": "2aa22cc2ab6246c21953e5072d8046ad9f0cff8e1edcc0dd3427cf24b26be0f6"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/12.npz",
+      "bytes": 14490823,
+      "sha256": "fd063622b52ccee720eb8c0407a0ba5631529d30de972d4e79c48481d7acd35f"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/13.npz",
+      "bytes": 14241084,
+      "sha256": "21ec3284f809f381fd5bdde45a673826cfe314e33dfb9f0aa5af78111041ec54"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/14.npz",
+      "bytes": 5130627,
+      "sha256": "ae3f9ea878f19de3718e29b14541cc4af214429dbc33bab7349fe2a59a540756"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/15.npz",
+      "bytes": 30157530,
+      "sha256": "7e5ccbe7b90951dca5efb529da48a4891d4151721206b9bd902949c84d09e45c"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/16.npz",
+      "bytes": 1596644,
+      "sha256": "e64d574269e0956ab5796a71bac2ca3b4ff681bf8b09d046820e82336ef7b5ec"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/17.npz",
+      "bytes": 4158073,
+      "sha256": "53b4f7f4bbf103e9aed1af25b6b8d17c97ae2e721f2471df48d323e3fd8222bf"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/18.npz",
+      "bytes": 3025671,
+      "sha256": "65f11f8f97f1975f85b7590a402baa8f76eeb9dc584d08af2a38c639632f0141"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/19.npz",
+      "bytes": 13199318,
+      "sha256": "c22310a0bdee3b08470ec49b662c7ddd5b1bb14fd8d73e65a8fc4345b8556eb7"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/2.npz",
+      "bytes": 19138018,
+      "sha256": "da27fd3ec9c74888912ddad6d95a62fb6a1788c05c8170032a51324b78fb7423"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/3.npz",
+      "bytes": 4547140,
+      "sha256": "af339030791662d27ee8102eaf867d9edcfd860b5a1901e4f330da5af3fc460e"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/4.npz",
+      "bytes": 15308675,
+      "sha256": "8c91bf8f99c7ec77cb98d0e6c9220390747627769cff10a4fde8a788baaf6a93"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/5.npz",
+      "bytes": 2986664,
+      "sha256": "cd96b4c91ce4bfe3fd7b7ffdfd9f1da8bdb1230a01cb6798f697d60d42e50400"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/6.npz",
+      "bytes": 5124630,
+      "sha256": "e4391db79ba9301155b6de0d3147638ffa091c31d5dd8fd81ca86940c2d58c2d"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/7.npz",
+      "bytes": 2347827,
+      "sha256": "f7253b06c614a6993a76bfdd0958c4558f5e3efe1d1c2ca219230881a4b53d24"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/8.npz",
+      "bytes": 1918156,
+      "sha256": "7ee6461ce7d6c1606250b841b6213810a22b9780f4562dd33fdfd5ee088d9fdd"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10CleanA0p1/train/9.npz",
+      "bytes": 1460301,
+      "sha256": "8ca8987125281b553c360d7b556d447d82a3f217d6511edab19b8e76dfe429f5"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/batches.meta",
+      "bytes": 158,
+      "sha256": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/data_batch_1",
+      "bytes": 31035704,
+      "sha256": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/data_batch_2",
+      "bytes": 31035320,
+      "sha256": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/data_batch_3",
+      "bytes": 31035999,
+      "sha256": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/data_batch_4",
+      "bytes": 31035696,
+      "sha256": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/data_batch_5",
+      "bytes": 31035623,
+      "sha256": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+    },
+    {
+      "path": "work/tinyproto_diag/dataset/Cifar10/rawdata/cifar-10-batches-py/test_batch",
+      "bytes": 31035526,
+      "sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831"
+    }
+  ],
+  "scope": "source/data provenance lock; not an accuracy result or external integrity verdict"
+}

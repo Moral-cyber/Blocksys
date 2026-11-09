@@ -1,0 +1,108 @@
+{
+  "status": "ALL_DONE",
+  "runs": {
+    "ce_dense": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "raw-logit global fixed dev2000",
+      "recorded_train_label_counts_match_manifest": true,
+      "calibration_shift_matches_rule": true,
+      "gradients_total": 11940,
+      "upload_bytes_analytical_total": 219024000,
+      "seconds_iterations_including_evaluation": 60.59691708302125,
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.3321999967098236,
+        "ce": 1.8340582885742187
+      }
+    },
+    "ce_topk": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "raw-logit global fixed dev2000",
+      "recorded_train_label_counts_match_manifest": true,
+      "calibration_shift_matches_rule": true,
+      "gradients_total": 11940,
+      "upload_bytes_analytical_total": 21923200,
+      "seconds_iterations_including_evaluation": 63.627627081936225,
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.31579999923706054,
+        "ce": 1.8771309234619138
+      }
+    },
+    "cal_dense": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "raw-logit global fixed dev2000",
+      "recorded_train_label_counts_match_manifest": true,
+      "calibration_shift_matches_rule": true,
+      "gradients_total": 11940,
+      "upload_bytes_analytical_total": 219024000,
+      "seconds_iterations_including_evaluation": 61.69467933307169,
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.33830000162124635,
+        "ce": 1.819128695678711
+      }
+    },
+    "cal_topk": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "raw-logit global fixed dev2000",
+      "recorded_train_label_counts_match_manifest": true,
+      "calibration_shift_matches_rule": true,
+      "gradients_total": 11940,
+      "upload_bytes_analytical_total": 21923200,
+      "seconds_iterations_including_evaluation": 64.28936392106698,
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.3208000063896179,
+        "ce": 1.8627080505371094
+      }
+    }
+  },
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE",
+  "calibration_component_comparisons": {
+    "dense": {
+      "ce_cal_minus_ce": -0.01492959289550777,
+      "accuracy_cal_minus_ce_pp": 0.6100004911422763,
+      "both_ce_and_accuracy_improved": true,
+      "attribution": "known FedLC-inspired calibration component, not a new communication contribution"
+    },
+    "topk": {
+      "ce_cal_minus_ce": -0.014422872924804375,
+      "accuracy_cal_minus_ce_pp": 0.5000007152557384,
+      "both_ce_and_accuracy_improved": true,
+      "attribution": "known FedLC-inspired calibration component, not a new communication contribution"
+    }
+  }
+}

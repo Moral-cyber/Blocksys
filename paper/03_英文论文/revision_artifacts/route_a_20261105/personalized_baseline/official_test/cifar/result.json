@@ -1,0 +1,58 @@
+{
+  "status": "DONE",
+  "task": "cifar",
+  "seeds": [
+    20261231,
+    20261232,
+    20261233
+  ],
+  "method": "pfedme_dense",
+  "predictor": "raw final theta",
+  "summaries": {
+    "raw": {
+      "macro_accuracy": {
+        "mean": 0.6438245867827841,
+        "sample_sd": 0.006907027469343883
+      },
+      "weighted_accuracy": {
+        "mean": 0.6406666666666667,
+        "sample_sd": 0.01823083468559064
+      },
+      "macro_nll": {
+        "mean": 1.0072316452381105,
+        "sample_sd": 0.029097689069628806
+      },
+      "weighted_nll": {
+        "mean": 0.9629863173662115,
+        "sample_sd": 0.03395037024589603
+      },
+      "macro_brier": {
+        "mean": 0.4893966889012309,
+        "sample_sd": 0.013171335335716999
+      },
+      "weighted_brier": {
+        "mean": 0.48095435247583573,
+        "sample_sd": 0.01809521497542178
+      },
+      "macro_ece15": {
+        "mean": 0.14795842343392612,
+        "sample_sd": 0.023162462055930276
+      },
+      "weighted_ece15": {
+        "mean": 0.12580893859913997,
+        "sample_sd": 0.025313466065492316
+      },
+      "client_accuracy_q10": {
+        "mean": 0.44095593369326114,
+        "sample_sd": 0.06058941769731646
+      },
+      "pooled_ece15": {
+        "mean": 0.05138756131051853,
+        "sample_sd": 0.015025149139821867
+      }
+    }
+  },
+  "assignment_hash": "08d8954ee4da54785f801a4310b3d39f4999bb879c2b74958794b817df1a215f",
+  "model_inputs_unchanged": true,
+  "TEST_fits": 0
+}

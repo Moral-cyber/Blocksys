@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-11-04T04:14:48.690058+00:00",
+  "figure": "prediction",
+  "destination": "User-supplied BlockSys svproc template; final figure width 122 mm",
+  "script": {
+    "path": "work/blocksys_template/figures.py",
+    "sha256": "0f403f5cf6977cb3ce268c6d1d719f5e3595a8d8d102502a59f14cf8e0b0bfde"
+  },
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "skill": "/Users/wind/.codex/skills/scientific-visualization/SKILL.md"
+  },
+  "export": {
+    "png_dpi": 600,
+    "opaque_white": true,
+    "font": "DejaVu Sans",
+    "minimum_text_pt": 7.1,
+    "pdf_fonttype": 42,
+    "svg_text": "Editable text; font not embedded",
+    "physical_size_preserved": "bbox_inches=None"
+  },
+  "width_mm": 122.0,
+  "height_mm": 65.0,
+  "axis_limits": {
+    "cifar": {
+      "accuracy_percent": [
+        74.41802955311994,
+        76.35793701520653
+      ],
+      "nll": [
+        0.6226111490539047,
+        0.7026087057115191
+      ]
+    },
+    "fashion": {
+      "accuracy_percent": [
+        92.31192278385105,
+        93.59369821089379
+      ],
+      "nll": [
+        0.16969398822247808,
+        0.22410699648101617
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "path": "prediction.pdf",
+      "sha256": "ac9b8986d22908c934c108da9e66ed8adb4cf99e61cbe9c996b5a9b500e1f593",
+      "bytes": 28212
+    },
+    {
+      "path": "prediction.svg",
+      "sha256": "9d65df20c946d9f63a4d430c725033494791b653ca453a8e80c54244e27931ea",
+      "bytes": 27940
+    },
+    {
+      "path": "prediction.png",
+      "sha256": "a3d77917e62f1def97cd4d955f462001369d6da307559a9423ad4c184ff7681a",
+      "bytes": 165559
+    }
+  ],
+  "source_sha256": {
+    "work/predictive_final_test/official_cifar/result.json": "3f71f68feb8bda6047bf15e50abfb4ca7716d32d039cccaf45b15502b368753f",
+    "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261231/result.json": "92410251daeae4ba67e812269d94b9f7dd8057c1540d29f2107d11d7b44250ea",
+    "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261232/result.json": "d093f26ed1a8d07f1d9db14ad58ba50741a88e088ba1f95fc9488698c7cbcaf0",
+    "work/predictive_final_test/official_cifar/fedlc_uniform3_s20261233/result.json": "8e13c6c329f081724ad0f6cf6de9954d4a72f5d1d3504c8f1035c60cd7402ab8",
+    "work/predictive_final_test/official_fashion/result.json": "835134b7812f64e9abb1f6c11b7c852f5f65b04e32e4f0449198ea6e09fd5215",
+    "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261241/result.json": "cc0f0c7020bcc077bf66cdc6230ac6da051a6ae81a7db9555106c21b305e3545",
+    "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261242/result.json": "f7d4042a57a1f8f53eab6f412bed2f432343d0c51f6b21be14f720404bef3e0c",
+    "work/predictive_final_test/official_fashion/fedlc_uniform3_s20261243/result.json": "c19964d3d8ed8441617efd7b5c307a2d8a58234069246fb58edda8d8563c0a5a"
+  },
+  "unit": "Exactly three predefined training seeds per task; one fixed client assignment per task",
+  "transformations": "macro_accuracy * 100; no NLL transformation, smoothing, jitter, filtering, or seed selection",
+  "uncertainty": "Arithmetic mean and sample SD, ddof=1; both independently matched to frozen aggregate JSON",
+  "raw_points": 18,
+  "encoding": "Each raw point is an open shape; means are larger filled shapes; horizontal and vertical sample-SD bars",
+  "data_file": "prediction.data.json"
+}

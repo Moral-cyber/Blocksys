@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "decision_verified": "STOP",
+  "candidate_fixed": "fedlc_uniform3",
+  "verified_output_files": 80,
+  "verified_vector_states": 160,
+  "bitwise_verified_holdout_score_elements": 999840,
+  "score_application": "FP32 saved A,b promoted to FP64; FP64 saved raw logits application and scoring for every vector baseline. FP64 optimization theta is diagnostic only.",
+  "state_rounding": "saved FP32 state equals optimization float64 theta cast once to float32",
+  "max_metric_error": 0.0,
+  "max_objective_formula_error": 0.0,
+  "max_gradient_inf_formula_error": 9.237055564881302e-14,
+  "max_fp64_optimization_vs_fp32_state_score_difference": 4.6923441487933815e-07,
+  "fp32_arithmetic_sensitivity_only": {
+    "max_score_difference": 7.094985221556271e-07,
+    "max_client_accuracy_difference": 0.0,
+    "max_client_nll_difference": 8.41149794261753e-09,
+    "scope": "diagnostic arithmetic sensitivity; official metrics use promoted FP32 states with FP64 arithmetic"
+  },
+  "optimizer_stop_reasons": {
+    "kkt_gradient_tolerance": 91,
+    "float64_objective_resolution": 69
+  },
+  "verified_source_input_identities": 89,
+  "source_input_output_hashes_unchanged": true,
+  "result_sha256": "3ac6d580eda6462fa23b24855112863536af7cc3c4fb76ad745416ee615dd7b2",
+  "dataset_open_attempts": [],
+  "new_cnn_forwards": 0,
+  "new_cnn_backwards": 0,
+  "new_fits": 0,
+  "harness_sha256": "285517017ab7fb1f8a72a999672d918005602e3f04763c527d0c7d0d9604b4c8"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "independent finite development-only arithmetic and partial validation replay",
+  "official_test_data_or_results_accessed": false,
+  "confirmation_runs_accessed": false,
+  "training_scope": "one client0 delta from each of two saved development endpoints only",
+  "checks": [
+    {
+      "name": "cpu_topk20",
+      "status": "PASS",
+      "source": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/development_runs/topk_ef_mix0_rho0.05_s20261113",
+      "source_round": 20,
+      "probe_round": 21,
+      "delta_client0_seed": 20263113,
+      "client0_delta_bitwise_reproduced": true,
+      "encoding_rows_recomputed": 18,
+      "validation_rows_recomputed": 6,
+      "maximum_validation_loss_difference": 0.0,
+      "parameter_count": 136874,
+      "K": 6843,
+      "sparse_round_analytical_bytes": 1096160,
+      "current_external_helper_sha256": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+      "source_does_not_record_external_helper_or_npz_hashes": true,
+      "unrelated_manifest_drift": []
+    },
+    {
+      "name": "cpu_align9020",
+      "status": "PASS",
+      "source": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/development_runs/align90_mix0_rho0.05_s20261113",
+      "source_round": 20,
+      "probe_round": 21,
+      "delta_client0_seed": 20263113,
+      "client0_delta_bitwise_reproduced": true,
+      "encoding_rows_recomputed": 18,
+      "validation_rows_recomputed": 6,
+      "maximum_validation_loss_difference": 0.0,
+      "parameter_count": 136874,
+      "K": 6843,
+      "sparse_round_analytical_bytes": 1096160,
+      "current_external_helper_sha256": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+      "source_does_not_record_external_helper_or_npz_hashes": true,
+      "unrelated_manifest_drift": [
+        "benchmark_codec.py",
+        "run_batch.py",
+        "summarize_confirmatory.py"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+\section{Introduction}
+A client dominated by one class must use a shared model that also serves nineteen other label distributions. In our label-skewed CIFAR-10 setting, the shared model reaches 38.96\% client-macro accuracy, below the 63.06\% obtained by predicting from local class frequencies alone. Figure~\ref{fig:motivation} motivates interpreting shared logits locally~\cite{mcmahan2017fedavg,arivazhagan2019fedper,chen2022fedrod}.
+
+Logit adjustment fixes the offset but not its strength; vector scaling frees the fit but supplies no client-prior center~\cite{menon2021logitadjust,guo2017calibration}. Fixed addition can duplicate information in shared logits; an unconstrained fit must infer it from limited local labels.
+
+We shrink the bias toward the client's prior instead of adding it. Infinite regularization fixes the prior offset; vanishing regularization removes the penalty. At an optimum, bias deviations track observed counts minus fitted probability mass: agreeing centers are retained and disagreeing ones corrected.
+
+Three results support PR-LFL (prior-regularized lightweight federated learning). Prior-centered fitting lowers NLL in each fixed seed on both tasks. Class permutation isolates alignment, and same-prior bias-corrected temperature scaling (BCTS) supports the center across score families. The predictor uses 80 B of local state with shared uploads of 54,067 B.
+
+\begin{figure}[!htb]\centering
+\includegraphics[width=\linewidth]{figures/motivation_route_a.pdf}
+\caption{Local counts expose the prediction gap. Left: CIFAR client 0 TRAIN. Right: client-macro accuracy over twenty clients and three seeds, including prior-only prediction.}\label{fig:motivation}
+\end{figure}
+
+\paragraph{Contributions.}
+\emph{A formulation that contains both baseline objectives as limits.} We treat the client's class prior as the center of a penalized post-hoc fit. $\lambda\to\infty$ recovers fixed logit adjustment, $\lambda\to0$ removes the penalty from the vector-scaling objective, and the optimum satisfies $\lambda(b-\mu)=n-\sum p$. The two standard objectives become penalty endpoints of one formulation instead of competitors.
+
+\emph{An attribution control that needs no retraining.} Permuting the prior's class labels keeps its norm, the predictor's capacity, and the solver fixed, yet increases NLL relative to the aligned center in all 60 client-seed pairs per task, and the permuted predictor's mean NLL exceeds the zero-center mean on both tasks. The benefit comes from class alignment, not from shrinkage strength or extra parameters.
+
+\emph{A deployment point at 54,067 B.} The same predictor fitted on logits from three-bit shared training stays within 0.03 accuracy points of the reported dense-training means on both tasks, with 90.1\% less uplink and 80 B of added local state.
+
+\section{Related Work}
+\paragraph{Personalization and communication.}
+FedProx, SCAFFOLD and FedNova modify shared optimization~\cite{li2020fedprox,karimireddy2020scaffold,wang2020fednova}. FedPer/FedRoD retain personal prediction components; Ditto/pFedMe regularize personal models, and FedBN retains local normalization~\cite{li2021ditto,dinh2020pfedme,li2021fedbn}. Quantization, sparsification and error feedback reduce update traffic~\cite{alistarh2017qsgd,stich2018sparsified,karimireddy2019errorfeedback}. PR-LFL freezes the compressed shared representation before fitting its local predictor.
+
+\paragraph{Class priors and label shift.}
+EM adjustment and black-box shift estimation infer target label frequencies~\cite{saerens2002prior,lipton2018bbse}. Logit adjustment, Balanced Softmax and FedLC use class counts in prediction or training~\cite{menon2021logitadjust,ren2020balanced,zhang2022fedlc}. PRIOR learns personalized centers for Bregman-regularized model training~\cite{shi2023prior}; PR-LFL instead centers a convex post-hoc predictor on observed log class frequencies, with shared logits frozen.
+
+\paragraph{Post-hoc calibration.}
+Temperature/vector scaling, BCTS and Dirichlet calibration transform scores~\cite{guo2017calibration,alexandari2020labelshift,kull2019dirichlet}. LaSCal fits temperature using estimated calibration error under label shift from labeled source and unlabeled target data~\cite{popordanoska2024lascal}; our center uses observed local TRAIN labels. Calibration measures~\cite{vaicenavicius2019calibration,kumar2019verified} and shift studies~\cite{ovadia2019shift} inform evaluation. FedCal aggregates parameterized scalers~\cite{peng2024fedcal}; private federated multiclass calibration learns global calibrators from distributed data~\cite{maddock2025privatecal}. PR-LFL keeps client-specific centers and prediction states local.

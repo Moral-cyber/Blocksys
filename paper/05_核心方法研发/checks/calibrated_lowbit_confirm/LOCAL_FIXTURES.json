@@ -1,0 +1,147 @@
+{
+  "scope": "synthetic CPU single-thread fixtures only; no official data or real training entry",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/calibrated_lowbit_confirm_fixture_85can77_",
+  "source_identities": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_bias/solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7"
+  },
+  "checks": {
+    "test_byte_guard": {
+      "intentional_dummy_path_rejected": true,
+      "official_files_read": 0,
+      "actual_test_file_opened": false
+    },
+    "synthetic_partition": {
+      "seed": 20261203,
+      "deterministic": true,
+      "train_actual": 37501,
+      "holdout_actual": 12499,
+      "validation_actual": 2000,
+      "unique_disjoint_full_coverage": true,
+      "same_frozen_partition_function_and_normalization": true
+    },
+    "tiny_training": {
+      "methods": [
+        {
+          "method": "ce_uniform3",
+          "rounds": 2,
+          "signature": "c159212e6878809e266d1b97264335c8f5c7fb58837fd51bcf1e121020adfda7",
+          "actual_gradient_evaluations": 4,
+          "wire_per_client": 54067,
+          "ef_max_error": 0.0,
+          "decoder_aggregation_and_residual_state_match": true
+        },
+        {
+          "method": "fedlc_uniform3",
+          "rounds": 2,
+          "signature": "59cca11f395a4f0a336b97ee79b649a926338515cc5133f1327f6c2d1964ce61",
+          "actual_gradient_evaluations": 4,
+          "wire_per_client": 54067,
+          "ef_max_error": 0.0,
+          "decoder_aggregation_and_residual_state_match": true
+        },
+        {
+          "method": "fedlc_dense",
+          "rounds": 2,
+          "signature": "53e349fdc4867e3f23a9eb580dd75350ca6b1a63f3f2f13ed7967134acd4cd72",
+          "actual_gradient_evaluations": 4,
+          "wire_per_client": 547560,
+          "ef_max_error": 0.0,
+          "decoder_aggregation_and_residual_state_match": true
+        }
+      ],
+      "same_seed_batch_initial_anchor": true,
+      "fedlc_quant_dense_first_local_deltas_bitwise_equal": true,
+      "new_real_data_training_started": false
+    },
+    "resume": {
+      "round1_interrupted_resume_model_EF_bitwise_equal": true,
+      "completed_resume_without_training": true,
+      "negative_rejections": {
+        "seed_mismatch": true,
+        "partition_seed_mismatch": true,
+        "rounds_mismatch": true,
+        "backend_mismatch": true,
+        "source_identity_mismatch": true,
+        "config_self_signature_mismatch": true,
+        "checkpoint_signature": true,
+        "checkpoint_version": true,
+        "checkpoint_full_config": true,
+        "checkpoint_ef_shape": true,
+        "checkpoint_ef_nonfinite": true
+      }
+    },
+    "final_only_evaluation_rejections": {
+      "incomplete_checkpoint": true,
+      "different_partition": true
+    },
+    "tiny_evaluation": {
+      "methods": [
+        {
+          "method": "ce_uniform3",
+          "all_variants": [
+            "raw",
+            "analytic_prior",
+            "prioranchor_bias",
+            "matched_learned_head",
+            "matched_learned_head_plus_prior"
+          ],
+          "holdout_fitting_absent_and_bias_reproduces": true,
+          "matched_head_body_frozen": true
+        },
+        {
+          "method": "fedlc_uniform3",
+          "all_variants": [
+            "raw",
+            "analytic_prior",
+            "prioranchor_bias",
+            "matched_learned_head",
+            "matched_learned_head_plus_prior"
+          ],
+          "holdout_fitting_absent_and_bias_reproduces": true,
+          "matched_head_body_frozen": true
+        },
+        {
+          "method": "fedlc_dense",
+          "all_variants": [
+            "raw",
+            "analytic_prior",
+            "prioranchor_bias",
+            "matched_learned_head",
+            "matched_learned_head_plus_prior"
+          ],
+          "holdout_fitting_absent_and_bias_reproduces": true,
+          "matched_head_body_frozen": true
+        }
+      ],
+      "bias_train_image_forwards": 24,
+      "bias_cnn_backward": 0,
+      "matched_head_gradient_evaluations": 6,
+      "state_bytes_per_client": 40,
+      "gates_recorded_without_hyperparameter_selection": {
+        "same_loss_prior_accuracy_plus_half_pp": false,
+        "same_loss_prior_lower_ce": true,
+        "ce_bias_accuracy_noninferior_half_pp": true,
+        "ce_bias_ce_within_001": true,
+        "matched_head_accuracy_noninferior_half_pp": true,
+        "quant_dense_accuracy_noninferior_half_pp": true
+      },
+      "fixture_decision_not_a_scientific_result": "STOP",
+      "must_next_zero_anchor_vector_BCTS_preserved": true
+    }
+  },
+  "status": "PASS",
+  "source_identities_unchanged": true,
+  "harness_sha256": "062f2c7491b4205f88aec4880ab34be1d30d2d4ef04cfe1fa3977b0c3c4d92e8",
+  "formal_ML_training_started": false
+}

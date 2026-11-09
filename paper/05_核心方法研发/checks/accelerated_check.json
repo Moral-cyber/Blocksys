@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "mps_available": true,
+  "cpu_checks": [
+    {
+      "mu": 0.0,
+      "bitwise_passthrough": true
+    },
+    {
+      "mu": 0.01,
+      "bitwise_passthrough": true
+    },
+    {
+      "mu": 0.1,
+      "bitwise_passthrough": true
+    }
+  ],
+  "mps_checks": [
+    {
+      "mu": 0.0,
+      "explicit_objective_maxabs_difference": 0.0,
+      "repeat_maxabs_difference": 0.0,
+      "repeat_bitwise_equal": true,
+      "delta_cpu_finite": true,
+      "global_unchanged": true
+    },
+    {
+      "mu": 0.01,
+      "explicit_objective_maxabs_difference": 0.0,
+      "repeat_maxabs_difference": 0.0,
+      "repeat_bitwise_equal": true,
+      "delta_cpu_finite": true,
+      "global_unchanged": true
+    },
+    {
+      "mu": 0.1,
+      "explicit_objective_maxabs_difference": 0.0,
+      "repeat_maxabs_difference": 0.0,
+      "repeat_bitwise_equal": true,
+      "delta_cpu_finite": true,
+      "global_unchanged": true
+    }
+  ],
+  "adapter_integration_backends": [
+    "cpu",
+    "mps"
+  ],
+  "summary_backend_dependency_source_isolation": true,
+  "scope": "Small local-objective and adapter checks; no real data training or learning-benefit claim."
+}

@@ -1,0 +1,98 @@
+{
+  "status": "ALL_DONE",
+  "runs": {
+    "standard": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "global fixed balanced dev2000, not client macro",
+      "analytical_upload_bytes_total": 21923200,
+      "gradient_evaluations_total": 11940,
+      "seconds_round_iterations_including_evaluation": 62.647765125206206,
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.33190000653266905,
+        "ce": 1.8763364685058594
+      },
+      "round20": {
+        "accuracy": 0.3400000035762787,
+        "ce": 1.8498551635742186
+      }
+    },
+    "samebatch": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "global fixed balanced dev2000, not client macro",
+      "analytical_upload_bytes_total": 21923200,
+      "gradient_evaluations_total": 23880,
+      "seconds_round_iterations_including_evaluation": 106.26655720805866,
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.348499995470047,
+        "ce": 1.8466855621337892
+      },
+      "round20": {
+        "accuracy": 0.36399999260902405,
+        "ce": 1.8080777740478515
+      }
+    },
+    "shadow": {
+      "status": "DONE",
+      "rounds": 20,
+      "evaluation": "global fixed balanced dev2000, not client macro",
+      "analytical_upload_bytes_total": 21923200,
+      "gradient_evaluations_total": 23880,
+      "seconds_round_iterations_including_evaluation": 113.80860462397686,
+      "final_checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "accuracy": 0.30920000076293946,
+        "ce": 1.939241961669922
+      },
+      "round20": {
+        "accuracy": 0.3215000033378601,
+        "ce": 1.9115022430419921
+      }
+    }
+  },
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE",
+  "frozen_go": {
+    "definition": "CE(C)<min(CE(A),CE(B)) AND acc(C)>=max(acc(A),acc(B))+.01",
+    "ce_pass": false,
+    "accuracy_pass": false,
+    "decision": "STOP_THIS_SHADOW_RECIPE"
+  },
+  "descriptive_differences": {
+    "extra_samebatch_B_minus_A": {
+      "ce_delta": -0.02965090637207024,
+      "accuracy_delta_pp": 1.6599988937377963
+    },
+    "shadow_C_minus_A": {
+      "ce_delta": 0.06290549316406246,
+      "accuracy_delta_pp": -2.270000576972958
+    },
+    "shadow_C_minus_B": {
+      "ce_delta": 0.0925563995361327,
+      "accuracy_delta_pp": -3.9299994707107544
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "scope": "independent CPU implementation fixtures on synthetic tensors only; no official data or efficacy result",
+  "source_identities": {
+    "work/head_control/run.py": "8ee487ea523ee772a99e3555174cc9f41d2c9e1ade300f58b3df778562c63b82",
+    "work/head_control/PLAN.md": "31b014425b47eb7af3fe36c51d755246e57127ebed68034f4e02572db277b48e",
+    "work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863"
+  },
+  "run_source_expected": "8ee487ea523ee772a99e3555174cc9f41d2c9e1ade300f58b3df778562c63b82",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/head_control_local_fixtures_0kkqb1yf",
+  "dataset_open_attempts": [],
+  "checks": {
+    "layout": {
+      "head": 650,
+      "body": 136224,
+      "total": 136874,
+      "head_names": [
+        "classifier.3.weight",
+        "classifier.3.bias"
+      ],
+      "last_coordinates": true
+    },
+    "local_gradient": {
+      "examples": 67,
+      "batch": 64,
+      "actual_steps": 2,
+      "body_gradient_added_max": 0.0,
+      "head_gradient_added_error_max": 6.984919309616089e-09,
+      "ci_vs_raw_head_gradient_mean_error": 1.2386590242385864e-07,
+      "reported_telescoping_error": 1.2386590242385864e-07,
+      "same_seed_repeat_delta_bitwise": true,
+      "same_seed_control_plain_batch_order": true,
+      "order_sha256": "8033254e9d901b8fa70df9a6231161f641f86ce012fcd085f22e6774ca55eab4",
+      "global_anchor_bitwise_unchanged": true
+    },
+    "actual_wire": {
+      "cases": [
+        {
+          "name": "normal",
+          "wrapper_bytes": 32,
+          "head_bytes": 2600,
+          "body_budget_bytes": 52176,
+          "actual_body_wire_bytes": 52153,
+          "actual_total_wire_bytes": 54785,
+          "cap_bytes": 54808,
+          "unused_bytes": 23,
+          "head_bitwise_exact": true,
+          "decoder_equals_encoded_update": true,
+          "body_ef_max_error": 1.862645149230957e-09
+        },
+        {
+          "name": "zero",
+          "wrapper_bytes": 32,
+          "head_bytes": 2600,
+          "body_budget_bytes": 52176,
+          "actual_body_wire_bytes": 36785,
+          "actual_total_wire_bytes": 39417,
+          "cap_bytes": 54808,
+          "unused_bytes": 15391,
+          "head_bitwise_exact": true,
+          "decoder_equals_encoded_update": true,
+          "body_ef_max_error": 0.0
+        },
+        {
+          "name": "body_tail_impulse",
+          "wrapper_bytes": 32,
+          "head_bytes": 2600,
+          "body_budget_bytes": 52176,
+          "actual_body_wire_bytes": 36785,
+          "actual_total_wire_bytes": 39417,
+          "cap_bytes": 54808,
+          "unused_bytes": 15391,
+          "head_bitwise_exact": true,
+          "decoder_equals_encoded_update": true,
+          "body_ef_max_error": 0.0
+        }
+      ],
+      "malformed_rejections": {
+        "short_header": true,
+        "truncated_packet": true,
+        "trailing_byte": true,
+        "wrong_version": true,
+        "wrong_body_size": true,
+        "wrong_head_size": true,
+        "zero_steps": true,
+        "wrong_length": true,
+        "nonzero_reserved": true,
+        "wrong_magic": true,
+        "nonfinite_head": true,
+        "bad_body_bitwidth": true
+      }
+    },
+    "fixed_weight_control_identity": {
+      "weights": [
+        0.375,
+        0.625
+      ],
+      "different_steps": [
+        2,
+        5
+      ],
+      "old_c_equals_weighted_old_ci": true,
+      "decoded_head_reconstruction": true,
+      "weighted_new_ci_vs_server_direct_error": 3.725290298461914e-09,
+      "ci_vs_raw_mean_error_max": 1.4901161193847656e-08
+    },
+    "one_round_integration": {
+      "synthetic_client_examples": [
+        3,
+        5
+      ],
+      "synthetic_dev_examples": 2,
+      "backend": "cpu",
+      "threads": 1,
+      "methods": [
+        {
+          "method": "plain_uniform",
+          "rounds": 1,
+          "actual_local_sgd_steps": 2,
+          "upload_per_client": [
+            54067,
+            54067
+          ],
+          "signature": "ba7440f1bb4ba4d661fd360bfba23d5b9cb650d84668b59b33adacc21f1bb619",
+          "source_plan_codec_hashes_bound": true,
+          "global_anchor_unmodified_during_clients": true
+        },
+        {
+          "method": "exact_head",
+          "rounds": 1,
+          "actual_local_sgd_steps": 2,
+          "upload_per_client": [
+            54785,
+            54785
+          ],
+          "signature": "1a198f15edba8a020b1b047229aba632d1cda5e96e5e585cef0445fb983fb1df",
+          "source_plan_codec_hashes_bound": true,
+          "global_anchor_unmodified_during_clients": true
+        },
+        {
+          "method": "head_control",
+          "rounds": 1,
+          "actual_local_sgd_steps": 2,
+          "upload_per_client": [
+            54785,
+            54785
+          ],
+          "signature": "f97355900fefb01f14125a28c2d148ffe10dec4f7ccc09219af91145b16f6b69",
+          "source_plan_codec_hashes_bound": true,
+          "global_anchor_unmodified_during_clients": true,
+          "stored_c_matches_weighted_ci": true,
+          "server_direct_reconstruction_error": 0.0
+        },
+        {
+          "method": "head_control_dense",
+          "rounds": 1,
+          "actual_local_sgd_steps": 2,
+          "upload_per_client": [
+            547560,
+            547560
+          ],
+          "signature": "96815e3f25ee7f2fc56e0fea4b112b4e8aa7c0c2bd7fe578f3e5541fa6b44e3a",
+          "source_plan_codec_hashes_bound": true,
+          "global_anchor_unmodified_during_clients": true,
+          "stored_c_matches_weighted_ci": true,
+          "server_direct_reconstruction_error": 0.0
+        }
+      ],
+      "matched_seed_batch_anchor_and_initial_raw_deltas": true,
+      "seeds": [
+        20261191,
+        20261192
+      ],
+      "example_orders": [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          4
+        ]
+      ],
+      "checkpoint_checks": {
+        "completed_resume_no_training": true,
+        "seed_mismatch_rejected_before_training": true,
+        "backend_mismatch_rejected_before_training": true,
+        "source_identity_mismatch_rejected_before_training": true,
+        "checkpoint_signature_mismatch_rejected_before_training": true
+      }
+    }
+  },
+  "source_identities_unchanged": true,
+  "elapsed_seconds": 0.9829984999960288,
+  "status": "PASS",
+  "failures": [],
+  "harness_source": {
+    "path": "/Users/wind/Documents/Codex/2026-11-02/zhe/work/head_control/local_fixture_check.py",
+    "sha256": "1cf78ded0bb0b64e8924c0ac2d17a982a09072a9f1b156223222da557ec095a8"
+  }
+}

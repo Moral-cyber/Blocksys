@@ -1,0 +1,6 @@
+\section{Discussion}
+Three observations explain why 20 parameters close this much of the gap. Counts supply the center, fitting corrects it, and the zero-center control isolates information from capacity. The one-epoch 650-parameter Linear control uses over 32 times as many values but has higher NLL; eleven-value BCTS approaches vector scaling with lower client ECE. The useful choice is the center across compact score families.
+
+The construction assumes the local prior is stable between fitting and serving. Primary TEST uses one partition per task; the frozen-predictor development reallocation diagnostic reverses the NLL gain as label distributions drift (Appendix~\ref{app:sensitivity}). Client-macro gains are larger than sample-weighted gains; weighted CIFAR accuracy, Fashion's lower client-accuracy decile, and one CIFAR seed's accuracy favor the zero-center control, locating the consistent benefit in NLL.
+
+The accounting separates three costs that deployments trade differently. Personalization adds 80 B locally, one TRAIN forward pass and a twenty-dimensional convex solve. Shared training requires 54,067 B uploads, 547,496 B FP32 residuals and dense downlinks; no further model upload is needed.

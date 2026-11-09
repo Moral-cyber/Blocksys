@@ -1,0 +1,38 @@
+\section{Results}
+\subsection{Prior-centered prediction improves client NLL}
+PR-LFL reaches client-macro NLL 0.645/0.188 (0.6446/0.1880 before rounding) and accuracy 75.57\%/92.97\% on CIFAR-10/FashionMNIST. Changing the center gives NLL/accuracy gains of 0.0358/0.0182 and +0.1777/+0.1730 percentage points (Table~\ref{tab:main}). Paired within one fixed partition, all 60/60 NLL differences per task favor prior centering (Fig.~\ref{fig:clients}); medians are $-0.025708$/$-0.011851$ and conditional client-resampling mean intervals $[-0.052484,-0.023284]$ and $[-0.027345,-0.010899]$ (Appendix~\ref{app:statistics}, Paired analysis).
+\input{tables/main}
+
+
+
+\begin{figure}[!htb]\centering
+\includegraphics[width=0.9\linewidth]{figures/clients_route_a.pdf}
+\caption{Prior centering lowers NLL in every original pair. Three seed markers per client show prior-minus-zero NLL; diamonds are client means.}\label{fig:clients}
+\end{figure}
+
+Learned correction reduces NLL over fixed prior addition by 0.0282/0.0222. Eleven-value same-prior BCTS comes within 0.0016/0.0036 of the vector predictor, supporting the prior center across score families.
+
+\input{tables/quality}
+The prior vector lowers mean NLL, whereas same-prior BCTS lowers mean client ECE (Table~\ref{tab:quality}). Weighted NLL falls by 0.0217/0.0102, less than the macro reductions. Sample-weighted accuracy equals pooled accuracy and changes by $-0.04$/$+0.11$ percentage points.
+
+\subsection{Class alignment explains the informative center}
+
+The aligned center lowers holdout NLL by 0.071145/0.043893 relative to its fixed class permutation (Appendix~\ref{app:complete}); all sixty pairs per task favor alignment at fixed norm and capacity.
+
+Mean probability mass on TRAIN-absent classes is 0.00279/0.03076/0.04639 for correct/zero/permuted centers on CIFAR and 0.00087/0.00912/0.01670 on Fashion. Such labels constitute about 0.019\%/0.037\% of holdouts, making suppression a trade-off.
+
+\paragraph{Penalty sensitivity.}
+Development NLL is close across $\lambda\in\{0.1,1,10\}$ and rises toward fixed prior addition; we retain $\lambda=10$. Appendix~\ref{app:sensitivity}, Diagnostics, reports frozen-center reallocation. All nine development configurations across three label-skew partitions per task favor prior centering.
+
+
+
+\subsection{Predictive quality under compressed shared training}
+
+Ordinary CE and the count-adjusted training loss produce close results with the same predictor (Appendix~\ref{app:complete}); the training loss is not the method contribution.
+
+
+Appendix~\ref{app:complete} gives the compressor and personal-head controls; prior centering also reduces NLL relative to zero-centered fits on dense FedAvg and FedProx (Appendix~\ref{app:complete}). The matched pFedMe adapter gives NLL 1.0072/0.3557 at five inner gradients per batch and dense communication (Appendix~\ref{app:complete}).
+
+Uniform3 uploads 54,067 B (scales/header included), 90.13\% below the analytical 547,560 B dense profile. Retaining dense downlinks reduces upload--download traffic from 1,095,120 B to 601,627 B (45.06\%). Predictor state costs 80 B (BCTS: 44 B; Linear/residual head: 2,600 B); each client retains a 547,496 B residual.
+
+

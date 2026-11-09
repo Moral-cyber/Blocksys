@@ -1,0 +1,80 @@
+{
+  "model_encoder_independent_decoder": {
+    "status": "PASS",
+    "cases": 5,
+    "parameters": 136874,
+    "packs": 1070,
+    "last_pack_parameters": 42,
+    "feedback_bytes": 150,
+    "mixed_full_short_zero_negative_values": true
+  },
+  "feedback_bit_order": {
+    "edge_positions": [
+      0,
+      7,
+      8,
+      1069
+    ],
+    "first_bytes": [
+      129,
+      1
+    ],
+    "last_byte": 32,
+    "padding_bits": 2
+  },
+  "upload_byte_cap": {
+    "common_cap_53_full_packs": 27364,
+    "magnitude_53_full": 27364,
+    "feedback_52_full_plus_bitset": 26998,
+    "magnitude_including_short": 27020,
+    "feedback_including_short_plus_bitset": 26654,
+    "equal_actual_bytes": false,
+    "common_warmup_formula_bytes_unicast": 219004800
+  },
+  "receiver_choice_fixture": {
+    "communication_rules_equal": true,
+    "forwards_per_choose": 4,
+    "ties_choose_local": true,
+    "local_sgd_has_different_candidates": true
+  },
+  "utility_fixture": {
+    "status": "PASS",
+    "updated": [
+      [
+        0.275,
+        0.35,
+        0.30000000000000004,
+        0.6
+      ],
+      [
+        0.625,
+        0.575,
+        0.5249999999999999,
+        0.8
+      ],
+      [
+        0.7250000000000001,
+        0.925,
+        0.07500000000000001,
+        0.2
+      ]
+    ],
+    "self_receiver_excluded": true,
+    "observed_zero_decays": true,
+    "unobserved_unchanged": true,
+    "utility_is_aggregate_reception_proxy": true
+  },
+  "source_warmup": {
+    "round": 10,
+    "signature_matches": true,
+    "train_dev_disjoint": true,
+    "train_n": 37500,
+    "dev_n": 12500,
+    "warmup_sha256": "6c2889778d4fb09f0cd5ca9eab4d17eb82935b7d12b5bd67d64ffeac3e819d81"
+  },
+  "current_source_hashes": {
+    "run.py": "3b5cf73f695585d61d9f2dc9d1e347fec78190f2ae2a5f2ee3527bd3bb67b633",
+    "PLAN.md": "9f26ba4ddae8e9c26421b8f9300baea5a11941030254d9978a68b047c3627da7"
+  },
+  "status": "PASS"
+}

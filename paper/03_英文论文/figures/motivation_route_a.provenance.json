@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-11-04T16:23:26.779992+00:00",
+  "figure": "motivation_route_a",
+  "destination": "Route A working manuscript in the user-selected svproc template; 122 mm text width. Final track requirements not independently asserted.",
+  "script": {
+    "delivery_relative_path": "figures/route_a_figures.py",
+    "relative_to": "03_英文论文",
+    "sha256": "b19043b2754f5a4c15fb9784e69e7b6e5a621fe62941ab4c08117f62c7b53aab"
+  },
+  "sources": [
+    {
+      "delivery_relative_path": "05_核心方法研发/results/predictive_pfl_confirm/development_cifar_p20261217_s20261231/fedlc_uniform3/config.json",
+      "relative_to": "paper",
+      "sha256": "a86c88b08ab75c199699995cfe07ae62ffd8efd871dea444e6c35f1187b15e4f"
+    },
+    {
+      "delivery_relative_path": "03_英文论文/evidence/individual_seed_metrics.csv",
+      "relative_to": "paper",
+      "sha256": "c44f55a445272f7ef29b7d0bc77035cd60f444be51535cc9ebeee8eedb5ccd72"
+    }
+  ],
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  },
+  "export": {
+    "format": "vector PDF",
+    "width_mm": 122.0,
+    "height_mm": 46,
+    "minimum_label_font_pt": 7.6,
+    "font": "DejaVu Sans; TrueType embedded",
+    "pdf_fonttype": 42,
+    "opaque_white_background": true,
+    "bbox_inches": null,
+    "embedded_image_xobjects": [],
+    "embedded_fonts": [
+      "/BAVITJ+DejaVuSans"
+    ],
+    "canvas_text_overflow": []
+  },
+  "meaning": {
+    "title": "Local label skew motivates prior-centered prediction",
+    "selection_rule": "Client 0 fixed before plotting; no search for a favorable client.",
+    "panel_A": "One actual client TRAIN histogram, not the TEST distribution or an aggregate.",
+    "panel_B": "CIFAR-10 client-macro TEST accuracy across all twenty clients; not client 0 accuracy.",
+    "uncertainty": "Mean and sample SD across three predefined training seeds; prior-only SD is zero.",
+    "encoding": "Bars begin at zero. Color plus hatch and direct labels distinguish four predictors."
+  },
+  "plotted_values": {
+    "client_id": 0,
+    "train_counts": [
+      1,
+      0,
+      193,
+      0,
+      98,
+      151,
+      0,
+      1,
+      0,
+      6
+    ],
+    "train_total": 450,
+    "accuracy_series": [
+      {
+        "variant": "raw",
+        "seed_values_percent": [
+          39.81231774718196,
+          38.760179215651064,
+          38.31630264322127
+        ],
+        "mean_percent": 38.96293320201809,
+        "sample_sd_percent": 0.7683405378218818
+      },
+      {
+        "variant": "prior_only",
+        "seed_values_percent": [
+          63.061951558525124,
+          63.061951558525124,
+          63.061951558525124
+        ],
+        "mean_percent": 63.061951558525124,
+        "sample_sd_percent": 0.0
+      },
+      {
+        "variant": "zero_anchor_vector",
+        "seed_values_percent": [
+          75.72149534607576,
+          75.84378226362148,
+          74.60576253332187
+        ],
+        "mean_percent": 75.3903467143397,
+        "sample_sd_percent": 0.6822153438455323
+      },
+      {
+        "variant": "prioranchored_vector",
+        "seed_values_percent": [
+          76.09561058799979,
+          75.69651125082635,
+          74.9120441800568
+        ],
+        "mean_percent": 75.56805533962763,
+        "sample_sd_percent": 0.6021486953769686
+      }
+    ]
+  },
+  "alt_text": "Two panels contrast an actual CIFAR client’s skewed TRAIN counts with aggregate TEST accuracy. Client 0 has counts 1,0,193,0,98,151,0,1,0,6. Across all clients, shared-model accuracy is38.96%, count-prior-only63.06%, zero-centered fit75.39%, and prior-centered fit75.57%. The panels use different populations, explicitly labelled; error bars show sample SD across the three original seeds.",
+  "output": {
+    "path": "motivation_route_a.pdf",
+    "sha256": "a843f90d7313d4e7ea92b54f2440449b28d7fd8d5a96955b688f5e1c2414049c",
+    "bytes": 28626
+  }
+}

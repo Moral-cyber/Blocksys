@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-05T16:20:02.785298+00:00",
+  "command": "git ls-remote https://github.com/duyvuleo/Open-ScientistTwo.git HEAD refs/tags/v0.4.0",
+  "exit_code": 0,
+  "remote_HEAD": "68ef7c9948b3da091724b5759f8a43888286ab9d",
+  "installed_HEAD": "68ef7c9948b3da091724b5759f8a43888286ab9d",
+  "matches": true,
+  "tag_output": "No matching v0.4.0 tag line returned; package version0.4.0 comes from installed source metadata",
+  "official_status": "Unofficial independent implementation; official-site bounded check recorded separately"
+}

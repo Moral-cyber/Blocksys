@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "source_and_input_hashes_unchanged": 84,
+  "saved_client_arrays": 80,
+  "calibrator_states_recomputed": 320,
+  "max_metric_error": 0.0,
+  "minimum_hessian_eigenvalue": 9.999999999999792,
+  "maximum_projected_gradient_inf": 3.978531399440044e-06,
+  "maximum_accepted_steps": 9,
+  "all_objective_traces_nonincreasing": true,
+  "positive_scalar_argmax_unchanged": true,
+  "prioranchor_original_fp32_states_preserved": true,
+  "result_sha256": "e368d6239ef2adedb286b6de591b1a7170be74f311c9b55ac1cabe59c1a4e213",
+  "output_arrays": [
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client0.npz",
+      "sha256": "eb342770c65b6927d0d4676d481f57ea94caecf08287180aebaf2a60bc47d9f4"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client1.npz",
+      "sha256": "8cfef3ce54dc1d7ebec687cbd388969a203e4b3b08c8115fedcc187533218104"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client2.npz",
+      "sha256": "13237585227d0682707a2fc79f89b4a12cdba97b9cd65d6eeef725571b48ef9d"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client3.npz",
+      "sha256": "74a072d1bf6a1ffb0d1f51ef80d859a29413391203de210bb7975424be87b3b9"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client4.npz",
+      "sha256": "23d51e8936c03667a692a9e28bc0709a9f49917a3448acfa8e0223652b57c1c7"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client5.npz",
+      "sha256": "6ac988ba979f63677741bde8236bce5a09f4f9c7edb28def5081e3e817f2b628"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client6.npz",
+      "sha256": "88b56ff6bec5e1723fd4c5e18f6b173e4203aa7ca748a1891863dd31683fdfeb"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client7.npz",
+      "sha256": "27db3b7cc742af55779832da373384d832b5cf5a590deba3700405499bef6192"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client8.npz",
+      "sha256": "d0e3c0cb456fb21eb596711ab6343b10236d9e2262ce1f209e0b924a3578e6a2"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client9.npz",
+      "sha256": "646c2990c77ca29493006e554e9b94fdb764ddd16e278933496c6870610461f5"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client10.npz",
+      "sha256": "e571c7b94cf1acef34ea7aa15fc3a679f764b28f86c14752f7cb13166b3bb29b"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client11.npz",
+      "sha256": "e9ae02672d142a17b6c3a669a7a17fb400271ea6751d9e17b78768e5137d5933"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client12.npz",
+      "sha256": "5084af873b01e00616db444a0b626e1c17c986bb0e85093fa2fcad19f35ac5fa"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client13.npz",
+      "sha256": "7d73286a6c6ee2ae26d0230236e95d1bddd7d1b9414879441425417c6eda4ae5"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client14.npz",
+      "sha256": "5b0ecd9373bd6ba5d940ae9381e1d16c8e29d9e3cb3f50ea0bec5948ceebdda7"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client15.npz",
+      "sha256": "d86b796c94fdf8d7a997f3374d6c332af48de755ef4d1e9abf2bb3e1ce966d9c"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client16.npz",
+      "sha256": "4688fe1d5df1ec710193a24e64df4a63eb467ff2fc656c020bcc9a753058b11a"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client17.npz",
+      "sha256": "2d62419e25512c2403db320a811e2e6ce1f49061c1a40a3d0ef83aec30276b15"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client18.npz",
+      "sha256": "fbf8818ea8e6888cad58c92003dd188162449fe6e0f5ac52b0546d0122ac2d1c"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/ce_uniform3_client19.npz",
+      "sha256": "72a97ab0b8a5469a4337c12a988abcf68fb1d6522fbc013b2d4c8f916d5e8929"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client0.npz",
+      "sha256": "506a5d4f9dc2ad879eb9fb7eba74a20e6ab69ca478b9b96dbd87684186ec3fcd"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client1.npz",
+      "sha256": "ee5ed3b4ba89a5fd3e28c1ffeb4ef4eaf7965248c7b283ccdf03f231754a1215"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client2.npz",
+      "sha256": "98ab771bd556b74a7c37104075920f6b91daa2ef1aa5e27fcdf6ab1fb6d3a97f"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client3.npz",
+      "sha256": "98747041cbdb6f5f615550b09e48f0ecde053f5d84176e2569b21dee64ff64d4"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client4.npz",
+      "sha256": "bf0825c16ffbaa8edb4421686626f41571e297a82bec384113c7b40cc56d2d1d"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client5.npz",
+      "sha256": "a30feedd66daa769576dcd89011430002fda7673399eeaa20d44a05c04521400"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client6.npz",
+      "sha256": "13d84afc0fac7d6054ea5ca59a55ce2eed79c99b23e4c5db844fdafbc17d89ed"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client7.npz",
+      "sha256": "4f909d7cfdccf7122b429090fc3732b06854257ca971f07d139769b104eec67f"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client8.npz",
+      "sha256": "48073796963bc3cd017495b71ec467f7db22f271c920e5ec3b23781a983004e9"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client9.npz",
+      "sha256": "ba2b8d11dbbaa9697ab1bd9f934326a6de322cb0c520e4d47a12bdd47a4407fd"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client10.npz",
+      "sha256": "eb5149b732e32f21c33adc434706bd1aaa5eb0c70a6c13ae85e3228f649cc529"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client11.npz",
+      "sha256": "5ff5cbff5883f180b99cc73e5577a66d339585e0206632c05e82871ab42a9b61"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client12.npz",
+      "sha256": "48a29b6ed3f327382c0d0a29b2a098c8bb8304fbb39bc5c49dc453a34bc0a3e5"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client13.npz",
+      "sha256": "120742612c167d6a37e3b725d823d56cca7212ef86959bfee8dae2a98b386a33"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client14.npz",
+      "sha256": "4932fa263fad0ac0776e794f9895563b72b67790d59527048b285eaa72f5a684"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client15.npz",
+      "sha256": "cae52d299e22de452e05adc763f6e23443264fc23d8d3f9d0b46ac019b8f98c7"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client16.npz",
+      "sha256": "09af38b4ef9004305e5f075f36fc2b19bae32b6e98ae8d7f9dcd6b8ab71d1c8c"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client17.npz",
+      "sha256": "9e5b3b70f180df27a07a6a96ef9603bb9c89fc7f571da8ccebc1eddd13608a11"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client18.npz",
+      "sha256": "ec6858663f5409f503d52b7fd47eecdeb0b7bf4a2603b5da97777a144d0d13dd"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/fedlc_uniform3_client19.npz",
+      "sha256": "0b9d439fc36d2e1e2d2eeb9c684ae05c368f9762edda58d27cc0b192b38427ee"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client0.npz",
+      "sha256": "ed9beb0762049871a3ed925a71ee06328c492a5638740ca6b1631a70c9b27260"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client1.npz",
+      "sha256": "b383dd9de7b9785e2d88e21b48299f783990ec677bba32f807421b86883c5646"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client2.npz",
+      "sha256": "e8f3b804af0c6722b054b8fe8ad6c1779e13c2c63d22c7b3d14942f353bcd860"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client3.npz",
+      "sha256": "f1b666da515bb7bb4121fc9c8e67908a7751c88ec7beac3c721faac0616d6058"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client4.npz",
+      "sha256": "ab65de694e16e70e30680f7d89a4b12504bdce2819bad9a869aff8854a213a3e"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client5.npz",
+      "sha256": "aae3ee342fc1811292c8aee6fe6dbd8ce20cc9938e3137810fd3ec956c62d586"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client6.npz",
+      "sha256": "ea6a3c26a2bd529474d0e077c4fe9d824522e05229fa530f696da4a037ce93f2"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client7.npz",
+      "sha256": "a204d98468298cefdb7de8c76afa1b08593d148619bdeaa1cf34c3705ea21a66"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client8.npz",
+      "sha256": "e82d652b488614dae00cb2e59a065f9c7f9d0e6a6fb3fed120c37edc56cdb777"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client9.npz",
+      "sha256": "a76974303823370698bca3304063a7f5e544e7f205ad646a7689f3d89fdfb470"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client10.npz",
+      "sha256": "f650ffe9941a0be8f2710139d68abe573688275989c8da9a5926d6e7520021c9"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client11.npz",
+      "sha256": "45a073f67a0c1e5b8c249483cf68b5b843d9788fcde266fe4ccc9c794a082e0e"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client12.npz",
+      "sha256": "3a2e1eb49b215d5a2edad8fac5e09801491001fcdc7f765a875c024220ef5617"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client13.npz",
+      "sha256": "9d11a9b96680a2a5e8b2ae27a090e756d4daf4bd964c3165e1335686aace5d47"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client14.npz",
+      "sha256": "3692cf0c5214b5fbc61d9f5c20600e2150d32ce0bbde24502cbe71418fd4eb2a"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client15.npz",
+      "sha256": "f69fe67988f227ba0b30c4a72b803098a699eb3910a676d1e3f07c76805e2795"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client16.npz",
+      "sha256": "69940bbb4119cb9e3b14982b62a68d9ba2e2807718a95b84d72f7d12420a1c5e"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client17.npz",
+      "sha256": "b043bcc21f78389f253168a7b1cfd1adcb6adbdc05616f6a88d6f611d52ae914"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client18.npz",
+      "sha256": "a5baf6e094af442aec69066137138f680956e3da12ecf4ff8613c8d9169fe3b2"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_uniform3_client19.npz",
+      "sha256": "f0ce9a4808e302c89c3f3d18d892092fe7923ce5cc95ae6bd2d4004c3ade3998"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client0.npz",
+      "sha256": "cacd7557988b63c47cb98d4ace0da28fb4b031baefad740c600ee8d674f5b669"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client1.npz",
+      "sha256": "36991957482ab4867ff8037b5d689b1171ef5656fca8d338b60d12d4c9233d8c"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client2.npz",
+      "sha256": "789e6776243306e87ccddfab50a013b8421ca4554d185debb48914ab9989e8c3"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client3.npz",
+      "sha256": "e7bba13e64b7458a32639e9f5b3cc54319f143f3f3df449a4c1cb1911ff1d78b"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client4.npz",
+      "sha256": "b687c51309279565af15b8b9457d108ea06d91a9aea8ce196d283800beceb3b1"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client5.npz",
+      "sha256": "813b02e00253cb2aefba19b87e648901d1a19f386246bb4369f92aa2c8bd7d4d"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client6.npz",
+      "sha256": "5eda97e8c51e3eae8dace33dee6f1e5707d26ae7fd75b73a0aca6b4627a128b8"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client7.npz",
+      "sha256": "aaf5391ea1d6cba9578eeeb3c1de48977c2cb846603ea0e5d91e157330d7ad94"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client8.npz",
+      "sha256": "0f1a69eac8977490d1c439659192b30581ead37cbbf855ff8a1acdb4fed9540c"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client9.npz",
+      "sha256": "d04b2409ae0ad9e31f4ebe47b1637b3621c5458723ccf9b25a367e6de8ca2ea5"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client10.npz",
+      "sha256": "557d8ba5dc55deef6e2da036f95efb242d57fb091e3fec60b073c73bd8494a63"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client11.npz",
+      "sha256": "f217f87d7f61d2ff367509403eb4379ef7fa333055e27eeee94eb734b48b211a"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client12.npz",
+      "sha256": "59baaa6a53a0fea524429380ac811a6840b85a421cf8c18a1a34859541eb8a83"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client13.npz",
+      "sha256": "9e0aa1320130218510fc61233a8868142a1a4ce68d915ec50ff7a1e63476a135"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client14.npz",
+      "sha256": "6e49f28effef6eee968e4690dd9e9d9d322367af0e32abc6cdb4c897b2696105"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client15.npz",
+      "sha256": "9ea5cbdfe2fb51ea7905334e2e8cca354c09f72b4bfb15d695bb6b6b8f073be1"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client16.npz",
+      "sha256": "e63fa0e63ef76d3c1e565033656f4a775c923f0235f41912046af44094f6ab67"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client17.npz",
+      "sha256": "73d5fbce24e05516bd24ae8a2e5e2861673b216126276dc1b9897ac8452e94c0"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client18.npz",
+      "sha256": "7eba11ba877ef511960397c557fa1cac96e6c9f71df5e432a6195ec5aa17b182"
+    },
+    {
+      "path": "work/calibration_baselines/diagnostic_v1/balanced_dense_client19.npz",
+      "sha256": "d042f0fb48704ac324f01da33609b011b577402c14023db09cbe874f2c86e763"
+    }
+  ]
+}

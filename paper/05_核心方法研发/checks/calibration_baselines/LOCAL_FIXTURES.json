@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "seed": 20261251,
+  "scope": "synthetic NumPy arrays only",
+  "analytic_derivatives_and_convexity": [
+    {
+      "kind": "zero_anchor_bias",
+      "dimension": 10,
+      "gradient_fd_max_error": 8.808178630914654e-10,
+      "hessian_fd_max_error": 7.26234350434396e-11,
+      "hessian_min_eigenvalue": 10.00000000000001,
+      "convex_jensen_and_bias_gauge_check": true
+    },
+    {
+      "kind": "temperature_scaling",
+      "dimension": 1,
+      "gradient_fd_max_error": 2.466737925033158e-10,
+      "hessian_fd_max_error": 1.2788703429578163e-10,
+      "hessian_min_eigenvalue": 23.504630480658747,
+      "convex_jensen_and_bias_gauge_check": true
+    },
+    {
+      "kind": "bcts",
+      "dimension": 11,
+      "gradient_fd_max_error": 8.095442094457894e-10,
+      "hessian_fd_max_error": 6.712616009915684e-10,
+      "hessian_min_eigenvalue": 10.0,
+      "convex_jensen_and_bias_gauge_check": true
+    },
+    {
+      "kind": "vector_scaling",
+      "dimension": 20,
+      "gradient_fd_max_error": 7.971299176290358e-10,
+      "hessian_fd_max_error": 8.527578643224842e-11,
+      "hessian_min_eigenvalue": 9.999999999999998,
+      "convex_jensen_and_bias_gauge_check": true
+    }
+  ],
+  "known_anchor_cases": [
+    {
+      "kind": "zero_anchor_bias",
+      "uniform_zero_logits_returns_anchor": true,
+      "state_bytes": 40
+    },
+    {
+      "kind": "temperature_scaling",
+      "uniform_zero_logits_returns_anchor": true,
+      "state_bytes": 4
+    },
+    {
+      "kind": "bcts",
+      "uniform_zero_logits_returns_anchor": true,
+      "state_bytes": 44
+    },
+    {
+      "kind": "vector_scaling",
+      "uniform_zero_logits_returns_anchor": true,
+      "state_bytes": 80
+    }
+  ],
+  "descent_finite_cases": [
+    {
+      "case": "imbalanced",
+      "kind": "zero_anchor_bias",
+      "steps": 4,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 286.405810374024,
+      "final_objective": 219.54944685395466,
+      "kkt_gradient_inf": 9.183764859699295e-13,
+      "state_bytes": 40
+    },
+    {
+      "case": "imbalanced",
+      "kind": "temperature_scaling",
+      "steps": 4,
+      "stop_reason": "float64_objective_resolution",
+      "initial_objective": 286.405810374024,
+      "final_objective": 250.01713412457974,
+      "kkt_gradient_inf": 3.552713678800501e-15,
+      "state_bytes": 4
+    },
+    {
+      "case": "imbalanced",
+      "kind": "bcts",
+      "steps": 4,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 286.405810374024,
+      "final_objective": 188.27845598224124,
+      "kkt_gradient_inf": 1.7064269997035808e-09,
+      "state_bytes": 44
+    },
+    {
+      "case": "imbalanced",
+      "kind": "vector_scaling",
+      "steps": 4,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 286.405810374024,
+      "final_objective": 203.00018660150744,
+      "kkt_gradient_inf": 3.6720795293376796e-09,
+      "state_bytes": 80
+    },
+    {
+      "case": "single_class",
+      "kind": "zero_anchor_bias",
+      "steps": 3,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 455.5215703032774,
+      "final_objective": 439.6502347484925,
+      "kkt_gradient_inf": 3.339550858072471e-13,
+      "state_bytes": 40
+    },
+    {
+      "case": "single_class",
+      "kind": "temperature_scaling",
+      "steps": 5,
+      "stop_reason": "float64_objective_resolution",
+      "initial_objective": 455.5215703032774,
+      "final_objective": 47.27840591471477,
+      "kkt_gradient_inf": 1.7763568394002505e-14,
+      "state_bytes": 4
+    },
+    {
+      "case": "single_class",
+      "kind": "bcts",
+      "steps": 5,
+      "stop_reason": "float64_objective_resolution",
+      "initial_objective": 455.5215703032774,
+      "final_objective": 35.048917706278914,
+      "kkt_gradient_inf": 6.306952702317403e-07,
+      "state_bytes": 44
+    },
+    {
+      "case": "single_class",
+      "kind": "vector_scaling",
+      "steps": 10,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 455.5215703032774,
+      "final_objective": 75.33852514966951,
+      "kkt_gradient_inf": 2.9967139880682225e-12,
+      "state_bytes": 80
+    },
+    {
+      "case": "large_logits",
+      "kind": "zero_anchor_bias",
+      "steps": 2,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 3028.2263677922238,
+      "final_objective": 3027.1341851041634,
+      "kkt_gradient_inf": 5.388112941928647e-10,
+      "state_bytes": 40
+    },
+    {
+      "case": "large_logits",
+      "kind": "temperature_scaling",
+      "steps": 1,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 3028.2263677922238,
+      "final_objective": 44.683781868475336,
+      "kkt_gradient_inf": 0.0,
+      "state_bytes": 4
+    },
+    {
+      "case": "large_logits",
+      "kind": "bcts",
+      "steps": 5,
+      "stop_reason": "kkt_gradient_tolerance",
+      "initial_objective": 3028.2263677922238,
+      "final_objective": 43.50506578619278,
+      "kkt_gradient_inf": 1.3278267374516872e-13,
+      "state_bytes": 44
+    },
+    {
+      "case": "large_logits",
+      "kind": "vector_scaling",
+      "steps": 11,
+      "stop_reason": "float64_objective_resolution",
+      "initial_objective": 3028.2263677922238,
+      "final_objective": 85.04824845382089,
+      "kkt_gradient_inf": 7.460698725481052e-14,
+      "state_bytes": 80
+    }
+  ],
+  "scalar_positive_boundary": {
+    "a": 0.0010000000474974513,
+    "constraint": "a>=0.001",
+    "kkt_gradient_inf": 0.0
+  },
+  "source_sha256": {
+    "PLAN.md": "33864fe167b461f5d9d7aa8777b932fdfecc752f9553fda14d1fb23c8ad091a9",
+    "solver.py": "10b11405e6662cb06d08a20549db92e2948b730c426aa1f0b912b958f1211f1c",
+    "local_fixture_check.py": "8acc5d9cabeb0094b2311f1b61e8dc5b401b0db8b8300fd967b2e8370285165a"
+  }
+}

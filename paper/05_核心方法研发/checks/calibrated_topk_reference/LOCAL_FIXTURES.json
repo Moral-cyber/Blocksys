@@ -1,0 +1,126 @@
+{
+  "scope": "CPU synthetic vectors/images and saved toy checkpoints only; no real-data preparation/training",
+  "fixture_out": "/var/folders/0t/lt7l05rn1zz3xrpbkj6ym_8m0000gn/T/strict_topk_reference_fixture_4gpkrivq",
+  "source_identities": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/PLAN.md": "ac6f2f4b9582e95897f9d9dedcd3af3481114c3824674cc1cee02832a3144597",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/common.py": "3f2e4693488d7e5a35a182e5340edb9d73f5cafc45b7c0e61b1e2cc392a22d9a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/train.py": "7fe8777db0ab8b2309140b39026a9bdbec42cd09ba9d2b8ef0c89b831a5641bd",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_lowbit_confirm/evaluate.py": "afcb8a47dc9c303b3e7d558e4e91b50b560cd10dd0287956969d61ab27e13250",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/run.py": "b94f6a3a985839e6781582c6203e3dd8154fc97cf7bcc8edfe9d4648240625d4",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/mixed_precision/codec.py": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/prior_bias/solver.py": "6b8dda5e86438f78f3918f8601ec3ce9e7099417d3b42ac55bfbeb4014132b96",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_partitions.py": "ca338c616ff12e4ec4d3a75958292af7166109555baa2bc3262407b64d4776b6",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_followup.py": "4066929ff317e486576b17e7d347b3437b17ce019f1425a18817c37f8406e18d",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/run_accelerated.py": "f4a9169ab5ca9f2ea149f9bcd96e452bf04b399342b754e9f30eba6f8e01643a",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/tinyproto_diag/tools/fedavg_update_diagnostic.py": "1307514260e8ec0e741324edc9d1b7ae34076f2e2de3cabadd8c8a11d6766496",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/balanced_quant/development_p20261193_s20261201/ce_uniform3/config.json": "e531a4df785f59a9c71b170c67e03f830753ff131938a4431843f6ff709edaf7",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/PLAN.md": "b0daad197d50f71c4d18e3ea3d12878192ab9705a3d6b6179479048e8c6d7130",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/common.py": "37976f773cbaca44ee444d95091cb77cb916e06a9943837dbbee8586425a4a58",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/wire.py": "6bf9856e73fba6d601bbcd8ce19cb9ec3bdfe09f17e58ca79e0faef000c86693",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/train.py": "13d8538e671302e1f8ec891fea3f0b87c6cb6a996774222aef4d36856946affe",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/calibrated_topk_reference/evaluate.py": "22cec15467ae06629c361a8f510da45cc1637bdf2ef1242db42169c88dbb3e8c",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/guarded_codec.py": "3dcb6636f12d6dc17fe023a978a9016ce10593ed3da5472b1ad498a33b8c948e"
+  },
+  "checks": {
+    "full_wire": {
+      "header_bytes": 64,
+      "pairs": 6843,
+      "pair_bytes": 8,
+      "actual_wire_bytes": 54808,
+      "indices_exact_global_topk": true,
+      "values_FP32_bit_exact": true,
+      "ties_lower_index_first": true,
+      "wire_indices_sorted": true,
+      "zero_pairs_and_negative_zero_preserved": true,
+      "independent_struct_decoder_equal": true,
+      "deterministic_repeated_wire": true,
+      "same_cap_uniform3_actual_bytes": 54067
+    },
+    "malformed_inputs": {
+      "rejected": [
+        "short_header",
+        "wrong_magic",
+        "wrong_version",
+        "zero_length",
+        "too_large_model",
+        "zero_k",
+        "wrong_pair_size",
+        "reserved_nonzero",
+        "duplicate_index",
+        "unsorted_indices",
+        "out_of_range",
+        "nan_value",
+        "inf_value",
+        "truncated_pair",
+        "trailing_bytes",
+        "over_cap",
+        "not_bytes",
+        "nan_input",
+        "wrong_dtype",
+        "wrong_shape",
+        "empty",
+        "bool_budget",
+        "small_budget",
+        "over_cap_budget"
+      ],
+      "all_rejected": true
+    },
+    "official_test_guard": {
+      "dummy_path_rejected_before_open": true,
+      "official_files_read": 0,
+      "actual_test_file_opened": false
+    },
+    "tiny_training": {
+      "methods": [
+        {
+          "method": "ce_topk",
+          "rounds": 2,
+          "actual_gradients": 4,
+          "wire_per_client": 54808,
+          "decoded_aggregation_EF_bitwise_equal": true
+        },
+        {
+          "method": "fedlc_topk",
+          "rounds": 2,
+          "actual_gradients": 4,
+          "wire_per_client": 54808,
+          "decoded_aggregation_EF_bitwise_equal": true
+        }
+      ],
+      "same_seed_batch_order_initialization": true,
+      "fixed_global_anchor_between_clients": true
+    },
+    "resume": {
+      "round1_resume_final_model_EF_bitwise_equal": true,
+      "complete_resume_no_training": true,
+      "negative_rejections": {
+        "seed_mismatch": true,
+        "partition_seed_mismatch": true,
+        "rounds_mismatch": true,
+        "backend_mismatch": true,
+        "source_identity_mismatch": true,
+        "config_self_signature": true,
+        "checkpoint_signature": true,
+        "checkpoint_version": true,
+        "checkpoint_full_config": true,
+        "checkpoint_EF_shape": true,
+        "checkpoint_EF_nonfinite": true
+      }
+    },
+    "tiny_evaluation": {
+      "only_final_complete_accepted": true,
+      "frozen_local_TRAIN_only_prior_bias_head": true,
+      "bias_train_forwards": 16,
+      "bias_CNN_backward": 0,
+      "matched_head_gradients": 4,
+      "decision": "REFERENCE_ONLY",
+      "gates": null,
+      "new_candidate": false
+    }
+  },
+  "status": "PASS",
+  "source_identities_unchanged": true,
+  "harness_sha256": "11a6b0341a01bace9fda83748d83456e3051a1f3dae783c4e32466af6a0d441f",
+  "formal_ML_training_started": false,
+  "review": "REVIEW_UNAVAILABLE"
+}

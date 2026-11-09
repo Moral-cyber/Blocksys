@@ -1,0 +1,153 @@
+{
+  "status": "ALL_DONE",
+  "runs": {
+    "cal_topk": {
+      "status": "DONE",
+      "rounds": 20,
+      "gradients_total": 11940,
+      "upload_bytes_total": 21923200,
+      "per_client_payload_min_max": [
+        54808,
+        54808
+      ],
+      "codec_seconds_total": 2.969918621907709,
+      "round_iteration_seconds_total": 64.28936392106698,
+      "historical_wire_saved": false,
+      "checks": "saved metadata and source/runtime reconstruction assertion; independent wire decoder checked on synthetic payloads",
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.8627080505371094,
+        "accuracy": 0.3208000063896179
+      }
+    },
+    "cal_uniform3": {
+      "status": "DONE",
+      "rounds": 20,
+      "gradients_total": 11940,
+      "upload_bytes_total": 21626800,
+      "per_client_payload_min_max": [
+        54067,
+        54067
+      ],
+      "codec_seconds_total": 17.77757896433468,
+      "round_iteration_seconds_total": 81.19658570896718,
+      "historical_wire_saved": false,
+      "checks": "saved metadata and source/runtime reconstruction assertion; independent wire decoder checked on synthetic payloads",
+      "ef_max_abs_error": 4.656612873077393e-10,
+      "ef_conservative_tolerance_min": 4.76837158203125e-07,
+      "bitwidth_counts_all_client_rounds": {
+        "2": 0,
+        "3": 214000,
+        "4": 0
+      },
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.8180330200195314,
+        "accuracy": 0.33960000872612
+      }
+    },
+    "cal_mixed_mse": {
+      "status": "DONE",
+      "rounds": 20,
+      "gradients_total": 11940,
+      "upload_bytes_total": 21916760,
+      "per_client_payload_min_max": [
+        54782,
+        54792
+      ],
+      "codec_seconds_total": 47.86866616777843,
+      "round_iteration_seconds_total": 114.36377808309044,
+      "historical_wire_saved": false,
+      "checks": "saved metadata and source/runtime reconstruction assertion; independent wire decoder checked on synthetic payloads",
+      "ef_max_abs_error": 2.3283064365386963e-10,
+      "ef_conservative_tolerance_min": 4.76837158203125e-07,
+      "bitwidth_counts_all_client_rounds": {
+        "2": 60294,
+        "3": 84216,
+        "4": 69490
+      },
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.8197476867675781,
+        "accuracy": 0.3390999913215637
+      }
+    },
+    "cal_mixed_sensitive": {
+      "status": "DONE",
+      "rounds": 20,
+      "gradients_total": 11940,
+      "upload_bytes_total": 21916760,
+      "per_client_payload_min_max": [
+        54782,
+        54792
+      ],
+      "codec_seconds_total": 48.09101378786727,
+      "round_iteration_seconds_total": 114.14889283297816,
+      "historical_wire_saved": false,
+      "checks": "saved metadata and source/runtime reconstruction assertion; independent wire decoder checked on synthetic payloads",
+      "ef_max_abs_error": 4.656612873077393e-10,
+      "ef_conservative_tolerance_min": 4.76837158203125e-07,
+      "bitwidth_counts_all_client_rounds": {
+        "2": 79333,
+        "3": 46138,
+        "4": 88529
+      },
+      "checkpoint": "MATCH",
+      "last5": {
+        "rounds": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "ce": 1.8198931610107423,
+        "accuracy": 0.33790000677108767
+      }
+    }
+  },
+  "codec_sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE",
+  "frozen_stage2_go": {
+    "definition": "CE(sensitive)<min(CE(uniform3),CE(mse)); acc(sensitive)>=acc(uniform3)+.005; acc(sensitive)>=acc(TopK)-.005",
+    "ce_pass": false,
+    "accuracy_vs_uniform_pass": false,
+    "accuracy_vs_topk_pass": true,
+    "decision": "STOP_THIS_SENSITIVITY_ALLOCATION_RULE"
+  },
+  "sensitive_minus_controls": {
+    "cal_uniform3": {
+      "ce_delta": 0.0018601409912109013,
+      "accuracy_delta_pp": -0.17000019550323375
+    },
+    "cal_mixed_mse": {
+      "ce_delta": 0.00014547424316413426,
+      "accuracy_delta_pp": -0.11999845504760409
+    },
+    "cal_topk": {
+      "ce_delta": -0.04281488952636714,
+      "accuracy_delta_pp": 1.7100000381469749
+    }
+  }
+}

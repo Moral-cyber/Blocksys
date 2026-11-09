@@ -1,0 +1,45 @@
+{
+  "independent_implementation": "Open-ScientistTwo",
+  "commit": "68ef7c9948b3da091724b5759f8a43888286ab9d",
+  "version": "0.4.0",
+  "install": "uv sync --python 3.12 --frozen",
+  "install_exit_code": 0,
+  "python": "3.12.16",
+  "cli_help_exit_code": 0,
+  "workflow_profile_inspection_exit_code": 0,
+  "doctor": {
+    "python_supported": true,
+    "architecture": "arm64",
+    "codex_installed": true,
+    "container": "unavailable",
+    "reason": "docker executable unavailable",
+    "exit_code": 2
+  },
+  "codex_cli_login": "Not logged in; no model invocation attempted",
+  "upstream_live_campaign": "NOT_ENABLED",
+  "native_bridge": "INSTALLED_AND_SMOKE_VERIFIED",
+  "mps_experiments": "Actual existing Tinyproto environment, root-held process; not upstream container execution",
+  "external_api_calls": 0,
+  "new_model_authentication": false,
+  "native_campaign": "bridge/campaigns/fl_heterogeneity_20261105-v1",
+  "native_roles_recorded": [
+    "limitations-01",
+    "seeds-01"
+  ],
+  "scientific_status": "Selected FL revision evidence and manuscript complete; geometry candidate stopped, no extra candidate contribution. See final research assessment.",
+  "native_experiments_recorded": [
+    "geometry-subset-stop-20261105",
+    "multipartition-development-20261105",
+    "dense-baselines-final-20261105",
+    "pfedme-final-sixrun-20261105",
+    "cifar100-development-threeseed-20261105"
+  ],
+  "updated_at": "2026-11-05T16:14:32.587956+00:00",
+  "last_bridge_check": {
+    "status": "PASS",
+    "artifacts": 45,
+    "roles": 2,
+    "experiments": 5,
+    "receipt": "artifacts/0a4dee7b5f8155ac85c6d78b48089a383b2ae194c1d2a6c9923966bed710f555.json"
+  }
+}

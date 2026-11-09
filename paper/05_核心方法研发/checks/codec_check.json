@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "case_count": 480,
+  "invalid_cases_rejected": 10,
+  "min_guard_margin": -1.1102230246251565e-16,
+  "min_alignment_gain": -2.1316282072803006e-14,
+  "meaning": "Deterministic compressor, accounting and serialization invariants only; no learning or novelty claim.",
+  "alignment_claim_scope": "guard_alignment_ef signed-product filler only; no guarantee that prior-global direction equals current objective descent."
+}

@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\small
+\caption{CIFAR-100 development check on one label-skew partition, three paired model seeds. Both affine predictors store 200 FP32 values (800 B); shared three-bit updates occupy 56,376 B. Values are client-macro mean $\pm$ sample SD; accuracy is in percent.}
+\label{tab:cifar100dev}
+\begin{tabular}{lrr}\toprule
+Predictor & NLL & Accuracy \\\midrule
+Shared logits & $3.9466\pm0.0123$ & $10.05\pm0.42$ \\
+Fixed prior addition & $2.3729\pm0.0134$ & $33.02\pm0.33$ \\
+Zero-center affine & $2.4283\pm0.0116$ & $35.27\pm0.39$ \\
+Prior-center affine & $2.2896\pm0.0114$ & $35.12\pm0.28$ \\
+\bottomrule\end{tabular}\end{table}

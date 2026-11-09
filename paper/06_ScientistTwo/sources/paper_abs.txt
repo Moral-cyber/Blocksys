@@ -1,0 +1,567 @@
+
+
+
+  [2609.19644] ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+  
+  
+  
+
+
+
+    Skip to main content
+
+
+
+
+  
+  
+    
+  
+  
+    
+      
+      
+    
+    Search
+  
+  
+    
+      
+    
+  
+  
+    Submit
+    Donate
+    
+Log in  
+
+
+  
+    
+      Search arXiv
+      
+      
+      
+    
+    
+      Press Enter to search · Advanced search
+    
+
+  
+
+
+    
+      
+
+
+  
+    
+      Computer Science > Artificial Intelligence
+
+    
+
+    
+      arXiv:2609.19644 (cs)
+    
+
+
+  
+    
+  [Submitted on 17 Sep 2026]
+    Title:ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI
+
+    Authors:Jaehyun Nam, Jinsung Yoon, Yanzhou Pan, Yubo Wang, Rui Meng, Parthasarathy Ranganathan, Tomas Pfister            View a PDF of the paper titled ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI, by Jaehyun Nam and 6 other authors
+    View PDF
+    HTML (experimental)
+
+
+
+    
+            Abstract:Scientific discovery is defined by the ability to identify the boundaries of existing knowledge and venture into unexplored territory. The ultimate vision for AI in science is problem-driven autonomous research: given a fundamental challenge by a human expert, the AI independently navigates the scientific landscape, uncovers theoretical and empirical bottlenecks, and systematically expands the frontier of knowledge. In this paper, we introduce ScientistTwo, a fully autonomous multi-agent framework designed to realize this vision. Specifically, ScientistTwo takes an initial problem as input, establishes state-of-the-art baselines, formulates novel hypotheses, and coordinates specialized agents to orchestrate an end-to-end discovery cycle without human intervention. Moreover, the framework rigorously conducts experiments using diverse datasets and metrics, refines methodologies through automated ablation studies, and validates research findings via a closed-loop simulated peer-review rebuttal engine. To evaluate ScientistTwo's capabilities against the highest standards of human scientific achievement, we benchmark it across papers accepted at top-tier conferences such as ICLR, ICML, and NeurIPS. As a result, ScientistTwo autonomously generates expert-level, publishable papers and fully verified, executable codebases. Its solutions consistently outperform human state-of-the-art models, and achieve higher average review ratings than human-authored papers under automated AI review agents. These results show that ScientistTwo is not merely an assistive tool but an autonomous scientific pioneer capable of pushing the frontiers of human discovery. Project website: this https URL
+    
+
+    
+    
+      
+          Subjects:
+          
+            Artificial Intelligence (cs.AI)
+        
+
+          Cite as:
+          arXiv:2609.19644 [cs.AI]
+        
+
+        
+           
+          (or 
+              arXiv:2609.19644v1 [cs.AI] for this version)
+          
+        
+
+        
+           
+                        https://doi.org/10.48550/arXiv.2609.19644
+              
+                
+                Focus to learn more
+              
+              
+              
+                                  arXiv-issued DOI via DataCite
+            
+          
+        
+
+    
+  
+
+    
+      Submission history
+ From: Jaehyun Nam [view email]          [v1]
+        Thu, 17 Sep 2026 03:37:42 UTC (25,520 KB)
+
+  
+  
+    
+      
+      Full-text links:
+      Access Paper:
+
+      
+  
+View a PDF of the paper titled ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI, by Jaehyun Nam and 6 other authorsView PDF
+HTML (experimental)
+TeX Source
+ 
+
+      
+          
+          view license
+        
+    
+        
+      Additional Features
+
+      
+        Audio Summary
+
+      
+    
+    
+    Current browse context:
+
+  cs.AI
+
+  
+
+      < prev
+    
+      |      
+      next >
+    
+  
+    new
+     | 
+    recent
+     | 2026-09
+  
+    Change to browse by:
+    
+        cs
+    
+  
+
+    
+      
+        References & Citations
+
+        
+          SciX
+Google Scholar
+
+          Semantic Scholar
+
+        
+        
+      
+
+
+    export BibTeX citation
+    Loading...
+
+
+
+    
+        
+            BibTeX formatted citation
+
+            ×
+        
+        
+            loading...
+        
+        
+            Data provided by: 
+            
+        
+    
+
+  Bookmark
+
+    
+  
+  
+    
+  
+  
+  
+
+
+  
+    Bibliographic Tools
+    
+      Bibliographic and Citation Tools
+
+      
+        
+          
+            
+              
+              
+              Bibliographic Explorer Toggle
+            
+          
+          
+            Bibliographic Explorer (What is the Explorer?)
+          
+        
+        
+          
+            
+              
+              
+              Connected Papers Toggle
+            
+          
+          
+            Connected Papers (What is Connected Papers?)
+          
+        
+          
+            
+              
+              
+              Litmaps Toggle
+            
+          
+          
+            Litmaps (What is Litmaps?)
+          
+        
+        
+          
+            
+              
+              
+              scite.ai Toggle
+            
+          
+          
+            scite Smart Citations (What are Smart Citations?)
+          
+        
+      
+        
+        
+        
+        
+    
+
+
+    
+    Code, Data, Media
+    
+      Code, Data and Media Associated with this Article
+
+      
+        
+          
+            
+              
+              
+              alphaXiv Toggle
+            
+          
+          
+            alphaXiv (What is alphaXiv?)
+          
+        
+
+        
+          
+            
+              
+              
+              Links to Code Toggle
+            
+          
+          
+            CatalyzeX Code Finder for Papers (What is CatalyzeX?)
+          
+        
+
+        
+          
+            
+              
+              
+              DagsHub Toggle
+            
+          
+          
+            DagsHub (What is DagsHub?)
+          
+        
+  
+        
+          
+            
+              
+              
+              GotitPub Toggle
+            
+          
+          
+            Gotit.pub (What is GotitPub?)
+          
+        
+
+        
+          
+            
+              
+              
+              Huggingface Toggle
+            
+          
+          
+            Hugging Face (What is Huggingface?)
+          
+        
+
+        
+          
+            
+              
+              
+              ScienceCast Toggle
+            
+          
+          
+            ScienceCast (What is ScienceCast?)
+          
+        
+      
+
+      
+      
+      
+      
+      
+      
+    
+
+
+      
+      Demos
+      
+        Demos
+
+        
+          
+            
+              
+                
+                
+                Replicate Toggle
+              
+            
+            
+              Replicate (What is Replicate?)
+            
+          
+          
+            
+              
+                
+                
+                Spaces Toggle
+              
+            
+            
+              Hugging Face Spaces (What is Spaces?)
+            
+          
+          
+            
+              
+                
+                
+                Spaces Toggle
+              
+            
+            
+              TXYZ.AI (What is TXYZ.AI?)
+            
+          
+        
+        
+        
+        
+      
+      
+      Related Papers
+      
+        Recommenders and Search Tools
+
+        
+          
+            
+              
+                
+                
+                Link to Influence Flower
+              
+            
+            
+              Influence Flower (What are Influence Flowers?)
+            
+          
+          
+            
+              
+                
+                
+                Core recommender toggle
+              
+            
+            
+              CORE Recommender (What is CORE?)
+            
+          
+        
+        
+          
+            Author
+
+            Venue
+
+            Institution
+
+            Topic
+
+          
+          
+            
+            
+            
+            
+          
+        
+        
+        
+      
+
+      
+      
+        About arXivLabs
+      
+      
+        
+          
+            arXivLabs: experimental projects with community collaborators
+
+            arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+
+            Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+
+            Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs.
+
+          
+          
+            
+
+          
+        
+      
+
+    
+
+
+  
+    Which authors of this paper are endorsers? |
+    Disable MathJax (What is MathJax?)
+    
+  
+  
+
+      
+    
+
+
+  
+    
+      
+        We gratefully acknowledge support from our major funders,
+        member institutions, ,
+        and all contributors.
+      
+      
+        About ·
+        Help ·
+        Contact ·
+        Subscribe ·
+        Copyright ·
+        Privacy ·
+        Accessibility ·
+        Operational Status (opens in new tab)
+      
+    
+  
+  
+
+
+

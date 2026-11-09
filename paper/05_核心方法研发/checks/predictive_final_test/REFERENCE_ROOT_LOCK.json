@@ -1,0 +1,14 @@
+{
+  "status": "ROOT_LOCKED_FINAL_TEST",
+  "tasks": [
+    "cifar"
+  ],
+  "plan_sha256": "a188e4e566e22804df7a08e89fd5ce5e1f23264be48eb1231330d3ca803f40e4",
+  "source_sha256": {
+    "data.py": "0366aa408b22220a4098be8aa14abb672c7480b264a77e95145b10c9ee918412",
+    "scorer.py": "9bba7e92e142a6c6c101da99a26734257f0abcb9f46feb9c242ae7aacdf99041",
+    "reference_inference.py": "3e379e5e352ec8c992a6971e7719bf3c0da15f9d0c51230ee76aeef93adb1c77"
+  },
+  "reference_input_snapshot_sha256": "15ffee78572d6fba6c5d83d2b5fc5df6f4925f51a4b7125e816f3202c61bfcff",
+  "scientific_scope": "fixed CIFAR reference3seeds, no retuning"
+}

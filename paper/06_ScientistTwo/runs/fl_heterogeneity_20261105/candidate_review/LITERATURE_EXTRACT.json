@@ -1,0 +1,70 @@
+{
+  "status": "EXTRACTED_FROM_EXISTING_PRIMARY_SOURCES",
+  "extractor": {
+    "path": "/Users/wind/Desktop/Codex/paper/06_ScientistTwo/runs/fl_heterogeneity_20261105/candidate_review/extract_literature.py",
+    "sha256": "ca78bc7ee495182e9bbd0f531435552bf2da68f317edbcda42f6480aa1c4e5b5"
+  },
+  "sources": [
+    {
+      "id": "saerens2002",
+      "source": {
+        "path": "/private/tmp/pr_lfl_route_a/literature/saerens2002.json",
+        "sha256": "f51310b9f1baff2a86df1776fd2b1edf321a2506e3a2fb42a7cb8f7511160b7e"
+      },
+      "doi": "10.1162/089976602753284446",
+      "url": "https://direct.mit.edu/neco/article/14/1/21-41/6577",
+      "verified_reading_scope": "publisher/Crossref abstract and metadata, no full-text equation claim",
+      "abstract": "It sometimes happens (for instance in case control studies) that a classifier is trained on a data set that does not reflect the true a priori probabilities of the target classes on real-world data. This may have a negative effect on the classification accuracy obtained on the real-world data set, especially when the classifier's decisions are based on the a posteriori probabilities of class membership. Indeed, in this case, the trained classifier provides estimates of the a posteriori probabilities that are not valid for this real-world data set (they rely on the a priori probabilities of the training set). Applying the classifier as is (without correcting its outputs with respect to these new conditions) on this new data set may thus be suboptimal. In this note, we present a simple iterative procedure for adjusting the outputs of the trained classifier with respect to these new a priori probabilities without having to refit the model, even when these probabilities are not known in advance. As a by-product, estimates of the new a priori probabilities are also obtained. This iterative algorithm is a straightforward instance of the expectation-maximization (EM) algorithm and is shown to maximize the likelihood of the new data. Thereafter, we discuss a statistical test that can be applied to decide if the a priori class probabilities have changed from the training set to the real-world data. The procedure is illustrated on different classification problems involving a multilayer neural network, and comparisons with a standard procedure for a priori probability estimation are provided. Our original method, based on the EM algorithm, is shown to be superior to the standard one for a priori probability estimation. Experimental results also indicate that the classifier with adjusted outputs always performs better than the original one in terms of classification accuracy, when the a priori probability conditions differ from the training set to the real-world data. The gain in classification accuracy can be significant.",
+      "implication": "Adjusting classifier outputs for changed class priors without model refit is prior art; the ratio formula in review is derived directly from Bayes."
+    },
+    {
+      "id": "menon2021",
+      "source": {
+        "path": "/Users/wind/Desktop/Codex/paper/05_核心方法研发/literature/prior_personalization/sources/menon_la.txt",
+        "sha256": "1f4a6276320f7fbdc14c7dda1f0d22775e571b422078278fa02d4e87fc07a2a4"
+      },
+      "url": "https://arxiv.org/abs/2007.07314v2",
+      "verified_reading_scope": "full-text section3 Eq8 and transition to section4",
+      "line_start": 351,
+      "line_end": 410,
+      "excerpt": "3 Logit adjustment for long-tail learning: a statistical view\nThe above suggests there is scope for improving performance on long-tail problems,\nboth in terms of post-hoc correction and loss modification.\nWe now show how a statistical perspective on the problem suggests simple procedures of each type,\nboth of which overcome the limitations discussed above.\nRecall that our goal is to minimise the balanced error (2).\nA natural question is:\nwhat\nis the best possible or Bayes-optimal scorer\nfor this problem,\ni.e.,\n[MATH f^{*}\\in\\operatorname{argmin}_{f\\colon\\mathscr{X}\\to\\mathbb{R}^{L}}{\\mathrm{BER}(f)}.]\nEvidently,\nsuch an [MATH f^{*}] must depend on the (unknown) underlying distribution [MATH \\mathbb{P}(x,y)].\nIndeed,\nwe have (Menon et al., 2013), (Collell et al., 2016, Theorem 1)\n[MATH {\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,f^{*}_{y}(x)={\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,\\mathbb{P}^{\\mathrm{bal}}(y\\mid x)={\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,\\mathbb{P}(x\\mid y),]\n(7)\nwhere [MATH \\mathbb{P}^{\\mathrm{bal}}] is the balanced class-probability as per §2. In words,\nthe Bayes-optimal prediction is the label under which the given instance [MATH x\\in\\mathscr{X}] is most likely.\nConsequently, for fixed class-conditionals [MATH \\mathbb{P}(x\\mid y)],\nvarying the class priors [MATH \\mathbb{P}(y)] arbitrarily will not affect the optimal scorers.\nThis is intuitively desirable: the balanced error is agnostic to the level of imbalance in the label distribution.\nTo further probe (7),\nsuppose the underlying class-probabilities\n[MATH \\mathbb{P}(y\\mid x)\\propto\\exp(s^{*}_{y}(x))], for (unknown) scorer\n[MATH s^{*}\\colon\\mathscr{X}\\to\\mathbb{R}^{L}].\nSince by definition\n[MATH \\mathbb{P}^{\\mathrm{bal}}(y\\mid x)\\propto{\\mathbb{P}(y\\mid x)}/{\\mathbb{P}(y)}], (7) becomes\n[MATH {\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,\\mathbb{P}^{\\mathrm{bal}}(y\\mid x)={\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,{\\exp(s^{*}_{y}(x))}/{\\mathbb{P}(y)}={\\operatorname{argmax}\\nolimits_{y\\in[L]}}\\,s^{*}_{y}(x)-\\ln\\mathbb{P}(y),]\n(8)\ni.e.,\nwe translate the (unknown) distributional scores or logits based on the class priors.\nThis simple fact immediately suggests two means of optimising for the balanced error:\n(i)\ntrain a model\nto estimate the standard [MATH \\mathbb{P}(y\\mid x)]\n(e.g., by minimising the standard softmax-cross entropy on the long-tailed data),\nand then explicitly modify its logits post-hoc as per (8)\n(ii)\ntrain a model to estimate the balanced [MATH \\mathbb{P}^{\\mathrm{bal}}(y\\mid x)],\nwhose logits are implicitly modified as per (8)\nSuch logit adjustment techniques\n— which have been a classic approach to class-imbalance (Provost, 2000) —\nneatly align with the post-hoc and loss modification streams discussed in §2.\nHowever,\nunlike most previous techniques from these streams,\nlogit adjustment is endowed with a clear statistical grounding:\nby construction,\nthe optimal solution under such adjustment coincides with the Bayes-optimal solution (7) for the balanced error,\ni.e.,\nit is Fisher consistent for minimising the balanced error.\nWe shall demonstrate this translates into superior empirical performance (§6).\nNote also that logit adjustment\nmay be easily extended to cover performance measures beyond the balanced error,\ne.g.,\nwith distinct costs for errors on dominant and rare classes;\nwe leave a detailed study and contrast to existing cost-sensitive approaches (Iranmehr et al., 2019; Gottlieb et al., 2020) to future work.\nWe now study each of the techniques (i) and (ii) in turn.\n4 Post-hoc logit adjustment",
+      "implication": "Subtracting log source priors is classic post-hoc logit adjustment; balanced-error goal does not establish the local-q estimator or NLL claim."
+    },
+    {
+      "id": "shi2023prior",
+      "source": {
+        "path": "/private/tmp/pr_lfl_route_a/03_英文论文/revision_artifacts/route_a_20261105/literature/near_neighbors/prior_full.html",
+        "sha256": "f7fb242bd4b0ba7e9e326816bd5a34052a0d35dac40244a56a278ec55ec1040e"
+      },
+      "url": "https://arxiv.org/html/2310.09183v2",
+      "verified_reading_scope": "full-text exact equations8,11,14; model-space personalized prior framework",
+      "equations": {
+        "S4.E8": {
+          "text": "− max w , { θ i } ⁡ 𝐄 i \\displaystyle-\\max_{w,\\{\\theta_{i}\\}}\\mathbf{E}_{i} { − f i ​ ( θ i ) − λ ​ 𝒟 g ∗ ​ ( θ i , μ i ​ ( w ) ) } ≤ min w ⁡ 𝐄 i ​ min { θ i } ⁡ { f i ​ ( θ i ) + λ ​ 𝒟 g ∗ ​ ( θ i , μ i ​ ( w ) ) } . \\displaystyle\\{-f_{i}(\\theta_{i})-\\lambda\\mathcal{D}_{g^{*}}(\\theta_{i},\\mu_{i}(w))\\}\\leq\\min_{w}\\mathbf{E}_{i}\\hbox{\\pagecolor{green!20}$\\min_{\\{\\theta_{i}\\}}\\{f_{i}(\\theta_{i})+\\lambda\\mathcal{D}_{g^{*}}(\\theta_{i},\\mu_{i}(w))\\}$}. (8)",
+          "tex_annotations": [
+            "\\displaystyle-\\max_{w,\\{\\theta_{i}\\}}\\mathbf{E}_{i}",
+            "\\displaystyle\\{-f_{i}(\\theta_{i})-\\lambda\\mathcal{D}_{g^{*}}(\\theta_{i},\\mu_{i}(w))\\}\\leq\\min_{w}\\mathbf{E}_{i}\\hbox{\\pagecolor{green!20}$\\min_{\\{\\theta_{i}\\}}\\{f_{i}(\\theta_{i})+\\lambda\\mathcal{D}_{g^{*}}(\\theta_{i},\\mu_{i}(w))\\}$}."
+          ]
+        },
+        "S4.E11": {
+          "text": "𝒟 ​ 𝐞𝐧𝐯 g ∗ , λ − 1 ​ Ψ ​ ( ⋅ , w ) ​ ( μ Φ ​ ( w ) ) \\displaystyle\\mathcal{D}\\mathbf{env}_{g^{*},\\lambda^{-1}}\\Psi(\\cdot,w)(\\mu_{\\Phi}(w)) = min θ ⁡ { Ψ ⁡ ( θ , w ) + λ ​ 𝒟 g ∗ ​ ( θ , μ Φ ​ ( w ) ) } \\displaystyle=\\min_{\\theta}\\{\\Psi(\\theta,w)+\\lambda\\mathcal{D}_{g^{*}}(\\theta,\\mu_{\\Phi}(w))\\} (11) μ Φ ​ ( w ) \\displaystyle\\hbox{\\pagecolor{cyan!20}$\\mu_{\\Phi}(w)$} = arg ⁡ min μ ​ { ⟨ ∇ Φ ​ ( w ) , μ − w ⟩ + ( 2 ​ η ) − 1 ​ ‖ μ − w ‖ 2 } . \\displaystyle=\\arg\\min_{\\mu}\\{\\langle\\nabla\\Phi(w),\\mu-w\\rangle+(2\\eta)^{-1}||\\mu-w||^{2}\\}.",
+          "tex_annotations": [
+            "\\displaystyle\\mathcal{D}\\mathbf{env}_{g^{*},\\lambda^{-1}}\\Psi(\\cdot,w)(\\mu_{\\Phi}(w))",
+            "\\displaystyle=\\min_{\\theta}\\{\\Psi(\\theta,w)+\\lambda\\mathcal{D}_{g^{*}}(\\theta,\\mu_{\\Phi}(w))\\}",
+            "\\displaystyle\\hbox{\\pagecolor{cyan!20}$\\mu_{\\Phi}(w)$}",
+            "\\displaystyle=\\arg\\min_{\\mu}\\{\\langle\\nabla\\Phi(w),\\mu-w\\rangle+(2\\eta)^{-1}||\\mu-w||^{2}\\}."
+          ]
+        },
+        "S5.E14": {
+          "text": "Φ i = { f i F i f i + F i μ i , r ( t ) ← { w i , r − 1 ( t ) − η α ∇ f i ( w i , r − 1 ( t ) ) , 𝐥𝐠 w i , r − 1 ( t ) − η ⁡ ( w i , R ( t − 1 ) − θ i , r − 1 ( t ) ) , 𝐦𝐞𝐠 w i , r − 1 ( t ) − η α ∇ f i ( w i , r − 1 ( t ) ) − η ( w i , R ( t − 1 ) − θ i , r − 1 ( t ) ) , 𝐦𝐡 \\Phi_{i}=\\left\\{\\begin{aligned} &f_{i}\\\\ &F_{i}\\\\ &f_{i}+F_{i}\\end{aligned}\\right.\\qquad\\text{\\hbox{\\pagecolor{cyan!25}$\\mu_{i,r}^{(t)}$}}\\leftarrow\\left\\{\\begin{aligned} &w_{i,r-1}^{(t)}-\\eta_{\\alpha}\\nabla f_{i}(w_{i,r-1}^{(t)}),&\\mathbf{lg}\\\\ &w_{i,r-1}^{(t)}-\\eta(w_{i,R}^{(t-1)}-\\theta_{i,r-1}^{(t)}),&\\mathbf{meg}\\\\ &w_{i,r-1}^{(t)}-\\eta_{\\alpha}\\nabla f_{i}(w_{i,r-1}^{(t)})-\\eta(w_{i,R}^{(t-1)}-\\theta_{i,r-1}^{(t)}),&\\mathbf{mh}\\end{aligned}\\right. (14)",
+          "tex_annotations": [
+            "\\Phi_{i}=\\left\\{\\begin{aligned} &f_{i}\\\\\n&F_{i}\\\\\n&f_{i}+F_{i}\\end{aligned}\\right.\\qquad\\text{\\hbox{\\pagecolor{cyan!25}$\\mu_{i,r}^{(t)}$}}\\leftarrow\\left\\{\\begin{aligned} &w_{i,r-1}^{(t)}-\\eta_{\\alpha}\\nabla f_{i}(w_{i,r-1}^{(t)}),&\\mathbf{lg}\\\\\n&w_{i,r-1}^{(t)}-\\eta(w_{i,R}^{(t-1)}-\\theta_{i,r-1}^{(t)}),&\\mathbf{meg}\\\\\n&w_{i,r-1}^{(t)}-\\eta_{\\alpha}\\nabla f_{i}(w_{i,r-1}^{(t)})-\\eta(w_{i,R}^{(t-1)}-\\theta_{i,r-1}^{(t)}),&\\mathbf{mh}\\end{aligned}\\right."
+          ]
+        }
+      },
+      "implication": "Personalized regularization centers already appear in model training; a local output-marginal denominator is not provided by this source."
+    }
+  ],
+  "new_network_search": false,
+  "scope": "bounded neighbor comparison, not a novelty search or claim of originality"
+}

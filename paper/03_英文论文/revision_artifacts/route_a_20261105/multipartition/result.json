@@ -1,0 +1,231 @@
+{
+  "status": "DONE",
+  "scope": "all twelve prespecified new development runs",
+  "partitions": [
+    20261105,
+    20261106
+  ],
+  "rows": [
+    {
+      "task": "cifar",
+      "partition_seed": 20261105,
+      "seeds": [
+        20261231,
+        20261232,
+        20261233
+      ],
+      "metrics": {
+        "zero_anchor_vector": {
+          "macro_loss": {
+            "mean": 0.6911764875775317,
+            "sample_sd": 0.01700046318689712
+          },
+          "macro_accuracy": {
+            "mean": 0.7563921144891207,
+            "sample_sd": 0.007020387293023235
+          },
+          "weighted_loss": {
+            "mean": 0.6673510221754317,
+            "sample_sd": 0.014073897742213657
+          },
+          "weighted_accuracy": {
+            "mean": 0.7479135002533132,
+            "sample_sd": 0.00617420713581594
+          }
+        },
+        "prioranchored_vector": {
+          "macro_loss": {
+            "mean": 0.6521147513573163,
+            "sample_sd": 0.01743707733406742
+          },
+          "macro_accuracy": {
+            "mean": 0.7573199419540781,
+            "sample_sd": 0.007270667654482072
+          },
+          "weighted_loss": {
+            "mean": 0.6449184369314243,
+            "sample_sd": 0.014135397759634124
+          },
+          "weighted_accuracy": {
+            "mean": 0.7478068421192972,
+            "sample_sd": 0.005509888902593366
+          }
+        }
+      },
+      "delta_nll_mean": -0.039061736220215436,
+      "delta_nll_sample_sd": 0.0011333057169668863,
+      "individual_seed_deltas": [
+        -0.03886861691652621,
+        -0.04027919307921901,
+        -0.03803739866490108
+      ],
+      "all_three_seeds_improve": true
+    },
+    {
+      "task": "cifar",
+      "partition_seed": 20261106,
+      "seeds": [
+        20261231,
+        20261232,
+        20261233
+      ],
+      "metrics": {
+        "zero_anchor_vector": {
+          "macro_loss": {
+            "mean": 0.6313761850214228,
+            "sample_sd": 0.021374643053123758
+          },
+          "macro_accuracy": {
+            "mean": 0.778188605729007,
+            "sample_sd": 0.00854850176568532
+          },
+          "weighted_loss": {
+            "mean": 0.5957490306285981,
+            "sample_sd": 0.020301066649169797
+          },
+          "weighted_accuracy": {
+            "mean": 0.7854571634269258,
+            "sample_sd": 0.007590123980158084
+          }
+        },
+        "prioranchored_vector": {
+          "macro_loss": {
+            "mean": 0.5850627384297566,
+            "sample_sd": 0.021274120243356825
+          },
+          "macro_accuracy": {
+            "mean": 0.7798724784559168,
+            "sample_sd": 0.008732469133972305
+          },
+          "weighted_loss": {
+            "mean": 0.5723908446422071,
+            "sample_sd": 0.020431849150977684
+          },
+          "weighted_accuracy": {
+            "mean": 0.7860437831640138,
+            "sample_sd": 0.007030492483821148
+          }
+        }
+      },
+      "delta_nll_mean": -0.046313446591666106,
+      "delta_nll_sample_sd": 0.0001583479943873968,
+      "individual_seed_deltas": [
+        -0.04613113471443564,
+        -0.04641668027394641,
+        -0.04639252478661626
+      ],
+      "all_three_seeds_improve": true
+    },
+    {
+      "task": "fashion",
+      "partition_seed": 20261105,
+      "seeds": [
+        20261241,
+        20261242,
+        20261243
+      ],
+      "metrics": {
+        "zero_anchor_vector": {
+          "macro_loss": {
+            "mean": 0.22008219851955793,
+            "sample_sd": 0.01254516808632145
+          },
+          "macro_accuracy": {
+            "mean": 0.9182581287048764,
+            "sample_sd": 0.006268193327655624
+          },
+          "weighted_loss": {
+            "mean": 0.1860109897454362,
+            "sample_sd": 0.010894096633691057
+          },
+          "weighted_accuracy": {
+            "mean": 0.9319555555555555,
+            "sample_sd": 0.004910457472842287
+          }
+        },
+        "prioranchored_vector": {
+          "macro_loss": {
+            "mean": 0.20975534065350468,
+            "sample_sd": 0.012320555607836178
+          },
+          "macro_accuracy": {
+            "mean": 0.9199207570786833,
+            "sample_sd": 0.0064164967606566035
+          },
+          "weighted_loss": {
+            "mean": 0.17812542394528016,
+            "sample_sd": 0.010705658548733865
+          },
+          "weighted_accuracy": {
+            "mean": 0.9329777777777778,
+            "sample_sd": 0.005159385550553382
+          }
+        }
+      },
+      "delta_nll_mean": -0.010326857866053252,
+      "delta_nll_sample_sd": 0.00035639013380661644,
+      "individual_seed_deltas": [
+        -0.010065643571725014,
+        -0.010732854277357512,
+        -0.01018207574907723
+      ],
+      "all_three_seeds_improve": true
+    },
+    {
+      "task": "fashion",
+      "partition_seed": 20261106,
+      "seeds": [
+        20261241,
+        20261242,
+        20261243
+      ],
+      "metrics": {
+        "zero_anchor_vector": {
+          "macro_loss": {
+            "mean": 0.16724762337124513,
+            "sample_sd": 0.009793045376678442
+          },
+          "macro_accuracy": {
+            "mean": 0.9417786721480527,
+            "sample_sd": 0.00337222195213869
+          },
+          "weighted_loss": {
+            "mean": 0.1562799483771792,
+            "sample_sd": 0.00931647642864708
+          },
+          "weighted_accuracy": {
+            "mean": 0.9448703419772014,
+            "sample_sd": 0.003174689927282313
+          }
+        },
+        "prioranchored_vector": {
+          "macro_loss": {
+            "mean": 0.15639160326226687,
+            "sample_sd": 0.008740485781210974
+          },
+          "macro_accuracy": {
+            "mean": 0.9427846304653048,
+            "sample_sd": 0.0030102125357955433
+          },
+          "weighted_loss": {
+            "mean": 0.14877307120710384,
+            "sample_sd": 0.00870728769354201
+          },
+          "weighted_accuracy": {
+            "mean": 0.9455369642023864,
+            "sample_sd": 0.0025199730913186623
+          }
+        }
+      },
+      "delta_nll_mean": -0.010856020108978274,
+      "delta_nll_sample_sd": 0.0011197399523739356,
+      "individual_seed_deltas": [
+        -0.009760093886204468,
+        -0.010809822596779317,
+        -0.011998143843951037
+      ],
+      "all_three_seeds_improve": true
+    }
+  ],
+  "official_test_reads": 0
+}

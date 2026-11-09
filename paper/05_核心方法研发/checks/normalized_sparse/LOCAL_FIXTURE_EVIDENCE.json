@@ -1,0 +1,117 @@
+{
+  "tau_loader_fixture": {
+    "tau": [
+      30,
+      46,
+      4,
+      93,
+      39,
+      8,
+      2,
+      5,
+      27,
+      51,
+      9,
+      62,
+      66,
+      5,
+      44,
+      22,
+      16,
+      3,
+      40,
+      25
+    ],
+    "last_batch_n": [
+      19,
+      52,
+      16,
+      34,
+      52,
+      29,
+      40,
+      4,
+      49,
+      17,
+      54,
+      33,
+      2,
+      34,
+      7,
+      52,
+      18,
+      2,
+      2,
+      56
+    ],
+    "tau_eff": 50.35770666666665,
+    "train_n": 37500,
+    "active_fedprox_mu": 0.0,
+    "no_training_called": true
+  },
+  "nova_algebra_fixture": {
+    "dense_update": [
+      0.159375,
+      -0.44625,
+      0.0
+    ],
+    "dense_formula_matches": true,
+    "equal_tau_reduces_to_FedAvg": true,
+    "different_tau_differs_from_FedAvg": true
+  },
+  "rms_sparse_fixture": {
+    "raw_sent": [
+      100.0,
+      50.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rms_sent": [
+      100.0,
+      0.0,
+      2.0,
+      2.0,
+      0.0,
+      0.0
+    ],
+    "rms_counts": [
+      1,
+      2,
+      0
+    ],
+    "tensor_scale_invariant_support": true,
+    "allzero_finite": true,
+    "raw_selected_values_sent": true,
+    "coordinate_not_pack_selection": true
+  },
+  "normalized_ef_telescoping_fixture": {
+    "server_update_total": [
+      0.9562500000000005,
+      2.7624999999999993,
+      3.1875,
+      5.312500000000001
+    ],
+    "telescoping_max_abs_error": 8.881784197001252e-16,
+    "residual_units": "delta/tau, before server multiplier",
+    "status": "PASS"
+  },
+  "data_and_budget": {
+    "train_n": 37500,
+    "holdout_pool_n": 12500,
+    "actual_dev_n": 2000,
+    "client_train_min": 104,
+    "k_coordinates": 6843,
+    "per_client_analytical_upload_bytes": 54808,
+    "round_upload_bytes": 1096160,
+    "rounds20_upload_bytes": 21923200,
+    "fresh_seed": 20261151,
+    "no_warmup": true
+  },
+  "source_hashes": {
+    "run.py": "f568d9e907ddbb4c52bf1802d1aedf8fc03fa75a8c9af33cbf97531022697fd3",
+    "PLAN.md": "02205457d290df0871bffb4332cb057af523364eef066732370ed735b6b5c0ce"
+  },
+  "status": "PASS"
+}

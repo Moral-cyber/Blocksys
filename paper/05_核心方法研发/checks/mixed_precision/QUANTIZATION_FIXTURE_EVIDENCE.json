@@ -1,0 +1,95 @@
+{
+  "scalar_endpoint_and_scale": {
+    "input": [
+      -1.7999999523162842,
+      -1.0,
+      -0.23000000417232513,
+      0.019999999552965164,
+      0.3100000023841858,
+      0.7400000095367432,
+      1.399999976158142
+    ],
+    "decoded": [
+      -1.2350000143051147,
+      -1.2350000143051147,
+      0.0,
+      0.0,
+      0.0,
+      1.2350000143051147,
+      1.2350000143051147
+    ],
+    "scale": 1.2350000143051147,
+    "decoded_mse": 0.11372856174111445,
+    "maxabs_initial_mse": 0.21385713173236207,
+    "symmetric_levels_2bit": [
+      -1,
+      0,
+      1
+    ],
+    "best_of_initial_plus_four_refits": true,
+    "clipping_after_refit_allowed": true
+  },
+  "greedy_and_importance_only_allocation": {
+    "unweighted_gain_per_byte": [
+      0.00046781883721625005,
+      0.005284479656032112,
+      1.3388547860540527e-05
+    ],
+    "mse_widths": [
+      2,
+      3,
+      2
+    ],
+    "sensitive_widths": [
+      3,
+      2,
+      2
+    ],
+    "same_candidate_scale_and_decoded_at_each_fixed_bitwidth": true,
+    "actual_upgrade_bytes": 32
+  },
+  "full_model_integer_decoder_and_byte_sum": [
+    {
+      "mode": "uniform3",
+      "wire_bytes": 54067,
+      "blocks": 535,
+      "tail_values": 170,
+      "ef_max_abs_error": 0.0,
+      "ef_tolerance": 4.76837158203125e-07,
+      "bitwidths": {
+        "2": 0,
+        "3": 535,
+        "4": 0
+      }
+    },
+    {
+      "mode": "mixed_mse",
+      "wire_bytes": 54803,
+      "blocks": 535,
+      "tail_values": 170,
+      "ef_max_abs_error": 0.0,
+      "ef_tolerance": 4.76837158203125e-07,
+      "bitwidths": {
+        "2": 0,
+        "3": 512,
+        "4": 23
+      }
+    },
+    {
+      "mode": "mixed_sensitive",
+      "wire_bytes": 54803,
+      "blocks": 535,
+      "tail_values": 170,
+      "ef_max_abs_error": 7.450580596923828e-09,
+      "ef_tolerance": 4.76837158203125e-07,
+      "bitwidths": {
+        "2": 85,
+        "3": 342,
+        "4": 108
+      }
+    }
+  ],
+  "codec_sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "status": "PASS",
+  "external_cross_model_audit": "REVIEW_UNAVAILABLE"
+}

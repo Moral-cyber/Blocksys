@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://arxiv.org/html/2609.36610",
+    "retrieved_utc": "2026-11-03T15:26:03.037377+00:00",
+    "status": "200",
+    "curl_exit": 0,
+    "stderr": "",
+    "raw_path": "work/weighted_feedback/afl_com.html",
+    "bytes": 1018256,
+    "sha256": "b4f1aa00c7d82d09358d0de039d8e02862237e94ee613271acc8fed3e357a2ea"
+  },
+  {
+    "url": "https://arxiv.org/html/2402.10774",
+    "retrieved_utc": "2026-11-03T15:26:03.038918+00:00",
+    "status": "200",
+    "curl_exit": 0,
+    "stderr": "",
+    "raw_path": "work/weighted_feedback/ef21_w.html",
+    "bytes": 1860960,
+    "sha256": "519217664433d16a01cdc075ff0feddb2e04506001a1dd20a51eb2cc92a6bd4a"
+  },
+  {
+    "url": "https://arxiv.org/html/2408.14736",
+    "retrieved_utc": "2026-11-03T15:26:03.039057+00:00",
+    "status": "200",
+    "curl_exit": 0,
+    "stderr": "",
+    "raw_path": "work/weighted_feedback/weighted_compression.html",
+    "bytes": 293344,
+    "sha256": "b551042628f81cb20284eedac4915259f9c4577fc8139311b58a3f201fe5ec92"
+  }
+]

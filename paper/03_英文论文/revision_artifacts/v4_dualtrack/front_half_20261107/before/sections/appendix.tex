@@ -1,0 +1,6 @@
+\appendix
+\section{Additional Results and Implementation}\label{app:complete}
+Aligned/\allowbreak zero/\allowbreak permuted development NLL is 0.612447/\allowbreak 0.653559/\allowbreak 0.683592 (CIFAR), 0.166384/\allowbreak 0.180172/\allowbreak 0.210277 (Fashion), at fixed capacity and norm. CE/\allowbreak FedLC uniform3 NLL is 0.645/\allowbreak 0.645 and 0.187/\allowbreak 0.188. Dense FedAvg NLL (zero, prior) is 0.6794/\allowbreak 0.6441 and 0.2054/\allowbreak 0.1868. FedProx gives 0.6908/\allowbreak 0.6551 and 0.2078/\allowbreak 0.1893. TopK/\allowbreak FedRoD gives 0.670/\allowbreak 0.677 on CIFAR.\par
+\label{app:statistics}Conditional intervals resample twenty clients 1,000 times with all seeds; they exclude new-partition and training uncertainty.\par
+\label{app:sensitivity}Frozen-predictor reallocation reverses NLL gain. Missing TRAIN classes prevent a finite $\lambda=0$ minimum.\par
+\label{app:implementation}FP64 Newton fits store FP32 states. Training uses $\operatorname{CE}(z-s_i,y)$, with $s_{ic}=\max(n_{ic},1)^{-1/\allowbreak 4}$~\cite{zhang2022fedlc}. The pFedMe adapter uses five gradients/\allowbreak batch and dense messages.

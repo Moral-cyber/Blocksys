@@ -1,0 +1,11 @@
+\begin{table}[!htb]\centering\small
+\caption{Recovery resumes the recorded client--round transition. All four classes pass in both measured activities.}\label{tab:recovery}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.33\linewidth}p{0.48\linewidth}l}\toprule
+Injected interruption & Recovered state and action & Result\\\midrule
+Reply lost after registration & Read back binding; accept the pending bytes & Pass\\
+Reply lost after finalization & Query incorporated record; commit staged residual & Pass\\
+Service and database reopen & Restore pending message and persisted model state & Pass\\
+Duplicate upload, finalize or commit & Reuse recorded contribution and generation & Pass\\\bottomrule
+\end{tabular}
+\end{table}

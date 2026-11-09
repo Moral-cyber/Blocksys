@@ -1,0 +1,780 @@
+{
+  "scope": "synthetic protocol tests; local SQLite simulated registration and trusted aggregation",
+  "not_measured": [
+    "ML performance",
+    "consensus",
+    "network latency",
+    "real permissioned-chain throughput",
+    "end-to-end distributed atomicity",
+    "poisoning resistance",
+    "decoder execution proof"
+  ],
+  "python": "/opt/anaconda3/envs/Tinyproto/bin/python",
+  "python_version": "3.13.15",
+  "sqlite_version": "3.53.4",
+  "hmac": "HMAC-SM3",
+  "tag_bytes": 32,
+  "frozen_codec_source": "/Users/wind/Documents/Codex/2026-11-02/zhe/outputs/method_followup/repro/work/mixed_precision/codec.py",
+  "frozen_codec_sha256_before": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "frozen_codec_sha256_after": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+  "old_toy_source_sha256_before": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2",
+  "old_toy_source_sha256_after": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2",
+  "protocol_source_sha256": "0b40fe49834a57a25c46006022e1161d6e0b3980de49ccca9c0a723f101ebc51",
+  "test_source_sha256": "b27894b2e07fbc52b083dbbeece15e0cd871db770af27ab0fe46cb385c7b3974",
+  "wire_protocol_version": "DURINT02",
+  "codec_spec_sha256": {
+    "synthetic-sparse-q8-v1": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec",
+    "frozen-mixed-precision-v1": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226"
+  },
+  "codec_spec_file_hashes": {
+    "synthetic-sparse-q8-v1": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec",
+    "frozen-mixed-precision-v1": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226"
+  },
+  "codec_identity_boundary": "semantic identifier and trusted matching implementation assumption; not decoder execution proof",
+  "v1_and_frozen_upstream_unchanged": true,
+  "upstream_hash_checks": {
+    "work/durable_integrity/protocol.py": {
+      "before": "a55d75048dffffd2e8b20a63548688138769ef53d43b0cbe419a3767dc3240e6",
+      "after": "a55d75048dffffd2e8b20a63548688138769ef53d43b0cbe419a3767dc3240e6"
+    },
+    "work/durable_integrity/test_protocol.py": {
+      "before": "40cbabb74a9883a1fc5390c0f77df89a07477e1a731114b9e416047849bbf420",
+      "after": "40cbabb74a9883a1fc5390c0f77df89a07477e1a731114b9e416047849bbf420"
+    },
+    "work/durable_integrity/REPORT.md": {
+      "before": "61247689ec81cb138caba7b04793382bb724bd1a24c22cc72d48bf861edf1435",
+      "after": "61247689ec81cb138caba7b04793382bb724bd1a24c22cc72d48bf861edf1435"
+    },
+    "work/durable_integrity/results/test_results.json": {
+      "before": "2634633c2f457f2f345b49b9d7c22a098262775d7192cff5a068e279f8287b64",
+      "after": "2634633c2f457f2f345b49b9d7c22a098262775d7192cff5a068e279f8287b64"
+    },
+    "work/durable_integrity/results/durability_audit.json": {
+      "before": "c490a0fcc8e11d9df7e19056fa1e46d51de2b1b6896a092e167d98796e1054e4",
+      "after": "c490a0fcc8e11d9df7e19056fa1e46d51de2b1b6896a092e167d98796e1054e4"
+    },
+    "work/mixed_precision/codec.py": {
+      "before": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+      "after": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863"
+    },
+    "work/tinyproto_diag/tools/integrity_attack_matrix.py": {
+      "before": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2",
+      "after": "75b69ccccc8d3bf9bb2c13db4d19148fccf659c4560a41d9288946f331d898a2"
+    }
+  },
+  "private_test_keys_directory": "/Users/wind/Documents/Codex/2026-11-02/zhe/outputs/method_followup/repro/work/durable_integrity_v2/portable_recheck_20261104T011533_34e9a84a_private_test_keys",
+  "private_test_keys_public_repro_policy": "exclude generated files; regenerate fresh synthetic keys at runtime",
+  "test_keys_under_result_directory": 0,
+  "tests_run": 62,
+  "passed": 62,
+  "failed": 0,
+  "elapsed_seconds": 1.4208855420001782,
+  "database_files": 188,
+  "cases": [
+    {
+      "test": "test_accepted_only_cannot_commit_ef",
+      "passed": true,
+      "elapsed_seconds": 0.01407487501273863,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_accepted_only_cannot_commit_ef/server.sqlite"
+      }
+    },
+    {
+      "test": "test_base_model_advance_preserves_residual_with_same_layout",
+      "passed": true,
+      "elapsed_seconds": 0.016210333997150883,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_base_model_advance_preserves_residual_with_same_layout/server.sqlite",
+        "base_hash_advanced": true,
+        "layout_unchanged": true,
+        "ef_was_not_reset": true
+      }
+    },
+    {
+      "test": "test_client_reopen_wrong_layout_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.008480749995214865,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_client_reopen_wrong_layout_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_client_second_write_failure_rolls_back_ef_and_commit_state",
+      "passed": true,
+      "elapsed_seconds": 0.013958875002572313,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_client_second_write_failure_rolls_back_ef_and_commit_state/server.sqlite",
+        "ef_and_pending_rollback_together": true,
+        "successful_retry_commit_count": 1
+      }
+    },
+    {
+      "test": "test_closed_round_replay_with_new_nonce_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.012038499990012497,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_closed_round_replay_with_new_nonce_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_concurrent_same_bytes_accept_finalize_and_client_commit_exactly_once",
+      "passed": true,
+      "elapsed_seconds": 0.10348633301327936,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_concurrent_same_bytes_accept_finalize_and_client_commit_exactly_once/server.sqlite",
+        "concurrent_workers": 16,
+        "successful_finalizations": 1,
+        "successful_client_commits": {
+          "c1": 1,
+          "c2": 1
+        },
+        "model_matches_known_weight_sum": true
+      }
+    },
+    {
+      "test": "test_exception_rolls_back_model_and_incorporation_together",
+      "passed": true,
+      "elapsed_seconds": 0.013294125004904345,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_exception_rolls_back_model_and_incorporation_together/server.sqlite"
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_activity",
+      "passed": true,
+      "elapsed_seconds": 0.008468708023428917,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_activity/server.sqlite",
+        "mutation": "activity",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_base_model",
+      "passed": true,
+      "elapsed_seconds": 0.008696208999026567,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_base_model/server.sqlite",
+        "mutation": "base_model",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_bitwidth",
+      "passed": true,
+      "elapsed_seconds": 0.009650624997448176,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_bitwidth/server.sqlite",
+        "mutation": "bitwidth",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_client",
+      "passed": true,
+      "elapsed_seconds": 0.010725166997872293,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_client/server.sqlite",
+        "mutation": "client",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_codec",
+      "passed": true,
+      "elapsed_seconds": 0.008852833998389542,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_codec/server.sqlite",
+        "mutation": "codec",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_codec_spec_sha256",
+      "passed": true,
+      "elapsed_seconds": 0.009166333999019116,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_codec_spec_sha256/server.sqlite",
+        "mutation": "codec_spec_sha256",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_layout",
+      "passed": true,
+      "elapsed_seconds": 0.00881608302006498,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_layout/server.sqlite",
+        "mutation": "layout",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_nonce",
+      "passed": true,
+      "elapsed_seconds": 0.008255875000031665,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_nonce/server.sqlite",
+        "mutation": "nonce",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_numeric_code",
+      "passed": true,
+      "elapsed_seconds": 0.009475165978074074,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_numeric_code/server.sqlite",
+        "mutation": "numeric_code",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_payload_append",
+      "passed": true,
+      "elapsed_seconds": 0.008440167002845556,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_payload_append/server.sqlite",
+        "mutation": "payload_append",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_payload_truncate",
+      "passed": true,
+      "elapsed_seconds": 0.009359416988445446,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_payload_truncate/server.sqlite",
+        "mutation": "payload_truncate",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_record_id",
+      "passed": true,
+      "elapsed_seconds": 0.007985792006365955,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_record_id/server.sqlite",
+        "mutation": "record_id",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_round",
+      "passed": true,
+      "elapsed_seconds": 0.00771979198907502,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_round/server.sqlite",
+        "mutation": "round",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_scale",
+      "passed": true,
+      "elapsed_seconds": 0.007264708983711898,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_scale/server.sqlite",
+        "mutation": "scale",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_hmac_rejects_mutated_sparse_index",
+      "passed": true,
+      "elapsed_seconds": 0.008039458014536649,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_hmac_rejects_mutated_sparse_index/server.sqlite",
+        "mutation": "sparse_index",
+        "original_tag_reused": true,
+        "rejected_before_incorporation": true
+      }
+    },
+    {
+      "test": "test_invalid_tag_registration_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.006820500013418496,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_invalid_tag_registration_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_key_holder_can_authenticate_poisoned_update_trust_boundary",
+      "passed": true,
+      "elapsed_seconds": 0.009786290989723057,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_key_holder_can_authenticate_poisoned_update_trust_boundary/server.sqlite",
+        "authorized_key_holder_forgery_accepted": true,
+        "poisoning_detection": false,
+        "original_pending_digest_still_blocks_wrong_ef_commit": true
+      }
+    },
+    {
+      "test": "test_lost_finalize_ack_and_client_restart_commit_saved_rnext_once",
+      "passed": true,
+      "elapsed_seconds": 0.01787695797975175,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_lost_finalize_ack_and_client_restart_commit_saved_rnext_once/server.sqlite",
+        "lost_ack_simulated": true,
+        "reopened_server": true,
+        "reopened_client": true,
+        "ef_commit_count": 1,
+        "server_finalization_count": 1
+      }
+    },
+    {
+      "test": "test_malformed_envelope_truncation_and_trailing_bytes_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.006541417009430006,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_malformed_envelope_truncation_and_trailing_bytes_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_malformed_spec_identity_rejected_before_signing",
+      "passed": true,
+      "elapsed_seconds": 0.006948041002033278,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_malformed_spec_identity_rejected_before_signing/server.sqlite"
+      }
+    },
+    {
+      "test": "test_matching_claimed_spec_does_not_prove_decoder_execution",
+      "passed": true,
+      "elapsed_seconds": 0.010710083006415516,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_matching_claimed_spec_does_not_prove_decoder_execution/server.sqlite",
+        "correct_spec_id_claimed": true,
+        "decoder_execution_proven": false,
+        "mismatching_execution_accepted_under_trusted_implementation_assumption": true,
+        "faithful_decoder_implementation_remains_required": true
+      }
+    },
+    {
+      "test": "test_matching_spec_identity_pinned_persisted_and_roundtripped",
+      "passed": true,
+      "elapsed_seconds": 0.011603000020841137,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_matching_spec_identity_pinned_persisted_and_roundtripped/server.sqlite",
+        "codec_spec_sha256": "90543828505430c4a0df3f2671c9f396015f8c0bf1d6943fa4d0566e4ea2c0ec",
+        "spec_file_hash_matches": true,
+        "sqlite_pinned_id_matches": true,
+        "pending_roundtrip_preserves_id": true
+      }
+    },
+    {
+      "test": "test_missing_fixed_participant_prevents_finalize",
+      "passed": true,
+      "elapsed_seconds": 0.009844042011536658,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_missing_fixed_participant_prevents_finalize/server.sqlite"
+      }
+    },
+    {
+      "test": "test_nonce_reuse_new_record_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.007593459013151005,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_nonce_reuse_new_record_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_old_finalization_result_stable_after_later_round",
+      "passed": true,
+      "elapsed_seconds": 0.017648583016125485,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_old_finalization_result_stable_after_later_round/server.sqlite"
+      }
+    },
+    {
+      "test": "test_pending_retry_never_regenerates_same_nonce_contribution",
+      "passed": true,
+      "elapsed_seconds": 0.009413457999471575,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_pending_retry_never_regenerates_same_nonce_contribution/server.sqlite"
+      }
+    },
+    {
+      "test": "test_pending_retry_spec_drift_rejected_without_regeneration",
+      "passed": true,
+      "elapsed_seconds": 0.010188750020461157,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_pending_retry_spec_drift_rejected_without_regeneration/server.sqlite"
+      }
+    },
+    {
+      "test": "test_process_crash_before_sql_commit_recovers_atomic_rollback",
+      "passed": true,
+      "elapsed_seconds": 0.04378100001486018,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_process_crash_before_sql_commit_recovers_atomic_rollback/server.sqlite",
+        "crashed_process_exit_code": 73,
+        "rollback_model_matches": true,
+        "states_after_crash": [
+          "ACCEPTED",
+          "ACCEPTED"
+        ],
+        "successful_retry": true
+      }
+    },
+    {
+      "test": "test_real_frozen_mixed_precision_codec_payload_roundtrip",
+      "passed": true,
+      "elapsed_seconds": 0.664509166002972,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_real_frozen_mixed_precision_codec_payload_roundtrip/server.sqlite",
+        "payload_bytes": 71,
+        "codec": "frozen mixed_precision.codec",
+        "frozen_codec_sha256": "46f3601e5c107f192d359227b21aea2734cc5e798674f2dccbbdf46fc796d863",
+        "source_unchanged": true,
+        "synthetic_dimension": 4,
+        "codec_spec_sha256": "73e252614fad7fabc4d4921f526c1ff71e7c0d4c18f4528f443aacb39f689226"
+      }
+    },
+    {
+      "test": "test_receipt_digest_mismatch_prevents_ef_commit",
+      "passed": true,
+      "elapsed_seconds": 0.011358832998666912,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_receipt_digest_mismatch_prevents_ef_commit/server.sqlite"
+      }
+    },
+    {
+      "test": "test_receipt_record_mismatch_prevents_ef_commit",
+      "passed": true,
+      "elapsed_seconds": 0.008116875018458813,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_receipt_record_mismatch_prevents_ef_commit/server.sqlite"
+      }
+    },
+    {
+      "test": "test_record_id_collision_different_validly_signed_bytes_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.008901332999812439,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_record_id_collision_different_validly_signed_bytes_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_registered_only_cannot_commit_ef",
+      "passed": true,
+      "elapsed_seconds": 0.009009125002194196,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_registered_only_cannot_commit_ef/server.sqlite"
+      }
+    },
+    {
+      "test": "test_registry_and_codec_identity_are_read_only_configuration",
+      "passed": true,
+      "elapsed_seconds": 0.007816708006430417,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_registry_and_codec_identity_are_read_only_configuration/server.sqlite"
+      }
+    },
+    {
+      "test": "test_reused_committed_nonce_does_not_invoke_encoder",
+      "passed": true,
+      "elapsed_seconds": 0.012396042002364993,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_reused_committed_nonce_does_not_invoke_encoder/server.sqlite"
+      }
+    },
+    {
+      "test": "test_same_bytes_replay_is_idempotent_after_incorporation",
+      "passed": true,
+      "elapsed_seconds": 0.02621158299734816,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_same_bytes_replay_is_idempotent_after_incorporation/server.sqlite"
+      }
+    },
+    {
+      "test": "test_same_name_different_client_spec_id_rejected_before_decode",
+      "passed": true,
+      "elapsed_seconds": 0.009898707998218015,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_same_name_different_client_spec_id_rejected_before_decode/server.sqlite",
+        "same_codec_name": true,
+        "different_declared_spec": true,
+        "decoder_calls": 0,
+        "rejected_by_pinned_activity_identity": true
+      }
+    },
+    {
+      "test": "test_same_name_server_registry_spec_drift_rejected_before_decode_after_reopen",
+      "passed": true,
+      "elapsed_seconds": 0.01037683300091885,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_same_name_server_registry_spec_drift_rejected_before_decode_after_reopen/server.sqlite",
+        "reopened_server": true,
+        "same_codec_name": true,
+        "different_local_registry_spec": true,
+        "decoder_calls": 0,
+        "original_model_unchanged": true
+      }
+    },
+    {
+      "test": "test_second_accepted_contribution_same_client_round_rejected",
+      "passed": true,
+      "elapsed_seconds": 0.009093166008824483,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_second_accepted_contribution_same_client_round_rejected/server.sqlite"
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_activity",
+      "passed": true,
+      "elapsed_seconds": 0.008534624997992069,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_activity/server.sqlite",
+        "context_replacement": "activity",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_client_outside_fixed_roster",
+      "passed": true,
+      "elapsed_seconds": 0.008464708982501179,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_client_outside_fixed_roster/server.sqlite",
+        "context_replacement": "client_outside_fixed_roster",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_codec",
+      "passed": true,
+      "elapsed_seconds": 0.008657875005155802,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_codec/server.sqlite",
+        "context_replacement": "codec",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_codec_spec_sha256",
+      "passed": true,
+      "elapsed_seconds": 0.008960458013461903,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_codec_spec_sha256/server.sqlite",
+        "context_replacement": "codec_spec_sha256",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_layout",
+      "passed": true,
+      "elapsed_seconds": 0.008676333003677428,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_layout/server.sqlite",
+        "context_replacement": "layout",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_round",
+      "passed": true,
+      "elapsed_seconds": 0.00991054202313535,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_round/server.sqlite",
+        "context_replacement": "round",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_context_rejects_stale_base_model",
+      "passed": true,
+      "elapsed_seconds": 0.008374291996005923,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_context_rejects_stale_base_model/server.sqlite",
+        "context_replacement": "stale_base_model",
+        "hmac_is_valid": true,
+        "rejected_by_fixed_server_context": true
+      }
+    },
+    {
+      "test": "test_signed_invalid_payload_duplicate_index",
+      "passed": true,
+      "elapsed_seconds": 0.009257500001695007,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_invalid_payload_duplicate_index/server.sqlite",
+        "payload_error": "duplicate_index",
+        "hmac_is_valid": true,
+        "decoder_rejected": true
+      }
+    },
+    {
+      "test": "test_signed_invalid_payload_out_of_bounds_index",
+      "passed": true,
+      "elapsed_seconds": 0.008568458986701444,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_invalid_payload_out_of_bounds_index/server.sqlite",
+        "payload_error": "out_of_bounds_index",
+        "hmac_is_valid": true,
+        "decoder_rejected": true
+      }
+    },
+    {
+      "test": "test_signed_invalid_payload_truncated_payload",
+      "passed": true,
+      "elapsed_seconds": 0.009722374990815297,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_invalid_payload_truncated_payload/server.sqlite",
+        "payload_error": "truncated_payload",
+        "hmac_is_valid": true,
+        "decoder_rejected": true
+      }
+    },
+    {
+      "test": "test_signed_invalid_payload_unsupported_bitwidth",
+      "passed": true,
+      "elapsed_seconds": 0.008306625008117408,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_invalid_payload_unsupported_bitwidth/server.sqlite",
+        "payload_error": "unsupported_bitwidth",
+        "hmac_is_valid": true,
+        "decoder_rejected": true
+      }
+    },
+    {
+      "test": "test_signed_invalid_payload_unsupported_scale",
+      "passed": true,
+      "elapsed_seconds": 0.008311917015817016,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_signed_invalid_payload_unsupported_scale/server.sqlite",
+        "payload_error": "unsupported_scale",
+        "hmac_is_valid": true,
+        "decoder_rejected": true
+      }
+    },
+    {
+      "test": "test_sqlite_reopen_proves_all_three_states_and_pending_persistence",
+      "passed": true,
+      "elapsed_seconds": 0.023595582984853536,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_sqlite_reopen_proves_all_three_states_and_pending_persistence/server.sqlite"
+      }
+    },
+    {
+      "test": "test_unknown_status_retains_exact_pending_bytes",
+      "passed": true,
+      "elapsed_seconds": 0.010177124990150332,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_unknown_status_retains_exact_pending_bytes/server.sqlite"
+      }
+    },
+    {
+      "test": "test_unregistered_packet_cannot_be_accepted",
+      "passed": true,
+      "elapsed_seconds": 0.007558790995972231,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_unregistered_packet_cannot_be_accepted/server.sqlite"
+      }
+    },
+    {
+      "test": "test_valid_three_states_fixed_weight_aggregate_and_ef",
+      "passed": true,
+      "elapsed_seconds": 0.012420042010489851,
+      "evidence": {
+        "scope": "synthetic protocol test",
+        "sqlite_file": "portable_recheck_20261104T011533_34e9a84a/synthetic_cases/test_valid_three_states_fixed_weight_aggregate_and_ef/server.sqlite",
+        "states": [
+          "REGISTERED",
+          "ACCEPTED",
+          "INCORPORATED"
+        ],
+        "known_weights": {
+          "c1": 0.25,
+          "c2": 0.75
+        },
+        "model": [
+          0.8125,
+          2.0,
+          2.75,
+          4.0
+        ],
+        "ef_generation": 1
+      }
+    }
+  ]
+}

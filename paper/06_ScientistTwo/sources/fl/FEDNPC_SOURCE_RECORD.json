@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-11-05T16:07:51.601280+00:00",
+  "reviewer": "/root/route_a_citations",
+  "scope": "complete CVF fulltext, official listing, and prior archived Crossref record; no new network by reviewer",
+  "full_pdf": {
+    "url": "https://openaccess.thecvf.com/content/CVPR2026F/papers/Gao_FedNPC_Stochastic_Noise-driven_Post-hoc_Classifier_Calibration_Method_for_Federated_Long-tailed_CVPRF_2026_paper.pdf",
+    "bytes": 1643740,
+    "pages": 10,
+    "printed_pages": "7737--7746",
+    "sha256": "b004153f11ecefd58bdebdb6b70cdcc850ed884ae46163d530bae3c4e335aa34"
+  },
+  "extraction": {
+    "python": "/Users/wind/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "pypdf": "6.10.0",
+    "fitz_used": false,
+    "all_pages_extracted": true,
+    "method_anchors": [
+      "PDFp3/printed7739 §3.3",
+      "PDFp4/printed7740 Eq2 Eq3 Algorithm1",
+      "PDFp5/printed7741 §3.5 §4.1"
+    ],
+    "known_encoding_issue": "Some figure-axis strings on PDFp8; not used for method decision"
+  },
+  "range_assembly": {
+    "all_12_206_content_ranges_verified": true,
+    "concatenation_matches_pdf": true,
+    "total_bytes": 1643740
+  },
+  "metadata_choice": "cite CVF edition, title/author/year/pages from official listing and full PDF",
+  "metadata_discrepancy": {
+    "cvf_pages": "7737--7746",
+    "crossref_pages": "7740--7749",
+    "candidate_doi": "10.1109/cvprf71909.2026.00743",
+    "ieee_document": "11697702",
+    "ieee_html_local_bytes": 0,
+    "cause": "unresolved possible proceedings pagination difference; do not guess",
+    "doi_in_optional_bib": false
+  },
+  "bounded_verdict": "relevant federated posthoc neighbor; server feature-noise global-classifier CE differs from client supervised frozen-logit prior-centered affine CE+ridge; no performance superiority or universal disjointness claim",
+  "inputs": {
+    "fednpc_cvf_full.pdf": {
+      "sha256": "b004153f11ecefd58bdebdb6b70cdcc850ed884ae46163d530bae3c4e335aa34",
+      "bytes": 1643740
+    },
+    "fednpc_cvf_full.txt": {
+      "sha256": "b1e11b8d521e92f22d091d2b0b9ccebb2fc659bd89933a4cede23ab97abb2296",
+      "bytes": 49548
+    },
+    "cvpr2026_findings.html": {
+      "sha256": "875561541ea69d6442e5fc98c9431e984e9956d739a2d1d28cd4b2c764ab5443",
+      "bytes": 2689487
+    },
+    "FEDNPC_FETCH.json": {
+      "sha256": "d5b7e4debeb8f9da0b66b6075df2db96ff9c0318683b606d9b877a53866f0281",
+      "bytes": 1218
+    },
+    "fetch_fednpc_chunks.py": {
+      "sha256": "85b26da81a4542a1a1f83761c692148bbe39cf128b22c81f3ccc750cdeca091c",
+      "bytes": 1099
+    },
+    "fednpc_chunk_0.headers": {
+      "sha256": "b2c3492a48cc5038d5aa45a6b010250a35078c590e6d07f62fe20213656b1219",
+      "bytes": 293
+    },
+    "fednpc_chunk_1540000.headers": {
+      "sha256": "a28840bdfdd04520385135442cc936785609620496d9871883fc9a426d9f700d",
+      "bytes": 300
+    },
+    "FEDNPC_METHOD_OVERLAP.md": {
+      "sha256": "056f6a75957efe44564c4aab47816a218346579ffbb7ec67378dfd7c76bf0463",
+      "bytes": 7715
+    },
+    "fednpc_verified_append.bib": {
+      "sha256": "4070ce1adbc028d193154374b0bffe90f7f12e8cb2ea1170beeec33b091f8042",
+      "bytes": 828
+    }
+  },
+  "crossref_record": {
+    "path": "fednpc_crossref.json",
+    "sha256": "0b8cbd75974d804fbd1d9bdc5de726d1cdaf8df553a226e250ed1afefa6a4bbf",
+    "bytes": 9626
+  },
+  "compact_append_bib": {
+    "file": "fednpc_compact_append.bib",
+    "sha256": "81691462c206ca9ebf101835c0bee64207ec7bcb488a3d786991a39585a62e49",
+    "url_omitted_for_manuscript_length": true,
+    "url_preserved_in_this_record": true,
+    "booktitle": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings",
+    "pages": "7737--7746",
+    "year": 2026,
+    "candidate_doi_omitted_due_metadata_page_difference": true
+  }
+}

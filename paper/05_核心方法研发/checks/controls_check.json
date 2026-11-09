@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "variants_checked": [
+    "prox001_ef",
+    "prox01_ef",
+    "sign50_ef",
+    "fixed50_ef",
+    "reverse90_ef",
+    "shuffle90_ef",
+    "regtopk1_ef",
+    "regtopk5_ef",
+    "regtopk10_ef"
+  ],
+  "checks": [
+    "same K and value/index bytes",
+    "candidate/residual conservation",
+    "RNG isolation",
+    "missing/zero reference fallback",
+    "sign/fixed quota supports",
+    "reverse/shuffle energy bounds",
+    "mu=0 baseline identity",
+    "FedProx gradient equals explicit proximal objective over 3 mini-batches",
+    "tiny one_run integration and adapter hash in run_signature",
+    "RegTopK per-client history and exact cancellation behavior",
+    "RegTopK tiny integration, adaptation metadata and interrupted-resume rejection",
+    "explicit variants and FedProx/RegTopK snapshot rejection"
+  ],
+  "scope": "Small deterministic implementation checks only, no learning advantage or literature reproduction claim."
+}

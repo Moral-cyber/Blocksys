@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pt
+*.npz
+*.sqlite
+*.zip
+*.aux
+*.log
+*.blg
+*.bbl
+*.out
+*.synctex.gz
+.bootstrap/
+site-packages/
+venv/
+.venv/

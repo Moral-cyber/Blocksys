@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "post-run payload, hashes, conservation and fixed-decision check only; no gradients/training rerun",
+  "client_variant_records_checked": 60,
+  "max_conservation_absolute_error": 1.862645149230957e-09,
+  "C_same_indices_as_A": true,
+  "B_C_same_saved_batch_and_gradient_count": true,
+  "K": 6843,
+  "round_bytes_all_variants": 1096160,
+  "decision_recomputed": "STOP_NO_TUNING_OR_EXPANSION",
+  "C_loss_minus_B": 0.02487446594238274,
+  "C_accuracy_pp_minus_B": -1.2499988079071045,
+  "clip_triggered_clients": 0,
+  "official_test_or_confirmation_read": false,
+  "artifact_sha256": {
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/probe_sparse_repair.py": "2ad6ad8d7c4a7856cc7c31628d17e11a90076ede1acbcfe246bd59f80708ade8",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/sparse_repair_probes/cpu_topk20_fixed_abc/result.json": "7631f69f0efea15303b9aff5d9a3fe224b33c1a77ce7bba1e73374a7a3cf7f15",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/sparse_repair_probes/cpu_topk20_fixed_abc/client_states.pt": "6255dff9dbb298b18bda4d57682f14a80705028a5cfed98947e6f298acd7e13b",
+    "/Users/wind/Documents/Codex/2026-11-02/zhe/work/method_followup/sparse_repair_probes/cpu_topk20_fixed_abc/summary.md": "126dd674c6397c5cc24a73dde349b43f847325259a9fd926450b1a6ad4ec883b"
+  }
+}

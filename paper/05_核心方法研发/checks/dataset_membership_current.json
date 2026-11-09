@@ -1,0 +1,75 @@
+{
+  "method": "SHA-256 of uint8 CHW image bytes plus label; shard normalization inverted and verified exactly",
+  "normalization_exact": true,
+  "shape_dtype": [
+    [
+      "float32",
+      [
+        3,
+        32,
+        32
+      ],
+      "int64"
+    ]
+  ],
+  "sizes": {
+    "train": [
+      343,
+      137,
+      4742,
+      1102,
+      3853,
+      844,
+      1287,
+      562,
+      466,
+      361,
+      94,
+      2248,
+      3646,
+      3669,
+      1268,
+      7389,
+      381,
+      1005,
+      728,
+      3375
+    ],
+    "test": [
+      114,
+      46,
+      1580,
+      368,
+      1284,
+      281,
+      429,
+      188,
+      156,
+      120,
+      31,
+      749,
+      1216,
+      1223,
+      422,
+      2463,
+      127,
+      335,
+      243,
+      1125
+    ]
+  },
+  "official_train_samples": 50000,
+  "official_test_samples": 10000,
+  "client_train_samples": 37500,
+  "client_holdout_samples": 12500,
+  "all_shards_multiset_equals_official_train": true,
+  "train_images_not_in_official_train": 0,
+  "holdout_images_not_in_official_train": 0,
+  "content_overlap_train_holdout_unique_hashes": 0,
+  "content_overlap_train_official_test_unique_hashes": 0,
+  "content_overlap_all_shards_official_test_unique_hashes": 0,
+  "content_overlap_original_official_train_test_unique_hashes": 0,
+  "duplicate_extra_samples_official_train": 0,
+  "duplicate_extra_samples_client_train": 0,
+  "duplicate_extra_samples_client_holdout": 0
+}

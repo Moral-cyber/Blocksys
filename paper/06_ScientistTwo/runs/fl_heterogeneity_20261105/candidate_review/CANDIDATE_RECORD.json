@@ -1,0 +1,57 @@
+{
+  "status": "PROPOSED_NOT_EXECUTED",
+  "agent": "/root/route_a_stats",
+  "review": "RESIDUAL_ANCHOR_REVIEW.md",
+  "plan": "PLAN.md",
+  "candidate": {
+    "title": "Residual local marginal-evidence anchor",
+    "hypothesis": "If frozen predictions already encode part of the local class prior, using H(log(pi)-log(q)) with q estimated from the same local TRAIN prediction marginal can reduce double-counting and improve development NLL over both prior and zero centers. Correct q-to-class alignment should matter. Local q is not guaranteed to be a source prior and may instead erase useful local information.",
+    "novelty_score": 0.0,
+    "novelty_scope": "UNASSESSED required-schema placeholder. Prior-ratio label-shift correction, Saerens-style adaptation and BCTS are close established mechanisms. A local TRAIN output marginal is a concrete but assumption-sensitive variant; no valid label-shift interpretation or novelty is claimed without separate checks.",
+    "source_ids": [
+      "task_pr_lfl",
+      "prior_pfedbred",
+      "near_neighbor_comparison",
+      "drift_development"
+    ],
+    "evidence_ids": [],
+    "adapter_payload": {
+      "candidate_id": "residual_marginal_v1",
+      "status": "UNRUN_CANDIDATE",
+      "mechanism": {
+        "pi": "(class_count+1)/(N+10)",
+        "q": "(sum softmax(raw_train_logits)+1)/(N+10)",
+        "center": "H(log(pi)-log(q))",
+        "lambda": 10.0,
+        "other_solver_settings": "unchanged"
+      },
+      "minimum_experiment": "Both tasks, original partition, all three existing seeds and all 20 clients; TRAIN-only centers/fits, designated development scoring, no shared retraining.",
+      "controls": [
+        "original prior center",
+        "zero center",
+        "local residual center",
+        "one-class cyclic permutation of q in residual center"
+      ],
+      "diagnostics": [
+        "TRAIN marginal q versus pi",
+        "center norms and distance to zero",
+        "class-mass residuals",
+        "known-offset synthetic numerical fixture, not task-performance evidence"
+      ],
+      "rejection": "Reject if task-mean NLL fails to beat original prior or zero on either task, if misaligned q performs equivalently, or if gains are explained only by proximity to zero. Report between-seed reversals.",
+      "extra_upload_bytes": 0,
+      "prediction_state_bytes": 80,
+      "named_extra_fitting_buffers_bytes": 400,
+      "memory_boundary": "Streaming accumulator, q/pi/center and one probability row; vectorized temporaries and baseline saved logits require measurement. All added buffers discarded after fitting.",
+      "official_test_access": false
+    }
+  },
+  "seed_source": {
+    "path": "/Users/wind/Desktop/Codex/paper/06_ScientistTwo/runs/fl_heterogeneity_20261105/roles/seeds.json",
+    "sha256": "e7682ed64c934437eb2076c1331750b234b7934153cde53a81331ea4adf010f9"
+  },
+  "scientific_novelty_assessment": "LOW_STANDALONE_NOVELTY: standard prior ratio plus established ridge center; local q source-prior interpretation unproved",
+  "root_plan_confirmation_required": true,
+  "actual_candidate_fits": 0,
+  "actual_candidate_scores": 0
+}

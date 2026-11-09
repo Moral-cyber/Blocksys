@@ -1,0 +1,10 @@
+\section{Evaluation Protocol}
+CIFAR-10~\cite{krizhevsky2009tiny} and FashionMNIST~\cite{xiao2017fashion} use a 136,874-parameter SmallCNN. Fashion is padded to $32\times32$ and repeated across three channels; normalization is $(x/255-0.5)/0.5$. Classwise Dirichlet-multinomial assignment ($\alpha=0.1$, twenty clients, minimum 100 examples) yields 37,500/12,500 CIFAR and 45,001/14,999 Fashion TRAIN/holdout examples. A fixed stratified 2,000-example subset monitors training; initialization/batch seeds are paired.
+
+Before TEST, TRAIN counts fix $P(i\mid c)=(n_{ic}+1)/\sum_j(n_{jc}+1)$; largest-remainder quotas allocate each class's 1,000 TEST examples. PCG64 orders rows, seeded by SeedSequence$(20261301,c)$; client index breaks quota ties. Assignments cover TEST once, identically across seeds and methods.
+
+Client-macro NLL/accuracy weight clients equally; tables show three-seed mean $\pm$ sample SD.\footnote{Sixty client--seed pairs share a partition/models; they are not independent training replicates.} Table~\ref{tab:quality} adds sample-weighted metrics, client-accuracy decile, Brier score and top-label expected calibration error (ECE), client-macro ($c$) or pooled ($p$): 15 equal-width left-closed bins, confidence one in the last.
+
+The heterogeneity sweep retrains the shared model at $\alpha\in\{0.1,0.5,1.0\}$ with twenty clients, twenty rounds and three model seeds per task. TRAIN-fitted predictors score disjoint development holdouts excluding the 2,000 monitoring examples. The client-size analysis reuses saved TEST outcomes from the original $\alpha=0.1$ partition, averaging gain across three seeds per client. We define $\Delta\mathrm{NLL}=\mathrm{NLL}(\mathrm{zero})-\mathrm{NLL}(\mathrm{prior})$, so positive values indicate improvement.
+
+Cyclic permutation $\widetilde\mu_i=\operatorname{roll}(\mu_i,1)$ preserves center values/norm, penalty, capacity and solver. TRAIN fits and existing correct/zero states score twenty development clients across three seeds.
