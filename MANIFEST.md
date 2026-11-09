@@ -23,7 +23,6 @@
 - `revision_artifacts/` 仅保留：表格 `.tex`、`figures/` 下的图、脚本、报告，以及白名单摘要 JSON（λ 扫描、α 扫描、链上成本、CIFAR-100、pFedMe、漂移诊断等）
 - 保留原目录编号（`02_`、`03_`、`05_`），不重命名，避免破坏文档里的相对路径
 - **`paper/06_ScientistTwo/` 整体未收录**：它是第三方研究工具（Open-ScientistTwo，非 Google 官方实现），不属于本论文项目内容
-- 已剔除 `paper/06_ScientistTwo/.bootstrap/`（虚拟环境内置 pip）
 
 ## 校验
 
