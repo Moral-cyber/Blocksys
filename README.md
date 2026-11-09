@@ -15,7 +15,6 @@ Two halves of one system: a 20-parameter prior-centered predictor fitted on froz
 | `paper/03_英文论文/` | LaTeX 源码、图表、`main.pdf`、`evidence/`、`checks/`、筛选后的 `revision_artifacts/` |
 | `paper/02_实验工程/` | 三比特编解码、误差反馈与诊断脚本、小体积结果 |
 | `paper/05_核心方法研发/` | 方法脚本、检查记录、设计说明（不含 checkpoint 与 results） |
-| `paper/06_ScientistTwo/` | 非官方 Open-ScientistTwo 桥接记录（非 Google 官方实现） |
 | `paper/00_使用说明/` | 研究状态说明 |
 | `00_文件总导航.md` | 仓库结构导航、排除清单与历史迁移记录 |
 
@@ -34,7 +33,7 @@ pdflatex main && bibtex main && pdflatex main && pdflatex main
 |---|---|---|
 | `paper/02_实验工程/dataset/` | 680 MB | CIFAR 原始数据，可公开下载 |
 | `paper/05_核心方法研发/results/` | 2.3 GB | 逐运行 `result.json`（单个 60–70 MB）与 checkpoint |
-| `paper/06_ScientistTwo/upstream/` | 257 MB | 第三方上游代码 |
+| `paper/06_ScientistTwo/` | 2.0 MB | 第三方研究工具（Open-ScientistTwo 非官方实现），不属于论文项目 |
 | `paper/03_英文论文/English_Paper_Complete_Package.zip` | 330 MB | 打包副本 |
 | `paper/03_英文论文/revision_artifacts/**/runs/` | ~470 MB | 训练 checkpoint（`*.pt`）与中间缓存 |
 | `对话产物完整归档_20261103/` | 7.6 GB | 完整对话与目录快照（含 6.4 GB 删除前备份） |

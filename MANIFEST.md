@@ -3,7 +3,7 @@
 - 生成时间：2026-11-09
 - 源目录：`/Users/wind/Desktop/Codex`
 - 目标目录：`/Users/wind/Desktop/Codex_repo`
-- 收录：**1176 个文件，19.3 MB**（单文件上限 2 MB）
+- 收录：**1041 个文件，17.3 MB**（单文件上限 2 MB）
 
 ## 分区统计
 
@@ -13,7 +13,6 @@
 | paper/03_英文论文/revision_artifacts（筛选后） | 256 | 5.7 MB |
 | paper/02_实验工程（代码与小结果） | 15 | 0.8 MB |
 | paper/05_核心方法研发（脚本与检查） | 699 | 7.5 MB |
-| paper/06_ScientistTwo（桥接记录） | 136 | 2.0 MB |
 | paper/00_使用说明 | 3 | 0.0 MB |
 | 根目录文件 | 5 | 0.0 MB |
 
@@ -22,8 +21,9 @@
 - 只保留文本与小型二进制：`.tex .bib .cls .bst .md .py .csv .json .txt .pdf .png .svg`
 - 排除：`*.pt`、`*.npz`、`*.sqlite`、`*.zip`、`__pycache__`、`runs/`、`e1_runs/`、`dataset/`、`results/`、`upstream/`
 - `revision_artifacts/` 仅保留：表格 `.tex`、`figures/` 下的图、脚本、报告，以及白名单摘要 JSON（λ 扫描、α 扫描、链上成本、CIFAR-100、pFedMe、漂移诊断等）
-- 保留原目录编号（`02_`、`03_`、`05_`、`06_`），不重命名，避免破坏文档里的相对路径
-- 已剔除 `paper/06_ScientistTwo/.bootstrap/`（410 个文件、5.1 MB，为虚拟环境内置的 pip，不属于项目内容）
+- 保留原目录编号（`02_`、`03_`、`05_`），不重命名，避免破坏文档里的相对路径
+- **`paper/06_ScientistTwo/` 整体未收录**：它是第三方研究工具（Open-ScientistTwo，非 Google 官方实现），不属于本论文项目内容
+- 已剔除 `paper/06_ScientistTwo/.bootstrap/`（虚拟环境内置 pip）
 
 ## 校验
 
@@ -49,6 +49,6 @@
 | `paper/02_实验工程/dataset/` | 680 MB |
 | `paper/03_英文论文/revision_artifacts/**/runs/` | ~470 MB |
 | `paper/03_英文论文/English_Paper_Complete_Package.zip` | 330 MB |
-| `paper/06_ScientistTwo/upstream/` | 257 MB |
+| `paper/06_ScientistTwo/`（第三方工具，含 upstream） | 259 MB |
 | `对话产物完整归档_20261103/02_实验工程完整快照/` | 1.2 GB |
 | `paper/01_论文材料/历史论文版本/` | 9.7 MB |
