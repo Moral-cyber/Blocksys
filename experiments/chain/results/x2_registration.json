@@ -1,0 +1,252 @@
+{
+  "schema": "pr-lfl-chain-registration/1",
+  "created_at": "2026-11-11T12:34:40.443Z",
+  "input": "/Users/wind/Desktop/Codex/experiments/chain/data/uploads.jsonl",
+  "contract_source": "/Users/wind/Desktop/Codex/experiments/chain/contracts/UploadRegistry.sol",
+  "chain": "in-process ganache (single-node development chain)",
+  "versions": {
+    "ganache": "7.9.2",
+    "solc": "0.8.30+commit.73712a01.Emscripten.clang",
+    "ethers": "6.15.0",
+    "node": "v24.21.0"
+  },
+  "configurations": {
+    "c2_r2_measured": {
+      "clients": 2,
+      "contract_address": "0xE2F64eC99C8D19fa0949fE1549D954b1F181d9a4",
+      "deployment": {
+        "tx_hash": "0xe48a451ee23ce6a2eb8766b782985d3b09411e6580f46f854aff26b8d12cbbb4",
+        "block_number": 1,
+        "gas_used": 530120
+      },
+      "registrations": 4,
+      "gas_total": 1140380,
+      "all_readback_match": true,
+      "records": [
+        {
+          "record_id": "r1-c0",
+          "record_key": "0x168e7a45b098d32551ee832bcb71a93b265a233a5691118a362bb3bbafaaf9a2",
+          "round": 1,
+          "client": 0,
+          "tx_hash": "0x97058c9e0406068fefd8e05fcea6036a95766a6fbb52b9b425625425376877ec",
+          "block_number": 2,
+          "gas_used": 297926,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r1-c1",
+          "record_key": "0xff0d3b12a9b49d67e1337fe6e94988651f61c1b6adbbba935c7a615e4cc8bf18",
+          "round": 1,
+          "client": 1,
+          "tx_hash": "0x913627d1a44d008554a80d904bfd2a1a0fa8c6ad65d29c7df7cd20c1c004766e",
+          "block_number": 3,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c0",
+          "record_key": "0xfe547f1be7226cdf1dd75a799770df1b43db75987329cec4df526270bf27b6b5",
+          "round": 2,
+          "client": 0,
+          "tx_hash": "0x5b0fd702e3763b43bf02ce3c01968ab7624a5208a58740f80f465fb5403785f9",
+          "block_number": 4,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c1",
+          "record_key": "0xa8db444d3b6714d4d9bae040f271a135e78b46b8a9976d65f8213c996612b0d2",
+          "round": 2,
+          "client": 1,
+          "tx_hash": "0x81008c777c365cbefde525d09a5893a1d36e6e82919964193239dd822138f422",
+          "block_number": 5,
+          "gas_used": 280802,
+          "readback_matches": true,
+          "status": 1
+        }
+      ]
+    },
+    "c5_r3_measured": {
+      "clients": 5,
+      "contract_address": "0x1645D6cBBB9A54CA0b8B4B8D12A3FCF37108E8F0",
+      "deployment": {
+        "tx_hash": "0x3f419a869a84660e943993039aedc65b8c528fcfcc5d26735e6370cc4e12fdcc",
+        "block_number": 6,
+        "gas_used": 601869
+      },
+      "registrations": 15,
+      "gas_total": 4229442,
+      "all_readback_match": true,
+      "records": [
+        {
+          "record_id": "r1-c0",
+          "record_key": "0x168e7a45b098d32551ee832bcb71a93b265a233a5691118a362bb3bbafaaf9a2",
+          "round": 1,
+          "client": 0,
+          "tx_hash": "0x33a818130b32ae9e7c1013c8fae5797ca9f2c36ec3fa50ad09d0e00e5f4d3802",
+          "block_number": 7,
+          "gas_used": 297926,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r1-c1",
+          "record_key": "0xff0d3b12a9b49d67e1337fe6e94988651f61c1b6adbbba935c7a615e4cc8bf18",
+          "round": 1,
+          "client": 1,
+          "tx_hash": "0x6c8041ecf81bbfe2cc68b023888875a5d71d12c27ec9b03522794d825128b880",
+          "block_number": 8,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r1-c2",
+          "record_key": "0xbfcf925d9673cc65127a149ea5c1a0ff00becfca405a37ca0d39e46c969a8af3",
+          "round": 1,
+          "client": 2,
+          "tx_hash": "0xe6f224b2549ff1915d0edbe68290657f4b52fa033bc80cb01e3655638842ec1d",
+          "block_number": 9,
+          "gas_used": 280802,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r1-c3",
+          "record_key": "0x92c4489b46a83b6fe18019f9b761d9b67e56a1e738b6ba21bd91000e8f1f925c",
+          "round": 1,
+          "client": 3,
+          "tx_hash": "0x369375a6c9565b60860b272b6e5ba5fce6178cefb7cd8cc7286dba0f3758c9e5",
+          "block_number": 10,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r1-c4",
+          "record_key": "0x6fe7db32dfd1d17a9b69854cecc0c1ebae53f5dd5229d332cef8b6eb663adbd8",
+          "round": 1,
+          "client": 4,
+          "tx_hash": "0xdbe96fcf1699c82a7c23ab4c969f8403bc678c0e9abcb30f03432649b1fb7326",
+          "block_number": 11,
+          "gas_used": 280814,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c0",
+          "record_key": "0xfe547f1be7226cdf1dd75a799770df1b43db75987329cec4df526270bf27b6b5",
+          "round": 2,
+          "client": 0,
+          "tx_hash": "0x3d29fcd76d3af57b9e3cd7fcd7264b905ae8c03d4959a4fc90e74a0b01494831",
+          "block_number": 12,
+          "gas_used": 280838,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c1",
+          "record_key": "0xa8db444d3b6714d4d9bae040f271a135e78b46b8a9976d65f8213c996612b0d2",
+          "round": 2,
+          "client": 1,
+          "tx_hash": "0xc334244f8af2f7fcde47a3bce56ed854849321c1cf5242872ca97f3bea70e41b",
+          "block_number": 13,
+          "gas_used": 280814,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c2",
+          "record_key": "0x9ca4998f23fef35648bf37e0cce6549c93e7ed61b24c40caab8ea34838d6e53e",
+          "round": 2,
+          "client": 2,
+          "tx_hash": "0x6be2e7d65ef46de1e7025fe9bd8b454d6e4fbd1e36c22e0569fc4c76543d9199",
+          "block_number": 14,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c3",
+          "record_key": "0x89ddac9a9fedb4bdfb12b764cac1bad356419d58295adf94b9809fb6c70f6751",
+          "round": 2,
+          "client": 3,
+          "tx_hash": "0xe34e8808ab4c7f95789ee65ca03c3b72326992e5d6e93ee52e8942d1e79e9d82",
+          "block_number": 15,
+          "gas_used": 280838,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r2-c4",
+          "record_key": "0xf6bd5e588112ed1e5fae1d2e7826ec118f73188dce2a8ce484ff408c81a95f1f",
+          "round": 2,
+          "client": 4,
+          "tx_hash": "0x184144fd58e6f10d71e3a4b42c4a3a5cff1bf42e80e7555d9171cba8f70d5c9e",
+          "block_number": 16,
+          "gas_used": 280802,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r3-c0",
+          "record_key": "0xb44723dfeff67d4080774341d9349229fae33b5888a2308e98c32a503c7ab0fb",
+          "round": 3,
+          "client": 0,
+          "tx_hash": "0x7b603582bc127c87963047abf138d8768937ffbe84a009a66345f93806e41951",
+          "block_number": 17,
+          "gas_used": 280838,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r3-c1",
+          "record_key": "0xf3821090afe75f40b7b97aa67e092b950904c96c17021b9378a039faf665c8de",
+          "round": 3,
+          "client": 1,
+          "tx_hash": "0xde88c63c36c1a8e7816e09e4161f8f5ff23c1231e450f629521a3d41d0524ef8",
+          "block_number": 18,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r3-c2",
+          "record_key": "0x771d21f98932493ed22a436cfb7482b96a66ab15ac3b06c9e4a87fc0a13e5fa3",
+          "round": 3,
+          "client": 2,
+          "tx_hash": "0x036f60c66ac62e7af4ce2ed0f2271ade10375f8e406948508f928dc16629f0a0",
+          "block_number": 19,
+          "gas_used": 280838,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r3-c3",
+          "record_key": "0x3c74ce33f4836dfd41dafbde7400c7d7a147a5cd103681a39a876a0a73ac28d8",
+          "round": 3,
+          "client": 3,
+          "tx_hash": "0xf2f46376efd1943bd2f936993098f6f59a6b36dd2f4d81f7d7e7d8a070ebe15a",
+          "block_number": 20,
+          "gas_used": 280826,
+          "readback_matches": true,
+          "status": 1
+        },
+        {
+          "record_id": "r3-c4",
+          "record_key": "0x49bfd497f218acc08b0789a5daab963cf97405e9a6367418668f892fb947badd",
+          "round": 3,
+          "client": 4,
+          "tx_hash": "0x9b21b51815a29602240d5b4424bed6c5863395dc8d0dd13a0a7c2f4ef40e81eb",
+          "block_number": 21,
+          "gas_used": 280802,
+          "readback_matches": true,
+          "status": 1
+        }
+      ]
+    }
+  }
+}

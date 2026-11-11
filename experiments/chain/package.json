@@ -1,0 +1,11 @@
+{
+  "name": "pr-lfl-chain-experiments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "链上实验线：把三比特压缩上传的绑定字段登记到本地 EVM，并校验回执（ganache/solc/ethers 版本锁定）",
+  "dependencies": {
+    "ethers": "6.15.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.30"
+  }
+}

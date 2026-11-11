@@ -1,0 +1,594 @@
+{
+  "status": "PASS",
+  "created_at": "2026-11-11T20:33:25.257628+08:00",
+  "source_and_input_sha256": {
+    "/Users/wind/Desktop/Codex/paper/03_英文论文/evidence/individual_seed_metrics.csv": "c44f55a445272f7ef29b7d0bc77035cd60f444be51535cc9ebeee8eedb5ccd72",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_cifar/fedlc_uniform3_s20261231/result.json": "92410251daeae4ba67e812269d94b9f7dd8057c1540d29f2107d11d7b44250ea",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_cifar/fedlc_uniform3_s20261232/result.json": "d093f26ed1a8d07f1d9db14ad58ba50741a88e088ba1f95fc9488698c7cbcaf0",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_cifar/fedlc_uniform3_s20261233/result.json": "8e13c6c329f081724ad0f6cf6de9954d4a72f5d1d3504c8f1035c60cd7402ab8",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_fashion/fedlc_uniform3_s20261241/result.json": "cc0f0c7020bcc077bf66cdc6230ac6da051a6ae81a7db9555106c21b305e3545",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_fashion/fedlc_uniform3_s20261242/result.json": "f7d4042a57a1f8f53eab6f412bed2f432343d0c51f6b21be14f720404bef3e0c",
+    "/Users/wind/Desktop/Codex/paper/05_核心方法研发/results/predictive_final_test/official_fashion/fedlc_uniform3_s20261243/result.json": "c19964d3d8ed8441617efd7b5c307a2d8a58234069246fb58edda8d8563c0a5a"
+  },
+  "design": {
+    "new_training": 0,
+    "new_fits": 0,
+    "new_test_inference": 0,
+    "training_replicates_per_task": 3,
+    "client_count_per_task": 20,
+    "paired_descriptions_per_task": 60,
+    "bootstrap_repetitions": 1000,
+    "bootstrap_rng": "numpy.random.Generator(PCG64(20261104)) independently reset per task",
+    "delta_convention": "prior center minus zero center; negative NLL difference favors prior",
+    "bootstrap_estimand": "unweighted average client NLL difference, averaged over the existing three seeds; client clusters resampled with all three seeds retained",
+    "inference_boundary": "One fixed partition and shared fitted model per seed. Client-seed pairs are repeated, dependent observations, not sixty independent training replicates. Pooled Wilcoxon p-values are nominal descriptive calculations, not valid population-level evidence of sixty independent replications. Client-cluster percentile intervals describe variation over observed client clusters conditional on these three seeds and the fixed partition; they omit new partition and training-run uncertainty."
+  },
+  "tasks": {
+    "cifar": {
+      "seeds": [
+        20261231,
+        20261232,
+        20261233
+      ],
+      "partition_seed": 20261217,
+      "summary_by_variant": {
+        "zero_anchor_vector": {
+          "macro_accuracy": {
+            "mean": 0.753903467143397,
+            "sample_sd": 0.0068221534384553415
+          },
+          "weighted_accuracy": {
+            "mean": 0.7475333333333333,
+            "sample_sd": 0.006616141876753637
+          },
+          "macro_nll": {
+            "mean": 0.6803677622590146,
+            "sample_sd": 0.013987227289417268
+          },
+          "weighted_nll": {
+            "mean": 0.6787784957981291,
+            "sample_sd": 0.016069406958793886
+          },
+          "client_accuracy_q10": {
+            "mean": 0.6027078965758211,
+            "sample_sd": 0.00537575646514962
+          }
+        },
+        "prioranchored_vector": {
+          "macro_accuracy": {
+            "mean": 0.7556805533962764,
+            "sample_sd": 0.006021486953769703
+          },
+          "weighted_accuracy": {
+            "mean": 0.7471333333333332,
+            "sample_sd": 0.006268439465555471
+          },
+          "macro_nll": {
+            "mean": 0.6446169008480034,
+            "sample_sd": 0.01375203563101143
+          },
+          "weighted_nll": {
+            "mean": 0.6570664934342357,
+            "sample_sd": 0.016185829742906003
+          },
+          "client_accuracy_q10": {
+            "mean": 0.6065036443090881,
+            "sample_sd": 0.001734029096074068
+          }
+        }
+      },
+      "csv_reconstruction_checks": [
+        {
+          "seed": 20261231,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 0.0,
+          "metrics": {
+            "macro_accuracy": 0.7572149534607576,
+            "weighted_accuracy": 0.7524,
+            "macro_nll": 0.6663777486928855,
+            "weighted_nll": 0.6648768950438846,
+            "client_accuracy_q10": 0.597897516529592
+          }
+        },
+        {
+          "seed": 20261231,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 1.1102230246251565e-16,
+          "metrics": {
+            "macro_accuracy": 0.7609561058799978,
+            "weighted_accuracy": 0.7524,
+            "macro_nll": 0.6320570996228507,
+            "weighted_nll": 0.64359998834347,
+            "client_accuracy_q10": 0.6051060312852765
+          }
+        },
+        {
+          "seed": 20261232,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 2.220446049250313e-16,
+          "metrics": {
+            "macro_accuracy": 0.7584378226362147,
+            "weighted_accuracy": 0.7502,
+            "macro_nll": 0.680373336478526,
+            "weighted_nll": 0.6750857553001702,
+            "client_accuracy_q10": 0.6085107240767618
+          }
+        },
+        {
+          "seed": 20261232,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 1.1102230246251565e-16,
+          "metrics": {
+            "macro_accuracy": 0.7569651125082635,
+            "weighted_accuracy": 0.7488,
+            "macro_nll": 0.6424821102074739,
+            "weighted_nll": 0.65257606499045,
+            "client_accuracy_q10": 0.6084441695020105
+          }
+        },
+        {
+          "seed": 20261233,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 2.220446049250313e-16,
+          "metrics": {
+            "macro_accuracy": 0.7460576253332186,
+            "weighted_accuracy": 0.74,
+            "macro_nll": 0.6943522016056326,
+            "weighted_nll": 0.6963728370503326,
+            "client_accuracy_q10": 0.6017154491211095
+          }
+        },
+        {
+          "seed": 20261233,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 1.1102230246251565e-16,
+          "metrics": {
+            "macro_accuracy": 0.7491204418005679,
+            "weighted_accuracy": 0.7402,
+            "macro_nll": 0.6593114927136857,
+            "weighted_nll": 0.6750234269687873,
+            "client_accuracy_q10": 0.6059607321399774
+          }
+        }
+      ],
+      "paired_nll": {
+        "client_seed_pairs": 60,
+        "improved_pairs": 60,
+        "worse_pairs": 0,
+        "tied_pairs": 0,
+        "mean_delta": -0.03575086141101124,
+        "median_delta": -0.025707725327802022,
+        "minimum_delta": -0.1999177348460322,
+        "maximum_delta": -0.007943253466208888,
+        "wilcoxon_two_sided": {
+          "statistic": 0.0,
+          "nominal_p": 1.734723475976807e-18,
+          "method": "SciPy exact signed-rank distribution; no zero differences",
+          "interpretation": "Nominal pooled-pair calculation only; repeated clients and shared seed-model dependence violate independent-pair sampling. Do not present as n=60 independent training runs."
+        },
+        "cluster_bootstrap_95_percentile_interval": [
+          -0.052483770435812746,
+          -0.02328365568083377
+        ],
+        "cluster_bootstrap_repetitions": 1000,
+        "client_mean_negative_count": 20,
+        "client_mean_positive_count": 0,
+        "all_clients_mean_improve": true,
+        "client_seed_delta_matrix": [
+          [
+            -0.07284606083121714,
+            -0.14956807421726737,
+            -0.02628990061811526,
+            -0.018049676831090378,
+            -0.022313065406747046,
+            -0.04143800429629135,
+            -0.04497075675115936,
+            -0.01057252558809374,
+            -0.018943983042283008,
+            -0.011768510723733194,
+            -0.04510448938196254,
+            -0.007943253466208888,
+            -0.011526953921245087,
+            -0.012649960617098888,
+            -0.047078949314270147,
+            -0.025330120562610303,
+            -0.03427111858825971,
+            -0.044550121155831346,
+            -0.020838632299843174,
+            -0.020358823787368197
+          ],
+          [
+            -0.06979577783642421,
+            -0.1999177348460322,
+            -0.03111652856441105,
+            -0.01911182249374055,
+            -0.025712859077076655,
+            -0.040517155265622606,
+            -0.04618108926484543,
+            -0.011955273444544279,
+            -0.0191970865708459,
+            -0.012748372673822894,
+            -0.04856656115884683,
+            -0.00980045553972797,
+            -0.010895428452084466,
+            -0.014381257057280883,
+            -0.05359644001750763,
+            -0.027931440978841926,
+            -0.034373230049925096,
+            -0.04443046307231924,
+            -0.019346461231468326,
+            -0.018249087825673804
+          ],
+          [
+            -0.07763511934775424,
+            -0.16934315061594968,
+            -0.02981742409691379,
+            -0.018795747285075493,
+            -0.02360152272687155,
+            -0.039447884821627754,
+            -0.038235248051095794,
+            -0.009999372396705314,
+            -0.016186028138110653,
+            -0.01184710694382185,
+            -0.04626940771557608,
+            -0.008560761772667347,
+            -0.009510831686839194,
+            -0.013073119276412637,
+            -0.04016496820422749,
+            -0.02570259157852739,
+            -0.03216199331518754,
+            -0.04583136171763447,
+            -0.025968128189666873,
+            -0.018662409958271953
+          ]
+        ],
+        "client_mean_deltas": [
+          -0.07342565267179853,
+          -0.17294298655974974,
+          -0.029074617759813366,
+          -0.018652415536635474,
+          -0.023875815736898415,
+          -0.04046768146118057,
+          -0.0431290313557002,
+          -0.010842390476447777,
+          -0.01810903258374652,
+          -0.012121330113792647,
+          -0.04664681941879515,
+          -0.008768156926201401,
+          -0.010644404686722916,
+          -0.013368112316930802,
+          -0.04694678584533509,
+          -0.02632138437332654,
+          -0.03360211398445745,
+          -0.04493731531526168,
+          -0.02205107390699279,
+          -0.019090107190437983
+        ],
+        "seed_mean_deltas": [
+          -0.034320649070034806,
+          -0.0378912262710521,
+          -0.03504070889194685
+        ],
+        "independent_training_seed_improvements": 3,
+        "seed_regressions": 0,
+        "client_average_wilcoxon_sensitivity": {
+          "statistic": 0.0,
+          "nominal_p": 1.9073486328125e-06,
+          "scope": "20 client averages across the same three seeds; conditional descriptive sensitivity, not new training replications"
+        }
+      },
+      "test_client_sample_counts": [
+        122,
+        43,
+        442,
+        913,
+        681,
+        273,
+        164,
+        730,
+        562,
+        1415,
+        120,
+        208,
+        879,
+        909,
+        186,
+        582,
+        424,
+        248,
+        631,
+        468
+      ],
+      "deltas": {
+        "macro_accuracy": 0.001777086252879423,
+        "weighted_accuracy": -0.00040000000000006697,
+        "macro_nll": -0.03575086141101125,
+        "weighted_nll": -0.021712002363893368,
+        "client_accuracy_q10": 0.003795747733266963
+      }
+    },
+    "fashion": {
+      "seeds": [
+        20261241,
+        20261242,
+        20261243
+      ],
+      "partition_seed": 20261219,
+      "summary_by_variant": {
+        "zero_anchor_vector": {
+          "macro_accuracy": {
+            "mean": 0.9280099419302982,
+            "sample_sd": 0.0036502862591656217
+          },
+          "weighted_accuracy": {
+            "mean": 0.9461666666666666,
+            "sample_sd": 0.003194265695482041
+          },
+          "macro_nll": {
+            "mean": 0.20623096282719913,
+            "sample_sd": 0.012261993119205979
+          },
+          "weighted_nll": {
+            "mean": 0.15880860459825663,
+            "sample_sd": 0.011436298463156172
+          },
+          "client_accuracy_q10": {
+            "mean": 0.8577691759015403,
+            "sample_sd": 0.0027004631364515768
+          }
+        },
+        "prioranchored_vector": {
+          "macro_accuracy": {
+            "mean": 0.9297399369016862,
+            "sample_sd": 0.004390757149895588
+          },
+          "weighted_accuracy": {
+            "mean": 0.9472666666666667,
+            "sample_sd": 0.003323151115031188
+          },
+          "macro_nll": {
+            "mean": 0.18799529734403406,
+            "sample_sd": 0.011001316913666523
+          },
+          "weighted_nll": {
+            "mean": 0.1486097221701655,
+            "sample_sd": 0.010721451817851918
+          },
+          "client_accuracy_q10": {
+            "mean": 0.8566495009177868,
+            "sample_sd": 0.0017705959812149075
+          }
+        }
+      },
+      "csv_reconstruction_checks": [
+        {
+          "seed": 20261241,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 2.220446049250313e-16,
+          "metrics": {
+            "macro_accuracy": 0.9319159364302925,
+            "weighted_accuracy": 0.9498,
+            "macro_nll": 0.1920999440185412,
+            "weighted_nll": 0.14565442569638748,
+            "client_accuracy_q10": 0.856801313404248
+          }
+        },
+        {
+          "seed": 20261241,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 2.220446049250313e-16,
+          "metrics": {
+            "macro_accuracy": 0.9346965542763159,
+            "weighted_accuracy": 0.9511,
+            "macro_nll": 0.17530802875708915,
+            "weighted_nll": 0.13625697264312364,
+            "client_accuracy_q10": 0.8585764613332421
+          }
+        },
+        {
+          "seed": 20261242,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 2.220446049250313e-16,
+          "metrics": {
+            "macro_accuracy": 0.9246850864520704,
+            "weighted_accuracy": 0.9449,
+            "macro_nll": 0.21406602133812985,
+            "weighted_nll": 0.16437841772086645,
+            "client_accuracy_q10": 0.8608201935903137
+          }
+        },
+        {
+          "seed": 20261242,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 0.0,
+          "metrics": {
+            "macro_accuracy": 0.9263382071292222,
+            "weighted_accuracy": 0.9455,
+            "macro_nll": 0.1948901899136038,
+            "weighted_nll": 0.1540742588733486,
+            "client_accuracy_q10": 0.8550943047337278
+          }
+        },
+        {
+          "seed": 20261243,
+          "variant": "zero_anchor_vector",
+          "maximum_csv_reconstruction_error": 2.7755575615628914e-17,
+          "metrics": {
+            "macro_accuracy": 0.9274288029085318,
+            "weighted_accuracy": 0.9438,
+            "macro_nll": 0.21252692312492633,
+            "weighted_nll": 0.166392970377516,
+            "client_accuracy_q10": 0.8556860207100592
+          }
+        },
+        {
+          "seed": 20261243,
+          "variant": "prioranchored_vector",
+          "maximum_csv_reconstruction_error": 0.0,
+          "metrics": {
+            "macro_accuracy": 0.9281850492995203,
+            "weighted_accuracy": 0.9452,
+            "macro_nll": 0.19378767336140923,
+            "weighted_nll": 0.15549793499402426,
+            "client_accuracy_q10": 0.8562777366863905
+          }
+        }
+      ],
+      "paired_nll": {
+        "client_seed_pairs": 60,
+        "improved_pairs": 60,
+        "worse_pairs": 0,
+        "tied_pairs": 0,
+        "mean_delta": -0.018235665483165055,
+        "median_delta": -0.011850780250448452,
+        "minimum_delta": -0.1086353381358135,
+        "maximum_delta": -0.00029148686239865995,
+        "wilcoxon_two_sided": {
+          "statistic": 0.0,
+          "nominal_p": 1.734723475976807e-18,
+          "method": "SciPy exact signed-rank distribution; no zero differences",
+          "interpretation": "Nominal pooled-pair calculation only; repeated clients and shared seed-model dependence violate independent-pair sampling. Do not present as n=60 independent training runs."
+        },
+        "cluster_bootstrap_95_percentile_interval": [
+          -0.02734455535492024,
+          -0.01089916360465485
+        ],
+        "cluster_bootstrap_repetitions": 1000,
+        "client_mean_negative_count": 20,
+        "client_mean_positive_count": 0,
+        "all_clients_mean_improve": true,
+        "client_seed_delta_matrix": [
+          [
+            -0.029618526869769374,
+            -0.014829133195333896,
+            -0.007607544347733336,
+            -0.017715394916218707,
+            -0.005401381277561734,
+            -0.005870215318424132,
+            -0.005083255499703843,
+            -0.0041794513460318185,
+            -0.005851011167382333,
+            -0.00485999776268306,
+            -0.07818463824603783,
+            -0.012813564180486514,
+            -0.011674369248405106,
+            -0.01439989601828262,
+            -0.016519321453372905,
+            -0.012027191252491798,
+            -0.00029148686239865995,
+            -0.05317587193920892,
+            -0.02811705008064863,
+            -0.007619004246866012
+          ],
+          [
+            -0.03513802318023257,
+            -0.01591313246565121,
+            -0.007339730715548276,
+            -0.027507746714269615,
+            -0.004326367610923254,
+            -0.0071357966728771705,
+            -0.0045684820714552155,
+            -0.005903409935568288,
+            -0.010334219824322338,
+            -0.003502464919388812,
+            -0.1086353381358135,
+            -0.01568778480848748,
+            -0.010917040979323653,
+            -0.020251885171895856,
+            -0.017152359350286184,
+            -0.010296051823252328,
+            -0.0004987957206380594,
+            -0.044957944184002674,
+            -0.02217013236513586,
+            -0.01127992184144766
+          ],
+          [
+            -0.039338344527905855,
+            -0.0164916625688471,
+            -0.007609164737340246,
+            -0.0272495402983067,
+            -0.006892748484802508,
+            -0.006532818268690482,
+            -0.005477039718252974,
+            -0.005601787638465146,
+            -0.00764351379067299,
+            -0.0028486314408342484,
+            -0.08857590001145288,
+            -0.01616790389882461,
+            -0.012730714782631748,
+            -0.021783468814210727,
+            -0.012131079621786302,
+            -0.014051004201717898,
+            -0.0027685411838989232,
+            -0.043405215333263414,
+            -0.02666723455944102,
+            -0.010818681388996276
+          ]
+        ],
+        "client_mean_deltas": [
+          -0.03469829819263593,
+          -0.0157446427432774,
+          -0.007518813266873953,
+          -0.024157560642931675,
+          -0.005540165791095832,
+          -0.006512943419997262,
+          -0.005042925763137344,
+          -0.005228216306688418,
+          -0.007942914927459221,
+          -0.0037370313743020404,
+          -0.09179862546443474,
+          -0.014889750962599535,
+          -0.011774041670120168,
+          -0.018811750001463068,
+          -0.0152675868084818,
+          -0.012124749092487341,
+          -0.0011862745889785475,
+          -0.04717967715215834,
+          -0.02565147233507517,
+          -0.009905869159103317
+        ],
+        "seed_mean_deltas": [
+          -0.016791915261452062,
+          -0.019175831424526,
+          -0.018739249763517103
+        ],
+        "independent_training_seed_improvements": 3,
+        "seed_regressions": 0,
+        "client_average_wilcoxon_sensitivity": {
+          "statistic": 0.0,
+          "nominal_p": 1.9073486328125e-06,
+          "scope": "20 client averages across the same three seeds; conditional descriptive sensitivity, not new training replications"
+        }
+      },
+      "test_client_sample_counts": [
+        91,
+        722,
+        778,
+        311,
+        869,
+        1536,
+        719,
+        941,
+        341,
+        431,
+        46,
+        346,
+        703,
+        377,
+        179,
+        433,
+        622,
+        64,
+        322,
+        169
+      ],
+      "deltas": {
+        "macro_accuracy": 0.001729994971388038,
+        "weighted_accuracy": 0.001100000000000101,
+        "macro_nll": -0.018235665483165076,
+        "weighted_nll": -0.010198882428091138,
+        "client_accuracy_q10": -0.001119674983753538
+      }
+    }
+  }
+}

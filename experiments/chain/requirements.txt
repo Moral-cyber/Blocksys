@@ -1,0 +1,4 @@
+# 链上实验线的 Python 依赖
+# x1_export_uploads.py 与 x3_verify_receipts.py 只用了标准库，因此这里没有第三方包。
+# 如果你要扩展成「用 Python 直接连链」，可自行加 web3：
+# web3>=6.20

@@ -1,0 +1,7 @@
+# PR-LFL 实验线依赖
+# 核对论文数字（t1 / f2a / f2b / s5_4）只需要下面四个：
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+# 从头重跑训练（e1_alpha_training.py）额外需要：
+torch>=2.2
