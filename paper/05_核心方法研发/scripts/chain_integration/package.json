@@ -1,0 +1,11 @@
+{
+  "name": "pr-lfl-local-chain-diagnostic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned local EVM development-chain runtime for the PR-LFL upload integration",
+  "dependencies": {
+    "ethers": "6.15.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.30"
+  }
+}
